@@ -1,0 +1,20 @@
+:root{
+    --mont-serrat: 'Montserrat', sans-serif;
+    
+    --primary: #173A67;
+    --primary-support: #1A8EF9;
+    --secundary: #F5961E;
+    --terciary: #96C83C;
+}
+body a{
+    color: #FFFFFF;
+}
+body{
+    overflow-x: hidden;
+    
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}

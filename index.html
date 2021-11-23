@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="./CSS/Login/login.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="./CSS/base.css" rel="stylesheet">
+        <link href="./CSS/reset.css" rel="stylesheet">
+        <link href="./CSS/normalize.css" rel="stylesheet">
+        <title>Login | Anbetec</title>
+    </head>
+
+    <body>
+        <main class="conteudo">
+            <section class="intro">
+                <img src="./Assets/VectorPreenchidoVerde.svg" class="vector-preenchido">
+                    <div class="info_intro">
+                        
+                        <div class="texto__intro">
+                            <h1 class="titulo__intro">Sua <span class="destaque__titulo">empresa</span> mais eficiente.</h1>
+                            <p class="descricao__intro">Automatize, optmize e configure seus processos.</p>
+                        </div>
+                        
+                        <div class="imagem-circuferencia">
+                            <img src="./Assets/Vector-direita.png" class="vetor-direita">
+                            <img src="./Assets/Vector-esquerda.png" class="vetor-esquerda">
+                        </div>
+                        
+                        <div class="intro-principal">
+                            <p class="edi-financeiro">
+                                EDI Fincanceiro
+                                <span>Último acesso: há 4 minutos</span>
+                            </p>
+                            <p class="titulos-gerados">
+                                R$ 152,00
+                                <span>21 titulos gerados</span>
+                            </p>
+                            <p class="cobranca">
+                                Cobrança
+                                <span>Último acesso: há 3 horas</span>
+                            </p>
+                            <p class="limite-automatico">
+                                Limite Automático
+                                <span>Último acesso: há 2 dias</span>
+                            </p>
+                            <img src="./Assets/icone1.png" class="icone-1">
+                            <img src="./Assets/icone2.png" class="icone-2">
+                            <img src="./Assets/engrenagem.png" class="icone-3">
+                            <img src="./Assets/EllipseLaranja.png" class="elipse-laranja">
+                            <img src="./Assets/iconeTabela.png"  class="dados">
+                        </div>
+                            
+                    </div>
+                        
+                <img src="./Assets/VectorBordaVerde.svg" class="vector-borda">
+            </section>
+
+            <section class="login">
+                <img src="./Assets/LogoAnbetec.png" alt="Logo da Empresa Anbetec" class="logo-anbetec">
+
+                <div class="login-area">
+                    <h2 class="titulo__login-area">
+                        Login
+                    </h2>
+                    <p class="descricao__login-area">
+                        Faça o Login e tenha acesso as aplicações
+                    </p>
+
+                    <form action="" class="form__login-area">
+                        <div class="input-container">
+                            <label for="email" class="label-email">Email</label>
+                            <input name="email" id="email" class="input-email input" type="email" placeholder="exemplo@empresa.com" data-tipo="email" autocomplete="off" autofocus>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="senha" class="label-senha">Senha</label>
+                            <input name="senha" id="senha" class="input-senha" type="password" placeholder="•••••••••••••" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%&^_=+-]).{6,12}$" data-tipo="senha" autocomplete="off">
+                            <span class="input-mensagem-erro">Senha incorreta.</span>
+                        </div>
+
+                        <div class="toggle">
+                            <label class="switch">
+                                <input type="checkbox" class="toggle-switch">
+                                <span class="slider round"></span>
+                            </label>
+                            <span>Manter-me logado</span>
+                        </div>
+
+                        <a href="./home.html"><button type="submit" class="input-botao">Entrar</button></a>
+                        <a href="#" class="esqueceu-senha">Esqueceu Sua Senha ?</a>
+                    </form>
+                </div>
+
+                <div class="redes-sociais">
+                    <div>
+                        <h3 class="titulo__redes-sociais">Minhas redes socias</h3>
+                    </div>
+                    <div class="links__redes-socias">
+                        <a href="#"><img src="./Assets/VectorYoutube.svg" alt="Link para youtube da Anbetec"></a>
+                        <a href="#"><img src="./Assets/VectorInstagram.svg" alt="Link para instagram da Anbetec"></a>
+                        <a href="#"><img src="./Assets/VectorFacebook.svg" alt="Link para facebook da Anbetec"></a>
+                        <a href="#"><img src="./Assets/VectorTwitter.svg" alt="Link para twitter da Anbetec"></a>
+                    </div>
+                    <a href="#" class="whatsapp"><img src="./Assets/icone-whatsapp.png" alt="Mandar Mensagem para Whatsapp da Anbetec"></a>
+                </div>
+
+            </section>
+        </main>
+    </body>
+
+</html>
