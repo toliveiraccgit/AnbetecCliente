@@ -14,9 +14,6 @@
         right: 48.061rem;
     }
     .info_intro{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
         height: 100%;
         padding-top: 15%;
         padding-bottom: 20%;
@@ -25,9 +22,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: absolute;
+        top: 319px;
+        left: 9%;
         margin-top: 4rem;
     }
     .texto__intro {
+        position: absolute;
         left: 9rem;
         top: 7.5rem;
     }
@@ -59,7 +60,7 @@
         margin-left: 2.5rem;
         margin-bottom: 1rem;
     }
-    .intro-principal p {
+    .intro p {
         display: flex;
         flex-direction: column;
         width: 14.499rem;
@@ -73,73 +74,92 @@
         background-repeat: no-repeat;
         background-position-y: 1rem;
         background-position-x: 0.838rem;
+        margin-bottom: 0%;
         z-index: 2;
     }
-    .intro-principal p>span {
+    .intro p>span {
         margin: 0%;
         color: #7A8594;
         font-size: 0.475rem;
     }
-    .edi-financeiro {
+    .container__edi-financeiro{
         position: absolute;
-        top: 34%;
+        top: 363px;
+        bottom: 66%;
         left: 17.5%;
+    }
+    .edi-financeiro {
         background: #FFFFFF;
         background-image: url("../../Assets/Finance.png");
     }
-    .cobranca {
+    .container__cobranca{
         position: absolute;
-        top: 67.5%;
+        top: 706px;
+        bottom: auto;
         left: 18%;
+        z-index: 3;
+    }
+    .cobranca {
         background: #FFFFFF;
         background-image: url("../../Assets/cobrança.svg");
     }
-    .limite-automatico {
+    .container__limite-automatico{
         position: absolute;
-        top: 50.5%;
+        top: 523px;
+        bottom: auto;
         left: 2%;
+    }
+    .limite-automatico {
         background: #FFFFFF;
         background-image: url("../../Assets/limiteAutomatico.svg");
     }
-    .titulos-gerados {
+    .container__titulos-gerados{
         position: absolute;
-        top: 50.5%;
+        top: 523px;
+        bottom: auto;
         left: 31%;
+    }
+    .titulos-gerados {
         background: #FFFFFF;
         background-image: url("../../Assets/titulosGerados.svg");
     }
     .icone-1 {
         position: absolute;
-        top: 42.9%;
+        top: 447px;
+        bottom: auto;
         left: 12.3%;
         border-radius: 50%;
         border: 2px solid #C4C4C4;
     }
     .icone-2 {
         position: absolute;
-        top: 63.5%;
+        top: 656px;
+        bottom: auto;
         left: 37.5%;
         width: 3.75rem;
         height: 3.75rem;
         border-radius: 50%;
         border: 2px solid #C4C4C4;
+        z-index: 10;
     }
     .icone-3 {
         position: absolute;
-        top: 37.5%;
+        top: 395px;
+        bottom: auto;
         left: 39%;
     }
     .elipse-laranja{
         position: absolute;
-        top: 74%;
+        top: 767px;
+        bottom: auto;
         left: 30.2%;
         z-index: 1;
     }
     .dados{
         position: absolute;
-        top: 66.5%;
+        top: 706px;
+        bottom: auto;
         left: 7%;
-
     }
     .intro {
         width: 50vw;
