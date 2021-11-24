@@ -171,14 +171,15 @@
         height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
     }
     .logo-anbetec {
         width: 8rem;
         height: 2.625rem;
         align-self: flex-start;
-        margin-left: 7.438rem;
+        margin-left: 9rem;
+        margin-top: 7rem;
     }
     .titulo__login-area {
         color: var(--primary);
@@ -223,6 +224,7 @@
         background-repeat: no-repeat;
         background-position-y: 1rem;
         background-position-x: 1rem;
+        z-index: 1;
     }
     .input-email:focus {
         outline: 2px solid var(--primary-support);
@@ -240,6 +242,18 @@
         font-weight: 500;
         margin-bottom: .25rem;
     }
+    .mostra-senha{
+        background-image: url("../../Assets/vetor-senha.png");
+        background-repeat: no-repeat;
+        background-color: transparent;
+        width: 1.313rem;
+        height: 0.938rem;
+        border: none;
+        z-index: 10;
+        position: relative;
+        top: -3rem;
+        left: 24rem;
+    }
     .toggle {
         display: flex;
         flex-direction: row;
@@ -247,7 +261,6 @@
         color: var(--primary);
         font-weight: 600;
         margin-bottom: 2.492rem;
-        margin-top: 1rem;
         font-size: 0.875rem;
     }
     .switch {
@@ -330,6 +343,7 @@
         align-items: center;
         justify-content: space-between;
         width: 50vw;
+        margin-top: 1rem;
     }
     .titulo__redes-sociais {
         color: var(--primary);
