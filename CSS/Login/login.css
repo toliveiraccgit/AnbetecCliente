@@ -21,11 +21,6 @@
         padding-top: 15%;
         padding-bottom: 20%;
     }
-    .intro-principal {
-        background-image: url("/Assets/Group\ 47.png");
-        background-repeat: no-repeat;
-        width: 100%;
-    }
     .imagem-circuferencia{
         display: flex;
         flex-direction: column;
@@ -90,28 +85,28 @@
         top: 34%;
         left: 17.5%;
         background: #FFFFFF;
-        background-image: url("/././Assets/Finance.png");
+        background-image: url("../../Assets/Finance.png");
     }
     .cobranca {
         position: absolute;
         top: 67.5%;
         left: 18%;
         background: #FFFFFF;
-        background-image: url("/././Assets/cobrança.svg");
+        background-image: url("../../Assets/cobrança.svg");
     }
     .limite-automatico {
         position: absolute;
         top: 50.5%;
         left: 2%;
         background: #FFFFFF;
-        background-image: url("/././Assets/limiteAutomatico.svg");
+        background-image: url("../../Assets/limiteAutomatico.svg");
     }
     .titulos-gerados {
         position: absolute;
         top: 50.5%;
         left: 31%;
         background: #FFFFFF;
-        background-image: url("/././Assets/titulosGerados.svg");
+        background-image: url("../../Assets/titulosGerados.svg");
     }
     .icone-1 {
         position: absolute;
@@ -198,13 +193,13 @@
         margin-top: .2rem;
     }
     .input-email {
-        background-image: url("/./Assets/iconeAvatar.png");
+        background-image: url("../../Assets/iconeAvatar.png");
         background-repeat: no-repeat;
         background-position-y: 1rem;
         background-position-x: 1rem;
     }
     .input-senha {
-        background-image: url("/./Assets/VectorSenha.png");
+        background-image: url("../../Assets/VectorSenha.png");
         background-repeat: no-repeat;
         background-position-y: 1rem;
         background-position-x: 1rem;
