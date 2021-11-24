@@ -1,4 +1,4 @@
-@media (max-width:768px){ /*Responsivo Mobile*/
+@media (max-width:1024px){ /*Responsivo Mobile*/
     .intro{
         display: none;
     }
@@ -79,5 +79,61 @@
         margin-left: 2.4rem;
         width: 3.938rem;
         height: 3.938rem;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1439px){
+    .intro{
+        display: none;
+        justify-content: space-around;
+    }
+    .login{
+        width: 100vw;
+        align-items: center;
+    }
+    .login-area{
+        width: 80vw;
+        padding: 0 20vw;
+    }
+    .input-senha, .input-email{
+        width: 40vw;
+    }
+    .input-botao{
+        width: 40vw;
+    }
+    .logo-anbetec{
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+    .redes-sociais{
+        width: 20vw;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .whatsapp{
+        margin-left: 5rem;
+        align-self: flex-end;
+    }
+}
+
+@media (min-width:1520px){
+    .vector-borda{
+        left: 29.43%;
+    }
+    .imagem-circuferencia{
+        position: relative;
+        left: 0%;
+    }
+    .container__limite-automatico{
+        left: 6.5vw;
+    }
+    .icone-1{
+        left: 15vw;
+    }
+    .icone-2{
+        left: 35vw;
+    }
+    .texto__intro{
+        left: 12.5vw;
     }
 }
