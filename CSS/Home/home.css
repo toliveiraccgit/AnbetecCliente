@@ -6,6 +6,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: space-around;
         
         height: 6.938rem;
         width: 100vw;
@@ -13,6 +14,10 @@
         background-color: #FFFFFF;
 
         padding: 2rem 3.5rem;
+    }
+    .container__info{
+        display: flex;
+        flex-direction: row;
     }
     .logo-anbetec{
         width: 9.213rem;
@@ -48,7 +53,7 @@
         align-items: center;
     }
     .notificacao-ativa{
-        visibility: hidden;
+        visibility:visible;
         position: relative;
         top: -.8rem;
         left: -.5rem;
