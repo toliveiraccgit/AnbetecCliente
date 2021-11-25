@@ -37,7 +37,7 @@
         background-repeat: no-repeat;
         background-position: 2.063rem, .5rem;
 
-        padding: 2rem 0 2rem 3.5rem;
+        padding: 1rem 0 1rem 3.5rem;
         margin-left: 3.724rem;
         margin-right: 12.103rem;
     }
@@ -49,8 +49,14 @@
         padding-right: 1.75rem;
         margin-right: 1.75rem;
         border-right: 1px solid #cdcdcd;
+        
         display: flex;
         align-items: center;
+
+        background-color: transparent;
+        border-top: none;
+        border-left: none;
+        border-bottom: none;
     }
     .notificacao-ativa{
         visibility:visible;
@@ -65,6 +71,9 @@
         align-items: center;
         font-family: var(--mont-serrat);
         height: 2rem;
+    }
+    .informacoes__perfil{
+        width: 112px;
     }
     .icone__perfil{
         border-radius: 50%;
@@ -82,23 +91,35 @@
         font-size: 14px;
         font-weight: 500;
     }
-    .aplicacoes{
-        padding: 2rem 1.5rem;
+    .menu-dots{
+        background-image: url("../../Assets/menu__dots.png");
+        border: none;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position-y: .5rem;
+
+        width: 30px;
+        height: 20px;
+        margin-left: 1.938rem;
     }
-    .intro__aplicacoes{
+    .aplicacoes{
+        padding: 2rem 0 2rem 2rem;
+    }
+    .intro__home{
         font-family: var(--mont-serrat);
         margin-left: 1rem;
     }
-    .saudacao__aplicacoes{
+    .saudacao__home{
         color: #7A8594;
         font-size: 14px;
         font-weight: 500;
         margin-top: 0%;
 
     }
-    .titulo__aplicacoes{
+    .titulo__home{
         color: var(--primary);
         font-weight: 700;
+        font-size: 24px;
     }
     .secao__aplicacoes{
         display: flex;
@@ -155,5 +176,127 @@
     }
     .edi-financeiro{
         background-image: url("../../Assets/edi-financeiro-home.png");
+    }
+
+    
+    
+    .gerenciamento{
+        padding: 0 0 2rem 2rem;
+        font-family: var(--mont-serrat);
+    }
+    .cabecalho__gerenciamento{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .secao-gerenciamento{
+        padding: 2rem;
+        background-color: #ffffff;
+        border-radius: 1rem;
+        border: 1px solid #f1f1f1;
+        height: 26.438rem;
+
+        margin: 1.5rem 2.5rem 1.5rem 0;
+
+        background-image: url("../../Assets/ellipse-bg.png"), url("../../Assets/borda-bg-home.png"), url("../../Assets/vetor-bg-home.png");
+        background-repeat: no-repeat;
+        background-position: 75.25rem 64px, bottom, bottom right;
+        background-size: auto, 100vw, auto;
+    }
+    .tablinks{
+        border: none;
+        background-color: transparent;
+        color: var(--primary);
+        padding: 0%;
+
+        font-size: 18px;
+        font-weight: 700;
+        opacity: 0.2;
+    }
+    .tab-perfil{
+        margin-right: 1.5rem;
+    }
+    .last-child__item___perfil{
+        border: none;
+    }
+    .active{
+        opacity: 1;
+    }
+    .botao-cadastro{
+        background-color: #FFFFFF;
+        border-radius: 64px;
+        border: 1px solid #394E67;
+
+        color: #394E67;
+        font-weight: 600;
+        font-size: 12px;
+
+        padding: .5rem 1rem;
+    }
+    .sub__perfil{
+        display: flex;
+        justify-content: space-between;
+        
+        padding: 1rem 2.5rem 0 0;
+
+        font-size: 14px;
+        color: #7A8594;
+    }
+    .container__item___perfil{
+        display: flex;
+        justify-content: space-between;
+        padding: .5rem 1rem .5rem 0;
+        border-bottom: 1px solid #efefef;
+    }
+    .nome__item___perfil{
+        font-size: 14px;
+        color: #7A8594;
+    }
+    .botao-edita, .botao-deleta{
+        background-color: #ffffff;
+        background-repeat: no-repeat;
+        background-position: .42rem;
+        background-position-y: .45rem;
+
+        border: 1px solid #F0F0F0;
+        border-radius: 8px;
+
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .botao-edita{
+        background-image: url("../../Assets/editar.png");
+        margin-right: .25rem;
+    }
+    .botao-deleta{
+        background-image: url("../../Assets/excluir.png");
+    }
+    .button--carrousel{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+        padding: 0 1rem;
+
+    }
+    .carrousel__button{
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+        background-position-y: center;
+        color: #7A8594;
+        font-family: var(--mont-serrat);
+        font-weight: 600;
+    }
+    .carrousel__button--anterior{
+        background-image: url("../../Assets/seta-esquerda.png");
+        padding-left: 2rem;
+        opacity: 0.4;
+    }
+    .carrousel__button--proximo{
+        background-image: url("../../Assets/seta-direita.png");
+        padding-right: 2rem;
+        background-position-x:right;
     }
 }
