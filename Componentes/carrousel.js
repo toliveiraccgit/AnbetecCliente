@@ -21,7 +21,7 @@ export class Carousel {
     }
 
     getTamanhoSlide() {
-        return this.slides[0].getBoundingClientRect().width - 12
+        return this.slides[0].getBoundingClientRect().width 
     }
 
     getSlideAtual() {

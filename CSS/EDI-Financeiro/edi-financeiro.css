@@ -1,0 +1,213 @@
+@media (min-width:0px){
+    body{
+        background-color: #F8FBFF;
+    }
+    .cabecalho{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        
+        height: 6.938rem;
+        width: 100vw;
+
+        background-color: #FFFFFF;
+
+        padding: 2rem 3.5rem;
+    }
+    .container__info{
+        display: flex;
+        flex-direction: row;
+    }
+    .logo-anbetec{
+        width: 9.213rem;
+        height: 2.979rem;
+    }
+    .barra-pesquisa{
+        font-family: var(--mont-serrat);
+        font-size: 14px;
+        width: 39.813rem;
+        height: 3.25rem;
+
+        border: none;
+        border-radius: .5rem;
+
+        background-color: #F1F4F9;
+        background-image: url("../../Assets/search.png");
+        background-repeat: no-repeat;
+        background-position: 2.063rem, .5rem;
+
+        padding: 1rem 0 1rem 3.5rem;
+        margin-left: 3.724rem;
+        margin-right: 12.103rem;
+    }
+    .barra-pesquisa:focus{
+        outline: 2px solid var(--primary-support);
+        color: var(--azul-secundaria);
+    }
+    .container__notificacao{
+        padding-right: 1.75rem;
+        margin-right: 1.75rem;
+        border-right: 1px solid #cdcdcd;
+        
+        display: flex;
+        align-items: center;
+
+        background-color: transparent;
+        border-top: none;
+        border-left: none;
+        border-bottom: none;
+    }
+    .notificacao-ativa{
+        visibility:visible;
+        position: relative;
+        top: -.8rem;
+        left: -.5rem;
+    }
+
+    .perfil-area{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-family: var(--mont-serrat);
+        height: 2rem;
+    }
+    .informacoes__perfil{
+        width: 112px;
+    }
+    .icone__perfil{
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        margin-right: .5rem;
+    }
+    .nome__perfil{
+        margin: 0%;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--primary);
+    }
+    .banco__perfil{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .menu-dots{
+        background-image: url("../../Assets/menu__dots.png");
+        border: none;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position-y: .5rem;
+
+        width: 30px;
+        height: 20px;
+        margin-left: 1.938rem;
+    }
+
+    .movimentacao{
+        padding: 2rem 0 1rem 2rem;
+    }
+    .intro__edi-financeiro{
+        font-family: var(--mont-serrat);
+        margin-left: 1rem;
+    }
+    .paginacao__edi-financeiro{
+        color: #7A8594;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 0%;
+
+    }
+    .link-paginacao{
+        color: #7A8594;
+    }
+    .destaque__paginacao{
+        padding-left: 1.5rem;
+        background-image: url("../../Assets/icone-paginacao.png");
+        background-repeat: no-repeat;
+        background-position: .55rem, .2rem ;
+
+        color: var(--primary);
+        font-weight: 600;
+    }
+    .titulo__edi-financeiro{
+        color: var(--primary);
+        font-weight: 700;
+        font-size: 24px;
+        margin-top: 2rem;
+    }
+    .secao__movimentacao,.secao__configuracao{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card__movimentacao{
+        width: 26.688rem;
+        font-family: var(--mont-serrat);
+        border: 0.034rem solid #F9F9F9;
+        box-shadow: 0px 0.136rem 0.674rem rgba(122, 133, 148, 0.21);
+        border-radius: 0.5rem;
+        background-color: #FFFFFF;
+        margin: 1rem;
+    }
+    .card__movimentacao > p {
+        color: var(--primary);
+        font-weight: 600;
+        font-size: 1.25rem;
+        
+        padding: 2.2rem 0 2.2rem 6.5rem;
+        margin: 0%;
+        
+        display: flex;
+        flex-direction: column;
+
+        background-repeat: no-repeat;
+        background-position-y: 1.6rem;
+        background-position-x: 1.5rem;
+    }
+    .tempo-visto {
+        margin: 0%;
+        color: #7A8594;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .processamento-servico{
+        background-image: url("../../Assets/processamento-servico.png");
+    }
+
+    .processamento-retorno{
+        background-image: url("../../Assets/processamento-retorno.png");
+    }
+
+    .processamento-dda{
+        background-image: url("../../Assets/processamento-dda.png");
+    }
+
+    .conferencia-conciliacao{
+        background-image: url("../../Assets/conferencia-conciliacao.png");
+    }
+
+    .gerenciamento-arquivos{
+        background-image: url("../../Assets/gerenciamento-arquivo.png");
+    }
+
+    .extrato-cobranca{
+        background-image: url("../../Assets/extrato-cobranca.png");
+    }
+
+    .configuracao{
+        padding: 0 0 2rem 2rem;
+    }
+    .titulo__configuracao{
+        color: var(--primary);
+        font-weight: 700;
+        font-size: 24px;
+    }
+    .gerenciamento-layouts{
+        background-image: url("../../Assets/gerenciamento-layout.png");
+    }
+    .configuracao-servicos{
+        background-image: url("../../Assets/configuracao-servico.png");
+    }
+}
