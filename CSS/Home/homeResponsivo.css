@@ -69,7 +69,24 @@
         font-size: 14px;
     }
 }
-
+@media (min-width:590px) and (max-width:1024px){
+    .container-pesquisa{
+        display: flex;
+        align-items: center;
+    }
+    .barra-pesquisa{
+        display: flex;
+        width: 15rem;
+        height: 3rem;
+        margin: 0%;
+        background-image: none;
+        padding: 1rem;
+    }
+    .pesquisa-mobile{
+        position: relative;
+        left: 1rem;
+    }
+}
 @media (min-width:768px) and (max-width:1024px){
     .cabecalho{
         justify-content: space-evenly;
