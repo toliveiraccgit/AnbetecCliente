@@ -103,3 +103,10 @@
     }
 
 }
+
+@media (min-width:1493px){
+
+    .carrousel__item___perfil{
+        width: 92vw;
+    }
+}
