@@ -23,6 +23,9 @@
         width: 9.213rem;
         height: 2.979rem;
     }
+    .pesquisa-mobile{
+        display: none;
+    }
     .barra-pesquisa{
         font-family: var(--mont-serrat);
         font-size: 14px;
@@ -121,7 +124,7 @@
         color: #7A8594;
     }
     .destaque__paginacao{
-        padding-left: 1.5rem;
+        padding-left: 1.6rem;
         background-image: url("../../Assets/icone-paginacao.png");
         background-repeat: no-repeat;
         background-position: .55rem, .2rem ;

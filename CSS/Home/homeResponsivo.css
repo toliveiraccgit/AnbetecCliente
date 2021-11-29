@@ -1,0 +1,105 @@
+@media (max-width:1024px){ /*Responsivo Mobile*/
+    .cabecalho{
+        padding: 1.563rem 1rem;
+    }
+    .logo-anbetec{
+        width: 5.688rem;
+        height: 1.813rem;
+    }
+    .container-pesquisa{
+        margin-left: 1.5rem;
+    }
+    .pesquisa-mobile{
+        display: flex;
+        padding: 0%;
+        border: none;
+        background-color: transparent;
+    }
+    .ico-pesquisa-mobile{
+        width: 2rem;
+        height: 2rem;
+    }
+    .barra-pesquisa{
+        display: none;
+    }
+    .container__notificacao{
+        border: none;
+        padding: 0%;
+        margin-right: .5rem;
+        margin-left: 1rem;
+    }
+    .notificacao{
+        height: 2rem;
+        width: 2rem;
+    }
+    .informacoes__perfil{
+        width: 97px;
+    }
+    .banco__perfil{
+        font-size: 12px;
+    }
+    .menu-dots{
+        display: none;
+    }
+
+    .saudacao__home{
+        margin-bottom: .5rem;
+    }
+    .intro__home{
+        margin-left: 0%;
+    }
+    .aplicacoes{
+        padding: 2rem 1rem 0 1rem;
+    }
+    .secao__aplicacoes{
+        padding: 0%;
+        gap: 1rem;
+        margin-bottom: 4.521rem;
+    }
+    .gerenciamento{
+        display: none;
+    }
+    .card__aplicacao{
+        width: 96vw;
+    }
+    .card__aplicacao > p {
+        font-size: 19.22px;
+    }
+    .tempo-visto{
+        font-size: 14px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    .cabecalho{
+        justify-content: space-evenly;
+    }
+    .logo-anbetec{
+        width: 6.5rem;
+        height: 2.5rem;
+    }
+    .container-pesquisa{
+        display: flex;
+        align-items: center;
+    }
+    .barra-pesquisa{
+        display: flex;
+        width: 15rem;
+        height: 3rem;
+        margin: 0%;
+        background-image: none;
+        padding: 1rem;
+    }
+    .pesquisa-mobile{
+        position: relative;
+        left: 1rem;
+    }
+    .card__aplicacao{
+        width: 46.8vw;
+        margin-bottom: 1.5rem;
+    }
+    .secao__aplicacoes{
+        gap: 1rem;
+    }
+
+}

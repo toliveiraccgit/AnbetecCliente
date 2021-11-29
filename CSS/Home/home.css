@@ -23,6 +23,9 @@
         width: 9.213rem;
         height: 2.979rem;
     }
+    .pesquisa-mobile{
+        display: none;
+    }
     .barra-pesquisa{
         font-family: var(--mont-serrat);
         font-size: 14px;
@@ -90,6 +93,7 @@
     .banco__perfil{
         font-size: 14px;
         font-weight: 500;
+        color: #7A8594;
     }
     .menu-dots{
         background-image: url("../../Assets/menu__dots.png");

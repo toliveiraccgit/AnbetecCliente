@@ -1,0 +1,121 @@
+@media (max-width:1024px){ /*Responsivo Mobile*/
+    .cabecalho{
+        padding: 1.563rem 1rem;
+        height: 6rem;
+    }
+    .logo-anbetec{
+        width: 5.688rem;
+        height: 1.813rem;
+    }
+    .container-pesquisa{
+        margin-left: 1.5rem;
+    }
+    .pesquisa-mobile{
+        display: flex;
+        padding: 0%;
+        border: none;
+        background-color: transparent;
+    }
+    .ico-pesquisa-mobile{
+        width: 2rem;
+        height: 2rem;
+    }
+    .barra-pesquisa{
+        display: none;
+    }
+    .container__notificacao{
+        border: none;
+        padding: 0%;
+        margin-right: .5rem;
+        margin-left: 0;
+    }
+    .notificacao{
+        height: 2rem;
+        width: 2rem;
+    }
+    .informacoes__perfil{
+        width: 97px;
+    }
+    .banco__perfil{
+        font-size: 12px;
+    }
+    .menu-dots{
+        display: none;
+    }
+
+    .titulo__edi-financeiro{
+        margin-top: .5rem;
+    }
+    .intro__edi-financeiro{
+        margin-left: 0%;
+    }
+    .movimentacao{
+        padding: 2rem 1rem 0 1rem;
+    }
+    .secao__movimentacao{
+        padding: 0%;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+    .card__movimentacao{
+        margin: 0%;
+        width: 98vw;
+    }
+    .card__movimentacao > p {
+        font-size: 16px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .tempo-visto{
+        font-size: 14px;
+    }
+    
+    .titulo__configuracao{
+        margin-bottom: 1rem;
+    }
+    .configuracao{
+        padding: 0 1rem 1rem 1rem;
+        margin-bottom: 4.438rem;
+    }
+    .secao__configuracao{
+        gap: 1rem;
+    }
+
+}
+
+@media (min-width:768px) and (max-width:1024px){
+
+    .cabecalho{
+        justify-content: space-evenly;
+    }
+    .logo-anbetec{
+        width: 6.5rem;
+        height: 2.5rem;
+    }
+    .container-pesquisa{
+        display: flex;
+        align-items: center;
+    }
+    .barra-pesquisa{
+        display: flex;
+        width: 15rem;
+        height: 3rem;
+        margin: 0%;
+        background-image: none;
+        padding: 1rem;
+    }
+    .pesquisa-mobile{
+        position: relative;
+        left: 1rem;
+    }
+    .card__movimentacao{
+        width: 46.8vw;
+        margin-bottom: 1.5rem;
+    }
+    .secao__movimentacao{
+        gap: 1rem;
+    }
+
+
+}
