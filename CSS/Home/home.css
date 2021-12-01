@@ -225,9 +225,7 @@
     .last-child__item___perfil{
         border: none;
     }
-    .active{
-        opacity: 1;
-    }
+    
     .botao-cadastro{
         background-color: #FFFFFF;
         border-radius: 64px;
@@ -269,6 +267,9 @@
 
         width: 2rem;
         height: 2rem;
+    }
+    #item__perfil-4{
+        border-bottom: none;
     }
 
     .botao-edita{
