@@ -1,6 +1,61 @@
 @media (min-width:0px){
+    .container__processo-concluido{
+        width: 100vw;
+        height: 165vh;
+        position: absolute;
+
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0%;
+        left: 0%;
+        background-color: rgba(0,0,0,0.2);
+        
+    }
+    .processo-concluido{
+        width: 24.188rem;
+        height: 22rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+
+        padding-left: 4.261rem;
+        padding-right: 4.261rem;
+        padding-top: 2.635rem;
+        padding-bottom: 2.635rem;
+        background-color: #FFFFFF;
+        border-radius: 16px;
+
+        animation-name: animatetop;
+        animation-duration: .4s
+    } 
+    .texto__concluido{
+        font-family: var(--mont-serrat);
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--primary);
+        text-align: center;
+    }
+    .botao__fecha-concluido{
+        background-color: transparent;
+        border: 0.966253px solid #ECECEC;
+        border-radius: 64px;
+        color: var(--primary);
+        font-family: var(--mont-serrat);
+
+        padding: 1rem 6.063rem;
+    }
+    
+    .icone__concluido{
+        width: 8.231rem;
+    }
     body{
         background-color: #F8FBFF;
+    }
+    #body{
+        overflow-y: hidden;
     }
     .cabecalho{
         display: flex;
@@ -343,10 +398,14 @@
         border: 0.966253px solid #ECECEC;
         border-radius: 64px;
     }
-
-
     .resultado__pesquisa{
         margin-bottom: 7rem;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .1s ease-in-out;
+        animation-name: animatetop;
+        animation-duration: .1s;
+        position:relative;
     }
     .clientes{
         margin-bottom: 3rem;
@@ -397,6 +456,7 @@
 
     .secao-1{
         display: flex;
+        gap: 2.5rem;
     }
     .secao-2{
         display: flex;
@@ -427,11 +487,15 @@
     .info__data-vencimento{
         margin-left: 1.2rem;
     }
-    .container__info{
+    .container__info___cliente{
         display: flex;
         flex-direction: row;
-        gap: 6.654rem;
-        margin-right: 5.5rem;
+        gap: 7rem;
+        
+    }
+    .container__valores___info{
+        display: flex;
+        gap: 7rem;
     }
     .input__check___cliente{
         width: 1rem;

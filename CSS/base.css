@@ -21,3 +21,8 @@ html{
 .active{
     opacity: 1;
 }
+
+@keyframes animatetop {
+    from {top: -500px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
