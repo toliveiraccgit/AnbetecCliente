@@ -224,7 +224,156 @@
                             
                         </section>
                     </section>
-                
+                    
+                    <section id="pagamento" class="tabcontent">
+                        
+                        <section class="filtros__pagamento">
+                            
+                            <h2 class="titulo__filtro">Filtros:</h2>
+                            <form class="form__filtros">    
+                            
+                                <section class="secao-1__filtros">
+                                    <div class="container__input___filtro">
+                                        <label for="Configuração" class="label__filtro">Configuração: (obrigatório)</label>
+                                        <select name="Configuração" id="Configuração" class="input__filtro___pagamento-secao-1" required>
+                                            <option  class="option__filtro" value="0">(Selecione)</option>
+                                            <option class="option__filtro" value="1">1 - 1 - ANBETEC LTDA / 2374-237-BRADESCO C... </option>
+                                        </select>
+                                    </div>
+                                    <div class="container__input___filtro">
+                                        <label for="Filia" class="label__filtro">Filial:</label>
+                                        <select name="Filial" id="Filial" class="input__filtro___pagamento-secao-1" required>
+                                            <option  class="option__filtro" value="0">(Selecione)</option>
+                                            <option class="option__filtro" value="1">1 - ANBETEC LTDA</option>
+                                        </select>
+                                    </div>
+                                    <div class="container__input___filtro">
+                                        <label for="Banco" class="label__filtro">Banco</label>
+                                        <select name="Banco" id="Banco" class="input__filtro___pagamento-secao-1" required>
+                                            <option  class="option__filtro" value="0">(Selecione)</option>
+                                            <option class="option__filtro" value="1">2374 - 2374-237-BRADESCO C.C. 58886-5</option>
+                                        </select>
+                                    </div>
+                                </section>
+
+                                <section class="secao-2__filtros___pagamento">
+                                    <div class="container__radio-titulo">
+                                        <label for="Titulo" class="label__filtro">Títulos por:</label>
+                                            <div class="container__radio">
+                                                
+                                                <input name="Titulo" type="radio" value="Gerar contas a pagar em aberto" class="input-radio">
+                                                <label for="Titulo" class="label__radio">Gerar contas a pagar em aberto</label>
+                                                
+                                                <input name="Titulo" type="radio" value="Gerar títulos com agendamento" class="input-radio">
+                                                <label for="Titulo" class="label__radio">Gerar títulos com agendamento</label>
+                        
+                                            </div>
+                                    </div>
+                                    <div class="container__input-titulo">
+                                        <div class="container__input___filtro">
+                                            <label for="data-inicio" class="label__filtro">Data início:</label>
+                                            <input type="date" for="Titulo" class="input__filtro-data" required>
+                                        </div>
+    
+                                        <div class="container__input___filtro">
+                                            <label for="data-fim" class="label__filtro">Data Fim:</label>
+                                            <input type="date" for="Titulo" class="input__filtro-data" required>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="secao-3__filtros">
+                                    <div class="container__input-titulo___secao-3">
+                                        <div class="container__input___filtro">
+                                            <label for="Duplicata" class="label__filtro">Número Borderô inicial:</label>
+                                            <input type="number" for="Duplicata" class="input__filtro___pagamento"  placeholder="0" required>
+                                        </div>
+    
+                                        <div class="container__input___filtro">
+                                            <label for="Valor" class="label__filtro">Número Borderô Final:</label>
+                                            <input type="number" for="Valor" class="input__filtro___pagamento" placeholder="0" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="botoes__form">
+                                        <button type="reset" class="botao-limpar">Limpar</button>
+                                        <button type="button" class="botao-pesquisa" id="pesquisa__filtro">Pesquisar</button>
+                                    </div>
+                                </section>
+
+                            </form>
+                            <section class="resultado__pesquisa" id="resultado__pesquisa">
+                            <section class="info__resultado">
+                                <div class="secao-1">
+                                    <span class="info__selecionar">Selecionar</span>
+                                    <span class="info__cliente">Cliente</span>
+                                </div>
+                                <div class="secao-2">
+                                    <span class="info__duplicatas">Duplic</span>
+                                    <span class="info__prestacao">Prest</span>
+                                    <span class="info__valor">Valor</span>
+                                    <span class="info__data-vencimento">Data Vencimento</span>
+                                </div>
+                            </section>
+
+                            <section class="clientes">
+                                <ul class="carrousel" data-lista-perfil>
+                                    <li class="item__clientes">
+                                        
+                                        <ul class="lista__clientes">
+                                            
+                                            <li class="cliente__pesquisa">
+                                                <input type="checkbox" class="input__check___cliente" id="check-cliente 2">
+                                                <span class="cliente">1 - Consumidor Final</span>
+                                                <div class="container__info___cliente">
+                                                    <div class="container__valores___info">
+                                                        <span class="cliente__duplicata">0</span>
+                                                        <span class="cliente__prestacao">0</span>
+                                                        <span class="cliente__valor">0</span>
+                                                    </div>
+                                                    <span class="cliente__vencimento">20/01/2021</span>
+                                                </div>
+                                                <button type="button" class="menu-dots"></button>
+                                            </li>
+                                            
+                                            <li class="cliente__pesquisa">
+                                                <input type="checkbox" class="input__check___cliente" id="check-cliente 2">
+                                                <span class="cliente">1 - Consumidor Final</span>
+                                                <div class="container__info___cliente">
+                                                    <div class="container__valores___info">
+                                                        <span class="cliente__duplicata">0</span>
+                                                        <span class="cliente__prestacao">0</span>
+                                                        <span class="cliente__valor">0</span>
+                                                    </div>
+                                                    <span class="cliente__vencimento">20/01/2021</span>
+                                                </div>
+                                                <button type="button" class="menu-dots"></button>
+                                            </li>
+                                        
+                                        </ul>
+                                    
+                                    </li>
+                                    
+                                    <li class="item__clientes">
+                                        
+                                    </li>
+
+                                </ul>
+                            </section>
+                            
+                            <div class="container__botoes-marcar">
+                                <div class="botoes__marcador">
+                                    <button class="botao__marcar" id="botao__marcar">Marcar Todos</button>
+                                    <button class="botao__desmarca" id="botao__desmarca">Desmarcar Todos</button>
+                                </div>
+                                <button class="botao__processar" id="botao__processa">Processar</button>
+                            </div>
+                                
+                            
+                        </section>
+                        </section>
+                    
+                    </section>
                 </section>
             
                 <div class="container__processo-concluido" id="container__processo-concluido">

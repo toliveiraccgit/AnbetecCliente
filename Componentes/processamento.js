@@ -15,7 +15,9 @@ export class Processamento {
         this.botaoFiltro.addEventListener('click', this.abrirResultador.bind(this))
         this.botaoProcessa.addEventListener('click', this.processoConcluido.bind(this))
         this.botaoFechaProcesso.addEventListener('click', this.fechaProcesso.bind(this))
-        this.botaoMarcar.addEventListener('click', this.marcaTodos.bind(this))
+        this.botaoMarcar.addEventListener('change', this.marcaTodos.bind(this))
+
+        this.botoesCheckClientes = document.querySelector('#check-cliente')
     }
     
     abrirResultador(){ 
@@ -39,10 +41,8 @@ export class Processamento {
     }
 
     marcaTodos(){
-            const checkboxes = this.checkBox
-            for(var i=0, n=checkboxes;i<n;i++) {
-              checkboxes[i].checked.length = checked;
-            }
+            const botoesClientes = this.botoesCheckClientes
+            botoesClientes.check
           }
     }
 

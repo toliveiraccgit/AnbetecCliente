@@ -220,7 +220,7 @@
         font-weight: 700;
         opacity: 0.2;
     }
-    .filtros__cobranca, .resultado__pesquisa{
+    .filtros__cobranca, .resultado__pesquisa, .filtros__pagamento{
         background-color: #FFFFFF;
         border-radius: 1rem;
         border: 1px solid #F1F1F1;
@@ -341,7 +341,7 @@
         display: none;
         -webkit-appearance: none;
     }
-    .input__filtro-data:focus, .input__filtro-small:focus{
+    .input__filtro-data:focus, .input__filtro-small:focus, .input__filtro___pagamento:focus{
         outline: none;
     }
 
@@ -532,5 +532,49 @@
         background-color: #93C83D;
         color: #FFFFFF;
         font-family: var(--mont-serrat);
+    }
+
+    .secao-2__filtros___pagamento{
+        display: flex;
+        flex-direction: row;
+        gap: 3.5rem;
+
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid #EEEEEE;
+
+        font-family: var(--mont-serrat);
+    }
+    .input__filtro___pagamento{
+        height: 3.063rem;
+        width: 31vw;
+
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+
+        padding: 1rem 0 1rem 1rem;
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        color: #7A8594;
+    }
+    .input__filtro___pagamento-secao-1{
+        height: 3.063rem;
+        width: 27.5vw;
+
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+
+        padding: 1rem 0 1rem 1rem;
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        color: #7A8594;
+    }
+    .input__filtro___pagamento, .input__filtro___pagamento-secao-1{
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: url("../../Assets/seta__selection.png") no-repeat;
+        background-position-x: 23.5rem;
+        background-position-y: 1.3rem;
     }
 }
