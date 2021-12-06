@@ -399,12 +399,12 @@
         border-radius: 64px;
     }
     .resultado__pesquisa{
-        margin-bottom: 7rem;
         visibility: hidden;
         opacity: 0;
-        transition: all .1s ease-in-out;
+        display: none;
+        transition: all .4s ease-in-out;
         animation-name: animatetop;
-        animation-duration: .1s;
+        animation-duration: .4s;
         position:relative;
     }
     .clientes{
@@ -414,13 +414,14 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        
 
         font-family: var(--mont-serrat);
 
         width: 88vw;
         height: 3.125rem;
 
-        padding-left: 1.846rem;
+        padding-left: 1.646rem;
         
 
         background-color: #FAFAFA;
@@ -429,11 +430,11 @@
         font-weight: 600;
         font-size: 14px;
     }
-    .info__selecionar,.info__cliente, .info__duplicatas, .info__data-vencimento, .info__valor, .info__prestacao  {
+    .info__selecionar,.info__cliente, .info__duplicatas, .info__data-vencimento, .info__valor, .info__prestacao, .info__bordero, .info__qtd-titulos, .info__valor-total, .info__valor-check, .info__registro {
         background-image: url("../../Assets/seta__selection.png");
         background-repeat: no-repeat;
         background-position-y: .3rem;
-        padding-right: 2.401rem;
+        padding-right: 2.101rem;
     }
     .info__cliente{
         background-position-x: 4.1rem;
@@ -453,7 +454,6 @@
     .info__data-vencimento{
         background-position-x: 8.8rem;
     }
-
     .secao-1{
         display: flex;
         gap: 2.5rem;
@@ -467,10 +467,12 @@
     }
     
 
+    .clientes{
+        padding: 0 2rem;
+    }
     .lista__clientes{
         display: flex;
         flex-direction: column;
-        padding: 0 2rem;
     }
     .cliente__pesquisa{
         display: flex;
@@ -534,47 +536,5 @@
         font-family: var(--mont-serrat);
     }
 
-    .secao-2__filtros___pagamento{
-        display: flex;
-        flex-direction: row;
-        gap: 3.5rem;
-
-        padding-bottom: 1.5rem;
-        margin-bottom: 1.5rem;
-        border-bottom: 1px solid #EEEEEE;
-
-        font-family: var(--mont-serrat);
-    }
-    .input__filtro___pagamento{
-        height: 3.063rem;
-        width: 31vw;
-
-        border: 1.02254px solid #ECECEC;
-        border-radius: 8px;
-
-        padding: 1rem 0 1rem 1rem;
-        font-size: 14px;
-        font-family: var(--mont-serrat);
-        color: #7A8594;
-    }
-    .input__filtro___pagamento-secao-1{
-        height: 3.063rem;
-        width: 27.5vw;
-
-        border: 1.02254px solid #ECECEC;
-        border-radius: 8px;
-
-        padding: 1rem 0 1rem 1rem;
-        font-size: 14px;
-        font-family: var(--mont-serrat);
-        color: #7A8594;
-    }
-    .input__filtro___pagamento, .input__filtro___pagamento-secao-1{
-        appearance: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        background: url("../../Assets/seta__selection.png") no-repeat;
-        background-position-x: 23.5rem;
-        background-position-y: 1.3rem;
-    }
+    
 }

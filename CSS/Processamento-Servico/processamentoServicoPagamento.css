@@ -1,0 +1,189 @@
+@media (min-width:0){
+    .secao-2__filtros___pagamento{
+        display: flex;
+        flex-direction: row;
+        gap: 3.5rem;
+
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid #EEEEEE;
+
+        font-family: var(--mont-serrat);
+    }
+    .input__filtro___pagamento{
+        height: 3.063rem;
+        width: 31vw;
+
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+
+        padding: 1rem 0 1rem 1rem;
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        color: #7A8594;
+    }
+    .input__filtro___pagamento-secao-1{
+        height: 3.063rem;
+        width: 27.5vw;
+
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+
+        padding: 1rem 0 1rem 1rem;
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        color: #7A8594;
+    }
+    .input__filtro___pagamento, .input__filtro___pagamento-secao-1{
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: url("../../Assets/seta__selection.png") no-repeat;
+        background-position-x: 23.5rem;
+        background-position-y: 1.3rem;
+    }
+    .info__bordero, .info__qtd-titulos, .info__valor-total{
+        background-position-x: right;
+    }
+    .cliente__pesquisa___pagamento{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+
+        font-family: var(--mont-serrat);
+        color: #7A8594;
+
+        padding: 1.471rem 0;
+        padding-right: 16.5rem;
+        border-bottom: 0.941034px solid #E1E1E1;
+    }
+    .cliente__pesquisa___pagamento-check{
+        display: flex;
+        flex-direction: row;
+        gap: 6.5rem;
+
+
+        font-family: var(--mont-serrat);
+        color: #7A8594;
+
+        padding: 1.471rem 0;
+        border-bottom: 0.941034px solid #E1E1E1;
+    }
+    .container__info___cliente-check{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 14px;
+        width: 50.5vw;
+    }
+    .cliente__tipo-servico{
+        width: 15rem;
+    }
+    .cliente__forma-pagamento{
+        width: 22.625rem;
+    }
+    .info__forma-pagamento{
+        margin-right: 1.5rem;
+    }
+    .container__cliente___pagamento{
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+    }
+    .info___cliente___pagamento{
+        display: flex;
+        flex-direction: row;
+        gap: 14.375rem;
+    }
+    .info__resultado___pagamento, .info__resultado___pagamento-check{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        font-family: var(--mont-serrat);
+
+        width: 88vw;
+        height: 3.125rem;
+
+        padding-left: 6.646rem;
+        padding-right: 17rem;
+        
+
+        background-color: #FAFAFA;
+        border-radius: 8px;
+        color: var(--primary);
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .info__valor-check, .info__registro{
+        background-position-x: right;
+    }
+    .info___cliente___pagamento-check{
+        display: flex;
+        flex-direction: row;
+        gap: 7.3rem;
+    }
+    .secao-1__pagamento{
+        display: flex;
+        gap: 8.5rem;
+    }
+    .secao-1__pagamento-check{
+        display: flex;
+        gap: 2rem;
+    }
+    .secao-2__pagamento{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .secao-2__pagamento-check{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        width: 26.7vw;
+    }
+    .botao__input___check{
+        background-color: transparent;
+        border: none;
+        width: 1rem;
+        height: 1rem;
+    }
+    #resulta__cliente___pagamento{
+        padding-bottom: 0%;
+    }
+    .button--carrousel{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+        padding: 0 1rem;
+
+    }
+    .carrousel__button{
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+        background-position-y: center;
+        color: #7A8594;
+        font-family: var(--mont-serrat);
+        font-weight: 600;
+    }
+    .carrousel__button--anterior{
+        background-image: url("../../Assets/seta-esquerda.png");
+        padding-left: 2rem;
+        opacity: 0.4;
+    }
+    .carrousel__button--proximo{
+        background-image: url("../../Assets/seta-direita.png");
+        padding-right: 2rem;
+        background-position-x:right;
+    }
+    .container__botoes-marcar___pagamento{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1.5rem;
+        margin-top: 2rem;
+    }
+}

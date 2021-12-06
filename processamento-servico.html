@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./CSS/Processamento-Servico/processamentoServicoCobranca.css">
+        <link rel="stylesheet" href="./CSS/Processamento-Servico/processamentoServicoPagamento.css">
         <link href="./CSS/base.css" rel="stylesheet">
         <link href="./CSS/reset.css" rel="stylesheet">
         <link href="./CSS/normalize.css" rel="stylesheet">
@@ -297,61 +298,55 @@
                                     
                                     <div class="botoes__form">
                                         <button type="reset" class="botao-limpar">Limpar</button>
-                                        <button type="button" class="botao-pesquisa" id="pesquisa__filtro">Pesquisar</button>
+                                        <button type="button" class="botao-pesquisa" id="pesquisa__filtro___pagamento">Pesquisar</button>
                                     </div>
                                 </section>
 
                             </form>
-                            <section class="resultado__pesquisa" id="resultado__pesquisa">
-                            <section class="info__resultado">
-                                <div class="secao-1">
-                                    <span class="info__selecionar">Selecionar</span>
-                                    <span class="info__cliente">Cliente</span>
+                        </section>
+                        <section class="resultado__pesquisa" id="resultado__pesquisa___pagamento">
+                            <section class="info__resultado___pagamento">
+                                <div class="secao-1__pagamento">
+                                    <span class="info__bordero">Num.Borderô</span>
+                                    <span class="info__qtd-titulos">Qtd.Títulos</span>
                                 </div>
-                                <div class="secao-2">
-                                    <span class="info__duplicatas">Duplic</span>
-                                    <span class="info__prestacao">Prest</span>
-                                    <span class="info__valor">Valor</span>
-                                    <span class="info__data-vencimento">Data Vencimento</span>
+                                <div class="secao-2__pagamento">
+                                    <span class="info__valor-total">Valor Total</span>
                                 </div>
                             </section>
 
                             <section class="clientes">
                                 <ul class="carrousel" data-lista-perfil>
                                     <li class="item__clientes">
-                                        
-                                        <ul class="lista__clientes">
-                                            
-                                            <li class="cliente__pesquisa">
-                                                <input type="checkbox" class="input__check___cliente" id="check-cliente 2">
-                                                <span class="cliente">1 - Consumidor Final</span>
+                                        <form class="lista__clientes">
+                                            <li class="cliente__pesquisa___pagamento">
+                                                <div class="container__cliente___pagamento">
+                                                    <button id="check__pagamento-1" class="botao__input___check"><input type="checkbox" class="input__check___cliente" id="check-cliente 2"></button>    
+                                                        <div class="info___cliente___pagamento">
+                                                            <span class="cliente__bordero">8075</span>    
+                                                            <span class="cliente__qtd-titulos">2</span>
+                                                        </div>
+                                                        
+                                                </div>   
                                                 <div class="container__info___cliente">
-                                                    <div class="container__valores___info">
-                                                        <span class="cliente__duplicata">0</span>
-                                                        <span class="cliente__prestacao">0</span>
-                                                        <span class="cliente__valor">0</span>
-                                                    </div>
-                                                    <span class="cliente__vencimento">20/01/2021</span>
+                                                    <span class="cliente__valorTotal">R$700,00</span>
                                                 </div>
-                                                <button type="button" class="menu-dots"></button>
                                             </li>
                                             
-                                            <li class="cliente__pesquisa">
-                                                <input type="checkbox" class="input__check___cliente" id="check-cliente 2">
-                                                <span class="cliente">1 - Consumidor Final</span>
+                                            <li class="cliente__pesquisa___pagamento">
+                                                <div class="container__cliente___pagamento">
+                                                    <button id="check__pagamento-2" class="botao__input___check"><input type="checkbox" class="input__check___cliente" id="check-cliente 2"></button>    
+                                                        <div class="info___cliente___pagamento">
+                                                            <span class="cliente__bordero">2514</span>    
+                                                            <span class="cliente__qtd-titulos">2</span>
+                                                        </div>
+                                                        
+                                                </div>   
                                                 <div class="container__info___cliente">
-                                                    <div class="container__valores___info">
-                                                        <span class="cliente__duplicata">0</span>
-                                                        <span class="cliente__prestacao">0</span>
-                                                        <span class="cliente__valor">0</span>
-                                                    </div>
-                                                    <span class="cliente__vencimento">20/01/2021</span>
+                                                    <span class="cliente__valorTotal">R$820,00</span>
                                                 </div>
-                                                <button type="button" class="menu-dots"></button>
                                             </li>
-                                        
-                                        </ul>
-                                    
+                                        </f>
                                     </li>
                                     
                                     <li class="item__clientes">
@@ -359,29 +354,171 @@
                                     </li>
 
                                 </ul>
-                            </section>
-                            
-                            <div class="container__botoes-marcar">
-                                <div class="botoes__marcador">
-                                    <button class="botao__marcar" id="botao__marcar">Marcar Todos</button>
-                                    <button class="botao__desmarca" id="botao__desmarca">Desmarcar Todos</button>
+                                <div class="button--carrousel">
+                                    <button class="carrousel__button carrousel__button--anterior" data-anterior aria-label="Botão de Voltar">Anterior</button>
+                                    <button class="carrousel__button carrousel__button--proximo" data-proximo aria-label="Botão de Avançar">Próximo</button>
                                 </div>
-                                <button class="botao__processar" id="botao__processa">Processar</button>
-                            </div>
-                                
-                            
+                            </section>
                         </section>
+                        
+                        <section class="resultado__pesquisa" id="resultado__pesquisa___pagamento-check-1">
+                            <section class="info__resultado___pagamento-check">
+                                <div class="secao-1__pagamento-check">
+                                    <span class="info__bordero">Num.Borderô</span>
+                                    <span class="info__registro">Num.Registro</span>
+                                    <span class="info__valor-check">Valor</span>
+                                </div>
+                                <div class="secao-2__pagamento-check">
+                                    <span class="info__tipo-servico">Tipo de Serviço</span>
+                                    <span class="info__forma-pagamento">Forma Pagto</span>
+                                </div>
+                            </section>
+
+                            <section class="clientes">
+                                <ul class="carrousel" data-lista-perfil>
+                                    <li class="item__clientes">
+                                        <form class="lista__clientes">
+                                            <li class="cliente__pesquisa___pagamento-check">
+                                                
+                                                <div class="container__cliente___pagamento">
+                                                    <button class="botao__input___check"><input type="checkbox" class="input__check___cliente" id="check-cliente check__pagamento-1 1"></button>
+                                                        <div class="info___cliente___pagamento-check">
+                                                            <span class="cliente__bordero">8075</span>    
+                                                            <span class="cliente__registro">216087</span>
+                                                            <span class="cliente__valorCheck">R$500,00</span>
+                                                        </div>
+                                                </div>   
+                                                <div class="container__info___cliente-check">
+                                                    <span class="cliente__tipo-servico">20 - Pag. Fornecedor</span>
+                                                    <span class="cliente__forma-pagamento">30 - Liquidação de Títulos do Próprio Banco</span>
+                                                </div>
+                                            </li>
+                                            
+                                            <li class="cliente__pesquisa___pagamento-check">
+                                                
+                                                <div class="container__cliente___pagamento">
+                                                    <button class="botao__input___check"><input type="checkbox" class="input__check___cliente" id="check-cliente check__pagamento-1 1"></button>
+                                                        <div class="info___cliente___pagamento-check">
+                                                            <span class="cliente__bordero">8075</span>    
+                                                            <span class="cliente__registro">216086</span>
+                                                            <span class="cliente__valorCheck">R$200,00</span>
+                                                        </div>
+                                                </div>   
+                                                <div class="container__info___cliente-check">
+                                                    <span class="cliente__tipo-servico">99 - Outros Pag.</span>
+                                                    <span class="cliente__forma-pagamento">1 - Crédito em Conta Corrente</span>
+                                                </div>
+                                            </li>
+                                        </form>
+                                    </li>
+                                    
+                                    <li class="item__clientes">
+                                        
+                                    </li>
+
+                                </ul>
+                                <div class="container__botoes-marcar___pagamento">
+                                    <div class="botoes__marcador">
+                                        <button class="botao__marcar" id="botao__marcar">Marcar Todos</button>
+                                        <button class="botao__desmarca" id="botao__desmarca">Desmarcar Todos</button>
+                                    </div>
+                                    <button class="botao__processar" id="botao__processa___pagamento-1">Processar</button>
+                                </div>
+                                <div class="button--carrousel">
+                                    <button class="carrousel__button carrousel__button--anterior" data-anterior aria-label="Botão de Voltar">Anterior</button>
+                                    <button class="carrousel__button carrousel__button--proximo" data-proximo aria-label="Botão de Avançar">Próximo</button>
+                                </div>
+                            </section>
                         </section>
-                    
+
+                        <section class="resultado__pesquisa" id="resultado__pesquisa___pagamento-check-2">
+                            <section class="info__resultado___pagamento-check">
+                                <div class="secao-1__pagamento-check">
+                                    <span class="info__bordero">Num.Borderô</span>
+                                    <span class="info__registro">Num.Registro</span>
+                                    <span class="info__valor-check">Valor</span>
+                                </div>
+                                <div class="secao-2__pagamento-check">
+                                    <span class="info__tipo-servico">Tipo de Serviço</span>
+                                    <span class="info__forma-pagamento">Forma Pagto</span>
+                                </div>
+                            </section>
+
+                            <section class="clientes">
+                                <ul class="carrousel" data-lista-perfil>
+                                    <li class="item__clientes">
+                                        <form class="lista__clientes">
+                                            <li class="cliente__pesquisa___pagamento-check">
+                                                
+                                                <div class="container__cliente___pagamento">
+                                                    <button class="botao__input___check"><input type="checkbox" class="input__check___cliente" id="check-cliente check__pagamento-1 1"></button>
+                                                        <div class="info___cliente___pagamento-check">
+                                                            <span class="cliente__bordero">8075</span>    
+                                                            <span class="cliente__registro">216150</span>
+                                                            <span class="cliente__valorCheck">R$500,00</span>
+                                                        </div>
+                                                </div>   
+                                                <div class="container__info___cliente-check">
+                                                    <span class="cliente__tipo-servico">20 - Pag. Fornecedor</span>
+                                                    <span class="cliente__forma-pagamento">30 - Liquidação de Títulos do Próprio Banco</span>
+                                                </div>
+                                            </li>
+                                            
+                                            <li class="cliente__pesquisa___pagamento-check">
+                                                
+                                                <div class="container__cliente___pagamento">
+                                                    <button class="botao__input___check"><input type="checkbox" class="input__check___cliente" id="check-cliente check__pagamento-1 1"></button>
+                                                        <div class="info___cliente___pagamento-check">
+                                                            <span class="cliente__bordero">8075</span>    
+                                                            <span class="cliente__registro">216149</span>
+                                                            <span class="cliente__valorCheck">R$320,00</span>
+                                                        </div>
+                                                </div>   
+                                                <div class="container__info___cliente-check">
+                                                    <span class="cliente__tipo-servico">99 - Outros Pag.</span>
+                                                    <span class="cliente__forma-pagamento">1 - Crédito em Conta Corrente</span>
+                                                </div>
+                                            </li>
+                                        </form>
+                                    </li>
+                                    
+                                    <li class="item__clientes">
+                                        
+                                    </li>
+
+                                </ul>
+                                <div class="container__botoes-marcar___pagamento">
+                                    <div class="botoes__marcador">
+                                        <button class="botao__marcar" id="botao__marcar">Marcar Todos</button>
+                                        <button class="botao__desmarca" id="botao__desmarca">Desmarcar Todos</button>
+                                    </div>
+                                    <button class="botao__processar" id="botao__processa___pagamento-2">Processar</button>
+                                </div>
+                                <div class="button--carrousel">
+                                    <button class="carrousel__button carrousel__button--anterior" data-anterior aria-label="Botão de Voltar">Anterior</button>
+                                    <button class="carrousel__button carrousel__button--proximo" data-proximo aria-label="Botão de Avançar">Próximo</button>
+                                </div>
+                            </section>
+                        </section>
                     </section>
                 </section>
             
                 <div class="container__processo-concluido" id="container__processo-concluido">
 
                     <div class="processo-concluido">
-                        <img src="./Assets/icone-concluido.png" alt="Processo Concluid" class="icone__concluido">
+                        <img src="./Assets/icone-concluido.png" alt="Processo Concluido" class="icone__concluido">
                         <p class="texto__concluido">Títulos enviados para o processamento</p>
                         <button class="botao__fecha-concluido" id="botao-fecha">Fechar</button>
+                    </div>
+
+                </div>
+
+                <div class="container__processo-concluido" id="container__processo-concluido___pagamento">
+
+                    <div class="processo-concluido">
+                        <img src="./Assets/icone-concluido.png" alt="Processo Concluid" class="icone__concluido">
+                        <p class="texto__concluido">Títulos enviados para o processamento</p>
+                        <button class="botao__fecha-concluido" id="botao-fecha__pagamento">Fechar</button>
                     </div>
 
                 </div>
