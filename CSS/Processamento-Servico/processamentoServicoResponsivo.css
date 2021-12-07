@@ -1,0 +1,50 @@
+@media (min-width:1493px){
+    .input__filtro{
+        width: 40vw;
+        background-position-x: calc(100% - 1rem);
+    }
+    .secao-1__filtros{
+        justify-content: space-around;
+    }
+    .secao-2__filtros,.secao-3__filtros{
+        justify-content: space-between;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .cliente__pesquisa{
+        justify-content: space-between;
+    }
+    .secao-1{
+        gap: 0%;
+        width: 22.5vw;
+
+        justify-content: space-between;
+    }
+    .secao-2{
+        margin-left: 21vw;
+    }
+
+    .input__filtro___pagamento-secao-1{
+        background-position-x: calc(100% - 1rem);
+    }
+    .secao-2__filtros___pagamento{
+        justify-content: space-between;
+        gap: 0%;
+        padding-left:  1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .secao-3__filtros{
+        justify-content: space-between;
+        gap: 0%;
+        padding-left:  1.5rem;
+        padding-right: 1.5rem;
+    }
+    .resultado__pesquisa {
+        padding-left: 3rem;
+    }
+
+    .cliente__pesquisa___pagamento{
+        padding-right: 18rem;
+    }
+}

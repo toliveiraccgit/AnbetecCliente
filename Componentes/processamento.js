@@ -41,7 +41,7 @@ export class Processamento {
         this.botaoProcessaPagamento2 = document.querySelector('#botao__processa___pagamento-2')
         this.botaoFechaProcessoPagamento = document.querySelector('#botao-fecha__pagamento')
         
-        this.formulario = document.querySelector('form')
+        this.formulario = document.querySelector('.lista__clientes')
         
         
         this.botaoProcessaPagamento.addEventListener('click', this.processoConcluidoPagamento.bind(this))
@@ -64,6 +64,7 @@ export class Processamento {
         const resultadoFiltro = this.resultado
         resultadoFiltro.style.visibility = ` hidden `
         resultadoFiltro.style.opacity = ` 0 `
+        document.querySelector('.lista__clientes').reset()
     }
     fechaProcesso(){
         const concluidoProcesso = this.modalProcesso

@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./CSS/Processamento-Servico/processamentoServicoCobranca.css">
         <link rel="stylesheet" href="./CSS/Processamento-Servico/processamentoServicoPagamento.css">
+        <link rel="stylesheet" href="./CSS/Processamento-Servico/processamentoServicoResponsivo.css">
         <link href="./CSS/base.css" rel="stylesheet">
         <link href="./CSS/reset.css" rel="stylesheet">
         <link href="./CSS/normalize.css" rel="stylesheet">
@@ -173,7 +174,7 @@
                                 <ul class="carrousel" data-lista-perfil>
                                     <li class="item__clientes">
                                         
-                                        <ul class="lista__clientes">
+                                        <form class="lista__clientes">
                                             
                                             <li class="cliente__pesquisa">
                                                 <input type="checkbox" class="input__check___cliente" id="check-cliente 2">
@@ -203,7 +204,7 @@
                                                 <button type="button" class="menu-dots"></button>
                                             </li>
                                         
-                                        </ul>
+                                        </form>
                                     
                                     </li>
                                     
@@ -377,7 +378,7 @@
                             <section class="clientes">
                                 <ul class="carrousel" data-lista-perfil>
                                     <li class="item__clientes">
-                                        <form class="lista__clientes">
+                                        <form class="lista__clientes" id="form__cliente">
                                             <li class="cliente__pesquisa___pagamento-check">
                                                 
                                                 <div class="container__cliente___pagamento">
@@ -447,9 +448,8 @@
                             <section class="clientes">
                                 <ul class="carrousel" data-lista-perfil>
                                     <li class="item__clientes">
-                                        <form class="lista__clientes">
+                                        <form class="lista__clientes" id="form__cliente">
                                             <li class="cliente__pesquisa___pagamento-check">
-                                                
                                                 <div class="container__cliente___pagamento">
                                                     <button class="botao__input___check"><input type="checkbox" class="input__check___cliente" id="check-cliente check__pagamento-1 1"></button>
                                                         <div class="info___cliente___pagamento-check">

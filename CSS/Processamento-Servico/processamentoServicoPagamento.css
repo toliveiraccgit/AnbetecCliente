@@ -34,13 +34,19 @@
         font-family: var(--mont-serrat);
         color: #7A8594;
     }
-    .input__filtro___pagamento, .input__filtro___pagamento-secao-1{
+    .input__filtro___pagamento-secao-1{
         appearance: none;
         -webkit-appearance: none;
         -moz-appearance: none;
         background: url("../../Assets/seta__selection.png") no-repeat;
         background-position-x: 23.5rem;
         background-position-y: 1.3rem;
+    }
+    .input__filtro___pagamento{
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+
     }
     .info__bordero, .info__qtd-titulos, .info__valor-total{
         background-position-x: right;

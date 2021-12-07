@@ -104,7 +104,7 @@
         color: var(--azul-secundaria);
     }
     .container__notificacao{
-        padding-right: 1.75rem;
+        padding-right: 1rem;
         margin-right: 1.75rem;
         border-right: 1px solid #cdcdcd;
         
@@ -278,7 +278,7 @@
         -webkit-appearance: none;
         -moz-appearance: none;
         background: url("../../Assets/seta__selection.png") no-repeat;
-        background-position-x: 37rem;
+        background-position-x: calc(100% - 1rem);
         background-position-y: 1.3rem;
         border: 1px solid #333;
         padding-right: 20px;
@@ -434,26 +434,10 @@
         background-image: url("../../Assets/seta__selection.png");
         background-repeat: no-repeat;
         background-position-y: .3rem;
+        background-position-x: calc(100% - 1rem);
         padding-right: 2.101rem;
     }
-    .info__cliente{
-        background-position-x: 4.1rem;
-    }
-    .info__selecionar{
-        background-position-x: 5.5rem;
-    }
-    .info__duplicatas{
-        background-position-x: 3.9rem;
-    }
-    .info__prestacao{
-        background-position-x: 3.3rem;
-    }
-    .info__valor{
-        background-position-x: 3.1rem;
-    }
-    .info__data-vencimento{
-        background-position-x: 8.8rem;
-    }
+
     .secao-1{
         display: flex;
         gap: 2.5rem;
@@ -538,3 +522,4 @@
 
     
 }
+
