@@ -3,6 +3,9 @@ export class Processamento {
     constructor () {
         this.resultado = document.querySelector('#resultado__pesquisa')
         this.botaoFiltro = document.querySelector('#pesquisa__filtro')
+        this.limparResultado = document.querySelector('#limpa__filtro___cobranca')
+        
+        this.limparResultado.addEventListener('click', this.limparResultadoCobranca.bind(this))
         
         this.botaoProcessa = document.querySelector('#botao__processa')
         this.botaoFechaProcesso = document.querySelector('#botao-fecha')
@@ -15,13 +18,16 @@ export class Processamento {
         this.botaoFiltro.addEventListener('click', this.abrirResultadorCobranca.bind(this))
         this.botaoProcessa.addEventListener('click', this.processoConcluidoCobranca.bind(this))
         this.botaoFechaProcesso.addEventListener('click', this.fechaProcesso.bind(this))
-        this.botaoMarcar.addEventListener('change', this.marcaTodos.bind(this))
 
         this.botoesCheckClientes = document.querySelector('#check-cliente')
 
         this.botaoFiltroPagamento = document.querySelector('#pesquisa__filtro___pagamento')
         this.resultadoPagamento = document.querySelector('#resultado__pesquisa___pagamento')
         this.modalProcessoPagamento = document.querySelector('#container__processo-concluido___pagamento')
+        this.limpaResultadoPagamento = document.querySelector('#limpa__filtro___pagamento')
+
+        this.limpaResultadoPagamento.addEventListener('click', this.limparResultadoPagamento.bind(this))
+
         
         this.botaoFiltroPagamento.addEventListener('click', this.abrirResultadorPagamento.bind(this))
 
@@ -71,9 +77,14 @@ export class Processamento {
         concluidoProcesso.style.display = ` none ` 
     }
 
-
-
-
+    limparResultadoCobranca(){
+        const resultadoFiltro = this.resultado
+        resultadoFiltro.style.visibility = `hidden`
+        resultadoFiltro.style.display = ` none `
+        document.querySelector('.lista__clientes').reset()
+    }
+    
+    
     abrirResultadorPagamento(){
         const resultadoFiltroPagamento = this.resultadoPagamento
         resultadoFiltroPagamento.style.visibility = `visible`
@@ -132,12 +143,21 @@ export class Processamento {
         const concluidoProcessoPagamento = this.modalProcessoPagamento
         concluidoProcessoPagamento.style.display = ` none ` 
     }
-   
+    
+    limparResultadoPagamento(){
+        const resultadoPagamentoCheck1 = this.resultadoPagamentoCheck1
+        const resultadoPagamentoCheck2 = this.resultadoPagamentoCheck2
+        
+        resultadoPagamentoCheck1.style.visibility = `hidden`
+        resultadoPagamentoCheck1.style.display = ` none `
+        resultadoPagamentoCheck1.style.opacity = ` 0 `
+        
+        resultadoPagamentoCheck2.style.display = ' none '
 
-    marcaTodos(){
-            const botoesClientes = this.botoesCheckClientes
-            botoesClientes.check
-          }
+        const resultadoFiltroPagamento = this.resultadoPagamento
+        resultadoFiltroPagamento.style.visibility = `hidden`
+        resultadoFiltroPagamento.style.display = ` none `
+        resultadoFiltroPagamento.style.opacity = ` 0 `
     }
 
-
+}
