@@ -1,23 +1,23 @@
-export class Carousel {
-    constructor(anterior, proximo, listaProdutos) {
-        this.anterior = document.querySelector(anterior)
-        this.proximo = document.querySelector(proximo)
-        this.listaProdutos = document.querySelector(listaProdutos)
+export class CarouselDDA {
+    constructor(anterior, proximo, listaClientesDDA) {
+        this.anteriorDDA = document.querySelector(anterior)
+        this.proximoDDA = document.querySelector(proximo)
+        this.listaClientesDDA = document.querySelector(listaClientesDDA)
 
         this.slides = this.getListaSlides()
         this.tamanhoSlide = this.getTamanhoSlide()
 
         this.indiceDoSlideAtual = 0
 
-        this.proximo.addEventListener('click', this.proximoSlide.bind(this))
+        this.proximoDDA.addEventListener('click', this.proximoSlide.bind(this))
 
-        this.anterior.addEventListener('click', this.slideAnterior.bind(this))
+        this.anteriorDDA.addEventListener('click', this.slideAnterior.bind(this))
 
         this.preparaSlides()
     }
 
     getListaSlides() {
-        return Array.from(this.listaProdutos.children)
+        return Array.from(this.listaClientesDDA.children)
     }
 
     getTamanhoSlide() {
@@ -53,7 +53,7 @@ export class Carousel {
     }
 
     scrollParaSlide(slideSelecionado) {
-        this.listaProdutos.style.transform = 'translateX(-' + slideSelecionado.style.left + ')'
+        this.listaClientesDDA.style.transform = 'translateX(-' + slideSelecionado.style.left + ')'
 
     }
 

@@ -35,8 +35,8 @@ export class Processamento {
         this.checkClientePagamento1 = document.querySelector('#check__pagamento-1')
         this.checkClientePagamento2 = document.querySelector('#check__pagamento-2')
         
-        this.checkClientePagamento1.addEventListener('change', this.abrirResultadorPagamentoCheck1.bind(this))
-        this.checkClientePagamento2.addEventListener('change', this.abrirResultadorPagamentoCheck2.bind(this))
+        this.checkClientePagamento1.addEventListener('click', this.abrirResultadorPagamentoCheck1.bind(this))
+        this.checkClientePagamento2.addEventListener('click', this.abrirResultadorPagamentoCheck2.bind(this))
         
         
         

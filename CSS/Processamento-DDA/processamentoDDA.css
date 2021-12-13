@@ -1,0 +1,692 @@
+@media (min-width:0){
+    body{
+        background-color: #F8FBFF;
+        overflow-x: hidden;
+    }
+    html{
+        overflow-x: hidden;
+    }
+    #body{
+        overflow-x: hidden;
+    }
+    .conteudo{
+        overflow-x: hidden;
+    }
+    .filtros__dda{
+        overflow-x: hidden;
+    }
+    
+    /*-------------------------cabecalho---------------------------*/
+    .cabecalho{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        
+        height: 6.938rem;
+        width: 100vw;
+    
+        background-color: #FFFFFF;
+    
+        padding: 2rem 3.5rem;
+    }
+    .container__info{
+        display: flex;
+        flex-direction: row;
+    }
+    .logo-anbetec{
+        width: 9.213rem;
+        height: 2.979rem;
+    }
+    .pesquisa-mobile{
+        display: none;
+    }
+    .barra-pesquisa{
+        font-family: var(--mont-serrat);
+        font-size: 14px;
+        width: 39.813rem;
+        height: 3.25rem;
+    
+        border: none;
+        border-radius: .5rem;
+    
+        background-color: #F1F4F9;
+        background-image: url("../../Assets/search.png");
+        background-repeat: no-repeat;
+        background-position: 2.063rem, .5rem;
+    
+        padding: 1rem 0 1rem 3.5rem;
+        margin-left: 3.724rem;
+        margin-right: 12.103rem;
+    }
+    .barra-pesquisa:focus{
+        outline: 2px solid var(--primary-support);
+        color: var(--azul-secundaria);
+    }
+    .container__notificacao{
+        padding-right: 1rem;
+        margin-right: 1.75rem;
+        border-right: 1px solid #cdcdcd;
+        
+        display: flex;
+        align-items: center;
+    
+        background-color: transparent;
+        border-top: none;
+        border-left: none;
+        border-bottom: none;
+    }
+    .notificacao-ativa{
+        visibility:visible;
+        position: relative;
+        top: -.8rem;
+        left: -.5rem;
+    }
+    .perfil-area{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-family: var(--mont-serrat);
+        height: 2rem;
+    }
+    .informacoes__perfil{
+        width: 112px;
+    }
+    .icone__perfil{
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        margin-right: .5rem;
+    }
+    .nome__perfil{
+        margin: 0%;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--primary);
+    }
+    .banco__perfil{
+        font-size: 14px;
+        font-weight: 500;
+        color: #7A8594;
+    }
+    .menu-dots{
+        background-image: url("../../Assets/menu__dots.png");
+        border: none;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position-y: .5rem;
+    
+        width: 30px;
+        height: 20px;
+        margin-left: 1.938rem;
+    }
+
+    /*-------------------------paginação-DDA---------------------------*/
+    .intro__processamento-dda{
+        font-family: var(--mont-serrat);
+        margin-bottom: 2rem;
+    }
+    .paginacao__processamento-dda{
+        color: #7A8594;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 0%;
+    
+    }
+    .link-paginacao{
+        color: #7A8594;
+    }
+    .link-paginacao-edi{
+        padding-left: 1.6rem;
+        background-image: url("../../Assets/icone-paginacao.png");
+        background-repeat: no-repeat;
+        background-position: .55rem, .2rem ;
+        color: #7A8594;
+    }
+    .destaque__paginacao{
+        padding-left: 1.6rem;
+        background-image: url("../../Assets/icone-paginacao.png");
+        background-repeat: no-repeat;
+        background-position: .55rem, .2rem ;
+    
+        color: var(--primary);
+        font-weight: 600;
+    }
+
+    .secao__processamento-dda{
+        padding-left: 3rem;
+        padding-top: 2rem;
+        padding-right: 3.438rem;
+    }
+    /*-------------------------secao-filtros-DDA---------------------------*/
+    .form__filtros{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .filtros__dda{
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+        border: 1px solid #F1F1F1;
+
+        padding: 2rem 2rem 2.5rem 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .titulo__filtro{
+        font-family: var(--mont-serrat);
+        font-size: 18px;
+        color: var(--primary);
+
+        margin-bottom: 1.438rem;
+    }
+    .secao-1__filtros{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+
+        font-family: var(--mont-serrat);
+
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid #EEEEEE;
+    }
+    .container__input___filtro{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .label__filtro{
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--primary);
+
+        margin-bottom: .25rem;
+    }
+    .input__filtro{
+        height: 3.063rem;
+        width: 38.75rem;
+
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+
+        padding: 1rem 0 1rem 1rem;
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        color: #7A8594;
+    }
+
+    select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: url("../../Assets/seta__selection.png") no-repeat;
+        background-position-x: calc(100% - 1rem);
+        background-position-y: 1.3rem;
+        border: 1px solid #333;
+        padding-right: 20px;
+    }
+
+    select:focus{
+        outline: none;
+    }
+    .option__filtro{
+        padding: 1rem 0 1rem 1rem;
+    }
+
+    .container__input-titulo{
+        display: flex;
+        flex-direction: row;
+        gap: 2.5rem;
+    }
+    .input__filtro-data{
+        width: 32.531rem;
+        height: 3.063rem;
+
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+
+        padding: 1rem 0 1rem 1rem;
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        color: #7A8594;
+    }
+    .input__filtro-data::-webkit-calendar-picker-indicator {
+        display: none;
+        -webkit-appearance: none;
+    }
+    .input__filtro-data:focus, .input__filtro-small:focus, .input__filtro___pagamento:focus{
+        outline: none;
+    }
+
+    .toggle {
+        display: flex;
+        flex-direction: column-reverse;
+        color: var(--primary);
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--primary);
+
+        width: 11rem;
+
+        margin-bottom: 1rem;
+    }
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 2.355rem;
+        height: 0.846rem;
+        margin-right: .5rem;
+        margin-top: 1.375rem;
+    }
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+        height: 0.846rem
+    }
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 1.625rem;
+        width: 1.625rem;
+        left: -0.063rem;
+        bottom: -0.313rem;
+        background-color: white;
+        -webkit-transition: .3s;
+        transition: .3s;
+        box-shadow: 0px 1.93251px 1.93251px rgba(0, 0, 0, 0.25);
+    }
+    input:checked+.slider {
+        background-color: var(--primary-support);
+    }
+    input:focus+.slider {
+        box-shadow: 0 0 1px var(--primary-support);
+    }
+    input:checked+.slider:before {
+        -webkit-transform: translateX(1.125rem);
+        -ms-transform: translateX(1.125rem);
+        transform: translateX(1.125rem);
+    }
+    .toggle-switch:checked+.input-botao {
+        background-color: var(--primary);
+    }
+    .slider.round {
+        border-radius: 2.125rem;
+    }
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+    .botoes__form{
+        display: flex;
+        align-self: flex-end;
+        font-family: var(--mont-serrat);
+    }
+    .botao-limpar{
+        width: 7.75rem;
+        height: 3.5rem;
+
+        background-color: transparent;
+        color: var(--primary);
+        padding: 1rem 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+        border: 0.966253px solid #ECECEC;
+        border-radius: 64px;
+    }
+    .botao-pesquisa{
+        width: 9.125rem;
+        height: 3.5rem;
+
+        background-color: var(--primary-support);
+        color: #FFFFFF;
+        padding: 1rem 2rem;
+
+        border: 0.966253px solid #ECECEC;
+        border-radius: 64px;
+    }
+    /*----------------------resultador-pesquisa-dda----------------*/
+    .resultado__pesquisa__dda{
+        display: none;
+        opacity: 0;
+        transition: all .4s ease-in-out;
+        height: 75vh;
+
+        animation: animetop .4s ease-in-out;
+        position: relative;
+
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+        border: 1px solid #F1F1F1;
+
+        padding: 2rem 2rem 2.5rem 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .clientes{
+        margin-bottom: 3rem;
+    }
+    .info__resultado{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+
+        font-family: var(--mont-serrat);
+
+        width: 88vw;
+        height: 3.125rem;
+
+        padding-left: 1.646rem;
+        
+
+        background-color: #FAFAFA;
+        border-radius: 8px;
+        color: var(--primary);
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .info__arquivo, .info__banco, .info__status, .info__data{
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: .3rem;
+        background-position-x: calc(100% - 1rem);
+        padding-right: 2.101rem;
+    }
+    .info__arquivo{
+        padding-left: 4rem;
+    }
+    .info__selecionar{
+        padding-right: 2.101rem;
+    }
+
+    .secao-1{
+        display: flex;
+        gap: 1.5rem;
+    }
+    .secao-2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 5.8rem;
+        margin-left: 16.5vw;
+    }
+    
+
+    .clientes{
+        padding: 0 2rem;
+        font-size: 14px;
+    }
+    .lista__clientes{
+        display: flex;
+        flex-direction: column;
+    }
+    .cliente__pesquisa{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+
+        font-family: var(--mont-serrat);
+        color: #7A8594;
+
+        padding: 1.471rem 0;
+        border-bottom: 0.941034px solid #E1E1E1;
+
+        align-items: center;
+    }
+    .info__data-vencimento{
+        margin-left: 1.2rem;
+    }
+    .container__info___cliente-1{
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+    .container__info___cliente-2{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .container__status___info{
+        display: flex;
+        gap: 4.8rem;
+    }
+    .input__check___cliente{
+        width: 1rem;
+        height: 1rem;
+    }
+    .botao__nao-processado{
+        background-color: #FFF2F2;
+        color: #F5381E;
+
+        border-radius: 64px;
+        border: none;
+        padding: .5rem 1rem;
+    }
+
+    .container__botoes-marcar{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1.5rem;
+        margin-top: 8.5rem;
+    }
+
+    .botoes__marcador{
+        display: flex;
+        gap: 1rem;
+        font-family: var(--mont-serrat);
+        font-size: 14px;
+    }
+    .botao__marcar, .botao__desmarca{
+        border: 1px solid #ECECEC;
+        border-radius: 64px;
+        height: 1.938rem;
+
+        padding: .5rem 1rem;
+        background-color: transparent;
+        color: var(--primary);
+    }
+    .botao__processar{
+        border: 1px solid #ECECEC;
+        border-radius: 64px;
+        height: 3.25rem;
+
+        padding: 1rem 2rem;
+        background-color: #93C83D;
+        color: #FFFFFF;
+        font-family: var(--mont-serrat);
+    }
+    .button--carrousel{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+        padding: 0 3rem;
+
+    }
+    .carrousel__button{
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+        background-position-y: center;
+        color: #7A8594;
+        font-family: var(--mont-serrat);
+        font-weight: 600;
+    }
+    .carrousel__button--anterior{
+        background-image: url("../../Assets/seta-esquerda.png");
+        padding-left: 2rem;
+        opacity: 0.4;
+    }
+    .carrousel__button--proximo{
+        background-image: url("../../Assets/seta-direita.png");
+        padding-right: 2rem;
+        background-position-x:right;
+    }
+    .container__botoes-marcar___pagamento{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1.5rem;
+        margin-top: 2rem;
+    }
+    /*----------------------configuracao-dda---------------------*/
+    .configuracoes-servico{
+        width: 70vw;
+        height: 137vh;
+
+        opacity: 0;
+        display: none;
+
+        position: absolute;
+        right: -70vw;
+        top: 0%;
+        bottom: 0%;
+
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+
+        padding: 3rem 3.438rem 2.5rem;
+
+        transition: all .3s ease-in-out;
+
+        background-color: #FFFFFF;
+        border-radius: 16px 0px 0px 16px;
+
+        font-family: var(--mont-serrat);
+    }
+
+    .cabecalho__configuracao-servico{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-bottom: 1.5rem;
+    }
+    .titulo__cabecalho__configuracao{
+        font-size: 20px;
+        color: var(--primary);
+    }
+    .fecha__configuracoes{
+        width: 1rem;
+        height: 1rem;
+        background-image: url("../../Assets/icone-fecha.svg");
+        background-repeat: no-repeat;
+
+        border: none;
+        background-color: transparent;
+
+        padding: 0;
+    }
+
+    .container__informacoes___configuracao{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+
+        color: #7A8594;
+        font-size: 14px;
+    }
+    .container__selecionado{
+        display: flex;
+        flex-direction: column;
+
+        width: 28vw;
+    }
+    .titulo__selecionado{
+        margin-bottom: 0;
+        color: var(--primary);
+        font-weight: 600;
+    }
+    .arquivo__selecionado___configuracoes{
+        border: 1px solid #ECECEC;
+        border-radius: 8px; 
+        margin-top: .25rem;
+
+        width: 25vw;
+
+        padding: 1rem;
+
+        opacity: .6;
+    }
+    .banco__selecionado___configuracoes, .data__selecionada___configuracoes{
+        border: 1px solid #ECECEC;
+        border-radius: 8px; 
+        margin-top: .25rem;
+
+        width: 17vw;
+
+        padding: 1rem;
+
+        opacity: .6;
+    }
+
+    /*-------------------------processo-concluido----------------*/
+    .container__processo-concluido{
+        width: 100vw;
+        height: 165vh;
+        position: absolute;
+
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0%;
+        left: 0%;
+        background-color: rgba(0,0,0,0.2);
+        
+    }
+    .processo-concluido{
+        width: 24.188rem;
+        height: 22rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+
+        padding-left: 4.261rem;
+        padding-right: 4.261rem;
+        padding-top: 2.635rem;
+        padding-bottom: 2.635rem;
+        background-color: #FFFFFF;
+        border-radius: 16px;
+
+        animation-name: animatetop;
+        animation-duration: .4s
+    } 
+    .texto__concluido{
+        font-family: var(--mont-serrat);
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--primary);
+        text-align: center;
+    }
+    .botao__fecha-concluido{
+        background-color: transparent;
+        border: 0.966253px solid #ECECEC;
+        border-radius: 64px;
+        color: var(--primary);
+        font-family: var(--mont-serrat);
+
+        padding: 1rem 6.063rem;
+    }
+    
+    .icone__concluido{
+        width: 8.231rem;
+    }
+}
