@@ -1,0 +1,22 @@
+@media (min-width:1493px){
+    /*------------------FILTROS------------------*/
+    .input__filtro{
+        width: 40vw;
+        
+    }
+    .input__filtro-data {
+        width: 35vw;
+        gap: 0;
+    }
+    .secao-1__filtros{
+        justify-content: space-between;
+    }
+    .info__resultado{
+        padding-right: 25.7vw;
+        justify-content: space-between;
+    }
+    .info__banco{
+        padding-left: 10rem;
+    }
+
+}

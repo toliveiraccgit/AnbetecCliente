@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./CSS/Processamento-DDA/processamentoDDA.css">
+        <link rel="stylesheet" href="./CSS/Processamento-DDA/processamentoDDAResponsivo.css">
         <link href="./CSS/base.css" rel="stylesheet">
         <link href="./CSS/reset.css" rel="stylesheet">
         <link href="./CSS/normalize.css" rel="stylesheet">
@@ -199,46 +200,240 @@
                     </div>
                     
                 </section>
-                <section class="configuracoes-servico" id="configuracoes-servico">
-                    <div class="cabecalho__configuracao-servico">
-                        <h1 class="titulo__cabecalho__configuracao">Processar DDA</h1>
-                        <button class="fecha__configuracoes" id="botao__fecha___configuracoes"></button>
-                    </div>
-                    
-                    <section class="container__informacoes___configuracao">
-                        
-                        <div class="container__selecionado">
-                            <span class="titulo__selecionado">Arquivo</span>
-                            <p class="arquivo__selecionado___configuracoes">VAR34108900_25011001.RET.2021014811520</p>
+                
+                <div class="container__secao___configuracao" id="configuracoes-servico">
+                    <section class="configuracoes-servico" >
+                        <div class="cabecalho__configuracao-servico">
+                            <h1 class="titulo__cabecalho__configuracao">Processar DDA</h1>
+                            <button class="fecha__configuracoes" id="botao__fecha___configuracoes" onclick="fechaConfiguracao()"></button>
                         </div>
                         
-                        <div class="container__selecionado">
-                            <span class="titulo__selecionado">Banco</span>
-                            <p class="banco__selecionado___configuracoes">341 - 341 - 018900</p>
-                        </div>
-                        <div class="container__selecionado">
-                            <span class="titulo__selecionado">Data</span>
-                            <p class="data__selecionada___configuracoes">25/10/2021</p>
-                        </div>
+                        <section class="container__informacoes___configuracao">
+                            
+                            <div class="container__selecionado">
+                                <span class="titulo__selecionado">Arquivo</span>
+                                <p class="arquivo__selecionado___configuracoes">VAR34108900_25011001.RET.2021014811520</p>
+                            </div>
+                            
+                            <div class="container__selecionado">
+                                <span class="titulo__selecionado">Banco</span>
+                                <p class="banco__selecionado___configuracoes">341 - 341 - 018900</p>
+                            </div>
+                            <div class="container__selecionado">
+                                <span class="titulo__selecionado">Data</span>
+                                <p class="data__selecionada___configuracoes">25/10/2021</p>
+                            </div>
+
+                        </section>
+
+                        <section class="clientes__configuracao">
+                            
+                            <div class="container__info___configuracao">
+                                <span class="info-configuracao   info__n-lancamento">Núm.Lançamento</span>
+                                <span class="info-configuracao   info__inscricao-cedente">Inscrição Cedente</span>
+                                <span class="info-configuracao   info__nome-cedente">Nome Cedente</span>
+                                <span class="info-configuracao   info__data-vencimento">Data Vencimento</span>
+                                <span class="info-configuracao   info__valor-titulo">Valor Título</span>
+                                <span class="info-configuracao   info__codigo-barras">Código de barras</span>
+                                <span class="info-configuracao   info__nosso-numero">Nosso número</span>
+                                <span class="info-configuracao   info__codigo-movimento">Código movimento</span>
+                                <span class="info-configuracao   info__nome-avalista">Nome avalista</span>
+                                <span class="info-configuracao   info__valor-abatimento">Valor abatimento</span>
+                                <span class="info-configuracao   info__valor-desconto">Valor desconto</span>
+                                <span class="info-configuracao   info__data-desconto">Data desconto</span>
+                            </div>
+
+                            <ul class="container__lista-clientes___configuracao">
+                                <li class="cliente-lista__configuracao">
+                                    <span class="cliente-configuracao   cliente__n-lancamento">58220</span>
+                                    <span class="cliente-configuracao   cliente__inscricao-cedente">01546468585000112</span>
+                                    <span class="cliente-configuracao   cliente__nome-cedente">STO ATACADISTA</span>
+                                    <span class="cliente-configuracao   cliente__data-vencimento">28/10/2021</span>
+                                    <span class="cliente-configuracao   cliente__valor-titulo">R$ 128.542,00</span>
+                                    <span class="cliente-configuracao   cliente__codigo-barras">23795285498445000012857</span>
+                                    <span class="cliente-configuracao   cliente__nosso-numero">00497787 1</span>
+                                    <span class="cliente-configuracao   cliente__codigo-movimento">00000000000000000</span>
+                                    <span class="cliente-configuracao   cliente__nome-avalista">-</span>
+                                    <span class="cliente-configuracao   cliente__valor-abatimento">R$ 0,00</span>
+                                    <span class="cliente-configuracao   cliente__valor-desconto">R$ 0,00</span>
+                                    <span class="cliente-configuracao   cliente__data-desconto">00/00/0000</span>    
+                                </li>
+                                <li class="cliente-lista__configuracao">
+                                    <span class="cliente-configuracao   cliente__n-lancamento">58220</span>
+                                    <span class="cliente-configuracao   cliente__inscricao-cedente">01546468585000112</span>
+                                    <span class="cliente-configuracao   cliente__nome-cedente">STO ATACADISTA</span>
+                                    <span class="cliente-configuracao   cliente__data-vencimento">28/10/2021</span>
+                                    <span class="cliente-configuracao   cliente__valor-titulo">R$ 128.542,00</span>
+                                    <span class="cliente-configuracao   cliente__codigo-barras">23795285498445000012857</span>
+                                    <span class="cliente-configuracao   cliente__nosso-numero">00497787 1</span>
+                                    <span class="cliente-configuracao   cliente__codigo-movimento">00000000000000000</span>
+                                    <span class="cliente-configuracao   cliente__nome-avalista">-</span>
+                                    <span class="cliente-configuracao   cliente__valor-abatimento">R$ 0,00</span>
+                                    <span class="cliente-configuracao   cliente__valor-desconto">R$ 0,00</span>
+                                    <span class="cliente-configuracao   cliente__data-desconto">00/00/0000</span>    
+                                </li>
+                                <li class="cliente-lista__configuracao">
+                                    <span class="cliente-configuracao   cliente__n-lancamento">58220</span>
+                                    <span class="cliente-configuracao   cliente__inscricao-cedente">01546468585000112</span>
+                                    <span class="cliente-configuracao   cliente__nome-cedente">STO ATACADISTA</span>
+                                    <span class="cliente-configuracao   cliente__data-vencimento">28/10/2021</span>
+                                    <span class="cliente-configuracao   cliente__valor-titulo">R$ 128.542,00</span>
+                                    <span class="cliente-configuracao   cliente__codigo-barras">23795285498445000012857</span>
+                                    <span class="cliente-configuracao   cliente__nosso-numero">00497787 1</span>
+                                    <span class="cliente-configuracao   cliente__codigo-movimento">00000000000000000</span>
+                                    <span class="cliente-configuracao   cliente__nome-avalista">-</span>
+                                    <span class="cliente-configuracao   cliente__valor-abatimento">R$ 0,00</span>
+                                    <span class="cliente-configuracao   cliente__valor-desconto">R$ 0,00</span>
+                                    <span class="cliente-configuracao   cliente__data-desconto">00/00/0000</span>    
+                                </li>
+                                <li class="cliente-lista__configuracao">
+                                    <span class="cliente-configuracao   cliente__n-lancamento">58220</span>
+                                    <span class="cliente-configuracao   cliente__inscricao-cedente">01546468585000112</span>
+                                    <span class="cliente-configuracao   cliente__nome-cedente">STO ATACADISTA</span>
+                                    <span class="cliente-configuracao   cliente__data-vencimento">28/10/2021</span>
+                                    <span class="cliente-configuracao   cliente__valor-titulo">R$ 128.542,00</span>
+                                    <span class="cliente-configuracao   cliente__codigo-barras">23795285498445000012857</span>
+                                    <span class="cliente-configuracao   cliente__nosso-numero">00497787 1</span>
+                                    <span class="cliente-configuracao   cliente__codigo-movimento">00000000000000000</span>
+                                    <span class="cliente-configuracao   cliente__nome-avalista">-</span>
+                                    <span class="cliente-configuracao   cliente__valor-abatimento">R$ 0,00</span>
+                                    <span class="cliente-configuracao   cliente__valor-desconto">R$ 0,00</span>
+                                    <span class="cliente-configuracao   cliente__data-desconto">00/00/0000</span>    
+                                </li>
+                                <li class="cliente-lista__configuracao">
+                                    <span class="cliente-configuracao   cliente__n-lancamento">58220</span>
+                                    <span class="cliente-configuracao   cliente__inscricao-cedente">01546468585000112</span>
+                                    <span class="cliente-configuracao   cliente__nome-cedente">STO ATACADISTA</span>
+                                    <span class="cliente-configuracao   cliente__data-vencimento">28/10/2021</span>
+                                    <span class="cliente-configuracao   cliente__valor-titulo">R$ 128.542,00</span>
+                                    <span class="cliente-configuracao   cliente__codigo-barras">23795285498445000012857</span>
+                                    <span class="cliente-configuracao   cliente__nosso-numero">00497787 1</span>
+                                    <span class="cliente-configuracao   cliente__codigo-movimento">00000000000000000</span>
+                                    <span class="cliente-configuracao   cliente__nome-avalista">-</span>
+                                    <span class="cliente-configuracao   cliente__valor-abatimento">R$ 0,00</span>
+                                    <span class="cliente-configuracao   cliente__valor-desconto">R$ 0,00</span>
+                                    <span class="cliente-configuracao   cliente__data-desconto">00/00/0000</span>    
+                                </li>
+                                <li class="cliente-lista__configuracao">
+                                    <span class="cliente-configuracao   cliente__n-lancamento">58220</span>
+                                    <span class="cliente-configuracao   cliente__inscricao-cedente">01546468585000112</span>
+                                    <span class="cliente-configuracao   cliente__nome-cedente">STO ATACADISTA</span>
+                                    <span class="cliente-configuracao   cliente__data-vencimento">28/10/2021</span>
+                                    <span class="cliente-configuracao   cliente__valor-titulo">R$ 128.542,00</span>
+                                    <span class="cliente-configuracao   cliente__codigo-barras">23795285498445000012857</span>
+                                    <span class="cliente-configuracao   cliente__nosso-numero">00497787 1</span>
+                                    <span class="cliente-configuracao   cliente__codigo-movimento">00000000000000000</span>
+                                    <span class="cliente-configuracao   cliente__nome-avalista">-</span>
+                                    <span class="cliente-configuracao   cliente__valor-abatimento">R$ 0,00</span>
+                                    <span class="cliente-configuracao   cliente__valor-desconto">R$ 0,00</span>
+                                    <span class="cliente-configuracao   cliente__data-desconto">00/00/0000</span>    
+                                </li>
+                                <li class="cliente-lista__configuracao">
+                                    <span class="cliente-configuracao   cliente__n-lancamento">58220</span>
+                                    <span class="cliente-configuracao   cliente__inscricao-cedente">01546468585000112</span>
+                                    <span class="cliente-configuracao   cliente__nome-cedente">STO ATACADISTA</span>
+                                    <span class="cliente-configuracao   cliente__data-vencimento">28/10/2021</span>
+                                    <span class="cliente-configuracao   cliente__valor-titulo">R$ 128.542,00</span>
+                                    <span class="cliente-configuracao   cliente__codigo-barras">23795285498445000012857</span>
+                                    <span class="cliente-configuracao   cliente__nosso-numero">00497787 1</span>
+                                    <span class="cliente-configuracao   cliente__codigo-movimento">00000000000000000</span>
+                                    <span class="cliente-configuracao   cliente__nome-avalista">-</span>
+                                    <span class="cliente-configuracao   cliente__valor-abatimento">R$ 0,00</span>
+                                    <span class="cliente-configuracao   cliente__valor-desconto">R$ 0,00</span>
+                                    <span class="cliente-configuracao   cliente__data-desconto">00/00/0000</span>    
+                                </li>
+                                <li class="cliente-lista__configuracao">
+                                    <span class="cliente-configuracao   cliente__n-lancamento">58220</span>
+                                    <span class="cliente-configuracao   cliente__inscricao-cedente">01546468585000112</span>
+                                    <span class="cliente-configuracao   cliente__nome-cedente">STO ATACADISTA</span>
+                                    <span class="cliente-configuracao   cliente__data-vencimento">28/10/2021</span>
+                                    <span class="cliente-configuracao   cliente__valor-titulo">R$ 128.542,00</span>
+                                    <span class="cliente-configuracao   cliente__codigo-barras">23795285498445000012857</span>
+                                    <span class="cliente-configuracao   cliente__nosso-numero">00497787 1</span>
+                                    <span class="cliente-configuracao   cliente__codigo-movimento">00000000000000000</span>
+                                    <span class="cliente-configuracao   cliente__nome-avalista">-</span>
+                                    <span class="cliente-configuracao   cliente__valor-abatimento">R$ 0,00</span>
+                                    <span class="cliente-configuracao   cliente__valor-desconto">R$ 0,00</span>
+                                    <span class="cliente-configuracao   cliente__data-desconto">00/00/0000</span>    
+                                </li>
+                                <li class="cliente-lista__configuracao">
+                                    <span class="cliente-configuracao   cliente__n-lancamento">58220</span>
+                                    <span class="cliente-configuracao   cliente__inscricao-cedente">01546468585000112</span>
+                                    <span class="cliente-configuracao   cliente__nome-cedente">STO ATACADISTA</span>
+                                    <span class="cliente-configuracao   cliente__data-vencimento">28/10/2021</span>
+                                    <span class="cliente-configuracao   cliente__valor-titulo">R$ 128.542,00</span>
+                                    <span class="cliente-configuracao   cliente__codigo-barras">23795285498445000012857</span>
+                                    <span class="cliente-configuracao   cliente__nosso-numero">00497787 1</span>
+                                    <span class="cliente-configuracao   cliente__codigo-movimento">00000000000000000</span>
+                                    <span class="cliente-configuracao   cliente__nome-avalista">-</span>
+                                    <span class="cliente-configuracao   cliente__valor-abatimento">R$ 0,00</span>
+                                    <span class="cliente-configuracao   cliente__valor-desconto">R$ 0,00</span>
+                                    <span class="cliente-configuracao   cliente__data-desconto">00/00/0000</span>    
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="container__botao___configuracao">
+                            <button class="botao-indicadores" onclick="abrirIndicadore()">Indicadores</button>
+                            <button class="botao-processar" onclick="abrirProcessoConcluido()">Processar</button>
+                        </section>
 
                     </section>
-
-                    <section class="clientes__configuracao">
-                        
-                        
-
-                    </section>
-
-                </section>
+                </div>
 
                 <div class="container__processo-concluido" id="container__processo-concluido-dda">
 
                     <div class="processo-concluido">
                         <img src="./Assets/icone-concluido.png" alt="Processo Concluido" class="icone__concluido">
-                        <p class="texto__concluido">Títulos enviados para o processamento</p>
-                        <button class="botao__fecha-concluido" id="botao-fecha">Fechar</button>
+                        <h5 class="titulo__concluido">Atenção: Arquivo</h5>
+                        <p class="texto__concluido">“VAR34154418_158451684RET.2021515145446198” enfilerado para processamento</p>
+                        <button class="botao__fecha-concluido" id="botao-fecha" onclick="fecharProcessoConcluido()">Fechar</button>
                     </div>
 
+                </div>
+
+
+                <div class="container__secao___indicadores" id="secao__indicadores">
+                    
+                    <div class="container__indicadores" >
+                        <div class="cabecalho__indicadores">
+                            <h1 class="titulo__cabecalho__configuracao">Indicadores</h1>
+                            <button class="fecha__indicadores" id="botao__fecha___indicadores" onclick="fechaIndicadores()"></button>
+                        </div>
+
+                        <section class="secao__info___indicadores">
+                            <div class="container__titulo__indicadores">
+                                <h2 class="titulo__info___indicadores">Arquivo Processado:</h2>
+                                <p class="descricao__indicadores">VAR34154418_158451684RET.2021515145446198</p>
+                            </div>
+                            <div class="container__titulo__indicadores">
+                                <h2 class="titulo__info___indicadores">Data do Arquivo:</h2>
+                                <p class="descricao__indicadores">14/10/2021</p>
+                            </div>
+                            <div class="container__titulo__indicadores">
+                                <h2 class="titulo__info___indicadores">Banco:</h2>
+                                <p class="descricao__indicadores">Itaú</p>
+                            </div>
+                        </section>
+
+                        <section class="secao__registros___indicadores">
+                            <div class="container__titulo__registros  registro-processados">
+                                <span class="numeros__registros">96</span>
+                                <span class="descricao__registros">Registros processados</span>
+                            </div>
+                            <div class="container__titulo__registros registro-encontrados">
+                                <span class="numeros__registros">36</span>
+                                <span class="descricao__registros">Registros encontrados</span>
+                            </div>
+                            <div class="container__titulo__registros registro-nao-encontrados">
+                                <span class="numeros__registros">60</span>
+                                <span class="descricao__registros">Não encontrados</span>
+                            </div>
+                        </section>
+
+                        <button class="botao-copia-codigo">Gravar código de barras</button>
+
+                    </div>
                 </div>
 
         </main>

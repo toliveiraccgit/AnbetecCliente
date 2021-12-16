@@ -366,8 +366,6 @@
         opacity: 0;
         transition: all .4s ease-in-out;
         height: 75vh;
-
-        animation: animetop .4s ease-in-out;
         position: relative;
 
         background-color: #FFFFFF;
@@ -375,7 +373,10 @@
         border: 1px solid #F1F1F1;
 
         padding: 2rem 2rem 2.5rem 2rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 5.5rem;
+
+        animation-name: animatetop;
+        animation-duration: .4s
     }
     .clientes{
         margin-bottom: 3rem;
@@ -545,20 +546,31 @@
         margin-top: 2rem;
     }
     /*----------------------configuracao-dda---------------------*/
+
+    .container__secao___configuracao{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100vw;
+        height: 155vh;
+
+        display: none;
+        justify-content: flex-end;
+        align-items: flex-end;
+        background-color: rgba(0,0,0,0.2);
+    }
     .configuracoes-servico{
         width: 70vw;
         height: 137vh;
 
-        opacity: 0;
-        display: none;
+        display: block;
 
         position: absolute;
-        right: -70vw;
         top: 0%;
         bottom: 0%;
 
         margin-top: 5vh;
-        margin-bottom: 5vh;
+        margin-bottom: 4vh;
 
         padding: 3rem 3.438rem 2.5rem;
 
@@ -566,6 +578,10 @@
 
         background-color: #FFFFFF;
         border-radius: 16px 0px 0px 16px;
+        border: 1px solid #F1F1F1;
+
+        animation-name: animateLeft;
+        animation-duration: .2s;
 
         font-family: var(--mont-serrat);
     }
@@ -636,6 +652,167 @@
         opacity: .6;
     }
 
+
+    .clientes__configuracao{
+        overflow-x: scroll;
+        overflow-y: visible;
+        width: 62vw;
+        height: 41.532rem;
+
+        padding-left: 1.188rem;
+        padding-top: 1.188rem;
+        padding-right: 2.188rem;
+
+        margin-top: 2.5rem;
+
+        border-radius: 16px;
+        border: 1px solid #F1F1F1;
+        background: linear-gradient(94.01deg, #6C6C6C -200%, rgba(225, 225, 225, 0.2) -37.3%, rgba(255, 255, 255, 0) 73.58%);
+
+        scroll-margin: .5rem ;
+    }
+    .clientes__configuracao::-webkit-scrollbar-thumb {
+        background:#173A67;
+        border-radius: 16px;
+    }
+    .clientes__configuracao::-webkit-scrollbar{
+        background:transparent;
+        height: 0.555rem;
+        width: .5rem;
+    }
+    .container__info___configuracao{
+        width: 152.063rem;
+
+        background-color: #FAFAFF;
+
+        padding: 1rem .5rem 1rem .5rem;
+        border: .4px solid #FFFFFA;
+        border-radius: 16px;
+
+        font-family: var(--mont-serrat);
+        font-size: 14px;
+        color: var(--primary);
+        font-weight: 600;
+        
+    }
+    .info-configuracao{
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: calc(100% - 1.5rem);
+        padding-right: 3.101rem;
+    }
+    .info__data-vencimento{
+        padding-left: 1rem;
+        margin-right: 1rem;
+    }
+    .info__valor-titulo, .info__codigo-movimento, .info__nome-avalista, .info__valor-desconto{
+        margin-right: 1.5rem;
+    }
+    .info__codigo-barras{
+        margin-right: 4rem;
+    }
+    .info__valor-abatimento{
+        margin-right: 6rem;
+    }
+    .container__lista-clientes___configuracao{
+        width: 152.063rem;
+
+
+        padding: 1rem .5rem 1rem .5rem;
+        border-bottom: 1px solid #FFFFFA;
+        border-radius: 16px;
+
+        font-family: var(--mont-serrat);
+        font-size: 14px;
+        color: var(--primary);
+        font-weight: 600;
+
+        display: flex;
+        flex-direction: column;
+    }
+    .cliente-lista__configuracao:last-child{
+        border-bottom: none;
+    }
+    .cliente-configuracao{
+        padding-right: 3.101rem;
+        color: #7A8594;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .cliente-lista__configuracao{
+        display: flex;
+        flex-direction: row;
+
+        padding-bottom: 1.375rem;
+        padding-top: 1.375rem;
+        border-bottom: 1px solid #ECECEC
+    }
+    .cliente__n-lancamento{
+        margin-right: 5.8rem;
+    }
+    .cliente__nome-cedente{
+        margin-right: 1.5rem;
+    }
+    .cliente__data-vencimento{
+        margin-right: 4.8rem;
+    }
+    .cliente__valor-titulo{
+        margin-right: 1rem;
+    }
+    .cliente__nosso-numero{
+        margin-right: 1.6rem;
+    }
+    .cliente__codigo-movimento{
+        margin-right: 3.2rem;
+    }
+    .cliente__valor-abatimento{
+        margin-left: 5.2rem;
+    }
+    .cliente__valor-desconto{
+        margin-left: 11rem;
+    }
+    .cliente__data-desconto{
+        margin-left: 5rem;
+    }
+
+    .container__botao___configuracao{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1.5rem;
+
+        margin-top: 7.759rem;
+        padding-top: 5.5rem;
+
+        border-top: 1px solid #EEEEEE;
+
+        font-family: var(--mont-serrat);
+        
+    }
+    .botao-indicadores{
+        border: 1px solid var(--primary-support);
+        border-radius: 64px;
+
+        padding: 1rem 2rem;
+
+        background-color: transparent;
+
+        color: var(--primary-support);
+        font-weight: 500;
+    }
+    .botao-processar{
+        border: 1px solid var(--primary-support);
+        border-radius: 64px;
+
+        padding: 1rem 2rem;
+
+        background-color: var(--primary-support);
+
+        color: #FFFFFF;
+        font-weight: 500;
+    }
     /*-------------------------processo-concluido----------------*/
     .container__processo-concluido{
         width: 100vw;
@@ -652,8 +829,8 @@
         
     }
     .processo-concluido{
-        width: 24.188rem;
-        height: 22rem;
+        width: 31.188rem;
+        height: 24rem;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -669,12 +846,17 @@
         animation-name: animatetop;
         animation-duration: .4s
     } 
-    .texto__concluido{
+    .texto__concluido,.titulo__concluido{
         font-family: var(--mont-serrat);
         font-size: 18px;
         font-weight: 600;
         color: var(--primary);
         text-align: center;
+
+        width: 28.387rem;
+    }
+    .titulo__concluido{
+        margin-top: 1.5rem;
     }
     .botao__fecha-concluido{
         background-color: transparent;
@@ -688,5 +870,131 @@
     
     .icone__concluido{
         width: 8.231rem;
+    }
+
+    /*-----------------INDICADORES-----------*/
+    .container__secao___indicadores{
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        top: 0%;
+        left: 0%;
+        width: 100vw;
+        height: 155vh;
+
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0,0,0,0.2);
+    }
+    .container__indicadores{
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+        width: 70vw;
+
+        background-color: #FFFFFF;
+        border-radius: 16px;
+
+        font-family: var(--mont-serrat);
+
+        animation-name: animaIndicadores;
+        animation-duration: .4s;
+    }
+    .secao__info___indicadores{
+        margin-bottom: 3.5rem;
+    }
+    .cabecalho__indicadores{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-bottom: 3rem;
+    }
+    .titulo__cabecalho__configuracao{
+        font-size: 24px;
+        margin: 0%;
+    }
+    .fecha__indicadores{
+        width: 1rem;
+        height: 1rem;
+        background-image: url("../../Assets/icone-fecha.svg");
+        background-repeat: no-repeat;
+
+        border: none;
+        background-color: transparent;
+
+        padding: 0;
+    }
+    .container__titulo__indicadores{
+        display: flex;
+        align-items: center;
+        gap: .2rem;
+        color: var(--primary);
+
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #ECECEC
+    }
+    .titulo__info___indicadores{
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .descricao__indicadores{
+        font-weight: 500;
+        margin: 0%;
+        font-size: 16px;
+    }
+    .secao__registros___indicadores{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px solid #ECECEC;
+
+        padding-bottom: 4.5rem;
+        margin-bottom: 2rem;
+    }
+    .container__titulo__registros{
+        background-color: #FFFFFF;
+        box-shadow: 0px 4px 16px rgba(122, 133, 148, 0.08);
+
+        border: 1px solid #F1F1F1;
+        border-radius: 8px;
+
+        padding: 1.2rem 1.5rem;
+
+        display: flex;
+        align-items: center;
+        gap: .4rem;
+    }
+    .numeros__registros{
+        font-weight: 600;
+        font-size: 24px;
+    }
+    .descricao__registros{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .registro-processados{
+        color: var(--terciary);
+    }
+    .registro-encontrados{
+        color: var(--primary-support);
+    }
+    .registro-nao-encontrados{
+        color: #F5381E;
+    }
+    .botao-copia-codigo{
+        display: flex;
+        align-self: flex-end;
+        border: 1px solid var(--primary-support);
+        border-radius: 64px;
+
+        padding: 1rem 2rem;
+
+        background-color: var(--primary-support);
+
+        color: #FFFFFF;
+        font-weight: 500;
     }
 }

@@ -25,4 +25,12 @@ html{
 @keyframes animatetop {
     from {top: -500px; opacity: 0}
     to {top: 0; opacity: 1}
-  }
+}
+@keyframes animateLeft {
+    from {right: -70vw; opacity: 0}
+    to {right: 0; opacity: 1}
+}
+@keyframes animaIndicadores {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}

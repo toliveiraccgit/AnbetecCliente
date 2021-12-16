@@ -30,9 +30,27 @@ function abrirResultadoDDA (){
     resultadoDDA.style.display = ` block `
 }
 function abrirProcessoDDA(){
-    modalConfiguracao.style.display = ` block `
+    modalConfiguracao.style.display = ` flex `
     modalConfiguracao.style.right = ` 0  ` 
-    modalConfiguracao.style.opacity = ` 1 `
+}
+function fechaConfiguracao(){
+    modalConfiguracao.style.display = ` none `
+}
+
+function abrirProcessoConcluido(){
+    modalProcessoConcluido.style.display = ` flex `
+    modalConfiguracao.style.display = ` none `
+    resultadoDDA.style.display = ` none `
+}
+function fecharProcessoConcluido(){
+    modalProcessoConcluido.style.display = ` none `
+}
+
+function abrirIndicadore(){
+    modalIndicadores.style.display = ` flex `
+}
+function fechaIndicadores(){
+    modalIndicadores.style.display = ` none `
 }
 
 const resultadoDDA = document.querySelector('#resultado__dda')
@@ -40,3 +58,6 @@ const botaoPesquisaDDA = document.querySelector('#pesquisa__dda')
 
 const botaoProcessa = document.querySelector('#botao__processa___dda')
 const modalConfiguracao = document.querySelector('#configuracoes-servico')
+
+const modalProcessoConcluido = document.querySelector('#container__processo-concluido-dda')
+const modalIndicadores = document.querySelector('#secao__indicadores')
