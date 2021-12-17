@@ -173,13 +173,17 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        overflow-y: hidden;
+    }
+    .login-area{
+        margin-bottom: 3rem;
     }
     .logo-anbetec {
         width: 8rem;
         height: 2.625rem;
         align-self: flex-start;
-        margin-left: 9rem;
-        margin-top: 7rem;
+        margin-bottom: 5.188rem;
+        margin-top: 4rem;
     }
     .titulo__login-area {
         color: var(--primary);

@@ -78,6 +78,10 @@
         width: 9.213rem;
         height: 2.979rem;
     }
+    .container-pesquisa{
+        padding-right: 12.103rem;
+        padding-left: 3.724rem;
+    }
     .pesquisa-mobile{
         display: none;
     }
@@ -96,15 +100,13 @@
         background-position: 2.063rem, .5rem;
 
         padding: 1rem 0 1rem 3.5rem;
-        margin-left: 3.724rem;
-        margin-right: 12.103rem;
     }
     .barra-pesquisa:focus{
         outline: 2px solid var(--primary-support);
         color: var(--azul-secundaria);
     }
     .container__notificacao{
-        padding-right: 1rem;
+        padding-right: 1.25rem;
         margin-right: 1.75rem;
         border-right: 1px solid #cdcdcd;
         
@@ -127,6 +129,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        gap: 1.75rem;
         font-family: var(--mont-serrat);
         height: 2rem;
     }
@@ -137,7 +140,6 @@
         border-radius: 50%;
         width: 2rem;
         height: 2rem;
-        margin-right: .5rem;
     }
     .nome__perfil{
         margin: 0%;
@@ -159,7 +161,6 @@
 
         width: 30px;
         height: 20px;
-        margin-left: 1.938rem;
     }
     
     .intro__processamento-servico{
@@ -272,6 +273,9 @@
         font-family: var(--mont-serrat);
         color: #7A8594;
     }
+    .input__filtro:focus{
+        outline: 1px solid var(--primary-support);
+    }
 
     select {
         appearance: none;
@@ -368,6 +372,9 @@
         font-size: 14px;
         font-family: var(--mont-serrat);
         color: #7A8594; 
+    }
+    .input__filtro-small:focus{
+        outline: 1px solid var(--primary-support);
     }
     .botoes__form{
         display: flex;

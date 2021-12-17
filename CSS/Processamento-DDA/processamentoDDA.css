@@ -64,13 +64,13 @@
         color: var(--azul-secundaria);
     }
     .container__notificacao{
-        padding-right: 1rem;
+        padding-right: 1.25rem;
         margin-right: 1.75rem;
         border-right: 1px solid #cdcdcd;
         
         display: flex;
         align-items: center;
-    
+
         background-color: transparent;
         border-top: none;
         border-left: none;
@@ -82,10 +82,12 @@
         top: -.8rem;
         left: -.5rem;
     }
+
     .perfil-area{
         display: flex;
         flex-direction: row;
         align-items: center;
+        gap: 1.75rem;
         font-family: var(--mont-serrat);
         height: 2rem;
     }
@@ -96,7 +98,6 @@
         border-radius: 50%;
         width: 2rem;
         height: 2rem;
-        margin-right: .5rem;
     }
     .nome__perfil{
         margin: 0%;
@@ -115,10 +116,9 @@
         background-color: transparent;
         background-repeat: no-repeat;
         background-position-y: .5rem;
-    
+
         width: 30px;
         height: 20px;
-        margin-left: 1.938rem;
     }
 
     /*-------------------------paginação-DDA---------------------------*/
@@ -212,10 +212,13 @@
         border: 1.02254px solid #ECECEC;
         border-radius: 8px;
 
-        padding: 1rem 0 1rem 1rem;
+        padding: .5rem 0 .5rem 1rem;
         font-size: 14px;
         font-family: var(--mont-serrat);
         color: #7A8594;
+    }
+    .input__filtro:focus{
+        outline: 1px solid var(--primary-support);
     }
 
     select {
@@ -242,7 +245,7 @@
         gap: 2.5rem;
     }
     .input__filtro-data{
-        width: 32.531rem;
+        width: 32.5rem;
         height: 3.063rem;
 
         border: 1.02254px solid #ECECEC;

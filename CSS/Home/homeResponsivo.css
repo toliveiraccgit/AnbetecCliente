@@ -120,6 +120,26 @@
     }
 
 }
+/*@media (min-width:1024px) and (max-width:1081px){
+    .carrousel__item___perfil{
+        width: 87.5vw;
+    }
+}
+@media (min-width:1081px) and (max-width:1179px){
+    .carrousel__item___perfil{
+        width: 88.5vw;
+    }
+}
+@media (min-width:1179px) and (max-width:1286px){
+    .carrousel__item___perfil{
+        width: 89.5vw;
+    }
+}
+@media (min-width:1286px) and (max-width:1373px){
+    .carrousel__item___perfil{
+        width: 90vw;
+    }
+}
 
 @media (min-width:1493px){
 
@@ -127,3 +147,9 @@
         width: 92vw;
     }
 }
+@media (min-width:1713px){
+
+    .carrousel__item___perfil{
+        width: 92.5vw;
+    }
+}*/

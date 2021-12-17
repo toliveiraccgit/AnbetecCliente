@@ -22,6 +22,9 @@
         font-family: var(--mont-serrat);
         color: #7A8594;
     }
+    .input__filtro___pagamento:focus{
+        outline: 1px solid var(--primary-support);
+    }
     .input__filtro___pagamento-secao-1{
         height: 3.063rem;
         width: 27.5vw;

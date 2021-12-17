@@ -1,23 +1,23 @@
-export class CarouselCobranca {
-    constructor(anteriorCobranca, proximoCobranca, listaClientesCobranca) {
-        this.anteriorCobranca = document.querySelector(anteriorCobranca)
-        this.proximoCobranca = document.querySelector(proximoCobranca)
-        this.listaClientesCobranca = document.querySelector(listaClientesCobranca)
+export class Carousel {
+    constructor(anterior, proximo, listaClientes) {
+        this.anterior = document.querySelector(anterior)
+        this.proximo = document.querySelector(proximo)
+        this.listaClientes = document.querySelector(listaClientes)
 
         this.slides = this.getListaSlides()
         this.tamanhoSlide = this.getTamanhoSlide()
 
         this.indiceDoSlideAtual = 0
 
-        this.proximoCobranca.addEventListener('click', this.proximoSlide.bind(this))
+        this.proximo.addEventListener('click', this.proximoSlide.bind(this))
 
-        this.anteriorCobranca.addEventListener('click', this.slideAnterior.bind(this))
+        this.anterior.addEventListener('click', this.slideAnterior.bind(this))
 
         this.preparaSlides()
     }
 
     getListaSlides() {
-        return Array.from(this.listaClientesCobranca.children)
+        return Array.from(this.listaClientes.children)
     }
 
     getTamanhoSlide() {
@@ -53,7 +53,7 @@ export class CarouselCobranca {
     }
 
     scrollParaSlide(slideSelecionado) {
-        this.listaClientesCobranca.style.transform = 'translateX(-' + slideSelecionado.style.left + ')'
+        this.listaClientes.style.transform = 'translateX(-' + slideSelecionado.style.left + ')'
 
     }
 

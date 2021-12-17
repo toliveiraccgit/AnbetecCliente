@@ -25,20 +25,20 @@
     }
 
     .input__filtro___pagamento-secao-1{
-        background-position-x: calc(100% - 1rem);
+        background-position-x: calc(100% - 2rem);
     }
     .secao-2__filtros___pagamento{
         justify-content: space-between;
         gap: 0%;
-        padding-left:  1.5rem;
+        padding-left:  0.5rem;
         padding-right: 1.5rem;
         padding-bottom: 1.5rem;
     }
     .secao-3__filtros{
         justify-content: space-between;
         gap: 0%;
-        padding-left:  1.5rem;
-        padding-right: 1.5rem;
+        padding-left:  0.5rem;
+        padding-right: 2.5rem;
     }
     .resultado__pesquisa {
         padding-left: 3rem;
@@ -47,4 +47,50 @@
     .cliente__pesquisa___pagamento{
         padding-right: 18rem;
     }
+}
+
+@media (max-width:1024px){ /*Responsivo Mobile*/
+    .cabecalho{
+        padding: 1.563rem 1rem;
+    }
+    .logo-anbetec{
+        width: 5.688rem;
+        height: 1.813rem;
+    }
+    .container-pesquisa{
+        margin-left: 1.5rem;
+    }
+    .pesquisa-mobile{
+        display: flex;
+        padding: 0%;
+        border: none;
+        background-color: transparent;
+    }
+    .ico-pesquisa-mobile{
+        width: 2rem;
+        height: 2rem;
+    }
+    .barra-pesquisa{
+        display: none;
+    }
+    .container__notificacao{
+        border: none;
+        padding: 0%;
+        margin-right: .5rem;
+        margin-left: 1rem;
+    }
+    .notificacao{
+        height: 2rem;
+        width: 2rem;
+    }
+    .informacoes__perfil{
+        width: 97px;
+    }
+    .banco__perfil{
+        font-size: 12px;
+    }
+    .menu-dots{
+        display: none;
+    }
+
 }

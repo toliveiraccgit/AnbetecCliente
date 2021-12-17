@@ -49,7 +49,7 @@
         color: var(--azul-secundaria);
     }
     .container__notificacao{
-        padding-right: 1rem;
+        padding-right: 1.25rem;
         margin-right: 1.75rem;
         border-right: 1px solid #cdcdcd;
         
@@ -72,6 +72,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        gap: 1.75rem;
         font-family: var(--mont-serrat);
         height: 2rem;
     }
@@ -82,7 +83,6 @@
         border-radius: 50%;
         width: 2rem;
         height: 2rem;
-        margin-right: .5rem;
     }
     .nome__perfil{
         margin: 0%;
@@ -93,6 +93,7 @@
     .banco__perfil{
         font-size: 14px;
         font-weight: 500;
+        color: #7A8594;
     }
     .menu-dots{
         background-image: url("../../Assets/menu__dots.png");
@@ -103,7 +104,6 @@
 
         width: 30px;
         height: 20px;
-        margin-left: 1.938rem;
     }
 
     .movimentacao{
@@ -166,7 +166,7 @@
 
         background-repeat: no-repeat;
         background-position-y: 1.6rem;
-        background-position-x: 1.5rem;
+        background-position-x: 2rem;
     }
     .tempo-visto {
         margin: 0%;
