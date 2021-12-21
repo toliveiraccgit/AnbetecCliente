@@ -33,15 +33,12 @@ export class Processamento {
 
         
         this.checkClientePagamento1 = document.querySelector('#check__pagamento-1')
-        this.checkClientePagamento2 = document.querySelector('#check__pagamento-2')
         
         this.checkClientePagamento1.addEventListener('click', this.abrirResultadorPagamentoCheck1.bind(this))
-        this.checkClientePagamento2.addEventListener('click', this.abrirResultadorPagamentoCheck2.bind(this))
         
         
         
         this.resultadoPagamentoCheck1 = document.querySelector('#resultado__pesquisa___pagamento-check-1')
-        this.resultadoPagamentoCheck2 = document.querySelector('#resultado__pesquisa___pagamento-check-2')
         
         this.botaoProcessaPagamento = document.querySelector('#botao__processa___pagamento-1')
         this.botaoProcessaPagamento2 = document.querySelector('#botao__processa___pagamento-2')
@@ -51,7 +48,6 @@ export class Processamento {
         
         
         this.botaoProcessaPagamento.addEventListener('click', this.processoConcluidoPagamento.bind(this))
-        this.botaoProcessaPagamento2.addEventListener('click', this.processoConcluidoPagamento2.bind(this))
         this.botaoFechaProcessoPagamento.addEventListener('click', this.fechaProcessoPagamento.bind(this))
         
     }
@@ -94,24 +90,12 @@ export class Processamento {
 
     abrirResultadorPagamentoCheck1(){
         const resultadoPagamentoCheck1 = this.resultadoPagamentoCheck1
-        const resultadoPagamentoCheck2 = this.resultadoPagamentoCheck2
         
         resultadoPagamentoCheck1.style.visibility = `visible`
         resultadoPagamentoCheck1.style.display = ` block `
         resultadoPagamentoCheck1.style.opacity = ` 1 `
         
-        resultadoPagamentoCheck2.style.display = ' none '
         
-    }
-    abrirResultadorPagamentoCheck2(){
-        const resultadoPagamentoCheck1 = this.resultadoPagamentoCheck1
-        const resultadoPagamentoCheck2 = this.resultadoPagamentoCheck2
-        
-        resultadoPagamentoCheck2.style.visibility = `visible`
-        resultadoPagamentoCheck2.style.display = ` block `
-        resultadoPagamentoCheck2.style.opacity = ` 1 `
-        
-        resultadoPagamentoCheck1.style.display = ' none '
     }
     processoConcluidoPagamento(){
         const concluidoProcessoPagamento =this.modalProcessoPagamento
@@ -120,24 +104,9 @@ export class Processamento {
         const resultadoPagamentoCheck = this.resultadoPagamentoCheck1
         const resultadoPagamento = this.resultadoPagamento
 
-        const resultadoPagamentoCheck2 = this.resultadoPagamentoCheck2
 
         resultadoPagamentoCheck.style.display = ` none `
         resultadoPagamento.style.display = ` none `
-        resultadoPagamentoCheck2.style.display = ' none '
-    }
-    processoConcluidoPagamento2(){
-        const concluidoProcessoPagamento =this.modalProcessoPagamento
-        concluidoProcessoPagamento.style.display = ' flex '
-
-        const resultadoPagamentoCheck = this.resultadoPagamentoCheck1
-        const resultadoPagamento = this.resultadoPagamento
-
-        const resultadoPagamentoCheck2 = this.resultadoPagamentoCheck2
-
-        resultadoPagamentoCheck.style.display = ` none `
-        resultadoPagamento.style.display = ` none `
-        resultadoPagamentoCheck2.style.display = ' none '
     }
     fechaProcessoPagamento(){
         const concluidoProcessoPagamento = this.modalProcessoPagamento
@@ -146,13 +115,11 @@ export class Processamento {
     
     limparResultadoPagamento(){
         const resultadoPagamentoCheck1 = this.resultadoPagamentoCheck1
-        const resultadoPagamentoCheck2 = this.resultadoPagamentoCheck2
         
         resultadoPagamentoCheck1.style.visibility = `hidden`
         resultadoPagamentoCheck1.style.display = ` none `
         resultadoPagamentoCheck1.style.opacity = ` 0 `
         
-        resultadoPagamentoCheck2.style.display = ' none '
 
         const resultadoFiltroPagamento = this.resultadoPagamento
         resultadoFiltroPagamento.style.visibility = `hidden`

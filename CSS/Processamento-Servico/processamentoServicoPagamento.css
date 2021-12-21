@@ -92,6 +92,12 @@
     .cliente__forma-pagamento{
         width: 22.625rem;
     }
+    .cliente__bordero{
+        width: 8vw;
+    }
+    .cliente__qtd-titulos{
+        width: 5vw;
+    }
     .info__forma-pagamento{
         margin-right: 1.5rem;
     }
@@ -103,7 +109,7 @@
     .info___cliente___pagamento{
         display: flex;
         flex-direction: row;
-        gap: 14.375rem;
+        gap:9.375rem;
     }
     .info__resultado___pagamento, .info__resultado___pagamento-check{
         display: flex;
@@ -161,6 +167,18 @@
     }
     #resulta__cliente___pagamento{
         padding-bottom: 0%;
+    }
+
+    .carrousel-clientes-pagamento{
+        display: flex;
+        flex-direction: row;
+        overflow-x: hidden;
+        width: 400vw;
+
+    }
+    .item__cliente__pagamento{
+        width: 100vw;
+        padding-right: 15rem;
     }
     .button--carrousel{
         display: flex;

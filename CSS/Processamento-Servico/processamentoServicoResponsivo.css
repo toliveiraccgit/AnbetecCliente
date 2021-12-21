@@ -21,7 +21,7 @@
         justify-content: space-between;
     }
     .secao-2{
-        margin-left: 21vw;
+        margin-left: 20vw;
     }
 
     .input__filtro___pagamento-secao-1{
@@ -30,12 +30,12 @@
     .secao-2__filtros___pagamento{
         justify-content: space-between;
         gap: 0%;
-        padding-left:  0.5rem;
+        padding-left:  1.5rem;
         padding-right: 1.5rem;
         padding-bottom: 1.5rem;
     }
     .secao-3__filtros{
-        justify-content: space-between;
+        justify-content: space-around;
         gap: 0%;
         padding-left:  0.5rem;
         padding-right: 2.5rem;
@@ -46,6 +46,12 @@
 
     .cliente__pesquisa___pagamento{
         padding-right: 18rem;
+    }
+    .info___cliente___pagamento{
+        gap:7.375rem;
+    }
+    .container__info___cliente{
+        padding-right: 2rem;
     }
 }
 

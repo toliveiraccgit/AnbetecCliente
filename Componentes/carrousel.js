@@ -9,9 +9,10 @@ export class Carousel {
 
         this.indiceDoSlideAtual = 0
 
-        this.proximo.addEventListener('click', this.proximoSlide.bind(this))
+        
 
         this.anterior.addEventListener('click', this.slideAnterior.bind(this))
+        this.proximo.addEventListener('click', this.proximoSlide.bind(this))
 
         this.preparaSlides()
     }

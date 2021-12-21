@@ -12,11 +12,14 @@
         justify-content: space-between;
     }
     .info__resultado{
-        padding-right: 25.7vw;
+        padding-right: 27.7vw;
         justify-content: space-between;
     }
     .info__banco{
         padding-left: 10rem;
+    }
+    .info__resultado{
+        width: 91vw;
     }
 
 }

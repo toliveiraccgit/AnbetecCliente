@@ -1,23 +1,23 @@
-export class CarouselPagamento {
-    constructor(anteriorPagamento, proximoPagamento, listaClientesPagamento) {
-        this.anteriorPagamento = document.querySelector(anteriorPagamento)
-        this.proximoPagamento = document.querySelector(proximoPagamento)
-        this.listaClientesPagamento = document.querySelector(listaClientesPagamento)
+export class CarouselPagamento2 {
+    constructor(anteriorPagamento2, proximoPagamento2, listaClientesPagamento2) {
+        this.anteriorPagamento2 = document.querySelector(anteriorPagamento2)
+        this.proximoPagamento2 = document.querySelector(proximoPagamento2)
+        this.listaClientesPagamento2 = document.querySelector(listaClientesPagamento2)
 
         this.slides = this.getListaSlides()
         this.tamanhoSlide = this.getTamanhoSlide()
 
         this.indiceDoSlideAtual = 0
 
-        this.proximoPagamento.addEventListener('click', this.proximoSlide.bind(this))
+        this.proximoPagamento2.addEventListener('click', this.proximoSlide.bind(this))
 
-        this.anteriorPagamento.addEventListener('click', this.slideAnterior.bind(this))
+        this.anteriorPagamento2.addEventListener('click', this.slideAnterior.bind(this))
 
         this.preparaSlides()
     }
 
     getListaSlides() {
-        return Array.from(this.listaClientesPagamento.children)
+        return Array.from(this.listaClientesPagamento2.children)
     }
 
     getTamanhoSlide() {
@@ -53,7 +53,7 @@ export class CarouselPagamento {
     }
 
     scrollParaSlide(slideSelecionado) {
-        this.listaClientesPagamento.style.transform = 'translateX(-' + slideSelecionado.style.left + ')'
+        this.listaClientesPagamento2.style.transform = 'translateX(-' + slideSelecionado.style.left + ')'
 
     }
 

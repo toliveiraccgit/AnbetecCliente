@@ -263,7 +263,7 @@
     }
     .input__filtro{
         height: 3.063rem;
-        width: 38.75rem;
+        width: 41.9vw;
 
         border: 1.02254px solid #ECECEC;
         border-radius: 8px;
@@ -330,7 +330,7 @@
         gap: 2.5rem;
     }
     .input__filtro-data{
-        width: 19.75rem;
+        width: 21.3vw;
         height: 3.063rem;
 
         border: 1.02254px solid #ECECEC;
@@ -362,7 +362,7 @@
         gap: 2rem;
     }
     .input__filtro-small{
-        width: 18.375rem;
+        width: 19.9vw;
         height: 3.063rem;
 
         border: 1.02254px solid #ECECEC;
@@ -447,14 +447,14 @@
 
     .secao-1{
         display: flex;
-        gap: 2.5rem;
+        gap: 5rem;
     }
     .secao-2{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         gap: 2rem;
-        margin-left: 19vw;
+        margin-left: 16vw;
     }
     
 
@@ -485,6 +485,7 @@
         flex-direction: row;
         gap: 7rem;
         
+        padding-right: .5rem;
     }
     .container__valores___info{
         display: flex;
