@@ -188,6 +188,10 @@
         padding: 0 1rem;
 
     }
+    .container__carrousel{
+        width: auto;
+        overflow-x: hidden;
+    }
     .carrousel__button{
         background-repeat: no-repeat;
         background-color: transparent;

@@ -1,6 +1,4 @@
-
 import { Carousel } from "./carrousel.js";
-/*import { CarouselPagamento } from "./carrouselServicoPagamento.js";*/
 import { Processamento } from "./processamento.js"
 
 
@@ -13,14 +11,6 @@ const listaClientes = '[data-lista-perfil]'
 
 
 
-
-/*const anteriorPagamento = '[data-anterior-Pagamento]'
-const proximoPagamento = '[data-proximo-Pagamento]'
-const listaClientesPagamento = '[data-lista-Pagamento]'*/
-
-
-
-
 new Carousel(anterior, proximo, listaClientes)
-/*new CarouselPagamento(anteriorPagamento, proximoPagamento, listaClientesPagamento)*/
+console.log(anterior, proximo, listaClientes)
 new Processamento()

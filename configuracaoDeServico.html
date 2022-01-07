@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./CSS/Configuração-Serviço/configuracaoServico.css">
+        <link href="./CSS/base.css" rel="stylesheet">
+        <link href="./CSS/reset.css" rel="stylesheet">
+        <link href="./CSS/normalize.css" rel="stylesheet">
+        <link rel="shortcut icon" href="./Assets/Logo-favicon.png" type="image/x-icon">
+        <title>Configuração de Serviços | Anbetec</title>
+    </head>
+    
+    <body id="body">
+        <header class="cabecalho">
+            <a href="./home.html"><img src="./Assets/LogoAnbetec.png" alt="Logo Anbetec" class="logo-anbetec"></a>
+            <div class="container-pesquisa">
+                <button class="pesquisa-mobile"><img class="ico-pesquisa-mobile" src="./Assets/ico-pesquisa-mobile.png" alt="Abrir Barra Pesquisa"></button>
+                <input type="text" class="barra-pesquisa" placeholder="Procure pelo portal">
+            </div>
+            
+            <div class="container__info">
+                <button type="button" class="container__notificacao">
+                    <img src="./Assets/notificação.png" alt="Notificação" class="notificacao">
+                    <img src="./Assets/notificação-ativa.png" alt="Você possui notificação" class="notificacao-ativa">
+                </button>
+                <div class="perfil-area">
+                    <img src="./Assets/icone2.png" alt="Sua Foto de Perfil" class="icone__perfil">
+                    <div class="informacoes__perfil">
+                        <h1 class="nome__perfil">Davi Neris</h1>
+                        <span class="banco__perfil">Banco Anbetec</span>
+                    </div>
+                    <button type="button" class="menu-dots"></button>
+                </div>
+            </div>
+        </header>
+
+        <main class="conteudo">
+
+                <div class="intro__configuracao-servico">
+                    <p class="paginacao__configuracao-servico">
+                        <a href="./home.html" class="link-paginacao">Produtos</a>
+                        <a href="./edi-financeiro.html" class="link-paginacao-edi">EDI Financeiro</a>
+                        <a href="./configuracaoDeServico.html" class="destaque__paginacao">Configuração de Serviços</a>
+                    </p>
+                </div>
+
+                <section class="secao__cabecalho___configuracao-servico">
+                    
+                    <div class="cabecalho__configuracao-servico">
+                            <button class="tablinks tab-cobranca" id="defaultOpen" onclick="openTab(event, 'cobranca')">Cobrança</button>
+                            <button class="tablinks tab-pagamento" onclick="openTab(event, 'pagamento')">Pagamento</button>
+                            <button class="tablinks tab-extrato" onclick="openTab(event, 'extrato')">Extrato</button>
+                            <button class="tablinks tab-dda" onclick="openTab(event, 'dda')">DDA</button>   
+                    </div>
+
+                    <button type="button" class="botao__configura___cobranca">Configurar Cobrança</button>
+
+                </section>
+
+                <section class="secao__cobranca___configuracao tabcontent" id="cobranca">
+
+                    <section class="container__cobranca">
+                        <section class="info__cobranca___configuracao">
+
+                            <div class="container__info__cobranca-primeiro">
+    
+                                <p class="info__cobranca___filial">Filial do cabeçalho</p>
+                                <p class="info__cobranca___banco">Banco</p>
+    
+                            </div>
+    
+                            <div class="container__info__cobranca-primeiro">
+    
+                                <p class="info__cobranca___remessa">Remessa</p>
+    
+                            </div>
+    
+                            <div class="container__info__cobranca-primeiro">
+    
+                                <p class="info__cobranca___agrupados">Enviar agrupados</p>
+                                <p class="info__cobranca___integracao">Integração</p>
+                                <p class="info__cobranca___status">Status</p>
+    
+                            </div>
+    
+                        </section>
+    
+                        <section class="clientes___cobranca___configuracao">
+    
+                            <div class="container__carousel">
+    
+                                <ul class="lista__clientes___cobranca-configuracao">
+    
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco">2374 - 2374 - 237-BRADESCO C.C. 588886-5</p>
+    
+                                        <p class="cliente__remessa">08:00 - 20:02</p>
+    
+                                        <p class="cliente__agrupado">SIM</p>
+    
+                                        <p class="cliente__integracao">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco">2374 - 2374 - 237-BRADESCO C.C. 588886-5</p>
+    
+                                        <p class="cliente__remessa">08:00 - 20:02</p>
+    
+                                        <p class="cliente__agrupado">SIM</p>
+    
+                                        <p class="cliente__integracao">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-desativa">Desativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco">2374 - 2374 - 237-BRADESCO C.C. 588886-5</p>
+    
+                                        <p class="cliente__remessa">08:00 - 20:02</p>
+    
+                                        <p class="cliente__agrupado">SIM</p>
+    
+                                        <p class="cliente__integracao">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco">2374 - 2374 - 237-BRADESCO C.C. 588886-5</p>
+    
+                                        <p class="cliente__remessa">08:00 - 20:02</p>
+    
+                                        <p class="cliente__agrupado">SIM</p>
+    
+                                        <p class="cliente__integracao">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-desativa">Desativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco">2374 - 2374 - 237-BRADESCO C.C. 588886-5</p>
+    
+                                        <p class="cliente__remessa">08:00 - 20:02</p>
+    
+                                        <p class="cliente__agrupado">SIM</p>
+    
+                                        <p class="cliente__integracao">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco">2374 - 2374 - 237-BRADESCO C.C. 588886-5</p>
+    
+                                        <p class="cliente__remessa">08:00 - 20:02</p>
+    
+                                        <p class="cliente__agrupado">SIM</p>
+    
+                                        <p class="cliente__integracao">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco">2374 - 2374 - 237-BRADESCO C.C. 588886-5</p>
+    
+                                        <p class="cliente__remessa">08:00 - 20:02</p>
+    
+                                        <p class="cliente__agrupado">SIM</p>
+    
+                                        <p class="cliente__integracao">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco">2374 - 2374 - 237-BRADESCO C.C. 588886-5</p>
+    
+                                        <p class="cliente__remessa">08:00 - 20:02</p>
+    
+                                        <p class="cliente__agrupado">SIM</p>
+    
+                                        <p class="cliente__integracao">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco">2374 - 2374 - 237-BRADESCO C.C. 588886-5</p>
+    
+                                        <p class="cliente__remessa">08:00 - 20:02</p>
+    
+                                        <p class="cliente__agrupado">SIM</p>
+    
+                                        <p class="cliente__integracao">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco">2374 - 2374 - 237-BRADESCO C.C. 588886-5</p>
+    
+                                        <p class="cliente__remessa">08:00 - 20:02</p>
+    
+                                        <p class="cliente__agrupado">SIM</p>
+    
+                                        <p class="cliente__integracao">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+                                    
+    
+                                </ul>
+
+                                <p class="paginacao__carrousel">Página 1 de 4</p>
+    
+                            </div>
+                        
+                        </section>
+                    </section>
+
+                    <div class="button--carrousel">
+                        <button class="carrousel__button carrousel__button--anterior" aria-label="Botão de Voltar">Anterior</button>
+                        <button class="carrousel__button carrousel__button--proximo" aria-label="Botão de Avançar">Próximo</button>
+                    </div>
+
+                    
+
+                </section>
+                
+                <section class="secao__cobranca___configuracao tabcontent" id="pagamento">
+
+                    <section class="container__cobranca">
+                        <section class="info__cobranca___configuracao">
+
+                            <div class="container__info__cobranca-primeiro">
+    
+                                <p class="info__cobranca___filial-pagamento">Filial</p>
+                                <p class="info__cobranca___banco-pagamento">Banco</p>
+    
+                            </div>
+    
+                            <div class="container__info__cobranca-primeiro">
+    
+                                <p class="info__cobranca___hora">Hora de ínicio</p>
+    
+                            </div>
+    
+                            <div class="container__info__cobranca-primeiro">
+    
+                                <p class="info__cobranca___periodicidade">Periodicidade Envio</p>
+                                <p class="info__cobranca___integracao-pagamento">Integração</p>
+                                <p class="info__cobranca___status-pagamento">Status</p>
+    
+                            </div>
+    
+                        </section>
+    
+                        <section class="clientes___cobranca___configuracao">
+    
+                            <div class="container__carousel">
+    
+                                <ul class="lista__clientes___cobranca-configuracao">
+    
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial-pagamento">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco-pagamento">2374 - 2374 - 237-BRADESCO C.C. 588886-5</p>
+    
+                                        <p class="cliente__hora">08:00 - 20:02</p>
+    
+                                        <p class="cliente__periodicidade">SIM</p>
+    
+                                        <p class="cliente__integracao-pagamento">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco">2374 - 2374 - 237-BRADESCO C.C. 588886-5</p>
+    
+                                        <p class="cliente__remessa">08:00 - 20:02</p>
+    
+                                        <p class="cliente__agrupado">SIM</p>
+    
+                                        <p class="cliente__integracao">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-desativa">Desativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco">2374 - 2374 - 237-BRADESCO C.C. 588886-5</p>
+    
+                                        <p class="cliente__remessa">08:00 - 20:02</p>
+    
+                                        <p class="cliente__agrupado">SIM</p>
+    
+                                        <p class="cliente__integracao">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco">2374 - 2374 - 237-BRADESCO C.C. 588886-5</p>
+    
+                                        <p class="cliente__remessa">08:00 - 20:02</p>
+    
+                                        <p class="cliente__agrupado">SIM</p>
+    
+                                        <p class="cliente__integracao">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-desativa">Desativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+
+    
+                                </ul>
+
+                                <p class="paginacao__carrousel">Página 1 de 4</p>
+    
+                            </div>
+                        
+                        </section>
+                    </section>
+
+                    <div class="button--carrousel">
+                        <button class="carrousel__button carrousel__button--anterior" aria-label="Botão de Voltar">Anterior</button>
+                        <button class="carrousel__button carrousel__button--proximo" aria-label="Botão de Avançar">Próximo</button>
+                    </div>
+
+                    
+
+                </section>
+
+                <section class="secao__cobranca___configuracao tabcontent" id="extrato">
+
+                    <section class="container__cobranca">
+                        <section class="info__cobranca___configuracao">
+
+                            <div class="container__info__cobranca-primeiro">
+    
+                                <p class="info__cobranca___filial-extrato">Filial</p>
+                                <p class="info__cobranca___banco-extrato">Banco</p>
+    
+                            </div>
+    
+                            <div class="container__info__cobranca-primeiro">
+    
+                                <p class="info__cobranca___moeda">Moeda</p>
+    
+                            </div>
+    
+                            <div class="container__info__cobranca-primeiro">
+    
+                                <p class="info__cobranca___inicio">Ínicio Retorno</p>
+                                <p class="info__cobranca___fim">Fim Retorno</p>
+                                <p class="info__cobranca___status-extrato">Status</p>
+    
+                            </div>
+    
+                        </section>
+    
+                        <section class="clientes___cobranca___configuracao">
+    
+                            <div class="container__carousel">
+    
+                                <ul class="lista__clientes___cobranca-configuracao">
+    
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial-extrato">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco-extrato">2374 - 2374 - 237-BRADESCO C.C</p>
+    
+                                        <p class="cliente__moeda">9999 - TODAS MOEDAS</p>
+    
+                                        <p class="cliente__inicio">08:00</p>
+    
+                                        <p class="cliente__fim">09:00</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial-extrato">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco-extrato">2374 - 2374 - 237-BRADESCO C.C</p>
+    
+                                        <p class="cliente__moeda">9999 - TODAS MOEDAS</p>
+    
+                                        <p class="cliente__inicio">08:00</p>
+    
+                                        <p class="cliente__fim">09:00</p>
+    
+                                        <button class="botao__status___configuracao-desativa">Desativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial-extrato">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco-extrato">2374 - 2374 - 237-BRADESCO C.C</p>
+    
+                                        <p class="cliente__moeda">9999 - TODAS MOEDAS</p>
+    
+                                        <p class="cliente__inicio">08:00</p>
+    
+                                        <p class="cliente__fim">09:00</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial-extrato">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco-extrato">2374 - 2374 - 237-BRADESCO C.C</p>
+    
+                                        <p class="cliente__moeda">9999 - TODAS MOEDAS</p>
+    
+                                        <p class="cliente__inicio">08:00</p>
+    
+                                        <p class="cliente__fim">09:00</p>
+    
+                                        <button class="botao__status___configuracao-desativa">Desativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+                                
+    
+                                </ul>
+
+                                <p class="paginacao__carrousel">Página 1 de 4</p>
+    
+                            </div>
+                        
+                        </section>
+                    </section>
+
+                    <div class="button--carrousel">
+                        <button class="carrousel__button carrousel__button--anterior" aria-label="Botão de Voltar">Anterior</button>
+                        <button class="carrousel__button carrousel__button--proximo" aria-label="Botão de Avançar">Próximo</button>
+                    </div>
+
+                    
+
+                </section>
+
+
+        </main>
+    
+    <script src="./Componentes/tab.js" type="text/javascript"></script>
+    </body>
+    
+</html>
