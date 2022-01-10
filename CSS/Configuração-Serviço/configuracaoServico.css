@@ -156,7 +156,7 @@
         display: flex;
         flex-direction: row;
         gap: 2rem;
-        margin-bottom: 1.482rem;
+        margin-bottom: 2.272rem;
     }
 
     .tablinks{
@@ -171,7 +171,8 @@
         opacity: 0.2;
     }
 
-    .botao__configura___cobranca{
+    /*-------------------------SECAO--COBRANCA-INFO-CONFIGURACAO---------------------------*/
+    .botao__configura___cobranca, .botao__configura___pagamento, .botao__configura___extrato, .botao__configura___dda{
         width: 16.733rem;
         color: #FFFFFF;
 
@@ -196,9 +197,10 @@
 
         border:none;
 
-
+        position: absolute;
+        left: 77.5%;
+        top: 24%;
     }
-    /*-------------------------SECAO--COBRANCA-INFO-CONFIGURACAO---------------------------*/
     .secao__cobranca___configuracao{
         background-color: #FFFFFF;
         border-radius: 1rem;
@@ -383,6 +385,9 @@
         font-family: var(--mont-serrat);
         font-size: 15px;
         color: #7A8594;
+
+        background-color: #FFFFFF;
+        z-index: 20000;
     }
     /*-------------------------SECAO--COBRANCA-BOTOES-CARROUSEL---------------------------*/
     .button--carrousel{
@@ -416,6 +421,15 @@
         background-position-x:right;
     }
     /*-------------------------SECAO--PAGAMENTO-INFO-CONFIGURACAO---------------------------*/
+    .botao__configura___pagamento{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        padding-left: 2rem;
+        padding-right: 1rem;
+
+        background-position-x: 1.4rem;
+    }
     .info__cobranca___filial-pagamento{
         width: 15.939rem;
         background-image: url("../../Assets/seta__selection.png");
@@ -481,7 +495,10 @@
         width: 9.587rem;
         font-size: 14px;
     }
-    /*-------------------------SECAO--PAGAMENTO-INFO-CONFIGURACAO---------------------------*/
+    /*-------------------------SECAO--EXTRATO-INFO-CONFIGURACAO---------------------------*/
+    .botao__configura___extrato{
+        background-position-x: 2.9rem;
+    }
     .info__cobranca___filial-extrato{
         width: 15.8rem;
         background-image: url("../../Assets/seta__selection.png");
@@ -546,5 +563,248 @@
     .cliente__fim{
         width: 9.587rem;
         font-size: 14px;
+    }
+    /*-------------------------SECAO--DDA-INFO-CONFIGURACAO---------------------------*/
+    .botao__configura___dda{
+        background-position-x: 3.5rem;
+    }
+    .info__cobranca___filial-dda{
+        width: 14.188rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 2.5rem;
+    }
+    .info__cobranca___banco-dda{
+        width: 17.563rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.4rem;
+    }
+    .info__cobranca___validacao{
+
+        width: 22.625rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 8.4rem;
+    }
+    .info__cobranca___integracao-dda{
+        width: 13.625rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 5.3rem;
+    }
+    .info__cobranca___status-dda{
+        width: 6.999rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.4rem;
+
+    }
+    
+    .cliente__filial-dda{
+        width: 14.188rem;
+        font-size: 14px;
+    }
+    .cliente__banco-dda{
+        width: 17.563rem;
+        font-size: 14px;
+    }
+    .container__cliente___validacao{
+        width: 22.688rem;
+        font-size: 14px;
+    }
+    .cliente__integracao-dda{
+        width: 13.438rem;
+        font-size: 14px;
+    }
+    /*-----------------SECAO-CONFIGURACAO-COBRANCA---------------------*/
+
+    .container__secao___configuracao-cobranca{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100vw;
+
+        padding: 46% 100vw;
+
+        display: none;
+        justify-content: flex-end;
+        align-items: flex-end;
+        background-color: rgba(0,0,0,0.2);
+
+        transition: all .4s ease-in-out;
+
+        z-index: 30000;
+    }
+    .configuracoes-cobranca{
+        width: 70vw;
+        height: 74.5rem;
+
+        display: block;
+
+        position: absolute;
+        top: 0%;
+        bottom: 0%;
+        right: 0%;
+
+        margin-top: 5vh;
+        margin-bottom: 4vh;
+
+        padding: 3rem 3.438rem 2.5rem;
+
+        transition: all .4s ease-in-out;
+
+        background-color: #FFFFFF;
+        border-radius: 16px 0px 0px 16px;
+        border: 1px solid #F1F1F1;
+
+        animation: animateLeftServiço .4s ease-out forwards;
+
+        font-family: var(--mont-serrat);
+        z-index: 400000;
+    }
+
+    .cabecalho__configuracao-cobranca{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-bottom: 1.5rem;
+    }
+    .titulo__cabecalho__configuracao-cobranca{
+        font-size: 20px;
+        color: var(--primary);
+    }
+    .fecha__configuracoes-cobranca{
+        width: 1rem;
+        height: 1rem;
+        background-image: url("../../Assets/icone-fecha.svg");
+        background-repeat: no-repeat;
+
+        border: none;
+        background-color: transparent;
+
+        padding: 0;
+    }
+    .container__input-configuracao{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        padding-bottom: 2.5rem;
+        margin-bottom: 2.5rem;
+
+        width: 58.438rem;
+        font-family: var(--mont-serrat);
+
+        border-bottom: 1px solid #EEEEEE;
+    }
+    .container__input{
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    .label__input___configuracao-cobranca{
+        font-size: 12px;
+        font-weight: 500;
+        font-family: var(--mont-serrat);
+
+        color: var(--primary);
+    }
+    .input__cobranca{
+        height: 3.063rem;
+        width: 30.5vw;
+        
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+        
+        padding: .5rem 0 .5rem 1rem;
+        
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        color: #7A8594;
+
+        background-color: transparent;
+    }
+    .input__cobranca:focus{
+        outline: 1px solid var(--primary-support);
+    }
+    .tablinks-configuracao-cobranca{
+        border: none;
+        background-color: transparent;
+        color: var(--primary);
+        font-family: var(--mont-serrat);
+        padding: 0%;
+
+        font-size: 22.58px;
+        font-weight: 700;
+        opacity: 0.2;
+    }
+    .active-configuracao-cobranca{
+        opacity: 1;
+    }
+    .secao__configuracao___remess{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .titulo__secao-configuracao___remessa{
+        margin-bottom: 1.625rem;
+
+        font-size: 16px;
+        font-weight: 700;
+        font-family: var(--mont-serrat);
+        color: var(--primary);
+    }
+    .secao__inputs___configuracao-remessa{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+    .input__cobranca___configuracao-remessa{
+        width: 24.25rem;
+        height: 3.063rem;
+
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+        
+        padding: .5rem 0 .5rem 1rem;
+        
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        color: #7A8594;
+
+        background-color: transparent;
+    }
+    .input__cobranca___configuracao-remessa:focus{
+        outline: 1px solid var(--primary-support);
+    }
+    .input__periodicidade-remessa, .input__horario-inicio-remessa, .input__horario-fim-remessa{
+        width: 9.6rem;
+        height: 3.063rem;
+
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+        
+        padding: .5rem 0 .5rem 1rem;
+        
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        color: #7A8594;
+
+        background-color: transparent;
+    }
+    .input__periodicidade-remessa:focus, .input__horario-inicio-remessa:focus, .input__horario-fim-remessa:focus{
+        outline: 1px solid var(--primary-support);
     }
 }

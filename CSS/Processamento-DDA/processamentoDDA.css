@@ -556,7 +556,8 @@
         top: 0%;
         left: 0%;
         width: 100vw;
-        height: 155vh;
+
+        padding: 48% 100vw;
 
         display: none;
         justify-content: flex-end;
@@ -567,7 +568,7 @@
     }
     .configuracoes-servico{
         width: 70vw;
-        height: 137vh;
+        height: 74.5rem;
 
         display: block;
 
@@ -676,6 +677,9 @@
         background: linear-gradient(94.01deg, #6C6C6C -200%, rgba(225, 225, 225, 0.2) -37.3%, rgba(255, 255, 255, 0) 73.58%);
 
         scroll-margin: .5rem ;
+
+        scrollbar-color: #173A67 #173A67;
+        scrollbar-width: thin;
     }
     .clientes__configuracao::-webkit-scrollbar-thumb {
         background:#173A67;

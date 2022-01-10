@@ -58,11 +58,11 @@
                             <button class="tablinks tab-dda" onclick="openTab(event, 'dda')">DDA</button>   
                     </div>
 
-                    <button type="button" class="botao__configura___cobranca">Configurar Cobrança</button>
-
                 </section>
 
                 <section class="secao__cobranca___configuracao tabcontent" id="cobranca">
+
+                    <button type="button" class="botao__configura___cobranca" id="botao__configura-cobranca">Configurar Cobrança</button>
 
                     <section class="container__cobranca">
                         <section class="info__cobranca___configuracao">
@@ -273,10 +273,100 @@
                     </div>
 
                     
+                    <div class="container__secao___configuracao-cobranca" id="configuracoes-cobranca">
+                        
+                        <section class="configuracoes-cobranca" >
+                            
+                            <div class="cabecalho__configuracao-cobranca">
+                                <h1 class="titulo__cabecalho__configuracao-cobranca">Incluir Configuração de Cobrança</h1>
+                                <button class="fecha__configuracoes-cobranca" id="botao__fecha___configuracoes-cobranca"></button>
+                            </div>
 
+                            <section class="container__input-configuracao">
+
+                                <div class="container__input">
+                                    <label for="Filial" class="label__input___configuracao-cobranca">Filial cabeçalho arquivo</label>
+                                    <select name="Filial" id="Filial" class="input__cobranca" required>
+                                        <option  class="option__filtro" value="0">(Selecione)</option>
+                                        <option class="option__filtro" value="1">99 - TODAS FILIAIS</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="container__input">
+                                    <label for="Filial Filtro" class="label__input___configuracao-cobranca" >Filiais para filtro dos títulos</label>
+                                    <select name="Filial Filtro" id="Filial Filtro" class="input__cobranca" required>
+                                        <option  class="option__filtro" value="0">(Selecione)</option>
+                                        <option class="option__filtro" value="1">99 - TODAS FILIAIS</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="container__input">
+                                    <label for="Cobrança" class="label__input___configuracao-cobranca" >Cobrança</label>
+                                    <select name="Cobrança" id="Cobrança" class="input__cobranca" required>
+                                        <option  class="option__filtro" value="0">(Selecione)</option>
+                                        <option class="option__filtro" value="1">015 - FIL05-BANCO BRASIL-COB-...</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="container__input">
+                                    <label for="Banco" class="label__input___configuracao-cobranca" >Banco</label>
+                                    <select name="Banco" id="Banco" class="input__cobranca" required>
+                                        <option  class="option__filtro" value="0">(Selecione)</option>
+                                        <option class="option__filtro" value="1">5006 - 5006-1-BCO BRASIL COB 88...</option>
+                                    </select>
+                                </div>
+
+
+
+                            </section>
+                            
+                            <div class="cabecalho__configuracao-servico">
+                                <button class="tablinks-configuracao-cobranca tab-remessa" id="defaultOpen-configuracao-cobranca" onclick="openTab(event, 'remessa')">Remessa</button>
+                                <button class="tablinks-configuracao-cobranca tab-retorno" onclick="openTab(event, 'retorno')">Retorno</button>
+                                <button class="tablinks-configuracao-cobranca tab-api" onclick="openTab(event, 'api')">APIs</button>
+                            </div>
+
+                            <section class="secao__configuracao___remessa tabcontent-configuracao-cobranca" id="remessa">
+                                
+                                <h2 class="titulo__secao-configuracao___remessa">Filtros para Inclusão</h2>
+
+                                <section class="secao__inputs___configuracao-remessa">
+
+                                    <div class="container__input">
+                                        <label for="Restrição-Clientes" class="label__input___configuracao-cobranca">Restrição de Clientes</label>
+                                        <select name="Restrição-Clientes" id="Restrição-Clientes" class="input__cobranca___configuracao-remessa" required>
+                                            <option  class="option__filtro" value="0">(Selecione)</option>
+                                            <option class="option__filtro" value="1">Restrição de Clientes</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="container__input">
+                                        <label for="Periodicidade-Envio" class="label__input___configuracao-cobranca">Periodicidade de envio</label>
+                                        <input name="Periodicidade-Envio" type="text" placeholder="60 min" class="input__periodicidade-remessa">
+                                    </div>
+
+                                    <div class="container__input">
+                                        <label for="Horario-Inicio-Envio" class="label__input___configuracao-cobranca">Horário do ínicio de envio</label>
+                                        <input name="Horario-Inicio-Envio" type="time" placeholder="08:00" class="input__horario-inicio-remessa">
+                                    </div>
+
+                                    <div class="container__input">
+                                        <label for="Horario-Fim-Envio" class="label__input___configuracao-cobranca">Horário do Fim de envio</label>
+                                        <input name="Horario-Fim-Envio" type="time" placeholder="20:00" class="input__horario-fim-remessa">
+                                    </div>
+
+                                </section>
+
+                            </section>
+                        
+                        </section>
+                    
+                    </div>
                 </section>
                 
                 <section class="secao__cobranca___configuracao tabcontent" id="pagamento">
+
+                    <button type="button" class="botao__configura___pagamento" id="botao__configura-pagamento">Configurar Pagamento</button>
 
                     <section class="container__cobranca">
                         <section class="info__cobranca___configuracao">
@@ -395,6 +485,8 @@
                 </section>
 
                 <section class="secao__cobranca___configuracao tabcontent" id="extrato">
+
+                    <button type="button" class="botao__configura___extrato" id="botao__configura-extrato">Configurar Extrato</button>
 
                     <section class="container__cobranca">
                         <section class="info__cobranca___configuracao">
@@ -515,10 +607,229 @@
 
                 </section>
 
+                <section class="secao__cobranca___configuracao tabcontent" id="dda">
+
+                    <button type="button" class="botao__configura___dda" id="botao__configura-dda">Configurar DDA</button>
+
+                    <section class="container__cobranca">
+                        <section class="info__cobranca___configuracao">
+
+                            <div class="container__info__cobranca-primeiro">
+    
+                                <p class="info__cobranca___filial-dda">Filial</p>
+                                <p class="info__cobranca___banco-dda">Banco</p>
+    
+                            </div>
+    
+                            <div class="container__info__cobranca-primeiro">
+    
+                                <p class="info__cobranca___validacao">Tipo de Validação</p>
+    
+                            </div>
+    
+                            <div class="container__info__cobranca-primeiro">
+    
+                                <p class="info__cobranca___integracao-dda">Integração</p>
+                                <p class="info__cobranca___status-dda">Status</p>
+    
+                            </div>
+    
+                        </section>
+    
+                        <section class="clientes___cobranca___configuracao">
+    
+                            <div class="container__carousel">
+    
+                                <ul class="lista__clientes___cobranca-configuracao">
+    
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial-dda">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco-dda">2374 - 2374 - 237-BRADESCO C.C</p>
+    
+                                        <div class="container__cliente___validacao">
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-positivo.png" alt="Validação Positiva" class="validacao-positiva">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div> 
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-negativo.png" alt="Validação Negativa" class="validacao-negativa">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-positivo.png" alt="Validação Positiva" class="validacao-positiva">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-negativo.png" alt="Validação Negativa" class="validacao-negativa">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-negativo.png" alt="Validação Negativa" class="validacao-negativa">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                        
+                                        </div>
+
+                                        <p class="cliente__integracao-dda">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial-dda">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco-dda">2374 - 2374 - 237-BRADESCO C.C</p>
+    
+                                        <div class="container__cliente___validacao">
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-positivo.png" alt="Validação Positiva" class="validacao-positiva">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div> 
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-negativo.png" alt="Validação Negativa" class="validacao-negativa">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-positivo.png" alt="Validação Positiva" class="validacao-positiva">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-negativo.png" alt="Validação Negativa" class="validacao-negativa">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-negativo.png" alt="Validação Negativa" class="validacao-negativa">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                        
+                                        </div>
+
+                                        <p class="cliente__integracao-dda">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial-dda">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco-dda">2374 - 2374 - 237-BRADESCO C.C</p>
+    
+                                        <div class="container__cliente___validacao">
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-positivo.png" alt="Validação Positiva" class="validacao-positiva">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div> 
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-negativo.png" alt="Validação Negativa" class="validacao-negativa">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-positivo.png" alt="Validação Positiva" class="validacao-positiva">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-negativo.png" alt="Validação Negativa" class="validacao-negativa">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-negativo.png" alt="Validação Negativa" class="validacao-negativa">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                        
+                                        </div>
+
+                                        <p class="cliente__integracao-dda">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+
+                                    <li class="item__lista___cobranca-configuracao">
+    
+                                        <p class="cliente__filial-dda">1 - ANBETEC LTDA</p>
+    
+                                        <p class="cliente__banco-dda">2374 - 2374 - 237-BRADESCO C.C</p>
+    
+                                        <div class="container__cliente___validacao">
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-positivo.png" alt="Validação Positiva" class="validacao-positiva">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div> 
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-negativo.png" alt="Validação Negativa" class="validacao-negativa">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-positivo.png" alt="Validação Positiva" class="validacao-positiva">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-negativo.png" alt="Validação Negativa" class="validacao-negativa">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                            
+                                            <div class="tooltip">
+                                                <img src="./Assets/validacao-negativo.png" alt="Validação Negativa" class="validacao-negativa">
+                                                <span class="tooltiptext">Este é um tooltip !</span>
+                                            </div>
+                                        
+                                        </div>
+
+                                        <p class="cliente__integracao-dda">CNAB</p>
+    
+                                        <button class="botao__status___configuracao-ativa">Ativa</button>
+                                        <button type="button" class="menu-dots"></button>
+    
+                                    </li>
+
+                                </ul>
+
+                                <p class="paginacao__carrousel">Página 1 de 4</p>
+    
+                            </div>
+                        
+                        </section>
+                    </section>
+
+                    <div class="button--carrousel">
+                        <button class="carrousel__button carrousel__button--anterior" aria-label="Botão de Voltar">Anterior</button>
+                        <button class="carrousel__button carrousel__button--proximo" aria-label="Botão de Avançar">Próximo</button>
+                    </div>
+
+                    
+
+                </section>
+
 
         </main>
     
     <script src="./Componentes/tab.js" type="text/javascript"></script>
+    <script src="./Componentes/ConfiguraçõesServiço/tab-configuracao-cobranca.js" type="text/javascript"></script>
+    <script src="./Componentes/index.js" type="module"></script>
     </body>
     
 </html>
