@@ -643,7 +643,7 @@
     }
     .configuracoes-cobranca{
         width: 70vw;
-        height: 74.5rem;
+        height: 75.5rem;
 
         display: block;
 
@@ -700,7 +700,7 @@
         padding-bottom: 2.5rem;
         margin-bottom: 2.5rem;
 
-        width: 58.438rem;
+        width: 56.438rem;
         font-family: var(--mont-serrat);
 
         border-bottom: 1px solid #EEEEEE;
@@ -768,6 +768,8 @@
         flex-direction: row;
         align-items: center;
         gap: 1rem;
+
+        margin-bottom: 3rem;
     }
     .input__cobranca___configuracao-remessa{
         width: 24.25rem;
@@ -784,6 +786,16 @@
         color: #7A8594;
 
         background-color: transparent;
+    }
+    select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: url("../../Assets/seta__selection.png") no-repeat;
+        background-position-x: calc(100% - 1rem);
+        background-position-y: 1.3rem;
+        border: 1px solid #333;
+        padding-right: 20px;
     }
     .input__cobranca___configuracao-remessa:focus{
         outline: 1px solid var(--primary-support);
@@ -806,5 +818,238 @@
     }
     .input__periodicidade-remessa:focus, .input__horario-inicio-remessa:focus, .input__horario-fim-remessa:focus{
         outline: 1px solid var(--primary-support);
+    }
+    .primeira-secao__filtros-alteracao___configuracao-remessa{
+        margin-bottom: 3rem;
+    }
+    .container__input___horario-envio-alteracoes{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+    .input__horario-envio-alteracoes{
+        width: 10.125rem;
+        height: 3.063rem;
+
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+        
+        padding: .5rem 0 .5rem 1rem;
+        
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        color: #7A8594;
+
+        background-color: transparent;
+    }
+
+    .container__segunda-secao___filtros-alteracao{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+
+        padding-bottom: 4.484rem;
+        margin-bottom: 3rem;
+
+        border-bottom: 1px solid #EEEEEE;
+
+    }
+    .segunda-secao__filtros-alteracao___configuracao-remessa{
+        display: flex;
+        flex-direction: column;
+
+        width: 27.326rem;
+    }
+    .subtitulo__secao-configuracao___remessa{
+        margin-bottom: 1.625rem;
+
+        font-size: 16px;
+        font-weight: 700;
+        font-family: var(--mont-serrat);
+        color: var(--primary);
+    }
+    .container__input___titulos-prorrogados, .container__input___titulos-abatidos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: .5rem;
+
+        margin-bottom: 1.5rem;
+    }
+    .input__titulos-prorrogados, .input__titulos-abatidos{
+        width: 6.538rem;
+        height: 3.063rem;
+
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+        
+        padding: .5rem 0 .5rem 1rem;
+        
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        color: #7A8594;
+
+        background-color: transparent;
+    }
+    .input__titulo-remessa-maior{
+        width: 7.038rem;
+    }
+    .container__input___titulos-prorrogados-radio, .container__input___titulos-abatidos-radio{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .secao__inputs-radio{
+        display: flex;
+        flex-direction: column;
+        gap: 0.625rem;
+    }
+    .label__input-radio{
+        font-size: 12px;
+        font-weight: 500;
+        font-family: var(--mont-serrat);
+        color: var(--primary);
+    }
+    .container__input-radio{
+        display: flex;
+        flex-direction: row;
+    }
+    .input-radio__integracao, .input-radio__ambiente{
+        margin-right: .75rem;
+
+        width: 1.188rem;
+        height: 1.188rem;
+
+        color: var(--primary-support);
+        background-color: #1A8EF9;
+    }
+    .titulo__input-radio{
+        margin-right: 1rem;
+        font-family: var(--mont-serrat);
+        font-size: 14px;
+        font-weight: 500;
+        color: #7A8594;
+    }
+    
+    .secao__toogle___configuracao-remessa{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .toggle {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: var(--primary);
+        font-weight: 500;
+        margin-bottom: 1rem;
+        font-size: 12px;
+    }
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 2.355rem;
+        height: 0.846rem;
+        margin-right: .5rem;
+    }
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+        height: 0.846rem
+    }
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 1.389rem;
+        width: 1.329rem;
+        left: -0.063rem;
+        bottom: -0.18rem;
+        background-color: white;
+        -webkit-transition: .3s;
+        transition: .3s;
+        box-shadow: 0px 1.93251px 1.93251px rgba(0, 0, 0, 0.25);
+    }
+    input:checked+.slider {
+        background-color: var(--primary-support);
+    }
+    input:focus+.slider {
+        box-shadow: 0 0 1px var(--primary-support);
+    }
+    input:checked+.slider:before {
+        -webkit-transform: translateX(1.15rem);
+        -ms-transform: translateX(1.15rem);
+        transform: translateX(1.15rem);
+    }
+    .toggle-switch:checked+.input-botao {
+        background-color: var(--primary);
+    }
+    .slider.round {
+        border-radius: 2.125rem;
+    }
+    .slider.round:before {
+        border-radius: 50%;
+    }
+    .container__input-email___configuracao-remessa{
+        visibility: hidden;
+        opacity: 0;
+    }
+    .input-email__configuracao-remessa{
+        width: 56.438rem;
+        height: 3.063rem;
+
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+        
+        padding: .5rem 0 .5rem 1rem;
+        
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        color: #7A8594;
+
+        background-color: transparent;
+    }
+    .container__botao-adiciona__remessa{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .botao__adiciona-configuracao___remessa{
+        color: #FFFFFF;
+        
+        font-weight: 500;
+        font-size: 16px;
+        font-family: var(--mont-serrat);
+        
+        padding: 1rem 2rem 1rem 3.733rem;
+        margin-bottom: 3rem;
+        margin-top: 2.5rem;
+        
+        background: var(--primary-support);
+        background-image: url("../../Assets/botao__configurar___cobranca.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 9%;
+        
+        box-shadow: 0px 0px 7.73002px rgba(26, 142, 249, 0.25);
+        
+        border-radius: 64px;
+        border: none;
     }
 }

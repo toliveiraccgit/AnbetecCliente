@@ -321,7 +321,7 @@
                             </section>
                             
                             <div class="cabecalho__configuracao-servico">
-                                <button class="tablinks-configuracao-cobranca tab-remessa" id="defaultOpen-configuracao-cobranca" onclick="openTab(event, 'remessa')">Remessa</button>
+                                <button class="tablinks-configuracao-cobranca tab-remessa" id="defaultOpenCobranca" onclick="openTab(event, 'remessa')">Remessa</button>
                                 <button class="tablinks-configuracao-cobranca tab-retorno" onclick="openTab(event, 'retorno')">Retorno</button>
                                 <button class="tablinks-configuracao-cobranca tab-api" onclick="openTab(event, 'api')">APIs</button>
                             </div>
@@ -357,7 +357,129 @@
 
                                 </section>
 
+                                <h3 class="titulo__secao-configuracao___remessa">Filtros para Alteração</h3>
+                                
+                                <section class="primeira-secao__filtros-alteracao___configuracao-remessa">
+
+                                    <div class="container__input___horario-envio-alteracoes">
+                                        <label for="Horario-Envio-Alterações" class="label__input___configuracao-cobranca">Horário do envio de alterações de títulos:</label>
+                                        <input name="Horario-Envio-Alterações" type="time" placeholder="12:00" class="input__horario-envio-alteracoes"> 
+                                    </div>
+
+                                </section>
+
+                                <div class="container__segunda-secao___filtros-alteracao">
+                                    
+                                    <section class="segunda-secao__filtros-alteracao___configuracao-remessa">
+
+                                        <h4 class="subtitulo__secao-configuracao___remessa">Range para títulos prorrogados</h4>
+    
+                                        <div class="container__input___titulos-prorrogados">
+                                            
+                                            <label for="Retroagir-Dias" class="label__input___configuracao-cobranca">Retroagir Dias:</label>
+                                            <input name="Retroagir-Dias" type="text" placeholder="0 dias" class="input__titulos-prorrogados">
+    
+                                            <label for="Avançar-Dias" class="label__input___configuracao-cobranca">Avançar Dias:</label>
+                                            <input name="Avançar-Dias" type="text" placeholder="0 dias" class="input__titulos-prorrogados input__titulo-remessa-maior">
+                                        
+                                        </div>
+
+                                        <section class="container__input___titulos-prorrogados-radio">
+                                            
+                                            <div class="secao__inputs-radio">
+
+                                                <label for="Integração" class="label__input-radio">Integração:</label>
+                                                <div class="container__input-radio">
+                                                    <input type="radio" name="Integração" class="input-radio__integracao">
+                                                    <span class="titulo__input-radio">CNAB</span>
+                                                    <input type="radio" name="Integração" class="input-radio__integracao">
+                                                    <span class="titulo__input-radio">API</span>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="secao__inputs-radio">
+
+                                                <label for="Integração-Ativa" class="label__input-radio">Integração Ativa (CNAB e API):</label>
+                                                <div class="container__input-radio">
+                                                    <input type="radio" name="Integração-Ativa" class="input-radio__integracao">
+                                                    <span class="titulo__input-radio">Ativa</span>
+                                                    <input type="radio" name="Integração-Ativa" class="input-radio__integracao">
+                                                    <span class="titulo__input-radio">Não Ativa</span>
+                                                </div>
+
+                                            </div>
+                                        
+                                        </section>
+    
+                                    </section>
+
+                                    <img src="./Assets/seta-remessa-configuracao.png" alt="Seta Remessa Configuração" class="seta__remessa-configuracao">
+
+                                    <section class="segunda-secao__filtros-alteracao___configuracao-remessa">
+
+                                        <h4 class="subtitulo__secao-configuracao___remessa">Range para títulos abatidos</h4>
+    
+                                        <div class="container__input___titulos-abatidos">
+                                            
+                                            <label for="Retroagir-Dias" class="label__input___configuracao-cobranca">Retroagir Dias:</label>
+                                            <input name="Retroagir-Dias" type="text" placeholder="0 dias" class="input__titulos-abatidos">
+    
+                                            <label for="Avançar-Dias" class="label__input___configuracao-cobranca">Avançar Dias:</label>
+                                            <input name="Avançar-Dias" type="text" placeholder="0 dias" class="input__titulos-abatidos input__titulo-remessa-maior">
+                                        
+                                        </div>
+
+                                        <section class="container__input___titulos-abatidos-radio">
+                                            
+                                            <div class="secao__inputs-radio">
+
+                                                <label for="Ambiente-Api" class="label__input-radio">Ambiente (Api):</label>
+                                                <div class="container__input-radio">
+                                                    <input type="radio" name="Ambiente-Api" class="input-radio__ambiente">
+                                                    <span class="titulo__input-radio">Homologação</span>
+                                                    <input type="radio" name="Ambiente-Api" class="input-radio__ambiente">
+                                                    <span class="titulo__input-radio">Produção</span>
+                                                </div>
+
+                                            </div>
+
+                                        </section>
+    
+                                    </section>
+
+
+                                </div>
+
+                                <section class="secao__toogle___configuracao-remessa">
+
+                                    <div class="toggle">
+                                        <label class="switch">
+                                            <input type="checkbox" class="toggle-switch">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <span>Apenas títulos com Carga Fechada / Caixa Fechado</span>
+                                    </div>
+
+                                    <div class="toggle">
+                                        <label class="switch">
+                                            <input type="checkbox" class="toggle-switch" id="input-email-radio-remessa">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <span>Receber arquivos de remessa e retorno quando forem gerados</span>
+                                    </div>
+
+                                </section>
+
+                                <div class="container__input-email___configuracao-remessa" id="container-input-email-remessa">
+                                    <input type="email" class="input-email__configuracao-remessa" placeholder="E-mails para receber arquivos" multiple required>
+                                </div>
+
                             </section>
+
+                            <div class="container__botao-adiciona__remessa">
+                                <button type="button" class="botao__adiciona-configuracao___remessa">Adicionar Configuração de Cobrança</button>
+                            </div>
                         
                         </section>
                     
@@ -829,7 +951,7 @@
     
     <script src="./Componentes/tab.js" type="text/javascript"></script>
     <script src="./Componentes/ConfiguraçõesServiço/tab-configuracao-cobranca.js" type="text/javascript"></script>
-    <script src="./Componentes/index.js" type="module"></script>
+    <script src="./Componentes/moduleProcessamentos.js" type="module"></script>
     </body>
     
 </html>

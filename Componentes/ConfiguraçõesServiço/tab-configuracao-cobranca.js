@@ -1,4 +1,5 @@
 function openTab(event, nomeTab) {
+    document.querySelector("#defaultOpenCobranca").click()
     // Declare all variables
     var i, tabcontent, tablinks;
   
@@ -11,14 +12,14 @@ function openTab(event, nomeTab) {
     // Get all elements with class="tablinks" and remove the class "active"
     tablinks = document.getElementsByClassName("tablinks-configuracao-cobranca");
     for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace("active-configuracao-cobranca", "");
+      tablinks[i].className = tablinks[i].className.replace("active", " ");
     }
   
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(nomeTab).style.display = "block";
-    event.currentTarget.className += "active-configuracao-cobranca";
+    event.currentTarget.className += "active";
 
 
 }
-document.getElementById("defaultOpen-configuracao-cobranca").click()
+
   
