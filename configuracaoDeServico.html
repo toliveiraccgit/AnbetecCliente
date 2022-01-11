@@ -321,9 +321,9 @@
                             </section>
                             
                             <div class="cabecalho__configuracao-servico">
-                                <button class="tablinks-configuracao-cobranca tab-remessa" id="defaultOpenCobranca" onclick="openTab(event, 'remessa')">Remessa</button>
-                                <button class="tablinks-configuracao-cobranca tab-retorno" onclick="openTab(event, 'retorno')">Retorno</button>
-                                <button class="tablinks-configuracao-cobranca tab-api" onclick="openTab(event, 'api')">APIs</button>
+                                <button class="tablinks-configuracao-cobranca tab-remessa" id="defaultOpenCobranca" onclick="openTabCobrancaRemessa(event, 'remessa')">Remessa</button>
+                                <button class="tablinks-configuracao-cobranca tab-retorno" onclick="openTabCobrancaRemessa(event, 'retorno')">Retorno</button>
+                                <button class="tablinks-configuracao-cobranca tab-api" onclick="openTabCobrancaRemessa(event, 'api')">APIs</button>
                             </div>
 
                             <section class="secao__configuracao___remessa tabcontent-configuracao-cobranca" id="remessa">
@@ -473,6 +473,79 @@
 
                                 <div class="container__input-email___configuracao-remessa" id="container-input-email-remessa">
                                     <input type="email" class="input-email__configuracao-remessa" placeholder="E-mails para receber arquivos" multiple required>
+                                </div>
+
+                            </section>
+
+                            <section class="secao__configuracao___retorno tabcontent-configuracao-cobranca" id="retorno">
+
+                                <div class="container__input">
+                                    <label for="Moeda-Retorno" class="label__input___configuracao-cobranca">Moeda para baixa</label>
+                                    <select name="Moeda-Retorno" id="Moeda-Retorno" class="input__cobranca___configuracao-retorno" required>
+                                        <option class="option__filtro" value="0">Selecionar</option>
+                                        <option class="option__filtro" value="1">Real</option>
+                                        <option class="option__filtro" value="2">Euro</option>
+                                    </select>
+                                </div>
+
+
+                                <section class="container__input-toogle___retorno">
+
+                                    <div class="toggle toogle__low-opacity">
+                                        <label class="switch-retorno">
+                                            <input type="checkbox" class="toggle-switch " checked disabled >
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <span class="label__toogle-retorno">Permitir baixa de título pago a maior gerando a diferença como receita</span>
+                                    </div>
+
+                                    <div class="toggle toogle__low-opacity">
+                                        <label class="switch-retorno">
+                                            <input type="checkbox" class="toggle-switch" checked disabled >
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <span class="label__toogle-retorno">Gerar para o cliente crédito proveniente de título pagos a mais</span>
+                                    </div>
+
+                                    <div class="toggle toogle__low-opacity">
+                                        <label class="switch-retorno">
+                                            <input type="checkbox" class="toggle-switch" checked disabled >
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <span class="label__toogle-retorno">Permitir baixa de título Após o vencimento, Sem JUROS, ou com JUROS pagos a menor</span>
+                                    </div>
+
+                                    <div class="toggle">
+                                        <label class="switch-retorno">
+                                            <input type="checkbox" class="toggle-switch">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <span class="label__toogle-retorno">Desbloquear cliente após baixa caso não tenha mais títulos vencidos</span>
+                                    </div>
+
+                                    <div class="toggle">
+                                        <label class="switch-retorno">
+                                            <input type="checkbox" class="toggle-switch">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <span class="label__toogle-retorno">Bloquear clientes automaticamente caso tenham títulos vencidos</span>
+                                    </div>
+
+                                    <div class="toggle">
+                                        <label class="switch-retorno">
+                                            <input type="checkbox" class="toggle-switch">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <span class="label__toogle-retorno">Realizar a baixa de retorno automáticamente</span>
+                                    </div>
+                                
+                                </section>
+
+                                <div class="container__accordion-contas-vinculadas">
+                                    <button class="accordion">Contas Vinculadas</button>
+                                    <div class="panel">
+                                        <p>Lorem ipsum...</p>
+                                    </div>
                                 </div>
 
                             </section>
@@ -952,6 +1025,7 @@
     <script src="./Componentes/tab.js" type="text/javascript"></script>
     <script src="./Componentes/ConfiguraçõesServiço/tab-configuracao-cobranca.js" type="text/javascript"></script>
     <script src="./Componentes/moduleProcessamentos.js" type="module"></script>
+    <script src="./Componentes/ConfiguraçõesServiço/accordion-retorno.js" type="text/javascript"></script>
     </body>
     
 </html>

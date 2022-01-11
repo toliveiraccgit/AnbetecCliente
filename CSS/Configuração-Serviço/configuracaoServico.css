@@ -750,7 +750,9 @@
     .active-configuracao-cobranca{
         opacity: 1;
     }
-    .secao__configuracao___remess{
+
+    /*-----------------SECAO-CONFIGURACAO-COBRANCA-REMESSA--------------------*/
+    .secao__configuracao___remessa{
         display: flex;
         flex-direction: column;
 
@@ -816,7 +818,7 @@
 
         background-color: transparent;
     }
-    .input__periodicidade-remessa:focus, .input__horario-inicio-remessa:focus, .input__horario-fim-remessa:focus{
+    .input__periodicidade-remessa:focus, .input__horario-inicio-remessa:focus, .input__horario-fim-remessa:focus, .input__cobranca___configuracao-retorno:focus{
         outline: 1px solid var(--primary-support);
     }
     .primeira-secao__filtros-alteracao___configuracao-remessa{
@@ -987,7 +989,7 @@
         box-shadow: 0px 1.93251px 1.93251px rgba(0, 0, 0, 0.25);
     }
     input:checked+.slider {
-        background-color: var(--primary-support);
+        background-color: #DDEBF9;
     }
     input:focus+.slider {
         box-shadow: 0 0 1px var(--primary-support);
@@ -996,6 +998,7 @@
         -webkit-transform: translateX(1.15rem);
         -ms-transform: translateX(1.15rem);
         transform: translateX(1.15rem);
+        background-color: var(--primary-support);
     }
     .toggle-switch:checked+.input-botao {
         background-color: var(--primary);
@@ -1052,4 +1055,97 @@
         border-radius: 64px;
         border: none;
     }
+    /*-----------------SECAO-CONFIGURACAO-COBRANCA-RETORNO--------------------*/
+    .secao__configuracao___retorno{
+        display: flex;
+        flex-direction: column;
+    }
+    .input__cobranca___configuracao-retorno{
+        width: 56.438rem;
+        height: 3.063rem;
+
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+        
+        padding: .5rem 0 .5rem 1rem;
+        
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        color: #7A8594;
+
+        background-color: transparent;
+    }
+    .container__input-toogle___retorno{
+        margin-top: 1.5rem;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        width: 56.438rem;
+        height: 8.079rem;
+    }
+    .label__toogle-retorno{
+        width: 23.719rem;
+
+        font-size: 12px;
+    }
+    .switch-retorno{
+        position: relative;
+        display: inline-block;
+        width: 2.355rem;
+        height: 0.846rem;
+        margin-right: .5rem;
+    }
+    .switch-retorno input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .toogle__low-opacity{
+        opacity: 0.5;
+    }
+    
+    .container__accordion-contas-vinculadas{
+        width: 56.438rem;
+
+
+        background-color: #FDFDFD;
+        border: 1px solid #E6E6E6;
+        border-radius: 16px;
+    }
+    /* Style the buttons that are used to open and close the accordion panel */
+    .accordion {
+        width: 56.438rem;
+        padding: 1.5rem;
+        
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        font-weight: 600;
+        
+        color: var(--primary);
+
+        background-color: transparent;
+        border: none;
+        
+        outline: none;
+        text-align: left;
+        transition: 0.4s;
+    }
+    
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over i
+    
+    /* Style the accordion panel. Note: hidden by default */
+    .panel {
+        padding-left: 1.5rem;
+      background-color: white;
+      display: none;
+      overflow: hidden;
+
+      transition: max-height 0.2s ease-out;
+    } 
+
+
+
 }
