@@ -6,6 +6,7 @@ for (i = 0; i < acc.length; i++) {
     /* Toggle between adding and removing the "active" class,
     to highlight the button that controls the panel */
     this.classList.toggle("active-accordion");
+    this.classList.toggle("ativa-accordion")
 
     /* Toggle between hiding and showing the active panel */
     var panel = this.nextElementSibling;

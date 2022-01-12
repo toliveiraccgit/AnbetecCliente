@@ -451,30 +451,6 @@
 
                                 </div>
 
-                                <section class="secao__toogle___configuracao-remessa">
-
-                                    <div class="toggle">
-                                        <label class="switch">
-                                            <input type="checkbox" class="toggle-switch">
-                                            <span class="slider round"></span>
-                                        </label>
-                                        <span>Apenas títulos com Carga Fechada / Caixa Fechado</span>
-                                    </div>
-
-                                    <div class="toggle">
-                                        <label class="switch">
-                                            <input type="checkbox" class="toggle-switch" id="input-email-radio-remessa">
-                                            <span class="slider round"></span>
-                                        </label>
-                                        <span>Receber arquivos de remessa e retorno quando forem gerados</span>
-                                    </div>
-
-                                </section>
-
-                                <div class="container__input-email___configuracao-remessa" id="container-input-email-remessa">
-                                    <input type="email" class="input-email__configuracao-remessa" placeholder="E-mails para receber arquivos" multiple required>
-                                </div>
-
                             </section>
 
                             <section class="secao__configuracao___retorno tabcontent-configuracao-cobranca" id="retorno">
@@ -533,7 +509,7 @@
 
                                     <div class="toggle">
                                         <label class="switch-retorno">
-                                            <input type="checkbox" class="toggle-switch">
+                                            <input type="checkbox" class="toggle-switch"  id="input-abre-email-retorno">
                                             <span class="slider round"></span>
                                         </label>
                                         <span class="label__toogle-retorno">Realizar a baixa de retorno automáticamente</span>
@@ -541,14 +517,216 @@
                                 
                                 </section>
 
-                                <div class="container__accordion-contas-vinculadas">
+                                <div class="container__input-email___configuracao-retorno" id="container-input-email-retorno">
+                                    <input type="email" class="input-email__configuracao-retorno" placeholder="Inserir e-mail para o recebimento do relatório de baixa" required>
+                                </div>
+
+                                <section class="container__accordion-contas-vinculadas">
                                     <button class="accordion">Contas Vinculadas</button>
+                                      
                                     <div class="panel">
-                                        <p>Lorem ipsum...</p>
+                                        
+                                        <div class="container__input-panel___vincular">
+                                            <div class="container__input">
+                                                <label for="Agência" class="label__input___configuracao-cobranca">Agência</label>
+                                                <input type="number"name="Agência" class="input__agencia-panel___vincular" placeholder="Ex: 0123">
+                                            </div>
+
+                                            <div class="container__input">
+                                                <label for="Conta" class="label__input___configuracao-cobranca">Conta</label>
+                                                <input type="number" name="Conta" class="input__conta-panel___vincular" placeholder="Ex: 00012345-6">
+                                            </div>
+                                            
+                                            <button class="botao__vincular-conta" id="botao-vincula-conta-retorno">Vincular Conta</button>
+
+                                        </div>
+
+                                        <section class="secao__contas-vinculadas" id="secao-contas-vinculadas">
+
+                                            <section class="info__contas-vinculadas">
+
+                                                <p class="info__agencia-retorno">Agência</p>
+                                                <p class="info__conta-retorno">Conta</p>
+
+                                            </section>
+
+                                            <ul class="lista__contas-vinculadas">
+
+                                                <li class="item__lista___conta-vinculadas">
+
+                                                    <p class="item__agencia-vinculada">0123</p>
+                                                        
+                                                    <p class="item__conta-vinculada">00012345-6</p>
+
+                                                    <button type="button" class="menu-dots"></button>
+
+                                                </li>
+
+                                            </ul>
+
+                                        </section>
+
                                     </div>
+                                
+                                </section>
+
+                            </section>
+
+                            <section class="secao__configuracao___api tabcontent-configuracao-cobranca" id="api">
+
+                                <div class="cabecalho__configuracao-servico">
+                                    <button class="tablinks-configuracao-cobranca-api tab-remessa" id="defaultOpenCobranca-api" onclick="openTabCobrancaApi(event, 'bradesco')">BRADESCO</button>
+                                    <button class="tablinks-configuracao-cobranca-api tab-retorno" onclick="openTabCobrancaApi(event, 'itau')">ITAU</button>
+                                    <button class="tablinks-configuracao-cobranca-api tab-api" onclick="openTabCobrancaApi(event, 'safra')">SAFRA</button>
+                                    <button class="tablinks-configuracao-cobranca-api tab-api" onclick="openTabCobrancaApi(event, 'banco-brasil')">BANCO DO BRASIL</button>
+                                    <button class="tablinks-configuracao-cobranca-api tab-api" onclick="openTabCobrancaApi(event, 'santander')">SANTANDER</button>
+                                </div>
+
+                                <section class="secao__inputs-api tabcontent-configuracao-cobranca-api" style="display: flex;" id="bradesco">
+
+                                    <div class="container__input">
+                                        <label for="Basic" class="label__input___configuracao-cobranca">Basic</label>
+                                        <input type="text" name="Basic" class="input__secao-api" placeholder="(Authorization)">
+                                    </div>
+                                    
+                                    <div class="container__input">
+                                        <label for="ClientID" class="label__input___configuracao-cobranca">ClientID</label>
+                                        <input type="number" name="ClientID" class="input__secao-api" placeholder="Ex: 1584">
+                                    </div>
+
+                                    <div class="container__input">
+                                        <label for="ClientSecret" class="label__input___configuracao-cobranca">ClientSecret</label>
+                                        <input type="text" name="ClientSecret" class="input__secao-api">
+                                    </div>
+
+                                    <div class="container__input">
+                                        <label for="gw-dev-app-key" class="label__input___configuracao-cobranca">gw-dev-app-key</label>
+                                        <input type="text" class="input__secao-api" name="gw-dev-app-key">
+                                    </div>
+
+                                </section>
+
+                                <section class="secao__inputs-api tabcontent-configuracao-cobranca-api" style="display: flex;" id="itau">
+
+                                    <div class="container__input">
+                                        <label for="Basic" class="label__input___configuracao-cobranca">Basic</label>
+                                        <input type="text" name="Basic" class="input__secao-api" placeholder="(Authorization)">
+                                    </div>
+                                    
+                                    <div class="container__input">
+                                        <label for="ClientID" class="label__input___configuracao-cobranca">ClientID</label>
+                                        <input type="number" name="ClientID" class="input__secao-api" placeholder="Ex: 1584">
+                                    </div>
+
+                                    <div class="container__input">
+                                        <label for="ClientSecret" class="label__input___configuracao-cobranca">ClientSecret</label>
+                                        <input type="text" name="ClientSecret" class="input__secao-api">
+                                    </div>
+
+                                    <div class="container__input">
+                                        <label for="gw-dev-app-key" class="label__input___configuracao-cobranca">gw-dev-app-key</label>
+                                        <input type="text" class="input__secao-api" name="gw-dev-app-key">
+                                    </div>
+
+                                </section>
+
+                                <section class="secao__inputs-api tabcontent-configuracao-cobranca-api" style="display: flex;" id="safra">
+
+                                    <div class="container__input">
+                                        <label for="Basic" class="label__input___configuracao-cobranca">Basic</label>
+                                        <input type="text" name="Basic" class="input__secao-api" placeholder="(Authorization)">
+                                    </div>
+                                    
+                                    <div class="container__input">
+                                        <label for="ClientID" class="label__input___configuracao-cobranca">ClientID</label>
+                                        <input type="number" name="ClientID" class="input__secao-api" placeholder="Ex: 1584">
+                                    </div>
+
+                                    <div class="container__input">
+                                        <label for="ClientSecret" class="label__input___configuracao-cobranca">ClientSecret</label>
+                                        <input type="text" name="ClientSecret" class="input__secao-api">
+                                    </div>
+
+                                    <div class="container__input">
+                                        <label for="gw-dev-app-key" class="label__input___configuracao-cobranca">gw-dev-app-key</label>
+                                        <input type="text" class="input__secao-api" name="gw-dev-app-key">
+                                    </div>
+
+                                </section>
+
+                                <section class="secao__inputs-api tabcontent-configuracao-cobranca-api" style="display: flex;" id="banco-brasil">
+
+                                    <div class="container__input">
+                                        <label for="Basic" class="label__input___configuracao-cobranca">Basic</label>
+                                        <input type="text" name="Basic" class="input__secao-api" placeholder="(Authorization)">
+                                    </div>
+                                    
+                                    <div class="container__input">
+                                        <label for="ClientID" class="label__input___configuracao-cobranca">ClientID</label>
+                                        <input type="number" name="ClientID" class="input__secao-api" placeholder="Ex: 1584">
+                                    </div>
+
+                                    <div class="container__input">
+                                        <label for="ClientSecret" class="label__input___configuracao-cobranca">ClientSecret</label>
+                                        <input type="text" name="ClientSecret" class="input__secao-api">
+                                    </div>
+
+                                    <div class="container__input">
+                                        <label for="gw-dev-app-key" class="label__input___configuracao-cobranca">gw-dev-app-key</label>
+                                        <input type="text" class="input__secao-api" name="gw-dev-app-key">
+                                    </div>
+
+                                </section>
+
+                                <section class="secao__inputs-api tabcontent-configuracao-cobranca-api" style="display: flex;" id="santander">
+
+                                    <div class="container__input">
+                                        <label for="Basic" class="label__input___configuracao-cobranca">Basic</label>
+                                        <input type="text" name="Basic" class="input__secao-api" placeholder="(Authorization)">
+                                    </div>
+                                    
+                                    <div class="container__input">
+                                        <label for="ClientID" class="label__input___configuracao-cobranca">ClientID</label>
+                                        <input type="number" name="ClientID" class="input__secao-api" placeholder="Ex: 1584">
+                                    </div>
+
+                                    <div class="container__input">
+                                        <label for="ClientSecret" class="label__input___configuracao-cobranca">ClientSecret</label>
+                                        <input type="text" name="ClientSecret" class="input__secao-api">
+                                    </div>
+
+                                    <div class="container__input">
+                                        <label for="gw-dev-app-key" class="label__input___configuracao-cobranca">gw-dev-app-key</label>
+                                        <input type="text" class="input__secao-api" name="gw-dev-app-key">
+                                    </div>
+
+                                </section>
+
+                            </section>
+
+                            <section class="secao__toogle___configuracao-remessa">
+
+                                <div class="toggle">
+                                    <label class="switch">
+                                        <input type="checkbox" class="toggle-switch">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span>Apenas títulos com Carga Fechada / Caixa Fechado</span>
+                                </div>
+
+                                <div class="toggle">
+                                    <label class="switch">
+                                        <input type="checkbox" class="toggle-switch" id="input-email-radio-remessa">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span>Receber arquivos de remessa e retorno quando forem gerados</span>
                                 </div>
 
                             </section>
+
+                            <div class="container__input-email___configuracao-remessa" id="container-input-email-remessa">
+                                <input type="email" class="input-email__configuracao-remessa" placeholder="E-mails para receber arquivos" multiple required>
+                            </div>
 
                             <div class="container__botao-adiciona__remessa">
                                 <button type="button" class="botao__adiciona-configuracao___remessa">Adicionar Configuração de Cobrança</button>
@@ -1026,6 +1204,7 @@
     <script src="./Componentes/ConfiguraçõesServiço/tab-configuracao-cobranca.js" type="text/javascript"></script>
     <script src="./Componentes/moduleProcessamentos.js" type="module"></script>
     <script src="./Componentes/ConfiguraçõesServiço/accordion-retorno.js" type="text/javascript"></script>
+    <script src="./Componentes/ConfiguraçõesServiço/tab-configuracao-api.js" type="text/javascript"></script>
     </body>
     
 </html>

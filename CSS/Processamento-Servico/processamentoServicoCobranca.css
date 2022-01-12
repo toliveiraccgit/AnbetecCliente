@@ -61,7 +61,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         
         height: 6.938rem;
         width: 100vw;

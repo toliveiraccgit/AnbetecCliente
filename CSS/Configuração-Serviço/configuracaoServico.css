@@ -7,7 +7,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         
         height: 6.938rem;
         width: 100vw;
@@ -30,7 +30,7 @@
     .barra-pesquisa{
         font-family: var(--mont-serrat);
         font-size: 14px;
-        width: 39.813rem;
+        width: 42vw;
         height: 3.25rem;
 
         border: none;
@@ -42,8 +42,6 @@
         background-position: 2.063rem, .5rem;
 
         padding: 1rem 0 1rem 3.5rem;
-        margin-left: 3.724rem;
-        margin-right: 12.103rem;
     }
     .barra-pesquisa:focus{
         outline: 2px solid var(--primary-support);
@@ -198,8 +196,8 @@
         border:none;
 
         position: absolute;
-        left: 77.5%;
-        top: 24%;
+        left: calc(100% - 20rem);
+        top: 12.5rem;
     }
     .secao__cobranca___configuracao{
         background-color: #FFFFFF;
@@ -818,7 +816,7 @@
 
         background-color: transparent;
     }
-    .input__periodicidade-remessa:focus, .input__horario-inicio-remessa:focus, .input__horario-fim-remessa:focus, .input__cobranca___configuracao-retorno:focus{
+    .input__periodicidade-remessa:focus, .input__horario-inicio-remessa:focus, .input__horario-fim-remessa:focus, .input__cobranca___configuracao-retorno:focus, .input__conta-panel___vincular:focus, .input__agencia-panel___vincular:focus, .input-email__configuracao-retorno:focus{
         outline: 1px solid var(--primary-support);
     }
     .primeira-secao__filtros-alteracao___configuracao-remessa{
@@ -852,12 +850,6 @@
         flex-direction: row;
         align-items: center;
         gap: 1.5rem;
-
-        padding-bottom: 4.484rem;
-        margin-bottom: 3rem;
-
-        border-bottom: 1px solid #EEEEEE;
-
     }
     .segunda-secao__filtros-alteracao___configuracao-remessa{
         display: flex;
@@ -942,6 +934,12 @@
         display: flex;
         flex-direction: row;
         gap: 2rem;
+
+        padding-top: 3rem;
+
+        margin-top: 4.484rem;
+
+        border-top: 1px solid #EEEEEE;
     }
     .toggle {
         display: flex;
@@ -1084,7 +1082,7 @@
         flex-wrap: wrap;
 
         width: 56.438rem;
-        height: 8.079rem;
+        height: 7.4rem;
     }
     .label__toogle-retorno{
         width: 23.719rem;
@@ -1106,6 +1104,29 @@
     .toogle__low-opacity{
         opacity: 0.5;
     }
+    .container__input-email___configuracao-retorno{
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+        
+        justify-content: flex-end;
+    }
+    .input-email__configuracao-retorno{
+        width: 27.719rem;
+        height: 3.063rem;
+
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+        
+        padding:1rem;
+        
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        color: #7A8594;
+
+        background-color: transparent;
+    }
     
     .container__accordion-contas-vinculadas{
         width: 56.438rem;
@@ -1114,6 +1135,8 @@
         background-color: #FDFDFD;
         border: 1px solid #E6E6E6;
         border-radius: 16px;
+
+        margin-top: 1.5rem;
     }
     /* Style the buttons that are used to open and close the accordion panel */
     .accordion {
@@ -1127,11 +1150,19 @@
         color: var(--primary);
 
         background-color: transparent;
+        background: url("../../Assets/seta-botao-acordion.png") no-repeat;
+        background-position-x: calc(100% - 1.5rem);
+        background-position-y: center;
+        background-size: 0.813rem 0.375rem ;
         border: none;
         
         outline: none;
         text-align: left;
         transition: 0.4s;
+    }
+    .ativa-accordion{
+        background-image: url("../../Assets/seta-botao-accordion-rotacionada.png");
+        background-repeat: no-repeat;
     }
     
     /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over i
@@ -1139,13 +1170,170 @@
     /* Style the accordion panel. Note: hidden by default */
     .panel {
         padding-left: 1.5rem;
-      background-color: white;
-      display: none;
-      overflow: hidden;
+        background-color: #FDFDFD;
+        display: none;
+        overflow: hidden;
+    }
+    .container__input-panel___vincular{
+        display: flex;
+        flex-direction: row;
+        align-items: center;        
+        gap: 1rem;
 
-      transition: max-height 0.2s ease-out;
-    } 
+        margin-bottom: 1.5rem;
+    }
+    .input__agencia-panel___vincular, .input__conta-panel___vincular{
+        width: 19.531rem;
 
+        border: 1px solid #ECECEC;
+        border-radius: 8px;
+        
+        padding: 1rem;
+        
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        color: #7A8594;
 
+        background-color: transparent;
+    }
+    .botao__vincular-conta{
+        color: #FFFFFF;
+        
+        font-weight: 500;
+        font-size: 16px;
+        font-family: var(--mont-serrat);
+        
+        padding: 1rem 1.5rem;
 
+        margin-left: 1.75rem;
+        
+        background: var(--primary-support);
+        
+        box-shadow: 0px 0px 7.73002px rgba(26, 142, 249, 0.25);
+        
+        border-radius: 64px;
+        border: none;
+    }
+    input[type=number]::-webkit-inner-spin-button { 
+        -webkit-appearance: none;
+        
+    }
+    input[type=number] { 
+       -moz-appearance: textfield;
+       appearance: textfield;
+    
+    }
+
+    .secao__contas-vinculadas{
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+
+        width: 40.188rem;
+
+        margin-bottom: 2rem;
+    }
+    .info__contas-vinculadas{
+        display: flex;
+        flex-direction: row;
+        
+        font-size: 12px;
+        font-weight: 500;
+        font-family: var(--mont-serrat);
+
+        color: var(--primary);
+
+        border-bottom: 1px solid #ECECEC;
+
+        padding-bottom: 1rem;
+    }
+    .info__agencia-retorno{
+        width: 16.938rem;
+        margin: 0%;
+
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 4.3rem;
+
+        padding-left: .5rem;
+    }
+    .info__conta-retorno{
+        width: 23.25rem;
+        margin: 0%;
+
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.5rem;
+
+        padding-left: .5rem;
+    }
+    .lista__contas-vinculadas{
+        display: flex;
+        flex-direction: column;
+    }
+    .item__lista___conta-vinculadas{
+        display: flex;
+        flex-direction: row;
+
+        font-size: 14px;
+        font-weight: 500;
+        font-family: var(--mont-serrat);
+
+        color: #7A8594;
+    }
+    .item__agencia-vinculada{
+        width: 16.938rem;
+        margin: 0%;
+
+        padding-left: .5rem;
+    }
+    .item__conta-vinculada{
+        width: 21.063rem;
+        margin: 0%;
+
+        padding-left: .5rem;
+    }
+    /*-----------------SECAO-CONFIGURACAO-COBRANCA-RETORNO--------------------*/
+    .tablinks-configuracao-cobranca-api{
+        border: none;
+        background-color: transparent;
+        color: var(--primary);
+        font-family: var(--mont-serrat);
+        padding: 0%;
+
+        font-size: 14px;
+        font-weight: 700;
+        opacity: 0.2;
+    }
+    .secao__configuracao___api{
+        display: flex;
+        flex-direction: column;
+    }
+    .secao__inputs-api{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        width: 58.438rem;
+        height: 10.5rem;
+    }
+    .input__secao-api{
+        width: 27.719rem;
+
+        border: 1px solid #ECECEC;
+        border-radius: 8px;
+        
+        padding: 1rem;
+        
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        color: #7A8594;
+
+        background-color: transparent;
+    }
 }
