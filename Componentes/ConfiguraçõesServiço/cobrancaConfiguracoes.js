@@ -40,6 +40,37 @@ export class ConfiguraçãoCobranca {
         this.botaoConfiguracoesPagamento.addEventListener('click', this.abrirConfiguracaoPagamento.bind(this))
         
         this.botaoFechaConfiguracaoPagamento.addEventListener('click', this.fechaConfiguracaoPagamento.bind(this))
+
+
+        /*--------------------------EXTRATO------------------------------*/
+
+        this.botaoConfiguracoesExtrato = document.querySelector('#botao__configura-extrato')
+        this.secaoConfiguracaoExtrato = document.querySelector('#configuracoes-extrato')
+        this.botaoFechaConfiguracaoExtrato = document.querySelector('#botao__fecha___configuracoes-extrato')
+
+        this.botaoAbriEmailExtrato = document.querySelector('#input-email-radio-extrato')
+        this.containerEmailExtrato = document.querySelector('#container-input-email-extrato')
+
+        this.botaoAbriEmailExtrato.addEventListener('click', this.abrirEmailExtrato.bind(this))
+        
+        this.botaoConfiguracoesExtrato.addEventListener('click', this.abrirConfiguracaoExtrato.bind(this))
+        
+        this.botaoFechaConfiguracaoExtrato.addEventListener('click', this.fechaConfiguracaoExtrato.bind(this))
+
+        /*--------------------------DDA------------------------------*/
+
+        this.botaoConfiguracoesDDA = document.querySelector('#botao__configura-dda')
+        this.secaoConfiguracaoDDA = document.querySelector('#configuracoes-dda')
+        this.botaoFechaConfiguracaoDDA = document.querySelector('#botao__fecha___configuracoes-dda')
+
+        this.botaoAbriEmailDDA = document.querySelector('#input-email-radio-dda')
+        this.containerEmailDDA = document.querySelector('#container-input-email-dda')
+
+        this.botaoAbriEmailDDA.addEventListener('click', this.abrirEmailDDA.bind(this))
+        
+        this.botaoConfiguracoesDDA.addEventListener('click', this.abrirConfiguracaoDDA.bind(this))
+        
+        this.botaoFechaConfiguracaoDDA.addEventListener('click', this.fechaConfiguracaoDDA.bind(this))
     }
     /*---------------------------COBRANCA------------------------------*/
     abrirConfiguracaoCobranca(){ 
@@ -92,7 +123,7 @@ export class ConfiguraçãoCobranca {
         secaoContasVinculadas.style.display = ` flex `
     }
 
-    /*---------------------------COBRANCA------------------------------*/
+    /*---------------------------PAGAMENTO------------------------------*/
     abrirConfiguracaoPagamento(){ 
         const configuracaoPagamento = this.secaoConfiguracaoPagamento
         configuracaoPagamento.style.display = ` block `
@@ -117,6 +148,70 @@ export class ConfiguraçãoCobranca {
         }else{
             containerEmailPagamento.style.visibility = ` hidden `
             containerEmailPagamento.style.opacity = ` 0 `
+        }
+         
+
+    }
+
+
+    /*---------------------------EXTRATO------------------------------*/
+    abrirConfiguracaoExtrato(){ 
+        const configuracaoExtrato = this.secaoConfiguracaoExtrato
+        configuracaoExtrato.style.display = ` block `
+        configuracaoExtrato.style.visibility = `visible`
+        configuracaoExtrato.style.opacity = ` 1 ` 
+    }
+    fechaConfiguracaoExtrato(){ 
+        const configuracaoExtrato = this.secaoConfiguracaoExtrato
+        configuracaoExtrato.style.display = ` none `
+        configuracaoExtrato.style.visibility = `hidden`
+        configuracaoExtrato.style.opacity = ` 0 ` 
+    }
+
+    abrirEmailExtrato(){
+        const containerEmailExtrato = this.containerEmailExtrato
+        const botaoAbriEmailExtrato = this.botaoAbriEmailExtrato
+
+        
+        if(botaoAbriEmailExtrato.checked == true ){
+            containerEmailExtrato.style.visibility = ` visible `
+            containerEmailExtrato.style.opacity = ` 1 `
+        }else{
+            containerEmailExtrato.style.visibility = ` hidden `
+            containerEmailExtrato.style.opacity = ` 0 `
+        }
+         
+
+    }
+
+
+    /*---------------------------DDA------------------------------*/
+    abrirConfiguracaoDDA(){ 
+        const configuracaoDDA = this.secaoConfiguracaoDDA
+        configuracaoDDA.style.display = ` block `
+        configuracaoDDA.style.visibility = `visible`
+        configuracaoDDA.style.opacity = ` 1 ` 
+    }
+    fechaConfiguracaoDDA(){ 
+        const configuracaoDDA = this.secaoConfiguracaoDDA
+        configuracaoDDA.style.display = ` none `
+        configuracaoDDA.style.visibility = `hidden`
+        configuracaoDDA.style.opacity = ` 0 ` 
+    }
+
+    abrirEmailDDA(){
+        const containerEmailDDA = this.containerEmailDDA
+        const botaoAbriEmailDDA = this.botaoAbriEmailDDA
+
+        
+        if(botaoAbriEmailDDA.checked == true ){
+            containerEmailDDA.style.visibility = ` visible `
+            containerEmailDDA.style.opacity = ` 1 `
+            containerEmailDDA.style.display = ` block `
+        }else{
+            containerEmailDDA.style.visibility = ` hidden `
+            containerEmailDDA.style.opacity = ` 0 `
+            containerEmailDDA.style.display = ` none `
         }
          
 

@@ -9,6 +9,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./CSS/Configuração-Serviço/configuracaoServico.css">
         <link rel="stylesheet" href="./CSS/Configuração-Serviço/configuracaoServicoPagamento.css">
+        <link rel="stylesheet" href="./CSS/Configuração-Serviço/configuracaoServicoExtrato.css">
+        <link rel="stylesheet" href="./CSS/Configuração-Serviço/configuracaoServicoDDA.css">
         <link href="./CSS/base.css" rel="stylesheet">
         <link href="./CSS/reset.css" rel="stylesheet">
         <link href="./CSS/normalize.css" rel="stylesheet">
@@ -859,7 +861,7 @@
                         <section class="configuracoes-pagamento">
                             
                             <div class="cabecalho__configuracao-pagamento">
-                                <h1 class="titulo__cabecalho__configuracao-pagamento">Incluir Configuração de Cobrança</h1>
+                                <h1 class="titulo__cabecalho__configuracao-pagamento">Incluir Configuração de Pagamento</h1>
                                 <button class="fecha__configuracoes-pagamento" id="botao__fecha___configuracoes-pagamento"></button>
                             </div>
 
@@ -1011,7 +1013,7 @@
                             </div>
 
                             <div class="container__botao-adiciona__pagamento">
-                                <button type="button" class="botao__adiciona-configuracao___pagamento">Adicionar Configuração de Cobrança</button>
+                                <button type="button" class="botao__adiciona-configuracao___pagamento">Adicionar Configuração de Pagamento</button>
                             </div>
                         
                         </section>
@@ -1140,6 +1142,123 @@
                         <button class="carrousel__button carrousel__button--anterior" aria-label="Botão de Voltar">Anterior</button>
                         <button class="carrousel__button carrousel__button--proximo" aria-label="Botão de Avançar">Próximo</button>
                     </div>
+
+                    <div class="container__secao___configuracao-extrato" id="configuracoes-extrato">
+                        
+                        <section class="configuracoes-extrato">
+                            
+                            <div class="cabecalho__configuracao-extrato">
+                                <h1 class="titulo__cabecalho__configuracao-extrato">Incluir Configuração de Extrato</h1>
+                                <button class="fecha__configuracoes-extrato" id="botao__fecha___configuracoes-extrato"></button>
+                            </div>
+
+                            <section class="container__input-configuracao">
+
+                                <div class="container__input">
+                                    <label for="Filial" class="label__input___configuracao-extrato">Filial</label>
+                                    <select name="Filial" id="Filial" class="input__extrato" required>
+                                        <option  class="option__filtro" value="0">(Selecione)</option>
+                                        <option class="option__filtro" value="1">99 - TODAS FILIAIS</option>
+                                    </select>
+                                </div>
+                        
+                                <div class="container__input">
+                                    <label for="Banco" class="label__input___configuracao-extrato" >Banco</label>
+                                    <select name="Banco" id="Banco" class="input__extrato" required>
+                                        <option  class="option__filtro" value="0">(Selecione)</option>
+                                        <option class="option__filtro" value="1">5006 - 5006-1-BCO BRASIL COB 88...</option>
+                                    </select>
+                                </div>
+
+                            </section>
+
+                            <div class="container__secao___filtros-extrato">
+                                    
+                                <section class="secao__filtros___configuracao-extrato">
+
+                                    <section class="secao__inputs-extrato">
+
+                                        <div class="container__input">
+                                            <label for="Moeda-Retorno" class="label__input___configuracao-extrato">Moeda</label>
+                                            <select name="Moeda-Retorno" id="Moeda-Retorno" class="input__extrato___configuracao-moeda" required>
+                                                <option class="option__filtro" value="0">Selecionar</option>
+                                                <option class="option__filtro" value="1">Real</option>
+                                                <option class="option__filtro" value="2">Euro</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="container__input___extrato">
+                                        
+                                            <div class="container__input">
+                                                <label for="Hora-Inicio-Envio" class="label__input___configuracao-extrato">Hora ínicio do retorno</label>
+                                                <input name="Hora-Inicio-Envio" type="time" placeholder="08:00" class="input__extrato-hora">
+                                            </div>
+                                            
+                                            <div class="container__input">
+                                                <label for="Hora-Fim-Envio" class="label__input___configuracao-extrato">Hora fim do retorno</label>
+                                                <input name="Hora-Fim-Envio" type="time" placeholder="20:00" class="input__extrato-hora input__titulo-remessa-maior">
+                                            </div>
+                                        
+                                        </div>
+    
+                                    </section>
+
+
+                                    <section class="container__input___radio">
+                                        
+                                        <div class="secao__inputs-radio">
+
+                                            <label for="Integração" class="label__input-radio">Integração (CNAB e API):</label>
+                                            <div class="container__input-radio">
+                                                <input type="radio" name="Integração" class="input-radio__integracao">
+                                                <span class="titulo__input-radio">Ativa</span>
+                                                <input type="radio" name="Integração" class="input-radio__integracao">
+                                                <span class="titulo__input-radio">Não Ativa</span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="secao__inputs-radio">
+
+                                            <label for="Ambiente-Api" class="label__input-radio">Ambiente (Api):</label>
+                                            <div class="container__input-radio">
+                                                <input type="radio" name="Ambiente-Api" class="input-radio__ambiente">
+                                                <span class="titulo__input-radio">Homologação</span>
+                                                <input type="radio" name="Ambiente-Api" class="input-radio__ambiente">
+                                                <span class="titulo__input-radio">Produção</span>
+                                            </div>
+                                        </div>
+                                    
+                                    </section>
+
+                                </section>
+
+                            </div>
+
+                            <section class="secao__toogle___configuracao-extrato">
+
+                                <div class="toggle">
+                                    <label class="switch">
+                                        <input type="checkbox" class="toggle-switch" id="input-email-radio-extrato">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span>Receber, ao gerar, arquivos de remessa e retorno</span>
+                                </div>
+
+                            </section>
+
+                            <div class="container__input-email___configuracao-extrato" id="container-input-email-extrato">
+                                <input type="email" class="input-email__configuracao-extrato" placeholder="E-mails para receber arquivos" multiple required>
+                            </div>
+
+                            <div class="container__botao-adiciona__extrato">
+                                <button type="button" class="botao__adiciona-configuracao___extrato">Adicionar Configuração de Extrato</button>
+                            </div>
+                        
+                        </section>
+                    
+                    </div>
+
 
                     
 
@@ -1357,6 +1476,155 @@
                         <button class="carrousel__button carrousel__button--anterior" aria-label="Botão de Voltar">Anterior</button>
                         <button class="carrousel__button carrousel__button--proximo" aria-label="Botão de Avançar">Próximo</button>
                     </div>
+
+                    <div class="container__secao___configuracao-dda" id="configuracoes-dda">
+                        
+                        <section class="configuracoes-dda">
+                            
+                            <div class="cabecalho__configuracao-dda">
+                                <h1 class="titulo__cabecalho__configuracao-dda">Incluir Configuração de DDA</h1>
+                                <button class="fecha__configuracoes-dda" id="botao__fecha___configuracoes-dda"></button>
+                            </div>
+
+                            <section class="container__input-configuracao">
+
+                                <div class="container__input">
+                                    <label for="Banco" class="label__input___configuracao-dda" >Banco</label>
+                                    <select name="Banco" id="Banco" class="input__dda" required>
+                                        <option  class="option__filtro" value="0">(Selecione)</option>
+                                        <option class="option__filtro" value="1">10 - 10-10-CAIXINHA - OESA</option>
+                                    </select>
+                                </div>
+
+                                <div class="container__input">
+                                    <label for="Filial" class="label__input___configuracao-dda">Filial</label>
+                                    <select name="Filial" id="Filial" class="input__dda" required>
+                                        <option  class="option__filtro" value="0">(Selecione)</option>
+                                        <option class="option__filtro" value="1">99 - TODAS FILIAIS</option>
+                                    </select>
+                                </div>
+
+                                <div class="toggle toggle-dda">
+                                    <label class="switch">
+                                        <input type="checkbox" class="toggle-switch">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span>Configurar manualmente</span>
+                                </div>
+                        
+                                <section class="secao__filtros___configuracao-dda">
+
+                                    <section class="secao__inputs-dda">
+
+                                        <div class="container__input">
+                                            <label for="Dias-Validação" class="label__input___configuracao-dda">Dias da semana para validação Arquivo DDA</label>
+                                            <select name="Dias-Validação" id="dias-validacao" class="input__dda___configuracao-validacao" required>
+                                                <option class="option__filtro" value="0">Selecionar</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="container__input___dda">
+                                        
+                                            <div class="container__input">
+                                                <label for="Hora-Execução" class="label__input___configuracao-dda">Horário de execução</label>
+                                                <input name="Hora-Execução" type="time" placeholder="08:00" class="input__dda-hora">
+                                            </div>
+                                
+                                        </div>
+    
+                                    </section>
+
+
+                                    <section class="container__input___radio-dda">
+
+                                        <div class="secao__inputs-radio toogle__low-opacity">
+
+                                            <label for="Integração-DDA" class="label__input-radio">Integração:</label>
+                                            <div class="container__input-radio">
+                                                <input type="radio" name="Integração-DDA" class="input-radio__integracao" checked readonly>
+                                                <span class="titulo__input-radio">CNAB</span>
+                                            </div>
+
+                                        </div>
+                                        
+                                        <div class="secao__inputs-radio" id="toggle-margin-right__extrato">
+
+                                            <label for="Integração" class="label__input-radio">Integração (CNAB e API):</label>
+                                            <div class="container__input-radio">
+                                                <input type="radio" name="Integração" class="input-radio__integracao">
+                                                <span class="titulo__input-radio">Ativa</span>
+                                                <input type="radio" name="Integração" class="input-radio__integracao">
+                                                <span class="titulo__input-radio">Não Ativa</span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="secao__inputs-radio">
+
+                                            <label for="Ambiente-Api" class="label__input-radio">Ambiente (Api):</label>
+                                            <div class="container__input-radio">
+                                                <input type="radio" name="Ambiente-Api" class="input-radio__ambiente">
+                                                <span class="titulo__input-radio">Homologação</span>
+                                                <input type="radio" name="Ambiente-Api" class="input-radio__ambiente">
+                                                <span class="titulo__input-radio">Produção</span>
+                                            </div>
+                                        </div>
+                                    
+                                    </section>
+
+                                </section>
+
+                            </section>
+
+                            <div class="container__secao___validacao-dda">
+                                
+                                <h2 class="titulo__secao-validacao">Tipos de Validação:</h2>
+                                
+                                <div class="container__input">
+
+                                    <label for="Tipo-Validacao" class="label__input___configuracao-dda" >Validações</label>
+                                    <select name="Tipo-Validacao" id="Tipo-Validacao" class="input__dda___validacao" required>
+                                        <option  class="option__filtro" value="0">(Selecione)</option>
+                                        <option class="option__filtro" value="1">Validar CNPJ da Filial (Sacado)</option>
+                                        <option class="option__filtro" value="1">Validar CNPJ do Fornecedor Principal (Cedente)</option>
+                                        <option class="option__filtro" value="1">Validar Valor Bruto</option>
+                                    </select>
+                                    
+                                </div>
+
+                            </div>
+
+                            <section class="secao__toogle___configuracao-dda">
+
+                                <div class="toggle toggle-dda-validacao">
+                                    <label class="switch">
+                                        <input type="checkbox" class="toggle-switch" id="input-email-radio-dda">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span>Receber, ao gerar, arquivos de remessa e retorno</span>
+                                </div>
+
+                            </section>
+
+                            <div class="container__input-email___configuracao-dda" id="container-input-email-dda">
+                                <input type="email" class="input-email__configuracao-dda" placeholder="E-mails para receber arquivos" multiple required>
+                            </div>
+
+                            <div class="container__input">
+
+                                <label for="Prazo-Exclusao" class="label__input___configuracao-dda">Prazo para exclusão do DDA inconcistente:</label>
+                                <input type="text" name="Prazo-Exclusao" class="input__configuracao-dda___prazo-exclusao" placeholder="20 dias">
+                                
+                            </div>
+
+                            <div class="container__botao-adiciona__dda">
+                                <button type="button" class="botao__adiciona-configuracao___dda">Adicionar Configuração de DDA</button>
+                            </div>
+                        
+                        </section>
+                    
+                    </div>
+
 
                     
 
