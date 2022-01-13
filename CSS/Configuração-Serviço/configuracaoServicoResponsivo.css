@@ -1,0 +1,110 @@
+@media (min-width:1441px){
+    /*-------------------------SECAO-COBRANCA---------------------------*/
+    .info__cobranca___configuracao {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 91vw;
+    }
+    .lista__clientes___cobranca-configuracao {
+        display: flex;
+        flex-direction: column;
+    }
+    .item__lista___cobranca-configuracao {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 88vw;
+
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    .container__cobranca {
+        overflow-x: hidden;
+        overflow-y: visible;
+        scrollbar-color: #173A67 #173A67;
+        scrollbar-width: thin;
+    }
+    .container__info__cobranca-primeiro {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+@media (min-width:1441px){
+    /*-------------------------SECAO-COBRANCA---------------------------*/
+    .info__cobranca___status{
+        margin-right: 3%;
+    }
+    /*-------------------------SECAO-PAGAMENTO---------------------------*/
+    .info__cobranca___status-pagamento{
+        margin-right:  3%;
+    }
+    /*-------------------------SECAO-EXTRATO---------------------------*/
+    .info__cobranca___status-extrato{
+        margin-right:  3%;
+    }
+    /*-------------------------SECAO-DDA---------------------------*/
+    .info__cobranca___status-dda{
+        margin-right:  3.5%;
+    }
+}
+@media (min-width:1510px){
+    /*-------------------------SECAO-COBRANCA---------------------------*/
+    .info__cobranca___status{
+        margin-right: 5%;
+    }
+    /*-------------------------SECAO-PAGAMENTO---------------------------*/
+    .info__cobranca___status-pagamento{
+        margin-right:  5%;
+    }
+    /*-------------------------SECAO-EXTRATO---------------------------*/
+    .info__cobranca___status-extrato{
+        margin-right:  5%;
+    }
+    /*-------------------------SECAO-DDA---------------------------*/
+    .info__cobranca___status-dda{
+        margin-right:  5.5%;
+    }
+}
+@media (min-width:1610px){
+    /*-------------------------SECAO-COBRANCA---------------------------*/
+    .info__cobranca___status{
+        margin-right: 6.5%;
+    }
+    /*-------------------------SECAO-PAGAMENTO---------------------------*/
+    .info__cobranca___status-pagamento{
+        margin-right:  6.5%;
+    }
+    /*-------------------------SECAO-EXTRATO---------------------------*/
+    .info__cobranca___status-extrato{
+        margin-right:  6.5%;
+    }
+    /*-------------------------SECAO-DDA---------------------------*/
+    .info__cobranca___status-dda{
+        margin-right:  7.5%;
+    }
+}
+
+@media (min-width:1750px){
+    /*-------------------------SECAO-COBRANCA---------------------------*/
+    .info__cobranca___status{
+        margin-right: 7%;
+    }
+    /*-------------------------SECAO-PAGAMENTO---------------------------*/
+    .info__cobranca___status-pagamento{
+        margin-right: 7%;
+    }
+    /*-------------------------SECAO-EXTRATO---------------------------*/
+    .info__cobranca___status-extrato{
+        margin-right: 7%;
+    }
+    /*-------------------------SECAO-DDA---------------------------*/
+    .info__cobranca___status-dda{
+        margin-right: 8%;
+    }
+}
