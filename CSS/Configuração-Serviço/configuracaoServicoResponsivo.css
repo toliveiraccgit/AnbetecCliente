@@ -108,3 +108,95 @@
         margin-right: 8%;
     }
 }
+
+@media (max-width:1400px){
+    /*-------------------------SECAO-CONFIGURAÇÃO-COBRANCA---------------------------*/
+    .container__input-configuracao{
+        width: 62vw;
+    }
+    .input__cobranca{
+        width: 30vw;
+    }
+    .input__cobranca___configuracao-remessa {
+        width: 24vw;
+    }
+    .input__periodicidade-remessa, .input__horario-inicio-remessa, .input__horario-fim-remessa {
+        width: 11.4vw;
+    }
+    .container__secao___configuracao-cobranca {
+        padding: 50% 100vw;
+    }
+    .input__cobranca___configuracao-retorno {
+        width: 62vw;
+    }
+    .container__input-toogle___retorno{
+        width: 62vw;
+        height: 12.4rem;
+    }
+    .accordion, .container__input-panel___vincular, .container__accordion-contas-vinculadas {
+        width: 62vw;
+    }
+    .container__accordion-contas-vinculadas{
+        margin-bottom: 7.5rem;
+    }
+    .input-email__configuracao-remessa{
+        width: 62vw;
+    }
+    .input__agencia-panel___vincular, .input__conta-panel___vincular {
+        width: 21vw;
+    }
+    .secao__toogle___configuracao-remessa {
+        margin-top: 2.484rem
+    }
+    .toggle{
+        width: 29vw;
+        height: 4rem;
+        margin-bottom: 0%;
+    }
+    .secao__inputs-api {
+        margin-bottom: 17.5rem;
+    }
+    .input__secao-api {
+        width: 30vw;
+    
+    }
+    /*-------------------------SECAO-CONFIGURAÇÃO-PAGAMENTO---------------------------*/
+    .container__secao___configuracao-pagamento {
+        padding: 50% 100vw;
+    }
+    .input__pagamento{
+        width: 30vw;
+    }
+    .input__pagamento-hora {
+        width: 13.4vw;
+    }
+    .secao__toogle___configuracao-pagamento {
+        margin-top: 27.171rem;
+    }
+    /*-------------------------SECAO-CONFIGURAÇÃO-EXTRATO---------------------------*/
+    .input__extrato{
+        width: 30vw;
+    }
+    .input__extrato___configuracao-moeda {
+        width: 35vw;
+    }
+    .input__extrato-hora {
+        width: 11.8vw;
+    }
+    /*-------------------------SECAO-CONFIGURAÇÃO-DDA---------------------------*/
+    .input__dda{
+        width: 30vw;
+    }
+    .input__dda___configuracao-validacao {
+        width: 41.5vw;
+    }
+    .input__dda-hora {
+        width: 18.4vw;
+    }
+    #toggle-margin-right__extrato {
+        margin-right: 14.563rem;
+    }
+    .input__dda___validacao, .input__configuracao-dda___prazo-exclusao, .input-email__configuracao-dda{
+        width: 62vw;
+    }
+}
