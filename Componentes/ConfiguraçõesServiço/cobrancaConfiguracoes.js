@@ -1,6 +1,7 @@
 export class ConfiguraçãoCobranca {
 
     constructor () {
+        /*---------------------------COBRANCA------------------------------*/
         this.botaoConfiguracoesCobranca = document.querySelector('#botao__configura-cobranca')
         this.secaoConfiguracaoCobranca = document.querySelector('#configuracoes-cobranca')
         this.botaoFechaConfiguracaoCobranca = document.querySelector('#botao__fecha___configuracoes-cobranca')
@@ -23,8 +24,24 @@ export class ConfiguraçãoCobranca {
         this.botaoConfiguracoesCobranca.addEventListener('click', this.abrirConfiguracaoCobranca.bind(this))
         
         this.botaoFechaConfiguracaoCobranca.addEventListener('click', this.fechaConfiguracaoCobranca.bind(this))
-    }
+        
+        
+        /*--------------------------PAGAMENTO------------------------------*/
 
+        this.botaoConfiguracoesPagamento = document.querySelector('#botao__configura-pagamento')
+        this.secaoConfiguracaoPagamento = document.querySelector('#configuracoes-pagamento')
+        this.botaoFechaConfiguracaoPagamento = document.querySelector('#botao__fecha___configuracoes-pagamento')
+
+        this.botaoAbriEmailPagamento = document.querySelector('#input-email-radio-pagamento')
+        this.containerEmailPagamento = document.querySelector('#container-input-email-pagamento')
+
+        this.botaoAbriEmailPagamento.addEventListener('click', this.abrirEmailPagamento.bind(this))
+        
+        this.botaoConfiguracoesPagamento.addEventListener('click', this.abrirConfiguracaoPagamento.bind(this))
+        
+        this.botaoFechaConfiguracaoPagamento.addEventListener('click', this.fechaConfiguracaoPagamento.bind(this))
+    }
+    /*---------------------------COBRANCA------------------------------*/
     abrirConfiguracaoCobranca(){ 
         const configuracaoCobranca = this.secaoConfiguracaoCobranca
         configuracaoCobranca.style.display = ` block `
@@ -52,7 +69,6 @@ export class ConfiguraçãoCobranca {
          
 
     }
-
     abrirEmailRetorno(){
         const containerEmailRetorno = this.containerEmailRetorno
         const botaoAbriEmailRetorno = this.botaoAbreEmailRetorno
@@ -70,11 +86,39 @@ export class ConfiguraçãoCobranca {
          
 
     }
-
     abrirListaContaVinculadas(){
         const secaoContasVinculadas = this.secaoContasVinculadas
 
         secaoContasVinculadas.style.display = ` flex `
     }
 
+    /*---------------------------COBRANCA------------------------------*/
+    abrirConfiguracaoPagamento(){ 
+        const configuracaoPagamento = this.secaoConfiguracaoPagamento
+        configuracaoPagamento.style.display = ` block `
+        configuracaoPagamento.style.visibility = `visible`
+        configuracaoPagamento.style.opacity = ` 1 ` 
+    }
+    fechaConfiguracaoPagamento(){ 
+        const configuracaoPagamento = this.secaoConfiguracaoPagamento
+        configuracaoPagamento.style.display = ` none `
+        configuracaoPagamento.style.visibility = `hidden`
+        configuracaoPagamento.style.opacity = ` 0 ` 
+    }
+
+    abrirEmailPagamento(){
+        const containerEmailPagamento = this.containerEmailPagamento
+        const botaoAbriEmailPagamento = this.botaoAbriEmailPagamento
+
+        
+        if(botaoAbriEmailPagamento.checked == true ){
+            containerEmailPagamento.style.visibility = ` visible `
+            containerEmailPagamento.style.opacity = ` 1 `
+        }else{
+            containerEmailPagamento.style.visibility = ` hidden `
+            containerEmailPagamento.style.opacity = ` 0 `
+        }
+         
+
+    }
 }

@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./CSS/Configuração-Serviço/configuracaoServico.css">
+        <link rel="stylesheet" href="./CSS/Configuração-Serviço/configuracaoServicoPagamento.css">
         <link href="./CSS/base.css" rel="stylesheet">
         <link href="./CSS/reset.css" rel="stylesheet">
         <link href="./CSS/normalize.css" rel="stylesheet">
@@ -851,6 +852,170 @@
                     <div class="button--carrousel">
                         <button class="carrousel__button carrousel__button--anterior" aria-label="Botão de Voltar">Anterior</button>
                         <button class="carrousel__button carrousel__button--proximo" aria-label="Botão de Avançar">Próximo</button>
+                    </div>
+
+                    <div class="container__secao___configuracao-pagamento" id="configuracoes-pagamento">
+                        
+                        <section class="configuracoes-pagamento">
+                            
+                            <div class="cabecalho__configuracao-pagamento">
+                                <h1 class="titulo__cabecalho__configuracao-pagamento">Incluir Configuração de Cobrança</h1>
+                                <button class="fecha__configuracoes-pagamento" id="botao__fecha___configuracoes-pagamento"></button>
+                            </div>
+
+                            <section class="container__input-configuracao">
+
+                                <div class="container__input">
+                                    <label for="Filial" class="label__input___configuracao-pagamento">Filial cabeçalho arquivo</label>
+                                    <select name="Filial" id="Filial" class="input__pagamento" required>
+                                        <option  class="option__filtro" value="0">(Selecione)</option>
+                                        <option class="option__filtro" value="1">99 - TODAS FILIAIS</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="container__input">
+                                    <label for="Filial Filtro" class="label__input___configuracao-pagamento" >Filiais para filtro dos títulos</label>
+                                    <select name="Filial Filtro" id="Filial Filtro" class="input__pagamento" required>
+                                        <option  class="option__filtro" value="0">(Selecione)</option>
+                                        <option class="option__filtro" value="1">99 - TODAS FILIAIS</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="container__input">
+                                    <label for="Cobrança" class="label__input___configuracao-pagamento" >Cobrança</label>
+                                    <select name="Cobrança" id="Cobrança" class="input__pagamento" required>
+                                        <option  class="option__filtro" value="0">(Selecione)</option>
+                                        <option class="option__filtro" value="1">015 - FIL05-BANCO BRASIL-COB-...</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="container__input">
+                                    <label for="Banco" class="label__input___configuracao-pagamento" >Banco</label>
+                                    <select name="Banco" id="Banco" class="input__pagamento" required>
+                                        <option  class="option__filtro" value="0">(Selecione)</option>
+                                        <option class="option__filtro" value="1">5006 - 5006-1-BCO BRASIL COB 88...</option>
+                                    </select>
+                                </div>
+
+                            </section>
+
+                            <div class="container__secao___filtros-pagamento">
+                                    
+                                <section class="secao__filtros___configuracao-pagamento">
+
+                                    <div class="container__input___pagamento">
+                                        
+                                        <div class="container__input">
+                                            <label for="Hora-Inicio-Envio" class="label__input___configuracao-pagamento">Hora inicio do envio:</label>
+                                            <input name="Hora-Inicio-Envio" type="time" placeholder="0 dias" class="input__pagamento-hora">
+                                        </div>
+                                        
+                                        <div class="container__input">
+                                            <label for="Avançar-Dias" class="label__input___configuracao-pagamento">Periodicidade de envio</label>
+                                            <input name="Avançar-Dias" type="text" placeholder="60 min" class="input__pagamento-hora input__titulo-remessa-maior">
+                                        </div>
+                                    
+                                    </div>
+
+                                    <section class="container__input___radio">
+                                        
+                                        <div class="secao__inputs-radio">
+
+                                            <label for="Integração" class="label__input-radio">Integração:</label>
+                                            <div class="container__input-radio">
+                                                <input type="radio" name="Integração" class="input-radio__integracao">
+                                                <span class="titulo__input-radio">CNAB</span>
+                                                <input type="radio" name="Integração" class="input-radio__integracao">
+                                                <span class="titulo__input-radio">API</span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="secao__inputs-radio">
+
+                                            <label for="Integração-Ativa" class="label__input-radio">Integração (CNAB e API):</label>
+                                            <div class="container__input-radio">
+                                                <input type="radio" name="Integração-Ativa" class="input-radio__integracao">
+                                                <span class="titulo__input-radio">Ativa</span>
+                                                <input type="radio" name="Integração-Ativa" class="input-radio__integracao">
+                                                <span class="titulo__input-radio">Não Ativa</span>
+                                            </div>
+                                        </div>
+                                    
+                                    </section>
+
+                                </section>
+
+                                <img src="./Assets/seta-remessa-configuracao.png" alt="Seta Pagamento Configuração" class="seta__remessa-configuracao">
+
+                                <section class="secao__filtros___configuracao-pagamento">
+
+                                    <div class="container__input___pagamento">
+                                        
+                                        <div class="container__input">
+                                            <label for="Retroagir-Dias" class="label__input___configuracao-cobranca">Hora fim do envio:</label>
+                                            <input name="Retroagir-Dias" type="time" placeholder="0 dias" class="input__pagamento-hora">
+                                        </div>
+                                        
+                                        <div class="container__input">
+                                            <label for="Avançar-Dias" class="label__input___configuracao-cobranca">Tempo para buscar retorno</label>
+                                            <input name="Avançar-Dias" type="text" placeholder="20 min" class="input__pagamento-hora input__titulo-remessa-maior">
+                                        </div>
+                                        
+                                    
+                                    </div>
+
+                                    <section class="container__input___radio">
+                                        
+                                        <div class="secao__inputs-radio">
+
+                                            <label for="Ambiente-Api" class="label__input-radio">Ambiente (Api):</label>
+                                            <div class="container__input-radio">
+                                                <input type="radio" name="Ambiente-Api" class="input-radio__ambiente">
+                                                <span class="titulo__input-radio">Homologação</span>
+                                                <input type="radio" name="Ambiente-Api" class="input-radio__ambiente">
+                                                <span class="titulo__input-radio">Produção</span>
+                                            </div>
+
+                                        </div>
+
+                                    </section>
+
+                                </section>
+
+
+                            </div>
+
+                            <section class="secao__toogle___configuracao-pagamento">
+
+                                <div class="toggle">
+                                    <label class="switch">
+                                        <input type="checkbox" class="toggle-switch" id="input-email-radio-pagamento">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span>Receber, ao gerar, arquivos de remessa e retorno</span>
+                                </div>
+
+                                <div class="toggle">
+                                    <label class="switch">
+                                        <input type="checkbox" class="toggle-switch">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span>Transmitir automáticamente para o banco após a assinatura do borderô</span>
+                                </div>
+
+                            </section>
+
+                            <div class="container__input-email___configuracao-pagamento" id="container-input-email-pagamento">
+                                <input type="email" class="input-email__configuracao-pagamento" placeholder="E-mails para receber arquivos" multiple required>
+                            </div>
+
+                            <div class="container__botao-adiciona__pagamento">
+                                <button type="button" class="botao__adiciona-configuracao___pagamento">Adicionar Configuração de Cobrança</button>
+                            </div>
+                        
+                        </section>
+                    
                     </div>
 
                     
