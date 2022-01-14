@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./CSS/Gerenciamento-Layouts/gerenciamentoLayouts.css">
+        <link href="./CSS/base.css" rel="stylesheet">
+        <link href="./CSS/reset.css" rel="stylesheet">
+        <link href="./CSS/normalize.css" rel="stylesheet">
+        <link rel="shortcut icon" href="./Assets/Logo-favicon.png" type="image/x-icon">
+        <title>Gerenciamento de Layouts | Anbetec</title>
+    </head>
+
+    <body id="body">
+        
+        <header class="cabecalho">
+            <a href="./home.html"><img src="./Assets/LogoAnbetec.png" alt="Logo Anbetec" class="logo-anbetec"></a>
+            <div class="container-pesquisa">
+                <button class="pesquisa-mobile"><img class="ico-pesquisa-mobile" src="./Assets/ico-pesquisa-mobile.png" alt="Abrir Barra Pesquisa"></button>
+                <input type="text" class="barra-pesquisa" placeholder="Procure pelo portal">
+            </div>
+            
+            <div class="container__info">
+                <button type="button" class="container__notificacao">
+                    <img src="./Assets/notificação.png" alt="Notificação" class="notificacao">
+                    <img src="./Assets/notificação-ativa.png" alt="Você possui notificação" class="notificacao-ativa">
+                </button>
+                <div class="perfil-area">
+                    <img src="./Assets/icone2.png" alt="Sua Foto de Perfil" class="icone__perfil">
+                    <div class="informacoes__perfil">
+                        <h1 class="nome__perfil">Davi Neris</h1>
+                        <span class="banco__perfil">Banco Anbetec</span>
+                    </div>
+                    <button type="button" class="menu-dots"></button>
+                </div>
+            </div>
+        </header>
+
+        <main class="conteudo">
+            
+            <div class="intro__gerenciamento-layouts">
+                <p class="paginacao__gerenciamento-layouts">
+                    <a href="./home.html" class="link-paginacao">Produtos</a>
+                    <a href="./edi-financeiro.html" class="link-paginacao-edi">EDI Financeiro</a>
+                    <a href="./configuracaoDeServico.html" class="destaque__paginacao">Gerenciamento de Layouts</a>
+                </p>
+            </div>
+
+            <section class="secao__cabecalho___gerenciamento-layouts">
+                    
+                <div class="cabecalho-titulo__gerenciamento-layouts">
+                        <h1 class="titulo__cabecalho">Lista de Layouts</h1>   
+                </div>
+
+                <div class="container__cabecalho-botoes___gerenciamento-layouts">
+
+                    <button class="botao__cabecalho___gerencia-variaveis">Gerenciar Variáveis</button>
+                    <button class="botao__cabecalho___cadastra-layout">Cadastrar Layout</button>
+                    
+                </div>
+
+            </section>
+
+            <section class="container__layouts">
+                <section class="info__layouts___configuracao">
+
+
+                        <p class="info__layouts___banco">Banco</p>
+                        
+                        <p class="info__layouts___descricao">Descrição</p>
+
+                        <p class="info__layouts___cnab">CNAB</p>
+
+                        <p class="info__layouts___tipo-documento">Tipo de documento</p>
+
+                </section>
+
+                <section class="lista___layouts">
+
+                    <div class="container__carousel">
+
+                        <ul class="lista__clientes___layouts">
+
+                            <li class="item__lista___layouts">
+
+                                <p class="layout__banco">2374 Bradesco</p>
+
+                                <p class="layout__descricao">2374 - 2374 - 237-BRADESCO C.C</p>
+
+                                <p class="layout__cnab">400</p>
+
+                                <p class="layout__tipo-documento">Retorno</p>
+
+                                <button type="button" class="menu-dots"></button>
+
+                            </li>
+
+                            <li class="item__lista___layouts">
+
+                                <p class="layout__banco">2374 Bradesco</p>
+
+                                <p class="layout__descricao">2374 - 2374 - 237-BRADESCO C.C</p>
+
+                                <p class="layout__cnab">400</p>
+
+                                <p class="layout__tipo-documento">Retorno</p>
+
+                                <button type="button" class="menu-dots"></button>
+
+                            </li>
+
+                            <li class="item__lista___layouts">
+
+                                <p class="layout__banco">2374 Bradesco</p>
+
+                                <p class="layout__descricao">2374 - 2374 - 237-BRADESCO C.C</p>
+
+                                <p class="layout__cnab">400</p>
+
+                                <p class="layout__tipo-documento">Retorno</p>
+
+                                <button type="button" class="menu-dots"></button>
+
+                            </li>
+
+                            <li class="item__lista___layouts">
+
+                                <p class="layout__banco">2374 Bradesco</p>
+
+                                <p class="layout__descricao">2374 - 2374 - 237-BRADESCO C.C</p>
+
+                                <p class="layout__cnab">400</p>
+
+                                <p class="layout__tipo-documento">Retorno</p>
+
+                                <button type="button" class="menu-dots"></button>
+
+                            </li>
+
+                        </ul>
+
+                        <p class="paginacao__carrousel">Página 1 de 1</p>
+
+                    </div>
+                
+                </section>
+                
+                <div class="button--carrousel">
+                    <button class="carrousel__button carrousel__button--anterior" aria-label="Botão de Voltar">Anterior</button>
+                    <button class="carrousel__button carrousel__button--proximo" aria-label="Botão de Avançar">Próximo</button>
+                </div>
+            </section>
+        
+        </main>
+
+    </body>

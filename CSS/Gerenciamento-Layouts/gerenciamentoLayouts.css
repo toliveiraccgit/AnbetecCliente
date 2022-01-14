@@ -1,0 +1,390 @@
+@media (min-width:0px){
+    body{
+        background-color: #F8FBFF;
+    }
+    /*-------------------------CABECALHO--------------------*/
+    .cabecalho{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+        height: 6.938rem;
+        width: 100vw;
+
+        background-color: #FFFFFF;
+
+        padding: 2rem 3.5rem;
+    }
+    .container__info{
+        display: flex;
+        flex-direction: row;
+    }
+    .logo-anbetec{
+        width: 9.213rem;
+        height: 2.979rem;
+    }
+    .pesquisa-mobile{
+        display: none;
+    }
+    .barra-pesquisa{
+        font-family: var(--mont-serrat);
+        font-size: 14px;
+        width: 42vw;
+        height: 3.25rem;
+
+        border: none;
+        border-radius: .5rem;
+
+        background-color: #F1F4F9;
+        background-image: url("../../Assets/search.png");
+        background-repeat: no-repeat;
+        background-position: 2.063rem, .5rem;
+
+        padding: 1rem 0 1rem 3.5rem;
+    }
+    .barra-pesquisa:focus{
+        outline: 2px solid var(--primary-support);
+        color: var(--azul-secundaria);
+    }
+    .container__notificacao{
+        padding-right: 1.25rem;
+        margin-right: 1.75rem;
+        border-right: 1px solid #cdcdcd;
+        
+        display: flex;
+        align-items: center;
+
+        background-color: transparent;
+        border-top: none;
+        border-left: none;
+        border-bottom: none;
+    }
+    .notificacao-ativa{
+        visibility:visible;
+        position: relative;
+        top: -.8rem;
+        left: -.5rem;
+    }
+
+    .perfil-area{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.75rem;
+        font-family: var(--mont-serrat);
+        height: 2rem;
+    }
+    .informacoes__perfil{
+        width: 112px;
+    }
+    .icone__perfil{
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+    }
+    .nome__perfil{
+        margin: 0%;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--primary);
+    }
+    .banco__perfil{
+        font-size: 14px;
+        font-weight: 500;
+        color: #7A8594;
+    }
+    .menu-dots{
+        background-image: url("../../Assets/menu__dots.png");
+        border: none;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position-y: .5rem;
+
+        width: 30px;
+        height: 20px;
+    }
+    /*-------------------------paginação-DDA---------------------------*/
+    .intro__gerenciamento-layouts{
+        font-family: var(--mont-serrat);
+        margin-bottom: 2.75rem;
+
+        padding-left: 3rem;
+        padding-top: 2rem;
+        padding-right: 3.438rem;
+    }
+    .paginacao__gerenciamento-layouts{
+        color: #7A8594;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 0%;
+    
+    }
+    .link-paginacao{
+        color: #7A8594;
+    }
+    .link-paginacao-edi{
+        padding-left: 1.6rem;
+        background-image: url("../../Assets/icone-paginacao.png");
+        background-repeat: no-repeat;
+        background-position: .55rem, .2rem ;
+        color: #7A8594;
+    }
+    .destaque__paginacao{
+        padding-left: 1.6rem;
+        background-image: url("../../Assets/icone-paginacao.png");
+        background-repeat: no-repeat;
+        background-position: .55rem, .2rem ;
+    
+        color: var(--primary);
+        font-weight: 600;
+    }
+    /*-------------------------CABECALHO---------------------------*/
+    .secao__cabecalho___gerenciamento-layouts{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-left: 2.9rem;
+        padding-right: 3.438rem;
+        margin-bottom: 1.5rem;
+    }
+    .cabecalho__gerenciamento-layouts{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        margin-bottom: 2.272rem;
+    }
+    .titulo__cabecalho{
+        color: var(--primary);
+        font-family: var(--mont-serrat);
+        font-size: 22.58px;
+        font-weight: 700;
+    }
+    .container__cabecalho-botoes___gerenciamento-layouts{
+        display: flex;
+        flex-direction: row;
+        gap: .5rem;
+    }
+    .botao__cabecalho___cadastra-layout{
+        color: #FFFFFF;
+
+        font-weight: 500;
+        font-size: 16px;
+        font-family: var(--mont-serrat);
+
+        padding: 1rem 2rem 1rem 2rem;
+
+        background: var(--primary-support);
+        box-shadow: 0px 0px 7.73002px rgba(26, 142, 249, 0.25);
+        border-radius: 64px;
+
+        border:none;
+    }
+    .botao__cabecalho___gerencia-variaveis{
+        color: var(--primary);
+
+        font-weight: 500;
+        font-size: 16px;
+        font-family: var(--mont-serrat);
+
+        padding: 1rem 2rem 1rem 2rem;
+
+        background: transparent;
+        border-radius: 64px;
+
+        border: 1px solid #ECECEC;
+    }
+    /*-------------------------SECAO--COBRANCA-INFO-CONFIGURACAO---------------------------*/
+    .container__layouts{
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+        border: 1px solid #F1F1F1;
+
+        padding: 2rem 1rem 0 1rem;
+
+        margin-left: 2.9rem;
+        margin-right: 3.438rem;
+        margin-bottom: 3.5rem;
+
+        overflow-x: scroll;
+        overflow-y: visible;
+        scrollbar-color: #173A67 #173A67;
+        scrollbar-width: thin;
+    }
+
+    .info__layouts___configuracao{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        font-family: var(--mont-serrat);
+        font-weight: 600;
+        font-size: 14px;
+
+        width: 80.75rem;
+        height: 3.125rem;
+
+        padding-left: 1.646rem;
+
+        background-color: #FAFAFA;
+        border-radius: 8px;
+        color: var(--primary);
+    }
+    .info__layouts___banco{
+        width: 20.688rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.5rem;
+    }
+    .info__layouts___descricao{
+        width: 20.653rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 5.1rem;
+    }
+
+    .info__layouts___cnab{
+        width: 11.538rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.5rem;
+    }
+    .info__layouts___tipo-documento{
+        width: 22.563rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 9.7rem;
+    }
+    /*-------------------------SECAO--COBRANCA-CLIENTES-CONFIGURACAO---------------------------*/
+    .container__layouts > p {
+        overflow-x: hidden;
+    }
+    .container__layouts::-webkit-scrollbar-thumb {
+        background:#173A67;
+        border-radius: 16px;
+    }
+    .container__layouts::-webkit-scrollbar{
+        background:transparent;
+        height: 0.555rem;
+        width: .5rem;
+    }
+    .lista__clientes___layouts{
+        display: flex;
+        flex-direction: column;
+
+        padding-left: 1.8rem;
+        padding-right: 1.6rem;
+    }
+    .item__lista___layouts{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 77.106rem;
+
+        font-family: var(--mont-serrat);
+        color: #7A8594;
+        
+        border-bottom: 0.941034px solid #E1E1E1;
+
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+
+    .layout__banco{
+        width: 20.688rem;
+        font-size: 14px;
+    }
+    .layout__descricao{
+        width: 20.813rem;
+        font-size: 14px;
+    }
+    .layout__cnab{
+        width: 11.938rem;
+        font-size: 14px;
+    }
+    .layout__tipo-documento{
+        width: 22.563rem;
+        font-size: 14px;
+    }
+    .botao__status___configuracao-ativa{
+        font-size: 14px;
+        font-weight: 500;
+
+        background: #DBFBCD;
+        border-radius: 18.8207px;
+        border: none;
+
+        color: #4ABE14;
+
+        padding: .2rem .9rem;
+
+        margin-right: 2.55rem;
+    }
+    .botao__status___configuracao-desativa{
+        background: #FFF2F2;
+        color: #F5381E;
+
+        font-size: 14px;
+        font-weight: 500;
+
+        border-radius: 18.8207px;
+        border: none;
+
+        padding: .2rem .9rem;
+
+        margin-right: 1rem;
+    }
+    .paginacao__carrousel{
+        width: 6.528rem;
+
+        position: relative;
+        top: 0%;
+        left: 47%;
+
+        margin-top: 3rem;
+
+        font-family: var(--mont-serrat);
+        font-size: 15px;
+        color: #7A8594;
+
+        background-color: #FFFFFF;
+        z-index: 20000;
+    }
+    /*-------------------------SECAO--COBRANCA-BOTOES-CARROUSEL---------------------------*/
+    .button--carrousel{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        position: relative;
+        top: -2rem;
+
+        padding: 0 2.6rem 0 1.8rem;
+
+    }
+    .carrousel__button{
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+        background-position-y: center;
+        color: #7A8594;
+        font-family: var(--mont-serrat);
+        font-weight: 600;
+    }
+    .carrousel__button--anterior{
+        background-image: url("../../Assets/seta-esquerda.png");
+        padding-left: 2rem;
+        opacity: 0.4;
+    }
+    .carrousel__button--proximo{
+        background-image: url("../../Assets/seta-direita.png");
+        padding-right: 2rem;
+        background-position-x:right;
+    }
+}
