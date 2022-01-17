@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./CSS/Gerenciamento-Layouts/gerenciamentoLayouts.css">
+        <link rel="stylesheet" href="./CSS/Gerenciamento-Layouts/gerenciamentoLayoutsResponsivo.css">
         <link href="./CSS/base.css" rel="stylesheet">
         <link href="./CSS/reset.css" rel="stylesheet">
         <link href="./CSS/normalize.css" rel="stylesheet">
@@ -58,8 +59,8 @@
 
                 <div class="container__cabecalho-botoes___gerenciamento-layouts">
 
-                    <button class="botao__cabecalho___gerencia-variaveis">Gerenciar Variáveis</button>
-                    <button class="botao__cabecalho___cadastra-layout">Cadastrar Layout</button>
+                    <button class="botao__cabecalho___gerencia-variaveis" id="botao-gerencia-variavel">Gerenciar Variáveis</button>
+                    <button class="botao__cabecalho___cadastra-layout" id="botao-cadastra-layout">Cadastrar Layout</button>
                     
                 </div>
 
@@ -146,6 +147,7 @@
                         <p class="paginacao__carrousel">Página 1 de 1</p>
 
                     </div>
+
                 
                 </section>
                 
@@ -153,8 +155,337 @@
                     <button class="carrousel__button carrousel__button--anterior" aria-label="Botão de Voltar">Anterior</button>
                     <button class="carrousel__button carrousel__button--proximo" aria-label="Botão de Avançar">Próximo</button>
                 </div>
+
+                
             </section>
+
+            <div class="container__secao___cadastra-layout" id="cadastra-layout">
+                        
+                <section class="cadastra-layout">
+                    
+                    <div class="cabecalho__cadastra-layout">
+                        <h1 class="titulo__cabecalho__cadastra-layout">Incluir Configuração de DDA</h1>
+                        <button class="fecha__cadastra-layout" id="botao__fecha___cadastra-layout"></button>
+                    </div>
+
+                    <section class="container__input___cadastra-layout">
+
+                        <div class="container__input">
+                            <label for="Numer-Banco" class="label__input___cadastra-layout" >Número do Banco (obrigatório)</label>
+                            <select name="Numer-Banco" id="Numer-Banco" class="input__cadastra-layout" required>
+                                <option  class="option__filtro" value="0">(Selecione)</option>
+                                <option class="option__filtro" value="1">1 - Banco do Brasil</option>
+                            </select>
+                        </div>
+
+                        <div class="container__input">
+                            <label for="Descrição" class="label__input___cadastra-layout">Descrição</label>
+                            <select name="Descrição" id="Descrição" class="input__cadastra-layout" required>
+                                <option  class="option__filtro" value="0">(Selecione)</option>
+                                <option class="option__filtro" value="1">Descrição</option>
+                            </select>
+                        </div>
+
+                        <div class="container__input">
+                            <label for="CNAB" class="label__input___cadastra-layout">CNAB</label>
+                            <select name="CNAB" id="CNAB" class="input__cadastra-layout" required>
+                                <option  class="option__filtro" value="0">(Selecione)</option>
+                                <option class="option__filtro" value="1">015 - FIL05-BANCO BRASIL-COB-...</option>
+                            </select>
+                        </div>
+
+                        <div class="container__input">
+                            <label for="Tipo-do-Documento " class="label__input___cadastra-layout">Tipo do Documento </label>
+                            <select name="Tipo-do-Documento " id="Tipo-do-Documento " class="input__cadastra-layout input-cadastra-layout__low-opacity" required>
+                                <option  class="option__filtro" value="0">(Selecione)</option>
+                                <option class="option__filtro" value="1">Retorno de Cobranças</option>
+                            </select>
+                        </div>
+        
+                    </section>
+
+                    <section class="secao__lista-linhas">
+
+                        <h2 class="titulo__secao___linhas">Linhas</h2>
+
+                        <ul class="lista-linhas">
+
+                            <li class="item__lista-linhas">
+                                
+                                <div class="container__inputs___secao-linhas">
+                            
+                                    <div class="container__input">
+                                        <label for="Numero-Linhas" class="label__input___cadastra-layout">Linhas</label>
+                                        <input name="Numero-Linhas" id="numero-Linhas" class="input__numero-linhas" type="number" required placeholder="1"></input>
+                                    </div>
+            
+                                    <div class="container__input">
+                                        <label for="Secao " class="label__input___cadastra-layout">Seção</label>
+                                        <select name="Secao " id="secao " class="input__secao___lista-linhas" required>
+                                            <option  class="option__filtro" value="0">(Selecione)</option>
+                                            <option class="option__filtro" value="1">Detalhe</option>
+                                        </select>
+                                    </div>
+            
+                                    <div class="container__input">
+                                        <label for="Poa.-Ini." class="label__input___cadastra-layout">Poa. Ini.</label>
+                                        <input name="Poa.-Ini." id="poa.-Ini." class="input__secao___lista-linhas" type="number" required placeholder="39"></input>
+                                    </div>
+            
+                                    <div class="container__input">
+                                        <label for="Poa.-fim" class="label__input___cadastra-layout">Tipo do Documento </label>
+                                        <input name="Poa.-fim" id="poa.-fim" class="input__secao___lista-linhas" type="number" required placeholder="63"></input>
+                                    </div>
+            
+                                    <div class="container__input">
+                                        <label for="Tipo " class="label__input___cadastra-layout">Tipo</label>
+                                        <select name="Tipo " id="tipo " class="input__secao___lista-linhas" required>
+                                            <option  class="option__filtro" value="0">(Selecione)</option>
+                                            <option class="option__filtro" value="1">Variável</option>
+                                        </select>
+                                    </div>
+                                
+                                </div>
+
+                                <div class="container__inputs___secao-linhas">
+            
+                                    <div class="container__input">
+                                        <label for="Conteúdo" class="label__input___cadastra-layout">Conteúdo</label>
+                                        <select name="Conteúdo" id="conteúdo" class="input__cadastra-layout" required>
+                                            <option  class="option__filtro" value="0">(Selecione)</option>
+                                            <option class="option__filtro" value="1">[NUMERO_DOCUMENTO] - Número documento</option>
+                                        </select>
+                                    </div>
+            
+                                    <div class="container__input">
+                                        <label for="Descricao" class="label__input___cadastra-layout">Tipo</label>
+                                        <input type="text" class="input__cadastra-layout" required placeholder="USO EXCLUSIVO DA EMPRESA">
+                                    </div>
+
+                                </div>
+
+                            </li>
+
+                            <li class="item__lista-linhas">
+                                
+                                <div class="container__inputs___secao-linhas">
+                            
+                                    <div class="container__input">
+                                        <label for="Numero-Linhas" class="label__input___cadastra-layout">Linhas</label>
+                                        <input name="Numero-Linhas" id="numero-Linhas" class="input__numero-linhas" type="number" required placeholder="1"></input>
+                                    </div>
+            
+                                    <div class="container__input">
+                                        <label for="Secao " class="label__input___cadastra-layout">Seção</label>
+                                        <select name="Secao " id="secao " class="input__secao___lista-linhas" required>
+                                            <option  class="option__filtro" value="0">(Selecione)</option>
+                                            <option class="option__filtro" value="1">Detalhe</option>
+                                        </select>
+                                    </div>
+            
+                                    <div class="container__input">
+                                        <label for="Poa.-Ini." class="label__input___cadastra-layout">Poa. Ini.</label>
+                                        <input name="Poa.-Ini." id="poa.-Ini." class="input__secao___lista-linhas" type="number" required placeholder="39"></input>
+                                    </div>
+            
+                                    <div class="container__input">
+                                        <label for="Poa.-fim" class="label__input___cadastra-layout">Tipo do Documento </label>
+                                        <input name="Poa.-fim" id="poa.-fim" class="input__secao___lista-linhas" type="number" required placeholder="63"></input>
+                                    </div>
+            
+                                    <div class="container__input">
+                                        <label for="Tipo " class="label__input___cadastra-layout">Tipo</label>
+                                        <select name="Tipo " id="tipo " class="input__secao___lista-linhas" required>
+                                            <option  class="option__filtro" value="0">(Selecione)</option>
+                                            <option class="option__filtro" value="1">Variável</option>
+                                        </select>
+                                    </div>
+                                
+                                </div>
+
+                                <div class="container__inputs___secao-linhas">
+            
+                                    <div class="container__input">
+                                        <label for="Conteúdo" class="label__input___cadastra-layout">Conteúdo</label>
+                                        <select name="Conteúdo" id="conteúdo" class="input__cadastra-layout" required>
+                                            <option  class="option__filtro" value="0">(Selecione)</option>
+                                            <option class="option__filtro" value="1">[NUMERO_DOCUMENTO] - Número documento</option>
+                                        </select>
+                                    </div>
+            
+                                    <div class="container__input">
+                                        <label for="Descricao" class="label__input___cadastra-layout">Tipo</label>
+                                        <input type="text" class="input__cadastra-layout" required placeholder="USO EXCLUSIVO DA EMPRESA">
+                                    </div>
+
+                                </div>
+
+                            </li>
+
+                            <div class="container__botao-adiciona-linha">
+                                <button type="button" class="botao__adiciona-linha">Adicionar Linha</button>
+                            </div>
+
+                        </ul>
+
+                        
+
+                        
+
+                        
+
+                    </section>
+
+                    
+
+                    <div class="container__botao-grava-registro">
+                        <button type="button" class="botao__grava-registro">Gravar Registros</button>
+                    </div>
+                
+                </section>
+            
+            </div>
+
+
+            <div class="container__secao___gerencia-variavel" id="gerencia-variavel">
+                        
+                <section class="gerencia-variavel">
+                    
+                    <div class="cabecalho__gerencia-variavel">
+                        <h1 class="titulo__cabecalho__gerencia-variavel">Gerenciamento de Layout</h1>
+                        <button class="fecha__gerencia-variavel" id="botao__fecha___gerencia-variavel"></button>
+                    </div>
+
+
+                    <section class="container__variavel">
+                        <section class="info__variavel___configuracao">
+        
+        
+                                <p class="info__variavel___nome">Nome</p>
+                                
+                                <p class="info__variavel___descricao">Descrição</p>
+        
+                                <p class="info__variavel___tipo-conteudo">Tipo Cont.</p>
+        
+                                <p class="info__variavel___conteudo">Conteúdo</p>
+
+                                <p class="info__variavel___tipo-dados">Tipo dados</p>
+                                
+                                <p class="info__variavel___tabela">Tabela</p>
+        
+                                <p class="info__variavel___coluna">Coluna</p>
+        
+        
+                        </section>
+        
+                        <section class="lista___variavel">
+        
+                            <div class="container__carousel">
+        
+                                <ul class="lista__clientes___variavel">
+        
+                                    <li class="item__lista___variavel">
+        
+                                        <p class="layout__nome">[NOSSO_NUMERO]</p>
+        
+                                        <p class="layout__descricao-variavel">Nosso Número</p>
+        
+                                        <p class="layout__tipo-conteudo">XXXXXXXXXX</p>
+        
+                                        <p class="layout__conteudo">XXXXXXXXXXX</p>
+
+                                        <p class="layout__tipo-dados">XXXXXXXXXXX</p>
+
+                                        <p class="layout__tabela">XXXXXXX</p>
+
+                                        <p class="layout__coluna">XXXXXXX</p>
+        
+                                        <button type="button" class="menu-dots"></button>
+        
+                                    </li>
+                                    <li class="item__lista___variavel">
+        
+                                        <p class="layout__nome">[NOSSO_NUMERO]</p>
+        
+                                        <p class="layout__descricao-variavel">Nosso Número</p>
+        
+                                        <p class="layout__tipo-conteudo">XXXXXXXXXX</p>
+        
+                                        <p class="layout__conteudo">XXXXXXXXXXX</p>
+
+                                        <p class="layout__tipo-dados">XXXXXXXXXXX</p>
+
+                                        <p class="layout__tabela">XXXXXXX</p>
+
+                                        <p class="layout__coluna">XXXXXXX</p>
+        
+                                        <button type="button" class="menu-dots"></button>
+        
+                                    </li>
+                                    <li class="item__lista___variavel">
+        
+                                        <p class="layout__nome">[NOSSO_NUMERO]</p>
+        
+                                        <p class="layout__descricao-variavel">Nosso Número</p>
+        
+                                        <p class="layout__tipo-conteudo">XXXXXXXXXX</p>
+        
+                                        <p class="layout__conteudo">XXXXXXXXXXX</p>
+
+                                        <p class="layout__tipo-dados">XXXXXXXXXXX</p>
+
+                                        <p class="layout__tabela">XXXXXXX</p>
+
+                                        <p class="layout__coluna">XXXXXXX</p>
+        
+                                        <button type="button" class="menu-dots"></button>
+        
+                                    </li>
+                                    <li class="item__lista___variavel">
+        
+                                        <p class="layout__nome">[NOSSO_NUMERO]</p>
+        
+                                        <p class="layout__descricao-variavel">Nosso Número</p>
+        
+                                        <p class="layout__tipo-conteudo">XXXXXXXXXX</p>
+        
+                                        <p class="layout__conteudo">XXXXXXXXXXX</p>
+
+                                        <p class="layout__tipo-dados">XXXXXXXXXXX</p>
+
+                                        <p class="layout__tabela">XXXXXXX</p>
+
+                                        <p class="layout__coluna">XXXXXXX</p>
+        
+                                        <button type="button" class="menu-dots"></button>
+        
+                                    </li>
+        
+                                </ul>
+        
+                            </div>
+        
+                        
+                        </section>
+                    
+                    </section>
+                    
+                    <div class="container__botao-adiciona-variavel">
+                        <button type="button" class="botao__adiciona-variavel">Adicionar Variável</button>
+                    </div>
+
+                    <div class="container__botao-grava-variavel">
+                        <button type="button" class="botao__grava-variavel">Gravar Salvar</button>
+                    </div>
+                
+                </section>
+            
+            </div>
+
+            
         
         </main>
-
+    <script src="./Componentes/Modules/moduleConfiguraLayout.js" type="module"></script>
     </body>
+
+</html>

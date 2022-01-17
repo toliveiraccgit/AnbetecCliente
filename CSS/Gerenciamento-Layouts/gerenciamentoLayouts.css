@@ -387,4 +387,527 @@
         padding-right: 2rem;
         background-position-x:right;
     }
+    /*-----------------SECAO-CADASTRA-LAYOUT--------------------*/
+
+    .container__secao___cadastra-layout{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100vw;
+
+        padding: 46% 100vw;
+
+        display: none;
+        justify-content: flex-end;
+        align-items: flex-end;
+        background-color: rgba(0,0,0,0.2);
+
+        transition: all .4s ease-in-out;
+
+        z-index: 400000;
+    }
+    .cadastra-layout{
+        width: 70vw;
+        height: 75.5rem;
+
+        display: block;
+
+        position: absolute;
+        top: 0%;
+        bottom: 0%;
+        right: 0%;
+
+        margin-top: 5vh;
+        margin-bottom: 4vh;
+
+        padding: 3rem 3.438rem 2.5rem;
+
+        transition: all .4s ease-in-out;
+
+        background-color: #FFFFFF;
+        border-radius: 16px 0px 0px 16px;
+        border: 1px solid #F1F1F1;
+
+        animation: animateLeftServiço .4s ease-out forwards;
+
+        font-family: var(--mont-serrat);
+        z-index: 400000;
+    }
+
+    .cabecalho__cadastra-layout{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-bottom: 1.5rem;
+    }
+    .titulo__cabecalho__cadastra-layout{
+        font-size: 20px;
+        color: var(--primary);
+    }
+    .fecha__cadastra-layout{
+        width: 1rem;
+        height: 1rem;
+        background-image: url("../../Assets/icone-fecha.svg");
+        background-repeat: no-repeat;
+
+        border: none;
+        background-color: transparent;
+
+        padding: 0;
+    }
+    .container__input___cadastra-layout{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        padding-bottom: 2.5rem;
+        margin-bottom: 2.5rem;
+
+        width: 56.438rem;
+        font-family: var(--mont-serrat);
+
+        border-bottom: 1px solid #EEEEEE;
+    }
+    .container__input{
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    .label__input___cadastra-layout{
+        font-size: 12px;
+        font-weight: 500;
+        font-family: var(--mont-serrat);
+
+        color: var(--primary);
+    }
+    .input__cadastra-layout{
+        height: 3.063rem;
+        width: 27.5rem;
+        
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+        
+        padding: .5rem 0 .5rem 1rem;
+        
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        color: #7A8594;
+
+        background-color: transparent;
+    }
+    .input-cadastra-layout__low-opacity{
+        opacity: .4;
+    }
+    .input__cadastra-layout:focus{
+        outline: 1px solid var(--primary-support);
+    }
+    .tablinks-cadastra-layout{
+        border: none;
+        background-color: transparent;
+        color: var(--primary);
+        font-family: var(--mont-serrat);
+        padding: 0%;
+
+        font-size: 22.58px;
+        font-weight: 700;
+        opacity: 0.2;
+    }
+    .active-cadastra-layout{
+        opacity: 1;
+    }
+    select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: url("../../Assets/seta__selection.png") no-repeat;
+        background-position-x: calc(100% - 1rem);
+        background-position-y: 1.3rem;
+        border: 1px solid #333;
+        padding-right: 20px;
+    }
+    .container__botao-grava-registro{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        margin-top: 2rem;
+
+        border-top: 1px solid #ECECEC;
+    }
+    .botao__grava-registro{
+        color: #FFFFFF;
+        
+        font-weight: 500;
+        font-size: 16px;
+        font-family: var(--mont-serrat);
+        
+        padding: 1rem 2rem 1rem 2rem;
+        margin-bottom: 2.5rem;
+        margin-top: 3.5rem;
+        
+        background: var(--primary-support);
+        box-shadow: 0px 0px 7.73002px rgba(26, 142, 249, 0.25);
+        
+        border-radius: 64px;
+        border: none;
+    }
+    /*-----------------SECAO-CADASTRA-LAYOUT-LINHAS-------------------*/
+    .lista-linhas{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .item__lista-linhas{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        padding-bottom: 1.5rem;
+
+        border-bottom: 1px solid #ECECEC;
+    }
+    .secao__lista-linhas{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .container__inputs___secao-linhas{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .titulo__secao___linhas{
+        font-size: 16px;
+        font-family: var(--mont-serrat);
+        color: var(--primary);
+    }
+    .input__numero-linhas{
+        width: 5.25rem;
+        height: 3.063rem;
+        
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+        
+        padding: .5rem 0 .5rem 0;
+        text-align: center;
+        
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        color: #7A8594;
+
+        background-color: transparent;
+    }
+    .input__secao___lista-linhas{
+        height: 3.063rem;
+        width: 11.7rem;
+        
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+        
+        padding: .5rem 0 .5rem 1rem;
+        
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        color: #7A8594;
+
+        background-color: transparent;
+    }
+    input[type=number]::-webkit-inner-spin-button { 
+        -webkit-appearance: none;
+        
+    }
+    input[type=number] { 
+       -moz-appearance: textfield;
+       appearance: textfield;
+    
+    }
+    .botao__adiciona-linha{
+        color: #FFFFFF;
+        
+        font-weight: 500;
+        font-size: 16px;
+        font-family: var(--mont-serrat);
+        
+        padding: 1rem 2rem 1rem 3.733rem;
+        
+        background: var(--primary-support);
+        background-image: url("../../Assets/botao__configurar___cobranca.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 16%;
+        
+        box-shadow: 0px 0px 7.73002px rgba(26, 142, 249, 0.25);
+        
+        border-radius: 64px;
+        border: none;
+    }
+    /*-----------------SECAO-GERENCIA-VARIAVEIS-------------------*/
+    .container__secao___gerencia-variavel{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100vw;
+
+        padding: 46% 100vw;
+
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0,0,0,0.2);
+
+        transition: all .4s ease-in-out;
+
+        z-index: 400000;
+    }
+    .gerencia-variavel{
+        width: 70vw;
+        height: 75.5rem;
+
+        display: block;
+
+        position: absolute;
+        top: 0%;
+        bottom: 0%;
+        right: 0%;
+
+        margin-top: 5vh;
+        margin-bottom: 4vh;
+
+        padding: 3rem 3.438rem 2.5rem;
+
+        transition: all .4s ease-in-out;
+
+        background-color: #FFFFFF;
+        border-radius: 16px 0px 0px 16px;
+        border: 1px solid #F1F1F1;
+
+        animation: animateLeftServiço .4s ease-out forwards;
+
+        font-family: var(--mont-serrat);
+        z-index: 400000;
+    }
+
+    .cabecalho__gerencia-variavel{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-bottom: 1.5rem;
+    }
+    .titulo__cabecalho__gerencia-variavel{
+        font-size: 20px;
+        color: var(--primary);
+    }
+    .fecha__gerencia-variavel{
+        width: 1rem;
+        height: 1rem;
+        background-image: url("../../Assets/icone-fecha.svg");
+        background-repeat: no-repeat;
+
+        border: none;
+        background-color: transparent;
+
+        padding: 0;
+    }
+    .container__botao-adiciona-variavel{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .botao__adiciona-variavel{
+        color: #FFFFFF;
+        
+        font-weight: 500;
+        font-size: 16px;
+        font-family: var(--mont-serrat);
+        
+        padding: 1rem 2rem 1rem 3.733rem;
+        
+        
+        background: var(--primary-support);
+        background: var(--primary-support);
+        background-image: url("../../Assets/botao__configurar___cobranca.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 16%;
+
+        box-shadow: 0px 0px 7.73002px rgba(26, 142, 249, 0.25);
+        
+        border-radius: 64px;
+        border: none;
+    }
+    .container__botao-grava-variavel{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        margin-top: 2rem;
+        
+
+        border-top: 1px solid #ECECEC;
+    }
+    .botao__grava-variavel{
+        color: #FFFFFF;
+        
+        font-weight: 500;
+        font-size: 16px;
+        font-family: var(--mont-serrat);
+        
+        padding: 1rem 2rem 1rem 2rem;
+        margin-bottom: 2.5rem;
+        margin-top: 2.5rem;
+        
+        
+        background: var(--primary-support);
+        box-shadow: 0px 0px 7.73002px rgba(26, 142, 249, 0.25);
+        
+        border-radius: 64px;
+        border: none;
+    }
+    /*-------------------------SECAO--COBRANCA-INFO-CONFIGURACAO---------------------------*/
+    .container__variavel{
+        background-color: #FFFFFF;
+
+        margin-bottom: 1.5rem;
+        padding-bottom: 2rem;
+
+        overflow-x: scroll;
+        overflow-y: visible;
+        scrollbar-color: #173A67 #173A67;
+        scrollbar-width: thin;
+    }
+
+    .info__variavel___configuracao{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        font-family: var(--mont-serrat);
+        font-weight: 600;
+        font-size: 14px;
+
+        width: 74.938rem;
+        height: 3.125rem;
+
+        background-color: #FFFFFF;
+        color: var(--primary);
+    }
+    .info__variavel___nome{
+        width: 14.75rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.5rem;
+    }
+    .info__variavel___descricao{
+        width: 12.25rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 5.1rem;
+    }
+
+    .info__variavel___tipo-conteudo{
+        width: 11rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 5.2rem;
+    }
+    .info__variavel___conteudo{
+        width: 11.875rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 5.2rem;
+    }
+    .info__variavel___tipo-dados{
+        width: 10.188rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 5.7rem;
+    }
+    .info__variavel___tabela{
+        width: 7.438rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.7rem;
+    }
+    .info__variavel___coluna{
+        width: 7.438rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.9rem;
+    }
+    /*-------------------------SECAO--COBRANCA-CLIENTES-CONFIGURACAO---------------------------*/
+    .container__variavel > p {
+        overflow-x: hidden;
+    }
+    .container__variavel::-webkit-scrollbar-thumb {
+        background:#173A67;
+        border-radius: 16px;
+    }
+    .container__variavel::-webkit-scrollbar{
+        background:transparent;
+        height: 0.555rem;
+        width: .5rem;
+    }
+    .lista__clientes___variavel{
+        display: flex;
+        flex-direction: column;
+    }
+    .item__lista___variavel:first-child{
+        border-top: 1px solid #ECECEC;
+    }
+    .item__lista___variavel{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 77.938rem;
+
+        font-family: var(--mont-serrat);
+        color: #7A8594;
+        
+        border-bottom: 0.941034px solid #E1E1E1;
+
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+
+    .layout__nome{
+        width: 14.75rem;
+        font-size: 14px;
+    }
+    .layout__descricao-variavel{
+        width: 12.25rem;
+        font-size: 14px;
+    }
+    .layout__tipo-conteudo{
+        width: 11rem;
+        font-size: 14px;
+    }
+    .layout__conteudo{
+        width: 11.875rem;
+        font-size: 14px;
+    }
+    .layout__tipo-dados{
+        width: 10.188rem;
+        font-size: 14px;
+    }
+    .layout__tabela{
+        width: 7.438rem;
+        font-size: 14px;
+    }
+    .layout__coluna{
+        width: 7.438rem;
+        font-size: 14px;
+    }
 }

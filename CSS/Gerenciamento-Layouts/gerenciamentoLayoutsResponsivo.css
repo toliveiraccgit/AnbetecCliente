@@ -1,0 +1,80 @@
+@media (min-width:1441px){
+    /*-------------------------SECAO-variavel---------------------------*/
+    .info__layouts___configuracao{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 91vw;
+    }
+    .lista__clientes___layouts{
+        display: flex;
+        flex-direction: column;
+    }
+    .item__lista___layouts{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 88vw;
+
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .container__layouts{
+        overflow-x: hidden;
+        overflow-y: visible;
+        scrollbar-color: #173A67 #173A67;
+        scrollbar-width: thin;
+    }
+}
+@media (min-width:1441px){
+    .info__layouts___tipo-documento{
+        margin-right: 5%;
+    }
+}
+@media (min-width:1488px){
+    .info__layouts___tipo-documento{
+        margin-right: 6%;
+    }
+}
+@media (min-width:1550px){
+    .info__layouts___tipo-documento{
+        margin-right: 7%;
+    }
+}
+@media (min-width:1726px){
+    .info__layouts___tipo-documento{
+        margin-right: 9%;
+    }
+}
+
+@media (min-width:1820px){
+    .info__layouts___tipo-documento{
+        margin-right: 10%;
+    }
+}
+
+@media (max-width:1400px){
+    /*-------------------------SECAO-CADASTRA-LAYOUT---------------------------*/
+    .input__cadastra-layout{
+        width: 30vw;
+    }
+    .container__input___cadastra-layout{
+        width: 62vw;
+    }
+    .container__secao___cadastra-layout{
+        padding: 50% 100vw;
+    }
+    /*-------------------------SECAO-LINHA-CADASTRA-LAYOUT---------------------------*/
+    .input__numero-linhas{
+        width: 5vw;
+    }
+    .input__secao___lista-linhas{
+        width: 12.9vw;
+    }
+    /*-------------------------SECAO-LINHA-GERENCIA-VARIAVEL---------------------------*/
+    .container__secao___gerencia-variavel{
+        padding: 50% 100vw;
+    }
+}
