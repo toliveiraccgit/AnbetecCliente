@@ -1,0 +1,1056 @@
+@media (min-width:0px){
+    body{
+        background-color: #F8FBFF;
+    }
+    /*-------------------------CABECALHO--------------------*/
+    .cabecalho{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+        height: 6.938rem;
+        width: 100vw;
+
+        background-color: #FFFFFF;
+
+        padding: 2rem 3.5rem;
+    }
+    .container__info{
+        display: flex;
+        flex-direction: row;
+    }
+    .logo-anbetec{
+        width: 9.213rem;
+        height: 2.979rem;
+    }
+    .pesquisa-mobile{
+        display: none;
+    }
+    .barra-pesquisa{
+        font-family: var(--mont-serrat);
+        font-size: 14px;
+        width: 42vw;
+        height: 3.25rem;
+
+        border: none;
+        border-radius: .5rem;
+
+        background-color: #F1F4F9;
+        background-image: url("../../Assets/search.png");
+        background-repeat: no-repeat;
+        background-position: 2.063rem, .5rem;
+
+        padding: 1rem 0 1rem 3.5rem;
+    }
+    .barra-pesquisa:focus{
+        outline: 2px solid var(--primary-support);
+        color: var(--azul-secundaria);
+    }
+    .container__notificacao{
+        padding-right: 1.25rem;
+        margin-right: 1.75rem;
+        border-right: 1px solid #cdcdcd;
+        
+        display: flex;
+        align-items: center;
+
+        background-color: transparent;
+        border-top: none;
+        border-left: none;
+        border-bottom: none;
+    }
+    .notificacao-ativa{
+        visibility:visible;
+        position: relative;
+        top: -.8rem;
+        left: -.5rem;
+    }
+
+    .perfil-area{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.75rem;
+        font-family: var(--mont-serrat);
+        height: 2rem;
+    }
+    .informacoes__perfil{
+        width: 112px;
+    }
+    .icone__perfil{
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+    }
+    .nome__perfil{
+        margin: 0%;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--primary);
+    }
+    .banco__perfil{
+        font-size: 14px;
+        font-weight: 500;
+        color: #7A8594;
+    }
+    .menu-dots{
+        background-image: url("../../Assets/menu__dots.png");
+        border: none;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position-y: .5rem;
+
+        width: 30px;
+        height: 20px;
+    }
+    /*-------------------------paginação-DDA---------------------------*/
+    .intro__limite-automatico{
+        font-family: var(--mont-serrat);
+        margin-bottom: 2.75rem;
+
+        padding-left: 3rem;
+        padding-top: 2rem;
+        padding-right: 3.438rem;
+    }
+    .paginacao__limite-automatico{
+        color: #7A8594;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 0%;
+    
+    }
+    .link-paginacao{
+        color: #7A8594;
+    }
+    .link-paginacao-limite-automatico{
+        padding-left: 1.6rem;
+        background-image: url("../../Assets/icone-paginacao.png");
+        background-repeat: no-repeat;
+        background-position: .55rem, .2rem ;
+        color: #7A8594;
+    }
+    .destaque__paginacao{
+        padding-left: 1.6rem;
+        background-image: url("../../Assets/icone-paginacao.png");
+        background-repeat: no-repeat;
+        background-position: .55rem, .2rem ;
+    
+        color: var(--primary);
+        font-weight: 600;
+    }
+    /*-------------------------CABECALHO-TABS---------------------------*/
+    .secao__cabecalho___limite-automatico{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        padding-left: 2.9rem;
+        padding-right: 3.438rem;
+    }
+    
+    .cabecalho__limite-automatico{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        margin-bottom: 2.272rem;
+    }
+    .tablinks-limite-automatico{
+        border: none;
+        background-color: transparent;
+        color: var(--primary);
+        font-family: var(--mont-serrat);
+        padding: 0%;
+
+        font-size: 22.58px;
+        font-weight: 700;
+        opacity: 0.2;
+    }
+    .active-limite-automatico{
+        opacity: 1;
+    }
+     /*-------------------------SECAO-CONFIGURACOES---------------------------*/
+    .secao__configuracoes{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        margin-top: 1rem;
+    }
+    .secao__configuracao-basica{
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+        border: 1px solid #F1F1F1;
+
+        padding: 2rem 2rem 2rem 2rem;
+
+        margin-left: 2.9rem;
+        margin-right: 3.438rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1.438rem;
+    }
+    .secao__filtros___configuracoes{
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+    .titulo__secao___configuracoes{
+        font-family: var(--mont-serrat);
+        font-size: 16px;
+        color: var(--primary);
+
+        margin: 0%;
+    }
+    .container__input{
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    .label__input___configuracao{
+        font-size: 12px;
+        font-weight: 500;
+        font-family: var(--mont-serrat);
+
+        color: var(--primary);
+    }
+    .input__configuracao{
+        height: 3.063rem;
+        width: 25.333rem;
+        
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+        
+        padding: .5rem 0 .5rem 1rem;
+        
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        color: #7A8594;
+
+        background-color: transparent;
+    }
+    .input__configuracao:focus{
+        outline: 1px solid var(--primary-support);
+    }
+    input[type=number]::-webkit-inner-spin-button { 
+        -webkit-appearance: none;
+        
+    }
+    input[type=number] { 
+       -moz-appearance: textfield;
+       appearance: textfield;
+    
+    }
+    .container__botao___salvar{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .botao__salvar___configuracoes{
+        padding: 1rem 2rem;
+
+        background-color: var(--primary-support);
+        box-shadow: 0px 0px 7.73002px rgba(26, 142, 249, 0.25);
+
+        border: none;
+        border-radius: 64px;
+
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        color: #FFFFFF;
+    }
+    .secao__configuracao-manual{
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+        border: 1px solid #F1F1F1;
+
+        padding: 2rem 2rem 2rem 2rem;
+
+        margin-left: 2.9rem;
+        margin-right: 3.438rem;
+        margin-bottom: 3.5rem;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.438rem;
+    }
+    .titulo__secao___configuracao-manual{
+        font-family: var(--mont-serrat);
+        font-size: 18px;
+        color: #000000;
+    }
+    .toggle {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: .5rem;
+        color: var(--primary);
+        font-family: var(--mont-serrat);
+        font-size: 14px;
+        font-weight: 500;
+
+        width: 29.293rem;
+    }
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 2.355rem;
+        height: 0.846rem;
+    }
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+        height: 0.846rem
+    }
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 1.625rem;
+        width: 1.625rem;
+        left: -0.063rem;
+        bottom: -0.313rem;
+        background-color: white;
+        -webkit-transition: .3s;
+        transition: .3s;
+        box-shadow: 0px 1.93251px 1.93251px rgba(0, 0, 0, 0.25);
+    }
+    input:checked+.slider {
+        background-color: var(--primary-support);
+    }
+    input:focus+.slider {
+        box-shadow: 0 0 1px var(--primary-support);
+    }
+    input:checked+.slider:before {
+        -webkit-transform: translateX(1.125rem);
+        -ms-transform: translateX(1.125rem);
+        transform: translateX(1.125rem);
+    }
+    .toggle-switch:checked+.input-botao {
+        background-color: var(--primary);
+    }
+    .slider.round {
+        border-radius: 2.125rem;
+    }
+    .slider.round:before {
+        border-radius: 50%;
+    }
+    .container__secao___inputs{
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+    .botao__executar___configuracoes{
+        padding: 1rem 2rem;
+
+        background-color: var(--primary-support);
+        box-shadow: 0px 0px 7.73002px rgba(26, 142, 249, 0.25);
+
+        border: none;
+        border-radius: 64px;
+
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        color: #FFFFFF;
+    }
+    /*--------------------SECAO-FAIXA-ACRESCIMO---------------*/
+    .secao__faixa-acrescimo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding-left: 2.9rem;
+        padding-top: 1rem;
+        padding-right: 3.438rem;
+    }
+    .secao__faixa-acrescimo___configuracao{
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+        border: 1px solid #F1F1F1;
+
+        padding: 2rem 1rem 0 1rem;
+
+        margin-left: 2.9rem;
+        margin-right: 3.438rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .info__faixa-acrescimo___configuracao{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        font-family: var(--mont-serrat);
+        font-weight: 600;
+        font-size: 14px;
+
+        width: 80rem;
+        height: 3.125rem;
+
+        padding-left: 1.646rem;
+
+        background-color: #FAFAFA;
+        border-radius: 8px;
+        color: var(--primary);
+    }
+
+    .container__info__faixa-acrescimo-primeiro{
+        width: auto;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+
+
+
+    .info__faixa-acrescimo___atraso-inicial{
+        width: 15.438rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 8.5rem;
+    }
+    .info__faixa-acrescimo___atraso-final{
+        width: 14.875rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 8.8rem;
+    }
+
+    .info__faixa-acrescimo___aumento-limite{
+        width: 33.375rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 9rem;
+    }
+
+    .info__faixa-acrescimo___acoes{
+        width: 16.938rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.6rem;
+    }
+    /*-------------------------SECAO--faixa-acrescimo-CLIENTES-CONFIGURACAO---------------------------*/
+    .botao__cria__linha-faixa-acrescimo{
+        width: 13.483rem;
+        color: #FFFFFF;
+
+        font-weight: 500;
+        font-size: 16px;
+        font-family: var(--mont-serrat);
+
+        padding: 1rem 2rem 1rem 3.733rem;
+
+        background: var(--primary-support);
+        background-image: url("../../Assets/botao__configurar___cobranca.png");
+        background-repeat: no-repeat;
+
+        background-position-y: center;
+        background-position-x: 15%;
+        
+
+        box-shadow: 0px 0px 7.73002px rgba(26, 142, 249, 0.25);
+        border-radius: 64px;
+
+        margin-bottom: 1.5rem;
+
+        border:none;
+
+        position: absolute;
+        left: calc(100% - 18rem);
+        top: 12.5rem;
+    }
+    .container__faixa-acrescimo{
+        overflow-x: scroll;
+        overflow-y: visible;
+        scrollbar-color:  #173A67 transparent;
+        scrollbar-width: thin;
+
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+        border: 1px solid #F1F1F1;
+
+        padding: 2rem 2rem 2.195rem 2rem;
+    }
+    .container__faixa-acrescimo > p {
+        overflow-x: hidden;
+    }
+    .container__faixa-acrescimo::-webkit-scrollbar-thumb {
+        background:#173A67;
+        border-radius: 16px;
+    }
+    .container__faixa-acrescimo::-webkit-scrollbar{
+        background:transparent;
+        height: 0.555rem;
+        width: .5rem;
+    }
+    .lista__clientes___faixa-acrescimo-configuracao{
+        display: flex;
+        flex-direction: column;
+
+        padding-left: 1.8rem;
+        padding-right: 1.6rem;
+    }
+    .item__lista___faixa-acrescimo-configuracao{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 76.25rem;
+
+        font-family: var(--mont-serrat);
+        color: #7A8594;
+        
+        border-bottom: 0.941034px solid #E1E1E1;
+
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+    .item__lista___faixa-acrescimo-configuracao:last-child{
+        border-bottom: none;
+    }
+
+    .cliente__atraso-inicial{
+        width: 15.4rem;
+        font-size: 14px;
+    }
+    .cliente__atraso-final{
+        width: 15.188rem;
+        font-size: 14px;
+    }
+    .cliente__aumento-limite{
+        width: 32.5rem;
+        font-size: 14px;
+    }
+    .container__botoes___faixa-acrescimo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.25rem;
+        width: 15.466rem;
+    }
+    .botao__edita___faixa-acrescimo{
+        border: none;
+        background-color: #E0F0FF;
+
+        padding-top: 0.719rem;
+        padding-bottom: 0.719rem;
+        padding-right: 1rem;
+        padding-left: 2.983rem;
+
+        border-radius: 64px;
+
+        color: #1A8EF9;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        font-size: 14px;
+
+        background-image: url("../../Assets/VetoresBotoes/vetor-botao-edita.svg");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 1rem;
+    }
+    .botao__deleta___faixa-acrescimo{
+        border: none;
+        background-color: #FFF2F2;
+
+        padding-top: 0.719rem;
+        padding-bottom: 0.719rem;
+        padding-right: 1rem;
+        padding-left: 2.983rem;
+
+        border-radius: 64px;
+
+        color: #F5381E;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        font-size: 14px;
+
+        background-image: url("../../Assets/VetoresBotoes/vetor-botao-deleta.svg");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 1rem;
+    }
+    .paginacao__carrousel{
+        width: 6.528rem;
+
+        position: relative;
+        top: 0%;
+        left: 47%;
+
+        margin-top: 3rem;
+
+        font-family: var(--mont-serrat);
+        font-size: 15px;
+        color: #7A8594;
+
+        background-color: #FFFFFF;
+        z-index: 20000;
+    }
+    /*-------------------------SECAO--COBRANCA-BOTOES-CARROUSEL---------------------------*/
+    .button--carrousel__faixa-acrescimo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        position: relative;
+        top: -4rem;
+
+        padding: 0 3.6rem 0 3.85rem;
+
+    }
+    .carrousel__button__faixa-acrescimo{
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+        background-position-y: center;
+        color: #7A8594;
+        font-family: var(--mont-serrat);
+        font-weight: 600;
+    }
+    .carrousel__button--anterior__faixa-acrescimo{
+        background-image: url("../../Assets/seta-esquerda.png");
+        padding-left: 2rem;
+        opacity: 0.4;
+    }
+    .carrousel__button--proximo__faixa-acrescimo{
+        background-image: url("../../Assets/seta-direita.png");
+        padding-right: 2rem;
+        background-position-x:right;
+    }
+    /*-------------------------SECAO--LOG-LIMITE-AUTOMATICO---------------------------*/
+    .secao__log__limite-automatico{
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 1rem;
+    }
+    .pesquisa__log___limite-automatico{
+        display: flex;
+        flex-direction: column;
+        gap: 1.438rem;
+
+        margin-left: 2.9rem;
+        margin-right: 3.438rem;
+
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+        border: 1px solid #F1F1F1;
+        padding: 2rem 2rem 2.195rem 2rem;
+    }
+    .secao__filtros___log{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 2rem;
+        
+    }
+    .titulo__pesquisa___log{
+        font-family: var(--mont-serrat);
+        font-weight: 600;
+        font-size: 16px;
+
+        color: var(--primary);
+    }
+    .label__filtro-data___log{
+        font-size: 12px;
+        font-weight: 600;
+        font-family: var(--mont-serrat);
+
+        color: var(--primary);
+    }
+    .input__data___log{
+        height: 3.063rem;
+        width: 14rem;
+        
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+        
+        padding: .5rem 0 .5rem 1rem;
+        
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        color: #7A8594;
+
+        background-color: transparent;
+    }
+    .input__configuracao:focus{
+        outline: 1px solid var(--primary-support);
+    }
+    .botao__pesquisa-filtro___log{
+        width: 9.125rem;
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 16px;
+        font-family: var(--mont-serrat);
+        padding: 1rem 2rem ;
+        background: var(--primary-support);
+
+        box-shadow: 0px 0px 7.73002px rgba(26, 142, 249, 0.25);
+        border-radius: 64px;
+        border: none;
+
+        margin-bottom: .5rem;
+    }
+    /*--------------------SECAO-FAIXA-ACRESCIMO---------------*/
+    .secao__resultado-log{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+
+        padding-left: 2.9rem;
+        padding-top: 1rem;
+        padding-right: 3.438rem;
+
+        animation:animatetop .2s ease-in-out forwards;
+    }
+    .secao__log___configuracao{
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+        border: 1px solid #F1F1F1;
+
+        padding: 2rem 1rem 0 1rem;
+
+        margin-left: 2.9rem;
+        margin-right: 3.438rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .info__log___configuracao{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        font-family: var(--mont-serrat);
+        font-weight: 600;
+        font-size: 14px;
+
+        width: 80rem;
+        height: 3.125rem;
+
+        padding-left: 1.646rem;
+
+        background-color: #FAFAFA;
+        border-radius: 8px;
+        color: var(--primary);
+    }
+
+    .container__info__log-primeiro{
+        width: auto;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .info__log___data{
+        width: 6.75rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3rem;
+    }
+    .info__log___cliente{
+        width: 10.438rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 4.1rem;
+    }
+
+    .info__log___anterior{
+        width: 8.563rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 4.5rem;
+    }
+
+    .info__log___novo{
+        width: 8.563rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.6em;
+    }
+
+    .info__log___acoes{
+        width: 16.813rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 6.6rem;
+    }
+
+    .info__log___movimentacao{
+        width: 13.563rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 7.6rem;
+    }
+
+    .info__log___acrescimo{
+        width: 13.563rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 6.6rem;
+    }
+    /*-------------------------SECAO--log-CLIENTES-CONFIGURACAO---------------------------*/
+    .botao__cria__linha-log{
+        width: 13.483rem;
+        color: #FFFFFF;
+
+        font-weight: 500;
+        font-size: 16px;
+        font-family: var(--mont-serrat);
+
+        padding: 1rem 2rem 1rem 3.733rem;
+
+        background: var(--primary-support);
+        background-image: url("../../Assets/botao__configurar___cobranca.png");
+        background-repeat: no-repeat;
+
+        background-position-y: center;
+        background-position-x: 15%;
+        
+
+        box-shadow: 0px 0px 7.73002px rgba(26, 142, 249, 0.25);
+        border-radius: 64px;
+
+        margin-bottom: 1.5rem;
+
+        border:none;
+
+        position: absolute;
+        left: calc(100% - 18rem);
+        top: 12.5rem;
+    }
+    .container__log{
+        overflow-x: scroll;
+        overflow-y: visible;
+        scrollbar-color:  #173A67 transparent;
+        scrollbar-width: thin;
+
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+        border: 1px solid #F1F1F1;
+
+        padding: 2rem 2rem 2.195rem 2rem;
+    }
+    .container__log > p {
+        overflow-x: hidden;
+    }
+    .container__log::-webkit-scrollbar-thumb {
+        background:#173A67;
+        border-radius: 16px;
+    }
+    .container__log::-webkit-scrollbar{
+        background:transparent;
+        height: 0.555rem;
+        width: .5rem;
+    }
+    .lista__clientes___log-configuracao{
+        display: flex;
+        flex-direction: column;
+
+        padding-left: 1.8rem;
+        padding-right: 1.6rem;
+    }
+    .item__lista___log-configuracao{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 76.25rem;
+
+        font-family: var(--mont-serrat);
+        color: #7A8594;
+        
+        border-bottom: 0.941034px solid #E1E1E1;
+
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+    .item__lista___log-configuracao:last-child{
+        border-bottom: none;
+    }
+
+    .cliente__log___data{
+        width: 6.75rem;
+        font-size: 14px;
+    }
+    .cliente__log___cliente{
+        width: 10.438rem;
+        font-size: 14px;
+    }
+
+    .cliente__log___anterior{
+        width: 8.563rem;
+        font-size: 14px;
+    }
+
+    .cliente__log___novo{
+        width: 8.563rem;
+        font-size: 14px;
+    }
+
+    .cliente__log___acoes{
+        width: 16.813rem;
+        font-size: 14px;
+    }
+
+    .cliente__log___movimentacao{
+        width: 13.563rem;
+        font-size: 14px;
+    }
+
+    .cliente__log___acrescimo{
+        width: 11.563rem;
+        font-size: 14px;
+    }
+    .container__botoes___log{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.25rem;
+        width: 15.466rem;
+    }
+    .botao__edita___log{
+        border: none;
+        background-color: #E0F0FF;
+
+        padding-top: 0.719rem;
+        padding-bottom: 0.719rem;
+        padding-right: 1rem;
+        padding-left: 2.983rem;
+
+        border-radius: 64px;
+
+        color: #1A8EF9;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        font-size: 14px;
+
+        background-image: url("../../Assets/VetoresBotoes/vetor-botao-edita.svg");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 1rem;
+    }
+    .botao__deleta___log{
+        border: none;
+        background-color: #FFF2F2;
+
+        padding-top: 0.719rem;
+        padding-bottom: 0.719rem;
+        padding-right: 1rem;
+        padding-left: 2.983rem;
+
+        border-radius: 64px;
+
+        color: #F5381E;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        font-size: 14px;
+
+        background-image: url("../../Assets/VetoresBotoes/vetor-botao-deleta.svg");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 1rem;
+    }
+    .paginacao__carrousel{
+        width: 6.528rem;
+
+        position: relative;
+        top: 0%;
+        left: 47%;
+
+        margin-top: 3rem;
+
+        font-family: var(--mont-serrat);
+        font-size: 15px;
+        color: #7A8594;
+
+        background-color: #FFFFFF;
+        z-index: 20000;
+    }
+    /*-------------------------SECAO--LOG-BOTOES-CARROUSEL---------------------------*/
+    .button--carrousel__log{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        position: relative;
+        top: -4rem;
+
+        padding: 0 3.6rem 0 3.85rem;
+
+    }
+    .carrousel__button__log{
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+        background-position-y: center;
+        color: #7A8594;
+        font-family: var(--mont-serrat);
+        font-weight: 600;
+    }
+    .carrousel__button--anterior__log{
+        background-image: url("../../Assets/seta-esquerda.png");
+        padding-left: 2rem;
+        opacity: 0.4;
+    }
+    .carrousel__button--proximo__log{
+        background-image: url("../../Assets/seta-direita.png");
+        padding-right: 2rem;
+        background-position-x:right;
+    }
+}
+@media (max-width: 1439px){
+    .input__configuracao{
+        width: 27vw;
+    }
+}
+@media (min-width:1460px) {
+    .info__faixa-acrescimo___configuracao{
+        width: 91vw;
+
+        justify-content: space-between;
+    }
+    .item__lista___faixa-acrescimo-configuracao {
+        justify-content: space-between;
+        width: 88vw;
+    }
+
+    .info__log___configuracao{
+        width: 91vw;
+
+        justify-content: space-between;
+    }
+    
+        
+    .item__lista___log-configuracao{
+        justify-content: space-between;
+        width: 88vw;
+    }
+}

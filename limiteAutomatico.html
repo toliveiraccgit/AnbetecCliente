@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./CSS/Limite-Automático/limiteAutomatico.css">
+        <link href="./CSS/base.css" rel="stylesheet">
+        <link href="./CSS/reset.css" rel="stylesheet">
+        <link href="./CSS/normalize.css" rel="stylesheet">
+        <link rel="shortcut icon" href="./Assets/Logo-favicon.png" type="image/x-icon">
+        <title>Gerenciamento de Layouts | Anbetec</title>
+    </head>
+
+    <body id="body">
+    
+        <header class="cabecalho">
+            <a href="./home.html"><img src="./Assets/LogoAnbetec.png" alt="Logo Anbetec" class="logo-anbetec"></a>
+            <div class="container-pesquisa">
+                <button class="pesquisa-mobile"><img class="ico-pesquisa-mobile" src="./Assets/ico-pesquisa-mobile.png" alt="Abrir Barra Pesquisa"></button>
+                <input type="text" class="barra-pesquisa" placeholder="Procure pelo portal">
+            </div>
+            
+            <div class="container__info">
+                <button type="button" class="container__notificacao">
+                    <img src="./Assets/notificação.png" alt="Notificação" class="notificacao">
+                    <img src="./Assets/notificação-ativa.png" alt="Você possui notificação" class="notificacao-ativa">
+                </button>
+                <div class="perfil-area">
+                    <img src="./Assets/icone2.png" alt="Sua Foto de Perfil" class="icone__perfil">
+                    <div class="informacoes__perfil">
+                        <h1 class="nome__perfil">Davi Neris</h1>
+                        <span class="banco__perfil">Banco Anbetec</span>
+                    </div>
+                    <button type="button" class="menu-dots"></button>
+                </div>
+            </div>
+        </header>
+
+        <main class="conteudo">
+
+            <div class="intro__limite-automatico">
+                <p class="paginacao__limite-automatico">
+                    <a href="./home.html" class="link-paginacao">Produtos</a>
+                    <a href="./limiteAutomatico.html" class="destaque__paginacao">Limite Automático</a>
+                </p>
+            </div>
+
+            <section class="secao__cabecalho___limite-automatico">
+                    
+                <div class="cabecalho__limite-automatico">
+                        <button class="tablinks-limite-automatico tab-configuracoes" id="defaultOpen-limite-automatico" onclick="openTabLimiteAutomatico(event, 'configuracoes')">Configurações</button>
+                        <button class="tablinks-limite-automatico tab-faixa-acrescimo" onclick="openTabLimiteAutomatico(event, 'faixa-acrescimo')">Faixas de acrescimo de limite</button>
+                        <button class="tablinks-limite-automatico tab-log" onclick="openTabLimiteAutomatico(event, 'log')">Logs</button>
+                </div>
+
+            </section>
+
+            <section class="secao__configuracoes tabcontent-limite-automatico" id="configuracoes">
+                
+                <section class="secao__configuracao-basica" >
+
+                    <h1 class="titulo__secao___configuracoes">Configuração básica para verificação e upgrade de crédito
+                    </h1>
+    
+                    <section class="secao__filtros___configuracoes">
+    
+                        <div class="container__input">
+                            
+                            <label for="periodo-busca" class="label__input___configuracao">Período para buscar clientes com movimentações:</label>
+                            <input type="number" name="periodo-busca" placeholder="2 Meses" class="input__configuracao">
+    
+                        </div>
+    
+                        <div class="container__input">
+                            
+                            <label for="periodo-minimo" class="label__input___configuracao">Período mínimo para atualizar um cliente após ser atualizado:</label>
+                            <input type="number" name="periodo-minimo" placeholder="4 Meses" class="input__configuracao">
+    
+                        </div>
+    
+                        <div class="container__input">
+                            
+                            <label for="tempo-execução" class="label__input___configuracao">Tempo entre cada execução da atualização:</label>
+                            <input type="number" name="tempo-execução" placeholder="2 Meses" class="input__configuracao">
+    
+                        </div>
+    
+                    </section>
+    
+                    <div class="container__botao___salvar">
+                        <button type="button" class="botao__salvar___configuracoes">Salvar</button>
+                    </div>
+                
+                </section>
+
+                <section class="secao__configuracao-manual" >
+
+                    <h2 class="titulo__secao___configuracao-manual">Execução manual do Agendamento</h2>
+                    
+
+                    <div class="container__secao___inputs">
+                        
+                        <div class="toggle">
+                            <label class="switch">
+                                <input type="checkbox" class="toggle-switch">
+                                <span class="slider round"></span>
+                            </label>
+                            <span>Ao calcular o limite considerar limite atual mais percentual</span>
+                        </div>
+
+                        <button type="button" class="botao__executar___configuracoes">Executar</button>
+                    
+                    </div>
+                
+                </section>
+            
+            </section>
+
+            <section class="secao__faixa-acrescimo tabcontent-limite-automatico" id="faixa-acrescimo">
+
+                <button type="button" class="botao__cria__linha-faixa-acrescimo">Adicionar faixa
+
+                </button>
+                <section class="container__faixa-acrescimo">
+                        <section class="info__faixa-acrescimo___configuracao">
+
+    
+                                <p class="info__faixa-acrescimo___atraso-inicial">Qtd. Inicial atraso</p>
+                                
+                                <p class="info__faixa-acrescimo___atraso-final">Qntd. Final atraso</p>
+        
+                                <p class="info__faixa-acrescimo___aumento-limite">% Aumento limite</p>
+
+                                <p class="info__faixa-acrescimo___acoes">Ações</p>
+                                
+    
+                        </section>
+    
+                        <section class="clientes___faixa-acrescimo___configuracao">
+    
+                            <div class="container__carousel">
+    
+                                <ul class="lista__clientes___faixa-acrescimo-configuracao">
+    
+                                    <li class="item__lista___faixa-acrescimo-configuracao">
+    
+                                        <p class="cliente__atraso-inicial">13 dias</p>
+    
+                                        <p class="cliente__atraso-final">14 Dias</p>
+    
+                                        <p class="cliente__aumento-limite">40%</p>
+    
+                                        <div class="container__botoes___faixa-acrescimo">
+                                       
+                                            <button class="botao__edita___faixa-acrescimo">Editar</button>
+                                            <button class="botao__deleta___faixa-acrescimo">Deletar</button>
+          
+                                        </div>
+        
+                                    </li>
+
+                                    <li class="item__lista___faixa-acrescimo-configuracao">
+    
+                                        <p class="cliente__atraso-inicial">13 dias</p>
+    
+                                        <p class="cliente__atraso-final">14 Dias</p>
+    
+                                        <p class="cliente__aumento-limite">40%</p>
+    
+                                        <div class="container__botoes___faixa-acrescimo">
+                                       
+                                            <button class="botao__edita___faixa-acrescimo">Editar</button>
+                                            <button class="botao__deleta___faixa-acrescimo">Deletar</button>
+          
+                                        </div>
+        
+                                    </li>
+
+                                    <li class="item__lista___faixa-acrescimo-configuracao">
+    
+                                        <p class="cliente__atraso-inicial">13 dias</p>
+    
+                                        <p class="cliente__atraso-final">14 Dias</p>
+    
+                                        <p class="cliente__aumento-limite">40%</p>
+    
+                                        <div class="container__botoes___faixa-acrescimo">
+                                       
+                                            <button class="botao__edita___faixa-acrescimo">Editar</button>
+                                            <button class="botao__deleta___faixa-acrescimo">Deletar</button>
+          
+                                        </div>
+        
+                                    </li>
+                                    
+    
+                                </ul>
+
+                                <p class="paginacao__carrousel">Página 1 de 1</p>
+    
+                            </div>
+                        
+                        </section>
+                </section>
+
+                <div class="button--carrousel__faixa-acrescimo">
+                        <button class="carrousel__button__faixa-acrescimo carrousel__button--anterior__faixa-acrescimo" aria-label="Botão de Voltar">Anterior</button>
+                        <button class="carrousel__button__faixa-acrescimo carrousel__button--proximo__faixa-acrescimo" aria-label="Botão de Avançar">Próximo</button>
+                </div>
+                
+
+            </section>
+
+            
+            <section class="secao__log__limite-automatico tabcontent-limite-automatico" id="log">
+
+                <section class="pesquisa__log___limite-automatico">
+
+                    <h9 class="titulo__pesquisa___log">Filtros:</h9>
+
+                    <section class="secao__filtros___log">
+
+                        <div class="container__input">
+                            <label for="Data Log" class="label__filtro-data___log">Data:</label>
+                            <input type="date" name="Data Log" class="input__data___log" placeholder="XX/XX/XXXX">
+                        </div>
+
+                        <button class="botao__pesquisa-filtro___log" id="botao__pesquisa-log">Pesquisar</button>
+
+                    </section>
+
+                </section>
+
+
+
+                <section class="secao__resultado-log" id="resultado__log">
+
+                    <button type="button" class="botao__cria__linha-log">Adicionar faixa
+
+                    </button>
+                    <section class="container__log">
+                            <section class="info__log___configuracao">
+
+        
+                                    <p class="info__log___data">Data</p>
+                                    
+                                    <p class="info__log___cliente">Cliente</p>
+            
+                                    <p class="info__log___anterior">Anterior</p>
+
+                                    <p class="info__log___novo">Novo</p>
+
+                                    <p class="info__log___acoes">Prazo Médio</p>
+
+                                    <p class="info__log___movimentacao">Movimentação</p>
+
+                                    <p class="info__log___acrescimo">% Acrescimo</p>
+                                    
+        
+                            </section>
+        
+                            <section class="clientes___log___configuracao">
+        
+                                <div class="container__carousel">
+        
+                                    <ul class="lista__clientes___log-configuracao">
+        
+                                        <li class="item__lista___log-configuracao">
+        
+                                            <p class="cliente__log___data">XX/XX/XXXX</p>
+        
+                                            <p class="cliente__log___cliente">XXXXXXXXXXX</p>
+        
+                                            <p class="cliente__log___anterior">XXXXXXXX</p>
+        
+                                            <p class="cliente__log___novo">XXXXXXXXX</p>
+
+                                            <p class="cliente__log___acoes">XXXXXX</p>
+
+                                            <p class="cliente__log___movimentacao">XXXXXXXXXX</p>
+
+                                            <p class="cliente__log___acrescimo">XXXXXX</p>
+            
+                                        </li>
+                                        
+                                    </ul>
+
+                                    <p class="paginacao__carrousel">Página 1 de 1</p>
+        
+                                </div>
+                            
+                            </section>
+                    </section>
+
+                    <div class="button--carrousel__log">
+                            <button class="carrousel__button__log carrousel__button--anterior__log" aria-label="Botão de Voltar">Anterior</button>
+                            <button class="carrousel__button__log carrousel__button--proximo__log" aria-label="Botão de Avançar">Próximo</button>
+                    </div>
+                    
+
+                </section>
+            </section>
+
+
+        </main>
+    
+    
+    <script src="./Componentes/LimiteAutomatico/tabLimiteAutomatico.js" type="text/javascript"></script>
+    <script src="./Componentes/Modules/moduleLimiteAutomatico.js" type="module"></script>
+    </body>
+
+</html>
