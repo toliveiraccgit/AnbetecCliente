@@ -164,6 +164,8 @@
     
     
     .filtros__extrato-cobranca{
+        width: 93vw;
+
         background-color: #FFFFFF;
         border-radius: 1rem;
         border: 1px solid #F1F1F1;
