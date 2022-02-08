@@ -1,0 +1,680 @@
+@media (min-width:0px){
+    body{
+        background-color: #F8FBFF;
+        overflow-x: hidden;
+    }
+    html{
+        overflow-x: hidden;
+    }
+    #body{
+        overflow-x: hidden;
+    }
+    .conteudo{
+        overflow-x: hidden;
+    }
+    .filtros__dda{
+        overflow-x: hidden;
+    }
+    
+    /*-------------------------cabecalho---------------------------*/
+    .cabecalho{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+        height: 6.938rem;
+        width: 100vw;
+    
+        background-color: #FFFFFF;
+    
+        padding: 2rem 3.5rem;
+    }
+    .container__info{
+        display: flex;
+        flex-direction: row;
+    }
+    .logo-anbetec{
+        width: 9.213rem;
+        height: 2.979rem;
+    }
+    .pesquisa-mobile{
+        display: none;
+    }
+    .barra-pesquisa{
+        font-family: var(--mont-serrat);
+        font-size: 14px;
+        width: 39.813rem;
+        height: 3.25rem;
+    
+        border: none;
+        border-radius: .5rem;
+    
+        background-color: #F1F4F9;
+        background-image: url("../../Assets/search.png");
+        background-repeat: no-repeat;
+        background-position: 2.063rem, .5rem;
+    
+        padding: 1rem 0 1rem 3.5rem;
+    }
+    .barra-pesquisa:focus{
+        outline: 2px solid var(--primary-support);
+        color: var(--azul-secundaria);
+    }
+    .container__notificacao{
+        padding-right: 1.25rem;
+        margin-right: 1.75rem;
+        border-right: 1px solid #cdcdcd;
+        
+        display: flex;
+        align-items: center;
+
+        background-color: transparent;
+        border-top: none;
+        border-left: none;
+        border-bottom: none;
+    }
+    .notificacao-ativa{
+        visibility:visible;
+        position: relative;
+        top: -.8rem;
+        left: -.5rem;
+    }
+
+    .perfil-area{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.75rem;
+        font-family: var(--mont-serrat);
+        height: 2rem;
+    }
+    .informacoes__perfil{
+        width: 112px;
+    }
+    .icone__perfil{
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+    }
+    .nome__perfil{
+        margin: 0%;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--primary);
+    }
+    .banco__perfil{
+        font-size: 14px;
+        font-weight: 500;
+        color: #7A8594;
+    }
+    .menu-dots{
+        background-image: url("../../Assets/menu__dots.png");
+        border: none;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position-y: .5rem;
+
+        width: 30px;
+        height: 20px;
+    }
+
+    /*-------------------------paginação-DDA---------------------------*/
+    .intro__extrato-cobranca{
+        font-family: var(--mont-serrat);
+        margin-bottom: 2rem;
+    }
+    .paginacao__extrato-cobranca{
+        color: #7A8594;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 0%;
+    
+    }
+    .link-paginacao{
+        color: #7A8594;
+    }
+    .link-paginacao-edi{
+        padding-left: 1.6rem;
+        background-image: url("../../Assets/icone-paginacao.png");
+        background-repeat: no-repeat;
+        background-position: .55rem, .2rem ;
+        color: #7A8594;
+    }
+    .destaque__paginacao{
+        padding-left: 1.6rem;
+        background-image: url("../../Assets/icone-paginacao.png");
+        background-repeat: no-repeat;
+        background-position: .55rem, .2rem ;
+    
+        color: var(--primary);
+        font-weight: 600;
+    }
+
+    .secao__extrato-cobranca{
+        padding-left: 3rem;
+        padding-top: 2rem;
+        padding-right: 3.438rem;
+    }
+    /*-------------------------secao-filtros-EXTRATO-COBRANCA---------------------------*/
+    .form__filtros{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .filtros__extrato-cobranca{
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+        border: 1px solid #F1F1F1;
+
+        padding: 2rem 2rem 2.5rem 2rem;
+        margin-bottom: 2.051rem;
+    }
+
+    .titulo__filtro{
+        font-family: var(--mont-serrat);
+        font-size: 18px;
+        color: var(--primary);
+
+        margin-bottom: 1.438rem;
+    }
+    .secao-1__filtros{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.281rem;
+
+        font-family: var(--mont-serrat);
+
+    }
+    .container__input___filtro{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .label__filtro{
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--primary);
+
+        margin-bottom: .25rem;
+    }
+    .input__filtro{
+        height: 3.063rem;
+        width: 40.1vw;
+
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+
+        padding: .5rem 1rem .5rem 1rem;
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        color: #7A8594;
+        text-overflow:ellipsis;
+    }
+    .input__filtro:focus, .input__filtro-banco:focus, .input__filtro-cobranca:focus{
+        outline: 1px solid var(--primary-support);
+    }
+    .input__filtro-banco{
+        height: 3.063rem;
+        width: 19.4vw;
+
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+
+        padding: .5rem 1rem .5rem 1rem;
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        color: #7A8594;
+        text-overflow:ellipsis;
+    }
+    .input__filtro-cobranca{
+        height: 3.063rem;
+        width: 25.5vw;
+
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+
+        padding: .5rem 1rem .5rem 1rem;
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        color: #7A8594;
+        text-overflow:ellipsis;
+    }
+
+    select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: url("../../Assets/seta__selection.png") no-repeat;
+        background-position-x: calc(100% - 1rem);
+        background-position-y: 1.3rem;
+        border: 1px solid #333;
+        padding-right: 20px;
+    }
+
+    select:focus{
+        outline: none;
+    }
+    .option__filtro{
+        padding: 1rem 0 1rem 1rem;
+    }
+
+    .container__input-titulo{
+        display: flex;
+        flex-direction: row;
+        gap: 2.5rem;
+    }
+    .input__filtro-data{
+        width: 12.29vw;
+        height: 3.063rem;
+
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+
+        padding: 1rem 0 1rem 1rem;
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        color: #7A8594;
+
+        text-overflow:ellipsis;
+    }
+    .input__filtro-data::-webkit-calendar-picker-indicator {
+        display: none;
+        -webkit-appearance: none;
+    }
+    .input__filtro-data:focus, .input__filtro-small:focus, .input__filtro___pagamento:focus{
+        outline: none;
+    }
+
+    .toggle {
+        display: flex;
+        flex-direction: column-reverse;
+        color: var(--primary);
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--primary);
+
+        width: 18vw;
+
+        margin-bottom: 1rem;
+    }
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 2.355rem;
+        height: 0.846rem;
+        margin-right: .5rem;
+        margin-top: 1.375rem;
+    }
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+        height: 0.846rem
+    }
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 1.625rem;
+        width: 1.625rem;
+        left: -0.063rem;
+        bottom: -0.313rem;
+        background-color: white;
+        -webkit-transition: .3s;
+        transition: .3s;
+        box-shadow: 0px 1.93251px 1.93251px rgba(0, 0, 0, 0.25);
+    }
+    input:checked+.slider {
+        background-color: var(--primary-support);
+    }
+    input:focus+.slider {
+        box-shadow: 0 0 1px var(--primary-support);
+    }
+    input:checked+.slider:before {
+        -webkit-transform: translateX(1.125rem);
+        -ms-transform: translateX(1.125rem);
+        transform: translateX(1.125rem);
+    }
+    .toggle-switch:checked+.input-botao {
+        background-color: var(--primary);
+    }
+    .slider.round {
+        border-radius: 2.125rem;
+    }
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+    .botoes__form{
+        display: flex;
+        align-self: flex-end;
+        font-family: var(--mont-serrat);
+    }
+    .botao-relatorios{
+        width: 11.25rem;
+        height: 3.5rem;
+
+        background-color: transparent;
+        color: var(--primary);
+        padding: 1rem 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+        border: 0.966253px solid #ECECEC;
+        border-radius: 64px;
+    }
+    .botao-pesquisa{
+        width: 11.25rem;
+        height: 3.5rem;
+
+        background-color: var(--primary-support);
+        color: #FFFFFF;
+        padding: 1rem 2rem;
+
+        border: 0.966253px solid #ECECEC;
+        border-radius: 64px;
+    }
+    .container__feedback-filtros{
+        width: 17.313rem;
+
+        position: absolute;
+        left: 41%;
+        right: 50%;
+        top: -300px;
+
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 2.563rem;
+        padding-right: 1rem;
+
+        background-color: var(--terciary);
+        background-image: url("../../Assets/ExtratoCobranca/icone-feedback-filtros.svg");
+        background-repeat: no-repeat;
+        background-position-x: .9rem;
+        background-position-y: center;
+
+        border-radius: 8px;
+
+    }
+    .texto__filtro-concluido{
+        font-family: var(--mont-serrat);
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+    /*-------------------------RESULTADO-PESQUISA-EXTRATO-COBRANCA---------------------------*/
+    .resultado__extrato-cobranca{
+        display: none;
+        opacity: 0;
+        position: relative;
+
+        flex-direction: column;
+        gap: 2.5rem;
+
+        padding-left: 3rem;
+        padding-top: 0rem;
+        padding-right: 3.438rem;
+
+        animation: animatetop .5s ease-in-out forwards;
+    }
+    .cards__titulos___extrato-cobranca{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+    .container__card___titulos{
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+
+        width: 20.45vw;
+        height: 7.5rem;
+
+        background: #FFFFFF;
+        box-shadow: 0px 4px 16px rgba(122, 133, 148, 0.08);
+        border-radius: 8px;
+
+        padding-top: 2.094rem;
+        padding-bottom: 2.094rem;
+        padding-left: 6.5rem;
+        padding-right: 0rem;
+
+        background-position-x: 1.5rem;
+        background-position-y: center;
+        background-repeat: no-repeat;
+    }
+    .card__titulos-gerados{
+        background-image: url("../../Assets/ExtratoCobranca/icone-titulos-gerados.svg");
+    }
+    .card__titulos-enviados{
+        background-image: url("../../Assets/ExtratoCobranca/icone-titulo-enviados.svg");
+    }
+    .card__titulos-nao-enviados{
+        background-image: url("../../Assets/ExtratoCobranca/icone-titulos-nao-enviados.svg");
+    }
+
+    .titulo__cards__extrato-cobranca{
+        font-family: var(--mont-serrat);
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .numero__cards__extrato-cobranca{
+        font-family: var(--mont-serrat);
+        font-size: 14px;
+        font-weight: 500;
+
+        color: #7A8594;
+
+        margin: 0%;
+    }
+    .valor__card-gerados{
+        color: var(--primary-support);
+    }
+    .valor__card-enviados{
+        color: var(--terciary);
+    }
+    .valor__card-nao-enviados{
+        color: #F5381E;
+    }
+
+    .container__card___baixas-automaticas{
+        display: flex;
+        flex-direction: column;
+
+        width: 27.4vw;
+        height: 7.5rem;
+
+        background: #231F20;
+        border-radius: 9px;
+
+        padding-top: 1.125rem;
+        padding-left: 1.438rem;
+        margin-left: 0.563rem;
+
+        color: #FFFFFF;
+        font-family: var(--mont-serrat);
+        letter-spacing: 0.3px;
+
+        background-image: url("../../Assets/ExtratoCobranca/icone-sifao-background.png");
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-position-y: 1.5rem;
+    }
+    .titulo__baixa-automatica{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .data__baixa-automatica{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .container__valor___baixa-automatica{
+        display: flex;
+        justify-content: flex-end;
+
+        padding-right: 1.938rem;
+
+        padding-top: 2rem;
+    }
+    .valor__baixa-automatica{
+       padding-left: 1.7rem;
+
+       margin: 0%;
+
+       font-size: 36px;
+       font-weight: 700;
+
+       background-image: url("../../Assets/ExtratoCobranca/icone-sifrao.svg");
+       background-repeat: no-repeat;
+    }
+    /*-------------------------TITULOS-PESQUISA-EXTRATO-COBRANCA---------------------------*/
+    .secao__ocorrencias{
+        display: flex;
+        flex-direction: column;
+        gap: 0.424rem;
+    }
+    .container__cabecalho-ocorrencias{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 92vw;
+
+        font-family: var(--mont-serrat);
+        color: #394E67;
+    }
+    .titulo__cabecalho___ocorrencia{
+        font-weight: 600;
+    }
+    .subtitulo__cabecalho___ocorrencia{
+        font-weight: 500;
+    }
+    /*-------------------------LISTA-OCORRENCIAS-TITULOS-PESQUISA-EXTRATO-COBRANCA---------------------------*/
+    .container__secoes___ocorrencias{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.326rem;
+
+        margin-bottom: 4.813rem;
+    }
+    .secao__lista___ocorrencias{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        width: 45.25vw;
+        height: auto;
+
+        background: #FFFFFF;
+
+        border: 1px solid #F1F1F1;
+        border-radius: 16px;
+
+        padding: 2rem;
+    }
+    .titulo__lista___ocorrencias{
+        font-family: var(--mont-serrat);
+        font-weight: 600;
+        font-size: 15.46px;
+        color: #394E67;
+    }
+    .lista__ocorrencias{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .item__lista___ocorrencias{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-bottom: 1rem;
+        border-bottom: 0.966253px solid #EFEFEF;
+    }
+    .item__lista___ocorrencias:last-child{
+        border: none;
+        padding: 0%;
+    }
+    .titulo__ocorrencia{
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        font-size: 13px;
+        color: #7A8594;
+    }
+    .quantidade__titulos___ocorrencia{
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        font-size: 13px;
+        color: #7A8594;
+
+        margin: 0%;
+    }
+    /*-------------------------LISTA-DETALHES-OCORRENCIAS-TITULOS-PESQUISA-EXTRATO-COBRANCA---------------------------*/
+    .secao__lista___detalhes-ocorrencias{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        width: 45.25vw;
+        height: auto;
+
+        background: #FFFFFF;
+
+        border: 1px solid #F1F1F1;
+        border-radius: 16px;
+
+        padding: 2rem;
+    }
+    .titulo__lista___detalhes-ocorrencias{
+        font-family: var(--mont-serrat);
+        font-weight: 600;
+        font-size: 15.46px;
+        color: #394E67;
+    }
+    .lista__detalhes-ocorrencias{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .item__lista___detalhes-ocorrencias{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        padding-bottom: 1rem;
+        border-bottom: 0.966253px solid #EFEFEF;
+    }
+    .item__lista___detalhes-ocorrencias:last-child{
+        border: none;
+        padding: 0%;
+    }
+    .titulo__detalhes-ocorrencia{
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        font-size: 13px;
+        color: #7A8594;
+    }
+    .quantidade__titulos___detalhes-ocorrencia{
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        font-size: 13px;
+        color: #7A8594;
+
+        margin: 0%;
+    }
+}

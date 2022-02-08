@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/Extrato-Cobranca/extratoCobranca.css">
+        <link href="../CSS/base.css" rel="stylesheet">
+        <link href="../CSS/reset.css" rel="stylesheet">
+        <link href="../CSS/normalize.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../Assets/Logo-favicon.png" type="image/x-icon" />
+        <title>Extrato de Cobrança | Anbetec</title>
+    </head>
+
+    <body id="body">
+        <header class="cabecalho">
+            <a href="../home.html"><img src="../Assets/LogoAnbetec.png" alt="Logo Anbetec" class="logo-anbetec"></a>
+            <div class="container-pesquisa">
+                <button class="pesquisa-mobile"><img class="ico-pesquisa-mobile" src="../Assets/ico-pesquisa-mobile.png" alt="Abrir Barra Pesquisa"></button>
+                <input type="text" class="barra-pesquisa" placeholder="Procure pelo portal">
+            </div>
+            
+            <div class="container__info">
+                <button type="button" class="container__notificacao">
+                    <img src="../Assets/notificação.png" alt="Notificação" class="notificacao">
+                    <img src="../Assets/notificação-ativa.png" alt="Você possui notificação" class="notificacao-ativa">
+                </button>
+                <div class="perfil-area">
+                    <img src="../Assets/icone2.png" alt="Sua Foto de Perfil" class="icone__perfil">
+                    <div class="informacoes__perfil">
+                        <h1 class="nome__perfil">Davi Neris</h1>
+                        <span class="banco__perfil">Banco Anbetec</span>
+                    </div>
+                    <button type="button" class="menu-dots"></button>
+                </div>
+            </div>
+        </header>
+        <main class="conteudo">
+            
+            <div class="container__feedback-filtros" id="container__feedback-filtros___extrato-cobranca">
+
+                <span class="texto__filtro-concluido">Filtros aplicados com sucesso!</span>
+
+            </div>
+
+            <section class="secao__extrato-cobranca"> 
+                
+                <div class="intro__extrato-cobranca">
+                    <p class="paginacao__extrato-cobranca">
+                        <a href="../home.html" class="link-paginacao">Produtos</a>
+                        <a href="../edi-financeiro.html" class="link-paginacao-edi">EDI Financeiro</a>
+                        <a href="./extrato-cobranca.html" class="destaque__paginacao">Extrato de Cobrança</a>
+                    </p>
+                </div>
+
+                <section class="filtros__extrato-cobranca">
+                    <h2 class="titulo__filtro">Filtros:</h2>
+                    <form action="" class="form__filtros">
+                        
+                        <section class="secao-1__filtros">
+                            
+                            <div class="container__input___filtro">
+                                <label for="Filial" class="label__filtro">Configuração</label>
+                                <select name="Filia" id="Filial" class="input__filtro" required>
+                                    <option  class="option__filtro" value="0">(Selecione)</option>
+                                    <option class="option__filtro" value="1">1 - 1 - ANBETEC LTDA - 341-341-BANCO ITAU</option>
+                                </select>
+                            </div>
+
+                            <div class="container__input___filtro">
+                                <label for="Banco" class="label__filtro">Banco:</label>
+                                <select name="Banco" id="Banco" class="input__filtro-banco">
+                                    <option class="option__filtro" value="0">(Selecione)</option>
+                                    <option class="option__filtro" value="1">341 - 341-341-BANCO ITAU</option>
+                                </select>
+                            </div>
+
+                            <div class="container__input___filtro">
+                                <label for="Banco" class="label__filtro">Cobranca</label>
+                                <select name="Banco" id="Banco" class="input__filtro-cobranca">
+                                    <option class="option__filtro" value="0">(Selecione)</option>
+                                    <option class="option__filtro" value="1">341 - FILO1-BANCO ITAU - CONGEBRRAS</option>
+                                </select>
+                            </div>
+
+                            <div class="container__input___filtro">
+                                <label for="data-fim" class="label__filtro">Data de remessa inicial</label>
+                                <input type="date" for="Titulo" class="input__filtro-data" required>
+                            </div>
+
+                            <div class="container__input___filtro">
+                                <label for="data-fim" class="label__filtro">Data de remessa final</label>
+                                <input type="date" for="Titulo" class="input__filtro-data" required>
+                            </div>
+
+                            <div class="container__input___filtro">
+                                <label for="data-fim" class="label__filtro">Data de retorno</label>
+                                <input type="date" for="Titulo" class="input__filtro-data" required>
+                            </div>
+                            
+                            <div class="toggle">
+                                <label class="switch">
+                                    <input type="checkbox" class="toggle-switch">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span>Contas vinculadas</span>
+                            </div>
+
+                            <div class="botoes__form">
+                                <button type="button" class="botao-relatorios">Ver Relatórios</button>
+                                <button type="button" class="botao-pesquisa" id="pesquisa__dda" onclick="abrirResultadoExtratoCobranca()">Aplicar Filtros</button>
+                            </div>
+
+                        </section>
+                        
+                    </form>
+                </section>
+                
+            </section>
+            
+            <section class="resultado__extrato-cobranca" id="resultado__extrato-cobranca">
+
+                <section class="cards__titulos___extrato-cobranca">
+
+                    <div class="container__card___titulos card__titulos-gerados">
+
+                        <h3 class="titulo__cards__extrato-cobranca valor__card-gerados">R$: 152,00</h3>
+                        <p class="numero__cards__extrato-cobranca numero__card-gerados">21 titulos gerados</p>
+
+                    </div>
+
+                    <div class="container__card___titulos card__titulos-enviados">
+
+                        <h3 class="titulo__cards__extrato-cobranca valor__card-enviados">R$: 209,11</h3>
+                        <p class="numero__cards__extrato-cobranca numero__card-enviados">10 titulos enviados ao Banco</p>
+
+                    </div>
+
+                    <div class="container__card___titulos card__titulos-nao-enviados">
+
+                        <h3 class="titulo__cards__extrato-cobranca valor__card-nao-enviados">R$: -102,89</h3>
+                        <p class="numero__cards__extrato-cobranca numero__card-nao-enviados">2 titulos não enviados</p>
+
+                    </div>
+
+                    <div class="container__card___baixas-automaticas">
+
+                        <h3 class="titulo__baixa-automatica">Baixas Automáticas em <span class="data__baixa-automatica">08/09/2021</span></h3>
+                        <div class="container__valor___baixa-automatica">
+                            <p class="valor__baixa-automatica">456,00</p>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="secao__ocorrencias">
+
+                    <div class="container__cabecalho-ocorrencias">
+
+                        <h4 class="titulo__cabecalho___ocorrencia">Baixas automáticas em 08/09/2021</h4>
+                        <h5 class="subtitulo__cabecalho___ocorrencia">Total liquidado: R$ 10.014,78</h5>
+
+                    </div>
+
+                    <section class="container__secoes___ocorrencias">
+
+                        <section class="secao__lista___ocorrencias">
+
+                            <h6 class="titulo__lista___ocorrencias">Ocorrências</h6>
+
+                            <ul class="lista__ocorrencias">
+
+                                <li class="item__lista___ocorrencias">
+                                    <h7 class="titulo__ocorrencia">12 - 12 Abatimento concedido</h7>
+                                    <p class="quantidade__titulos___ocorrencia">8 Títulos</p>
+                                </li>
+
+                                <li class="item__lista___ocorrencias">
+                                    <h7 class="titulo__ocorrencia">14 - 14 Alteração de vencimento do título</h7>
+                                    <p class="quantidade__titulos___ocorrencia">34 Títulos</p>
+                                </li>
+
+                                <li class="item__lista___ocorrencias">
+                                    <h7 class="titulo__ocorrencia">28 - 28 Manutenção de título vencido</h7>
+                                    <p class="quantidade__titulos___ocorrencia">201 Títulos</p>
+                                </li>
+
+                                <li class="item__lista___ocorrencias">
+                                    <h7 class="titulo__ocorrencia">02 - 02 Confirmação de entrada de título</h7>
+                                    <p class="quantidade__titulos___ocorrencia">12 Títulos</p>
+                                </li>
+
+                                <li class="item__lista___ocorrencias">
+                                    <h7 class="titulo__ocorrencia">06 - 06 Liquidação normal</h7>
+                                    <p class="quantidade__titulos___ocorrencia">13 Títulos</p>
+                                </li>
+
+                                <li class="item__lista___ocorrencias">
+                                    <h7 class="titulo__ocorrencia">09 - 09 Baixa de título</h7>
+                                    <p class="quantidade__titulos___ocorrencia">2 Títulos</p>
+                                </li>
+
+                                <li class="item__lista___ocorrencias">
+                                    <h7 class="titulo__ocorrencia">03 - 03 Comando recusado</h7>
+                                    <p class="quantidade__titulos___ocorrencia">4 Títulos</p>
+                                </li>
+
+
+                            </ul>
+
+                        </section>
+
+                        <section class="secao__lista___detalhes-ocorrencias">
+                            
+                            <h8 class="titulo__lista___detalhes-ocorrencias">Ocorrências</h8>
+
+                            <ul class="lista__detalhes-ocorrencias">
+
+                                <li class="item__lista___detalhes-ocorrencias">
+                                    <h9 class="titulo__detalhes-ocorrencia">Títulos já baixados</h9>
+                                    <p class="quantidade__titulos___detalhes-ocorrencia">8 Títulos</p>
+                                </li>
+
+                                <li class="item__lista___detalhes-ocorrencias">
+                                    <h9 class="titulo__detalhes-ocorrencia">Títulos aptos porém não baixados</h9>
+                                    <p class="quantidade__titulos___detalhes-ocorrencia">34 Títulos</p>
+                                </li>
+
+                                <li class="item__lista___detalhes-ocorrencias">
+                                    <h9 class="titulo__detalhes-ocorrencia">Títulos gerados a maior</h9>
+                                    <p class="quantidade__titulos___detalhes-ocorrencia">201 Títulos</p>
+                                </li>
+
+                                <li class="item__lista___detalhes-ocorrencias">
+                                    <h9 class="titulo__detalhes-ocorrencia">Títulos gerados a menor com juros</h9>
+                                    <p class="quantidade__titulos___detalhes-ocorrencia">12 Títulos</p>
+                                </li>
+
+                                <li class="item__lista___detalhes-ocorrencias">
+                                    <h9 class="titulo__detalhes-ocorrencia">Títulos gerados a menor desdobrando</h9>
+                                    <p class="quantidade__titulos___detalhes-ocorrencia">4 Títulos</p>
+                                </li>
+
+                                <li class="item__lista___detalhes-ocorrencias">
+                                    <h9 class="titulo__detalhes-ocorrencia">Títulos não aptos para baixa</h9>
+                                    <p class="quantidade__titulos___detalhes-ocorrencia">13 Títulos</p>
+                                </li>
+
+                                <li class="item__lista___detalhes-ocorrencias">
+                                    <h9 class="titulo__detalhes-ocorrencia">Títulos não encontratos</h9>
+                                    <p class="quantidade__titulos___detalhes-ocorrencia">2 Títulos</p>
+                                </li>
+
+
+                            </ul>
+
+
+                        </section>
+
+                    </section>
+
+                </section>
+
+            </section>
+        </main>
+    <script src="../Componentes/ExtratoCobranca/extratoCorbanca.js" type="text/javascript"></script>
+    </body>
+
+</html>
