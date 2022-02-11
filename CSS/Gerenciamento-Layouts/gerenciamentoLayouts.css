@@ -210,7 +210,7 @@
 
         overflow-x: scroll;
         overflow-y: visible;
-        scrollbar-color: #173A67 #173A67;
+        scrollbar-color: #173A67 transparent;
         scrollbar-width: thin;
     }
 
@@ -778,7 +778,7 @@
 
         overflow-x: scroll;
         overflow-y: visible;
-        scrollbar-color: #173A67 #173A67;
+        scrollbar-color: #173A67 transparent;
         scrollbar-width: thin;
     }
 

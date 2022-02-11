@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/Conferencia-Conciliacao/conferenciaConciliacao.css">
+        <link rel="stylesheet" href="../CSS/Conferencia-Conciliacao/conferenciaConciliacaoResponsivo.css">
+        <link href="../CSS/base.css" rel="stylesheet">
+        <link href="../CSS/reset.css" rel="stylesheet">
+        <link href="../CSS/normalize.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../Assets/Logo-favicon.png" type="image/x-icon" />
+        <title>Conferência e Conciliação | Anbetec</title>
+    </head>
+
+    <body id="body">
+        <header class="cabecalho">
+            <a href="../home.html"><img src="../Assets/LogoAnbetec.png" alt="Logo Anbetec" class="logo-anbetec"></a>
+            <div class="container-pesquisa">
+                <button class="pesquisa-mobile"><img class="ico-pesquisa-mobile" src="../Assets/ico-pesquisa-mobile.png" alt="Abrir Barra Pesquisa"></button>
+                <input type="text" class="barra-pesquisa" placeholder="Procure pelo portal">
+            </div>
+            
+            <div class="container__info">
+                <button type="button" class="container__notificacao">
+                    <img src="../Assets/notificação.png" alt="Notificação" class="notificacao">
+                    <img src="../Assets/notificação-ativa.png" alt="Você possui notificação" class="notificacao-ativa">
+                </button>
+                <div class="perfil-area">
+                    <img src="../Assets/icone2.png" alt="Sua Foto de Perfil" class="icone__perfil">
+                    <div class="informacoes__perfil">
+                        <h1 class="nome__perfil">Davi Neris</h1>
+                        <span class="banco__perfil">Banco Anbetec</span>
+                    </div>
+                    <button type="button" class="menu-dots"></button>
+                </div>
+            </div>
+        </header>
+        <main class="conteudo">
+
+            <section class="secao__extrato-cobranca"> 
+                
+                <div class="intro__extrato-cobranca">
+                    <p class="paginacao__extrato-cobranca">
+                        <a href="../home.html" class="link-paginacao">Produtos</a>
+                        <a href="../edi-financeiro.html" class="link-paginacao-edi">EDI Financeiro</a>
+                        <a href="./conferencia-conciliacao.html" class="destaque__paginacao">Conferência e Conciliação</a>
+                    </p>
+                </div>
+
+                <div class="cabecalho__processamento-servico">
+                    <button class="tablinks tab-extrato" id="defaultOpen" onclick="openTab(event, 'extrato')">Extrato de Conferência</button>
+                    <button class="tablinks tab-conferencia" onclick="openTab(event, 'conferencia')">Conferência e Conciliação</button>   
+                </div>
+            </section>
+
+            <section class="secao__extrato___filtros tabcontent" id="extrato">
+                
+                <section class="filtros__extrato-cobranca">
+                    <h2 class="titulo__filtro">Filtros:</h2>
+                    <form action="" class="form__filtros">
+                        
+                        <section class="secao-1__filtros">
+                            
+                            <div class="container__input___filtro">
+                                <label for="Configuração" class="label__filtro">Configuração: (obrigatório)</label>
+                                <select name="Configuração" id="Configuracao" class="input__filtro" required>
+                                    <option  class="option__filtro" value="0">(Selecione)</option>
+                                    <option class="option__filtro" value="1">3 - 10-10-CAIXINHA - OESA</option>
+                                </select>
+                            </div>
+
+                            <div class="container__input___filtro">
+                                <label for="Banco" class="label__filtro">Banco:</label>
+                                <select name="Banco" id="Banco" class="input__filtro" required>
+                                    <option  class="option__filtro" value="0">(Selecione)</option>
+                                    <option class="option__filtro" value="1">341 - 341-341-BANCO ITAU</option>
+                                </select>
+                            </div>
+
+                            <div class="container__input___filtro">
+                                <label for="Período Inicio" class="label__filtro">Período Início:</label>
+                                <input type="date" name="Período Inicio" class="input__filtro" required placeholder="XX/XX/XXXX">
+                            </div>
+
+                            <div class="container__input___filtro">
+                                <label for="Periodo Final" class="label__filtro">Período Final:</label>
+                                <input type="date" name="Periodo Final" class="input__filtro" required placeholder="XX/XX/XXXX">
+                            </div>
+
+                            
+
+                        </section>
+
+                        <div class="botoes__form">
+                            <button type="reset" class="botao-limpar-form">Limpar</button>
+                            <button type="button" class="botao-pesquisa" id="pesquisa__extrato" onclick="abrirResultadoExtratoFiltro()">Pesquisar</button>
+                        </div>
+
+                    </form>
+                </section>
+
+
+                <section class="container__extrato-lista" id="resultado__extrato___pesquisa-filtro">
+                    <section class="info__extrato-lista___configuracao">
+    
+    
+                            <p class="info__extrato-lista___agencia">Agencia</p>
+                            
+                            <p class="info__extrato-lista___conta">Conta</p>
+    
+                            <p class="info__extrato-lista___data-arquivo">Dt. Arquivo</p>
+    
+                            <p class="info__extrato-lista___nome-arquivo">Nome Arquivo</p>
+    
+                    </section>
+    
+                    <section class="lista___extrato-lista">
+    
+                        <div class="container__carousel">
+    
+                            <ul class="lista__clientes___extrato-lista">
+    
+                                <li class="item__lista___extrato-lista">
+
+                                    <input type="checkbox" class="input__check___lista-extrato">
+    
+                                    <p class="extrato-lista__agencia">1539</p>
+    
+                                    <p class="extrato-lista__conta">13000000030-7</p>
+    
+                                    <p class="extrato-lista__data-arquivo">04/11/2021</p>
+    
+                                    <p class="extrato-lista__nome-arquivo">EXT03314300000003070411202106ret2021110405227635</p>
+    
+                                </li>
+
+                                <li class="item__lista___extrato-lista">
+
+                                    <input type="checkbox" class="input__check___lista-extrato">
+    
+                                    <p class="extrato-lista__agencia">1539</p>
+    
+                                    <p class="extrato-lista__conta">13000000030-7</p>
+    
+                                    <p class="extrato-lista__data-arquivo">04/11/2021</p>
+    
+                                    <p class="extrato-lista__nome-arquivo">EXT03314300000003070411202106ret2021110405227635</p>
+    
+                                </li>
+
+                                <li class="item__lista___extrato-lista">
+
+                                    <input type="checkbox" class="input__check___lista-extrato">
+    
+                                    <p class="extrato-lista__agencia">1539</p>
+    
+                                    <p class="extrato-lista__conta">13000000030-7</p>
+    
+                                    <p class="extrato-lista__data-arquivo">04/11/2021</p>
+    
+                                    <p class="extrato-lista__nome-arquivo">EXT03314300000003070411202106ret2021110405227635</p>
+    
+                                </li>
+
+                                <li class="item__lista___extrato-lista">
+
+                                    <input type="checkbox" class="input__check___lista-extrato">
+    
+                                    <p class="extrato-lista__agencia">1539</p>
+    
+                                    <p class="extrato-lista__conta">13000000030-7</p>
+    
+                                    <p class="extrato-lista__data-arquivo">04/11/2021</p>
+    
+                                    <p class="extrato-lista__nome-arquivo">EXT03314300000003070411202106ret2021110405227635</p>
+    
+                                </li>
+                                
+                            </ul>
+
+                            <div class="container__botoes-marcar">
+                                <div class="botoes__marcador">
+                                    <button class="botao__marcar" id="botao__marcar">Marcar Todos</button>
+                                    <button class="botao__desmarca" id="botao__desmarca">Desmarcar Todos</button>
+                                </div>
+                                <button class="botao__processar" id="botao__processa">Processar</button>
+                            </div>
+
+                            <p class="paginacao__carrousel">Página 1 de 1</p>
+    
+                        </div>
+    
+                    
+                    </section>
+                    
+                    <div class="button--carrousel">
+                        <button class="carrousel__button carrousel__button--anterior" aria-label="Botão de Voltar">Anterior</button>
+                        <button class="carrousel__button carrousel__button--proximo" aria-label="Botão de Avançar">Próximo</button>
+                    </div>
+    
+                    
+                </section>
+
+            </section>
+
+            <section class="secao__conferencia-conciliacao tabcontent" id="conferencia">
+
+                <section class="cabecalho__info___arquivo">
+
+                    <div class="container__info___arquivo">
+
+                        <h1 class="titulo__info___arquivo">Banco</h1>
+                        <span class="info__arquivo">3302-33-SANTANDER C.C 130000000307</span>
+
+                    </div>
+
+                    <div class="container__info___arquivo">
+
+                        <h1 class="titulo__info___arquivo">Data do arquivo</h1>
+                        <span class="info__arquivo">04/11/2021</span>
+                        
+                    </div>
+
+                </section>
+
+                <section class="secao__movimentacao-erp">
+
+                    <h2 class="titulo__secao___movimentacao-erp">Movimentações do ERP</h2>
+
+                    <section class="filtro__movimentacao-erp">
+
+                            <div class="container__input___filtro">
+                                <label for="Data Inicio" class="label__filtro">Data Início:</label>
+                                <input type="date" name="Data Inicio" class="input__filtro-erp" required placeholder="XX/XX/XXXX">
+                            </div>
+
+                            <div class="container__input___filtro">
+                                <label for="Data Final" class="label__filtro">Data Final:</label>
+                                <input type="date" name="Data Final" class="input__filtro-erp" required placeholder="XX/XX/XXXX">
+                            </div>
+
+                            <div class="container__input___filtro">
+                                <label for="Moeda" class="label__filtro">Moeda</label>
+
+                                <select name="Moeda" id="Moeda" class="input__filtro-erp" required>
+                                    <option  class="option__filtro" value="0">(Selecione)</option>
+                                    <option class="option__filtro" value="1">REAL</option>
+                                </select>
+                            </div>
+
+                            <button type="button" class="botao-pesquisa__filtro-erp" id="pesquisa__filtro-erp" >Pesquisar</button>
+                    </section>
+
+                    <section class="container__movimentacao-erp___lista">
+                        <section class="info__movimentacao-erp___configuracao">
+        
+        
+                                <p class="info__movimentacao-erp___transacao">Transação</p>
+                                
+                                <p class="info__movimentacao-erp___id-transacao">ID Arquivo</p>
+        
+                                <p class="info__movimentacao-erp___valor">Valor</p>
+        
+                                <p class="info__movimentacao-erp___natureza">Natureza</p>
+
+                                <p class="info__movimentacao-erp___data">Data</p>
+
+                                <p class="info__movimentacao-erp___documento">Documento</p>
+        
+                        </section>
+        
+                        <section class="lista___movimentacao-erp">
+        
+                            <div class="container__carousel">
+        
+                                <ul class="lista__clientes___movimentacao-erp">
+        
+                                    <li class="item__lista___movimentacao-erp">
+    
+                                        <input type="checkbox" class="input__check___lista-extrato">
+        
+                                        <p class="movimentacao-erp__transacao">58220</p>
+        
+                                        <p class="movimentacao-erp__id-transacao">-</p>
+        
+                                        <p class="movimentacao-erp__valor">R$ 42,76</p>
+
+                                        <p class="movimentacao-erp__natureza">D</p>
+
+                                        <p class="movimentacao-erp__data">21/10/2021</p>
+        
+                                        <p class="movimentacao-erp__documento">04/11/2021</p>
+                                        
+                                        <button class="botao__edita___item-erp">Editar</button>
+                                    </li>
+
+                                    <li class="item__lista___movimentacao-erp">
+    
+                                        <input type="checkbox" class="input__check___lista-extrato">
+        
+                                        <p class="movimentacao-erp__transacao">58220</p>
+        
+                                        <p class="movimentacao-erp__id-transacao">-</p>
+        
+                                        <p class="movimentacao-erp__valor">R$ 42,76</p>
+
+                                        <p class="movimentacao-erp__natureza">D</p>
+
+                                        <p class="movimentacao-erp__data">21/10/2021</p>
+        
+                                        <p class="movimentacao-erp__documento">04/11/2021</p>
+                                        
+                                        <button class="botao__edita___item-erp">Editar</button>
+                                    </li>
+
+                                    <li class="item__lista___movimentacao-erp">
+    
+                                        <input type="checkbox" class="input__check___lista-extrato">
+        
+                                        <p class="movimentacao-erp__transacao">58220</p>
+        
+                                        <p class="movimentacao-erp__id-transacao">-</p>
+        
+                                        <p class="movimentacao-erp__valor">R$ 42,76</p>
+
+                                        <p class="movimentacao-erp__natureza">D</p>
+
+                                        <p class="movimentacao-erp__data">21/10/2021</p>
+        
+                                        <p class="movimentacao-erp__documento">04/11/2021</p>
+                                        
+                                        <button class="botao__edita___item-erp">Editar</button>
+                                    </li>
+
+                                    <li class="item__lista___movimentacao-erp">
+    
+                                        <input type="checkbox" class="input__check___lista-extrato">
+        
+                                        <p class="movimentacao-erp__transacao">58220</p>
+        
+                                        <p class="movimentacao-erp__id-transacao">-</p>
+        
+                                        <p class="movimentacao-erp__valor">R$ 42,76</p>
+
+                                        <p class="movimentacao-erp__natureza">D</p>
+
+                                        <p class="movimentacao-erp__data">21/10/2021</p>
+        
+                                        <p class="movimentacao-erp__documento">04/11/2021</p>
+                                        
+                                        <button class="botao__edita___item-erp">Editar</button>
+                                    </li>
+
+                                    <li class="item__lista___movimentacao-erp">
+    
+                                        <input type="checkbox" class="input__check___lista-extrato">
+        
+                                        <p class="movimentacao-erp__transacao">58220</p>
+        
+                                        <p class="movimentacao-erp__id-transacao">-</p>
+        
+                                        <p class="movimentacao-erp__valor">R$ 42,76</p>
+
+                                        <p class="movimentacao-erp__natureza">D</p>
+
+                                        <p class="movimentacao-erp__data">21/10/2021</p>
+        
+                                        <p class="movimentacao-erp__documento">04/11/2021</p>
+                                        
+                                        <button class="botao__edita___item-erp">Editar</button>
+                                    </li>
+
+                                    <li class="item__lista___movimentacao-erp">
+    
+                                        <input type="checkbox" class="input__check___lista-extrato">
+        
+                                        <p class="movimentacao-erp__transacao">58220</p>
+        
+                                        <p class="movimentacao-erp__id-transacao">-</p>
+        
+                                        <p class="movimentacao-erp__valor">R$ 42,76</p>
+
+                                        <p class="movimentacao-erp__natureza">D</p>
+
+                                        <p class="movimentacao-erp__data">21/10/2021</p>
+        
+                                        <p class="movimentacao-erp__documento">04/11/2021</p>
+                                        
+                                        <button class="botao__edita___item-erp">Editar</button>
+                                    </li>
+
+                                    <li class="item__lista___movimentacao-erp">
+    
+                                        <input type="checkbox" class="input__check___lista-extrato">
+        
+                                        <p class="movimentacao-erp__transacao">58220</p>
+        
+                                        <p class="movimentacao-erp__id-transacao">-</p>
+        
+                                        <p class="movimentacao-erp__valor">R$ 42,76</p>
+
+                                        <p class="movimentacao-erp__natureza">D</p>
+
+                                        <p class="movimentacao-erp__data">21/10/2021</p>
+        
+                                        <p class="movimentacao-erp__documento">04/11/2021</p>
+                                        
+                                        <button class="botao__edita___item-erp">Editar</button>
+                                    </li>
+
+                                    <li class="item__lista___movimentacao-erp">
+    
+                                        <input type="checkbox" class="input__check___lista-extrato">
+        
+                                        <p class="movimentacao-erp__transacao">58220</p>
+        
+                                        <p class="movimentacao-erp__id-transacao">-</p>
+        
+                                        <p class="movimentacao-erp__valor">R$ 42,76</p>
+
+                                        <p class="movimentacao-erp__natureza">D</p>
+
+                                        <p class="movimentacao-erp__data">21/10/2021</p>
+        
+                                        <p class="movimentacao-erp__documento">04/11/2021</p>
+                                        
+                                        <button class="botao__edita___item-erp">Editar</button>
+                                    </li>
+                                    
+                                </ul>
+                        
+                            </div>
+        
+                        
+                        </section>
+                     
+                    </section>
+                    
+                </section>
+
+                <section class="secao__movimentacao-extrato">
+
+                    <h3 class="titulo__secao___movimentacao-extrato">Movimentações do Extrato Bancário</h2>
+
+                    <div class="cabecalho__movimentacao-extrato">
+                        <button class="tablinks-movimentacao-extrato tab-nao-conciliadas" id="defaultOpenExtrato" onclick="openTabExtrato(event, 'nao-conciliadas')">Não Conciliadas (5)</button>
+                        <button class="tablinks-movimentacao-extrato tab-vinculadas" onclick="openTabExtrato(event, 'vinculadas')">Vinculadas (2)</button>
+                        <button class="tablinks-movimentacao-extrato tab-conciliadas" onclick="openTabExtrato(event, 'conciliadas')">Conciliadas (3)</button>   
+                        <button class="tablinks-movimentacao-extrato tab-todas" onclick="openTabExtrato(event, 'todas')">Todas (10)</button>      
+                    </div>
+
+                    <section class="container__movimentacao-extrato___lista tabcontent-movimentacao-extrato" id="nao-conciliadas">
+                        <section class="info__movimentacao-extrato___configuracao">
+        
+        
+                                <p class="info__movimentacao-extrato___id">ID</p>
+                                
+                                <p class="info__movimentacao-extrato___documento">Documento</p>
+        
+                                <p class="info__movimentacao-extrato___a-pagar">A Pagar</p>
+        
+                                <p class="info__movimentacao-extrato___a-receber">A Receber</p>
+
+                                <p class="info__movimentacao-extrato___historico">Histórico</p>
+
+                                <p class="info__movimentacao-extrato___data">Data</p>
+
+                                <p class="info__movimentacao-extrato___transacao">Transação</p>
+        
+                        </section>
+        
+                        <section class="lista___movimentacao-extrato">
+        
+                            <div class="container__carousel">
+        
+                                <ul class="lista__clientes___movimentacao-extrato">
+        
+                                    <li class="item__lista___movimentacao-extrato">
+    
+                                        <input type="checkbox" class="input__check___lista-extrato">
+        
+                                        <p class="movimentacao-extrato__id">0001</p>
+        
+                                        <p class="movimentacao-extrato__documento">P1539/0</p>
+        
+                                        <p class="movimentacao-extrato__a-pagar">-</p>
+
+                                        <p class="movimentacao-extrato__a-receber">R$ 293.512,98</p>
+
+                                        <p class="movimentacao-extrato__historico">Extrato de Cobrança</p>
+        
+                                        <p class="movimentacao-extrato__data">04/11/2021</p>
+
+                                        <p class="movimentacao-extrato__transacao">-</p>
+                                        
+                                        <button class="botao__edita___item-erp">Editar</button>
+                                    </li>
+                                    <li class="item__lista___movimentacao-extrato">
+    
+                                        <input type="checkbox" class="input__check___lista-extrato">
+        
+                                        <p class="movimentacao-extrato__id">0001</p>
+        
+                                        <p class="movimentacao-extrato__documento">P1539/0</p>
+        
+                                        <p class="movimentacao-extrato__a-pagar">-</p>
+
+                                        <p class="movimentacao-extrato__a-receber">R$ 293.512,98</p>
+
+                                        <p class="movimentacao-extrato__historico">Extrato de Cobrança</p>
+        
+                                        <p class="movimentacao-extrato__data">04/11/2021</p>
+
+                                        <p class="movimentacao-extrato__transacao">-</p>
+                                        
+                                        <button class="botao__edita___item-erp">Editar</button>
+                                    </li>
+
+                                    <li class="item__lista___movimentacao-extrato">
+    
+                                        <input type="checkbox" class="input__check___lista-extrato">
+        
+                                        <p class="movimentacao-extrato__id">0001</p>
+        
+                                        <p class="movimentacao-extrato__documento">P1539/0</p>
+        
+                                        <p class="movimentacao-extrato__a-pagar">-</p>
+
+                                        <p class="movimentacao-extrato__a-receber">R$ 293.512,98</p>
+
+                                        <p class="movimentacao-extrato__historico">Extrato de Cobrança</p>
+        
+                                        <p class="movimentacao-extrato__data">04/11/2021</p>
+
+                                        <p class="movimentacao-extrato__transacao">-</p>
+                                        
+                                        <button class="botao__edita___item-erp">Editar</button>
+                                    </li>
+
+                                    <li class="item__lista___movimentacao-extrato">
+    
+                                        <input type="checkbox" class="input__check___lista-extrato">
+        
+                                        <p class="movimentacao-extrato__id">0001</p>
+        
+                                        <p class="movimentacao-extrato__documento">P1539/0</p>
+        
+                                        <p class="movimentacao-extrato__a-pagar">-</p>
+
+                                        <p class="movimentacao-extrato__a-receber">R$ 293.512,98</p>
+
+                                        <p class="movimentacao-extrato__historico">Extrato de Cobrança</p>
+        
+                                        <p class="movimentacao-extrato__data">04/11/2021</p>
+
+                                        <p class="movimentacao-extrato__transacao">-</p>
+                                        
+                                        <button class="botao__edita___item-erp">Editar</button>
+                                    </li>
+
+                                    <li class="item__lista___movimentacao-extrato">
+    
+                                        <input type="checkbox" class="input__check___lista-extrato">
+        
+                                        <p class="movimentacao-extrato__id">0001</p>
+        
+                                        <p class="movimentacao-extrato__documento">P1539/0</p>
+        
+                                        <p class="movimentacao-extrato__a-pagar">-</p>
+
+                                        <p class="movimentacao-extrato__a-receber">R$ 293.512,98</p>
+
+                                        <p class="movimentacao-extrato__historico">Extrato de Cobrança</p>
+        
+                                        <p class="movimentacao-extrato__data">04/11/2021</p>
+
+                                        <p class="movimentacao-extrato__transacao">-</p>
+                                        
+                                        <button class="botao__edita___item-erp">Editar</button>
+                                    </li>
+                                    
+                                </ul>
+                        
+                            </div>
+        
+                        
+                        </section>
+                     
+                    </section>
+
+                    <section class="container__movimentacao-extrato___lista tabcontent-movimentacao-extrato" id="vinculadas">
+                        <section class="info__movimentacao-extrato___configuracao">
+        
+        
+                                <p class="info__movimentacao-extrato___id">ID</p>
+                                
+                                <p class="info__movimentacao-extrato___documento">Documento</p>
+        
+                                <p class="info__movimentacao-extrato___a-pagar">A Pagar</p>
+        
+                                <p class="info__movimentacao-extrato___a-receber">A Receber</p>
+
+                                <p class="info__movimentacao-extrato___historico">Histórico</p>
+
+                                <p class="info__movimentacao-extrato___data">Data</p>
+
+                                <p class="info__movimentacao-extrato___transacao">Transação</p>
+        
+                        </section>
+        
+                        <section class="lista___movimentacao-extrato">
+        
+                            <div class="container__carousel">
+        
+                                <ul class="lista__clientes___movimentacao-extrato">
+        
+                                    <li class="item__lista___movimentacao-extrato">
+    
+                                        <input type="checkbox" class="input__check___lista-extrato">
+        
+                                        <p class="movimentacao-extrato__id">0001</p>
+        
+                                        <p class="movimentacao-extrato__documento">P1539/0</p>
+        
+                                        <p class="movimentacao-extrato__a-pagar">-</p>
+
+                                        <p class="movimentacao-extrato__a-receber">R$ 293.512,98</p>
+
+                                        <p class="movimentacao-extrato__historico">Extrato de Cobrança</p>
+        
+                                        <p class="movimentacao-extrato__data">04/11/2021</p>
+
+                                        <p class="movimentacao-extrato__transacao">-</p>
+                                        
+                                        <button class="botao__edita___item-erp">Editar</button>
+                                    </li>
+                                    <li class="item__lista___movimentacao-extrato">
+    
+                                        <input type="checkbox" class="input__check___lista-extrato">
+        
+                                        <p class="movimentacao-extrato__id">0001</p>
+        
+                                        <p class="movimentacao-extrato__documento">P1539/0</p>
+        
+                                        <p class="movimentacao-extrato__a-pagar">-</p>
+
+                                        <p class="movimentacao-extrato__a-receber">R$ 293.512,98</p>
+
+                                        <p class="movimentacao-extrato__historico">Extrato de Cobrança</p>
+        
+                                        <p class="movimentacao-extrato__data">04/11/2021</p>
+
+                                        <p class="movimentacao-extrato__transacao">-</p>
+                                        
+                                        <button class="botao__edita___item-erp">Editar</button>
+                                    </li>
+                                    
+                                </ul>
+                        
+                            </div>
+        
+                        
+                        </section>
+                     
+                    </section>
+
+                    <section class="container__movimentacao-extrato___lista tabcontent-movimentacao-extrato" id="conciliadas">
+                        <section class="info__movimentacao-extrato___configuracao">
+        
+        
+                                <p class="info__movimentacao-extrato___id">ID</p>
+                                
+                                <p class="info__movimentacao-extrato___documento">Documento</p>
+        
+                                <p class="info__movimentacao-extrato___a-pagar">A Pagar</p>
+        
+                                <p class="info__movimentacao-extrato___a-receber">A Receber</p>
+
+                                <p class="info__movimentacao-extrato___historico">Histórico</p>
+
+                                <p class="info__movimentacao-extrato___data">Data</p>
+
+                                <p class="info__movimentacao-extrato___transacao">Transação</p>
+        
+                        </section>
+        
+                        <section class="lista___movimentacao-extrato">
+        
+                            <div class="container__carousel">
+        
+                                <ul class="lista__clientes___movimentacao-extrato">
+        
+                                    <li class="item__lista___movimentacao-extrato">
+    
+                                        <input type="checkbox" class="input__check___lista-extrato">
+        
+                                        <p class="movimentacao-extrato__id">0001</p>
+        
+                                        <p class="movimentacao-extrato__documento">P1539/0</p>
+        
+                                        <p class="movimentacao-extrato__a-pagar">-</p>
+
+                                        <p class="movimentacao-extrato__a-receber">R$ 293.512,98</p>
+
+                                        <p class="movimentacao-extrato__historico">Extrato de Cobrança</p>
+        
+                                        <p class="movimentacao-extrato__data">04/11/2021</p>
+
+                                        <p class="movimentacao-extrato__transacao">-</p>
+                                        
+                                        <button class="botao__edita___item-erp">Editar</button>
+                                    </li>
+
+                                    <li class="item__lista___movimentacao-extrato">
+    
+                                        <input type="checkbox" class="input__check___lista-extrato">
+        
+                                        <p class="movimentacao-extrato__id">0001</p>
+        
+                                        <p class="movimentacao-extrato__documento">P1539/0</p>
+        
+                                        <p class="movimentacao-extrato__a-pagar">-</p>
+
+                                        <p class="movimentacao-extrato__a-receber">R$ 293.512,98</p>
+
+                                        <p class="movimentacao-extrato__historico">Extrato de Cobrança</p>
+        
+                                        <p class="movimentacao-extrato__data">04/11/2021</p>
+
+                                        <p class="movimentacao-extrato__transacao">-</p>
+                                        
+                                        <button class="botao__edita___item-erp">Editar</button>
+                                    </li>
+
+                                    <li class="item__lista___movimentacao-extrato">
+    
+                                        <input type="checkbox" class="input__check___lista-extrato">
+        
+                                        <p class="movimentacao-extrato__id">0001</p>
+        
+                                        <p class="movimentacao-extrato__documento">P1539/0</p>
+        
+                                        <p class="movimentacao-extrato__a-pagar">-</p>
+
+                                        <p class="movimentacao-extrato__a-receber">R$ 293.512,98</p>
+
+                                        <p class="movimentacao-extrato__historico">Extrato de Cobrança</p>
+        
+                                        <p class="movimentacao-extrato__data">04/11/2021</p>
+
+                                        <p class="movimentacao-extrato__transacao">-</p>
+                                        
+                                        <button class="botao__edita___item-erp">Editar</button>
+                                    </li>
+                                    
+                                </ul>
+                        
+                            </div>
+        
+                        
+                        </section>
+                     
+                    </section>
+
+                    <section class="container__movimentacao-extrato___lista tabcontent-movimentacao-extrato" id="todas">
+                        <section class="info__movimentacao-extrato___configuracao">
+        
+        
+                                <p class="info__movimentacao-extrato___id">ID</p>
+                                
+                                <p class="info__movimentacao-extrato___documento">Documento</p>
+        
+                                <p class="info__movimentacao-extrato___a-pagar">A Pagar</p>
+        
+                                <p class="info__movimentacao-extrato___a-receber">A Receber</p>
+
+                                <p class="info__movimentacao-extrato___historico">Histórico</p>
+
+                                <p class="info__movimentacao-extrato___data">Data</p>
+
+                                <p class="info__movimentacao-extrato___transacao">Transação</p>
+        
+                        </section>
+        
+                        <section class="lista___movimentacao-extrato">
+        
+                            <div class="container__carousel">
+        
+                                <ul class="lista__clientes___movimentacao-extrato">
+        
+                                    <li class="item__lista___movimentacao-extrato">
+    
+                                        <input type="checkbox" class="input__check___lista-extrato">
+        
+                                        <p class="movimentacao-extrato__id">0001</p>
+        
+                                        <p class="movimentacao-extrato__documento">P1539/0</p>
+        
+                                        <p class="movimentacao-extrato__a-pagar">-</p>
+
+                                        <p class="movimentacao-extrato__a-receber">R$ 293.512,98</p>
+
+                                        <p class="movimentacao-extrato__historico">Extrato de Cobrança</p>
+        
+                                        <p class="movimentacao-extrato__data">04/11/2021</p>
+
+                                        <p class="movimentacao-extrato__transacao">-</p>
+                                        
+                                        <button class="botao__edita___item-erp">Editar</button>
+                                    </li>
+                                    <li class="item__lista___movimentacao-extrato">
+    
+                                        <input type="checkbox" class="input__check___lista-extrato">
+        
+                                        <p class="movimentacao-extrato__id">0001</p>
+        
+                                        <p class="movimentacao-extrato__documento">P1539/0</p>
+        
+                                        <p class="movimentacao-extrato__a-pagar">-</p>
+
+                                        <p class="movimentacao-extrato__a-receber">R$ 293.512,98</p>
+
+                                        <p class="movimentacao-extrato__historico">Extrato de Cobrança</p>
+        
+                                        <p class="movimentacao-extrato__data">04/11/2021</p>
+
+                                        <p class="movimentacao-extrato__transacao">-</p>
+                                        
+                                        <button class="botao__edita___item-erp">Editar</button>
+                                    </li>
+
+                                    <li class="item__lista___movimentacao-extrato">
+    
+                                        <input type="checkbox" class="input__check___lista-extrato">
+        
+                                        <p class="movimentacao-extrato__id">0001</p>
+        
+                                        <p class="movimentacao-extrato__documento">P1539/0</p>
+        
+                                        <p class="movimentacao-extrato__a-pagar">-</p>
+
+                                        <p class="movimentacao-extrato__a-receber">R$ 293.512,98</p>
+
+                                        <p class="movimentacao-extrato__historico">Extrato de Cobrança</p>
+        
+                                        <p class="movimentacao-extrato__data">04/11/2021</p>
+
+                                        <p class="movimentacao-extrato__transacao">-</p>
+                                        
+                                        <button class="botao__edita___item-erp">Editar</button>
+                                    </li>
+
+                                    <li class="item__lista___movimentacao-extrato">
+    
+                                        <input type="checkbox" class="input__check___lista-extrato">
+        
+                                        <p class="movimentacao-extrato__id">0001</p>
+        
+                                        <p class="movimentacao-extrato__documento">P1539/0</p>
+        
+                                        <p class="movimentacao-extrato__a-pagar">-</p>
+
+                                        <p class="movimentacao-extrato__a-receber">R$ 293.512,98</p>
+
+                                        <p class="movimentacao-extrato__historico">Extrato de Cobrança</p>
+        
+                                        <p class="movimentacao-extrato__data">04/11/2021</p>
+
+                                        <p class="movimentacao-extrato__transacao">-</p>
+                                        
+                                        <button class="botao__edita___item-erp">Editar</button>
+                                    </li>
+
+                                    <li class="item__lista___movimentacao-extrato">
+    
+                                        <input type="checkbox" class="input__check___lista-extrato">
+        
+                                        <p class="movimentacao-extrato__id">0001</p>
+        
+                                        <p class="movimentacao-extrato__documento">P1539/0</p>
+        
+                                        <p class="movimentacao-extrato__a-pagar">-</p>
+
+                                        <p class="movimentacao-extrato__a-receber">R$ 293.512,98</p>
+
+                                        <p class="movimentacao-extrato__historico">Extrato de Cobrança</p>
+        
+                                        <p class="movimentacao-extrato__data">04/11/2021</p>
+
+                                        <p class="movimentacao-extrato__transacao">-</p>
+                                        
+                                        <button class="botao__edita___item-erp">Editar</button>
+                                    </li>
+
+                                    <li class="item__lista___movimentacao-extrato">
+    
+                                        <input type="checkbox" class="input__check___lista-extrato">
+        
+                                        <p class="movimentacao-extrato__id">0001</p>
+        
+                                        <p class="movimentacao-extrato__documento">P1539/0</p>
+        
+                                        <p class="movimentacao-extrato__a-pagar">-</p>
+
+                                        <p class="movimentacao-extrato__a-receber">R$ 293.512,98</p>
+
+                                        <p class="movimentacao-extrato__historico">Extrato de Cobrança</p>
+        
+                                        <p class="movimentacao-extrato__data">04/11/2021</p>
+
+                                        <p class="movimentacao-extrato__transacao">-</p>
+                                        
+                                        <button class="botao__edita___item-erp">Editar</button>
+                                    </li>
+                                    <li class="item__lista___movimentacao-extrato">
+    
+                                        <input type="checkbox" class="input__check___lista-extrato">
+        
+                                        <p class="movimentacao-extrato__id">0001</p>
+        
+                                        <p class="movimentacao-extrato__documento">P1539/0</p>
+        
+                                        <p class="movimentacao-extrato__a-pagar">-</p>
+
+                                        <p class="movimentacao-extrato__a-receber">R$ 293.512,98</p>
+
+                                        <p class="movimentacao-extrato__historico">Extrato de Cobrança</p>
+        
+                                        <p class="movimentacao-extrato__data">04/11/2021</p>
+
+                                        <p class="movimentacao-extrato__transacao">-</p>
+                                        
+                                        <button class="botao__edita___item-erp">Editar</button>
+                                    </li>
+
+                                    <li class="item__lista___movimentacao-extrato">
+    
+                                        <input type="checkbox" class="input__check___lista-extrato">
+        
+                                        <p class="movimentacao-extrato__id">0001</p>
+        
+                                        <p class="movimentacao-extrato__documento">P1539/0</p>
+        
+                                        <p class="movimentacao-extrato__a-pagar">-</p>
+
+                                        <p class="movimentacao-extrato__a-receber">R$ 293.512,98</p>
+
+                                        <p class="movimentacao-extrato__historico">Extrato de Cobrança</p>
+        
+                                        <p class="movimentacao-extrato__data">04/11/2021</p>
+
+                                        <p class="movimentacao-extrato__transacao">-</p>
+                                        
+                                        <button class="botao__edita___item-erp">Editar</button>
+                                    </li>
+
+                                    <li class="item__lista___movimentacao-extrato">
+    
+                                        <input type="checkbox" class="input__check___lista-extrato">
+        
+                                        <p class="movimentacao-extrato__id">0001</p>
+        
+                                        <p class="movimentacao-extrato__documento">P1539/0</p>
+        
+                                        <p class="movimentacao-extrato__a-pagar">-</p>
+
+                                        <p class="movimentacao-extrato__a-receber">R$ 293.512,98</p>
+
+                                        <p class="movimentacao-extrato__historico">Extrato de Cobrança</p>
+        
+                                        <p class="movimentacao-extrato__data">04/11/2021</p>
+
+                                        <p class="movimentacao-extrato__transacao">-</p>
+                                        
+                                        <button class="botao__edita___item-erp">Editar</button>
+                                    </li>
+
+                                    <li class="item__lista___movimentacao-extrato">
+    
+                                        <input type="checkbox" class="input__check___lista-extrato">
+        
+                                        <p class="movimentacao-extrato__id">0001</p>
+        
+                                        <p class="movimentacao-extrato__documento">P1539/0</p>
+        
+                                        <p class="movimentacao-extrato__a-pagar">-</p>
+
+                                        <p class="movimentacao-extrato__a-receber">R$ 293.512,98</p>
+
+                                        <p class="movimentacao-extrato__historico">Extrato de Cobrança</p>
+        
+                                        <p class="movimentacao-extrato__data">04/11/2021</p>
+
+                                        <p class="movimentacao-extrato__transacao">-</p>
+                                        
+                                        <button class="botao__edita___item-erp">Editar</button>
+                                    </li>
+                                    
+                                </ul>
+                        
+                            </div>
+        
+                        
+                        </section>
+                     
+                    </section>
+
+                </section>
+
+                <section class="secao__valor___extrato-conferencia">
+                    <section class="secao__container___valores">
+
+                        <div class="container__valor___extrato">
+    
+                            <h1 class="titulo__valor___extrato">Saldo Total</h1>
+                            <span class="valor__extrato">R$ 0,00</span>
+    
+                        </div>
+    
+                        <div class="container__valor___extrato">
+    
+                            <h1 class="titulo__valor___extrato">Total Crédito</h1>
+                            <span class="valor__extrato">R$ 0,00</span>
+                            
+                        </div>
+
+                        <div class="container__valor___extrato">
+    
+                            <h1 class="titulo__valor___extrato">Total Débito</h1>
+                            <span class="valor__extrato">R$ 0,00</span>
+    
+                        </div>
+                    </section>
+                    
+                    <section class="secao__botoes___extrato-valor">
+
+                        <div class="toggle">
+                            <label class="switch">
+                                <input type="checkbox" class="toggle-switch">
+                                <span class="slider round"></span>
+                            </label>
+                            <span class="span-toogle">Datas devem ser iguais</span>
+                        </div>
+
+                        <button class="botao__extrato-valor">Vincular automáticamente</button>
+                        <button class="botao__extrato-valor">Conciliar Vinculados</button>
+                        <button class="botao__extrato-valor">Conciliar Selecionados</button>
+                    </section>
+                </section>
+
+            </section>
+
+        </main>
+    <script src="../Componentes/ConferenciaConciliacao/conferenciaConcilicacao.js" type="text/javascript"></script>
+    <script src="../Componentes/tab.js" type="text/javascript"></script>
+    <script src="../Componentes/ConferenciaConciliacao/tabMovimentacaoExtrato.js" type="text/javascript"></script>
+    </body>
+
+</html>

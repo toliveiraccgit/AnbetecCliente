@@ -189,6 +189,7 @@
 
         font-family: var(--mont-serrat);
 
+        width: 90vw;
     }
     .container__input___filtro{
         display: flex;
