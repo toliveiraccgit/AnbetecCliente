@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/ProcessamentoRetorno/processamentoRetorno.css">
+        <link rel="stylesheet" href="../CSS/ProcessamentoRetorno/processamentoRetornoResponsivo.css">
+        <link href="../CSS/base.css" rel="stylesheet">
+        <link href="../CSS/reset.css" rel="stylesheet">
+        <link href="../CSS/normalize.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../Assets/Logo-favicon.png" type="image/x-icon" />
+        <title>Processamento de Retorno | Anbetec</title>
+    </head>
+
+    <body id="body">
+        <header class="cabecalho">
+            <a href="../home.html"><img src="../Assets/LogoAnbetec.png" alt="Logo Anbetec" class="logo-anbetec"></a>
+            <div class="container-pesquisa">
+                <button class="pesquisa-mobile"><img class="ico-pesquisa-mobile" src="../Assets/ico-pesquisa-mobile.png" alt="Abrir Barra Pesquisa"></button>
+                <input type="text" class="barra-pesquisa" placeholder="Procure pelo portal">
+            </div>
+            
+            <div class="container__info">
+                <button type="button" class="container__notificacao">
+                    <img src="../Assets/notificação.png" alt="Notificação" class="notificacao">
+                    <img src="../Assets/notificação-ativa.png" alt="Você possui notificação" class="notificacao-ativa">
+                </button>
+                <div class="perfil-area">
+                    <img src="../Assets/icone2.png" alt="Sua Foto de Perfil" class="icone__perfil">
+                    <div class="informacoes__perfil">
+                        <h1 class="nome__perfil">Davi Neris</h1>
+                        <span class="banco__perfil">Banco Anbetec</span>
+                    </div>
+                    <button type="button" class="menu-dots"></button>
+                </div>
+            </div>
+        </header>
+        <main class="conteudo">
+            <section class="secao__processamento-retorno"> 
+                
+                <div class="intro__processamento-retorno">
+                    <p class="paginacao__processamento-retorno">
+                        <a href="../home.html" class="link-paginacao">Produtos</a>
+                        <a href="../edi-financeiro.html" class="link-paginacao-edi">EDI Financeiro</a>
+                        <a href="./processamento-retorno.html" class="destaque__paginacao">Processamento de Retorno</a>
+                    </p>
+                </div>
+
+                <section class="filtros__retorno">
+                    <h2 class="titulo__filtro">Filtros:</h2>
+                    <form action="" class="form__filtros">
+                        
+                        <section class="secao-1__filtros">
+                            
+                            <div class="container__input___filtro">
+                                <label for="Filial" class="label__filtro">Filial: (obrigatório)</label>
+                                <select name="Filia" id="Filial" class="input__filtro" required>
+                                    <option  class="option__filtro" value="0">(Selecione)</option>
+                                    <option class="option__filtro" value="1">1 - 1 - ANBETEC LTD</option>
+                                </select>
+                            </div>
+
+                            <div class="container__input___filtro">
+                                <label for="Banco" class="label__filtro">Banco:</label>
+                                <select name="Banco" id="Banco" class="input__filtro">
+                                    <option class="option__filtro" value="0">(Selecione)</option>
+                                    <option class="option__filtro" value="1">341 - 341-341-BANCO ITAU</option>
+                                </select>
+                            </div>
+                        </section>
+
+                        <section class="secao-2__filtros">
+
+                            <div class="container__filtro-evento">
+
+                                <h2 class="label__filtro">Evento</h2>
+
+                                <div class="inputs___evento">
+                                    <div class="container__input-evento___filtro">
+                                        <label for="Evento" class="label__filtro">Cobrança</label>
+                                        <input name="Evento" type="radio" class="input-radio__evento">
+                                    </div>
+                                    
+                                    <div class="container__input-evento___filtro">
+                                        <label for="Evento" class="label__filtro">Pagamentos</label>
+                                        <input name="Evento" type="radio" class="input-radio__evento">
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="container__input___filtro">
+                                <label for="data-inicio" class="label__filtro">Período início:</label>
+                                <input type="date" for="Titulo" class="input__filtro-data" required>
+                            </div>
+
+                            <div class="container__input___filtro">
+                                <label for="data-fim" class="label__filtro">Período Final</label>
+                                <input type="date" for="Titulo" class="input__filtro-data" required>
+                            </div>
+                            
+                            <div class="toggle">
+                                <label class="switch">
+                                    <input type="checkbox" class="toggle-switch">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span>Apenas não processados</span>
+                            </div>
+
+                        </section>
+                        <div class="botoes__form">
+                            <button type="reset" class="botao-limpar">Limpar</button>
+                            <button type="button" class="botao-pesquisa" id="pesquisa__retorno" onclick="abrirResultadoDDA()">Pesquisar</button>
+                        </div>
+                    </form>
+
+                </section>
+                
+            </section>
+
+            <section class="container__retorno-lista" id="resultado__retorno___pesquisa-filtro">
+                <section class="info__retorno-lista___configuracao">
+
+
+                        <p class="info__retorno-lista___selecionar">Selecionar</p>
+                        
+                        <p class="info__retorno-lista___banco">Banco</p>
+
+                        <p class="info__retorno-lista___arquivo">Arquivo</p>
+
+                        <p class="info__retorno-lista___data-processamento">Data Processamento</p>
+
+                        <p class="info__retorno-lista___status">Status</p>
+
+                        <p class="info__retorno-lista___codigo-barras">Qdt. Código de Barras</p>
+
+                        <p class="info__retorno-lista___valor-total">Valor Total</p>
+
+                </section>
+
+                <section class="lista___retorno-lista">
+
+                    <div class="container__carousel">
+
+                        <ul class="lista__clientes___retorno-lista">
+
+                            <li class="item__lista___retorno-lista">
+
+                                <input type="checkbox" class="input__check___lista-retorno">
+
+                                <p class="retorno-lista__banco">XXXXXXXXX-XXXXX</p>
+
+                                <p class="retorno-lista__arquivo">XXXXXXXXXX</p>
+
+                                <p class="retorno-lista__data-processamento">XX/XX/XXXX</p>
+
+                                <p class="retorno-lista__status">XXXXXXX</p>
+
+                                <p class="retorno-lista__codigo-barras">XXXX-XXXXXXXXX-XX</p>
+
+                                <p class="retorno-lista__valor-total">XXXXXXX</p>
+
+                            </li>
+                            
+                        </ul>
+
+                        <div class="container__botoes-marcar">
+                            <div class="botoes__marcador">
+                                <button class="botao__marcar" id="botao__marcar">Marcar Todos</button>
+                                <button class="botao__desmarca" id="botao__desmarca">Desmarcar Todos</button>
+                            </div>
+                            <button class="botao__processar" id="botao__processa">Processar</button>
+                        </div>
+
+                    </div>
+
+                
+                </section>
+                
+                <div class="button--carrousel">
+                    <button class="carrousel__button carrousel__button--anterior" aria-label="Botão de Voltar">Anterior</button>
+                    <button class="carrousel__button carrousel__button--proximo" aria-label="Botão de Avançar">Próximo</button>
+                </div>
+
+                
+            </section>
+
+        </main>
+
+    </body>
+
+</html>

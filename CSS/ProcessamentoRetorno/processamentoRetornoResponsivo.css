@@ -1,0 +1,11 @@
+@media (min-width:1441px){
+    .info__retorno-lista___configuracao{
+        width: 91vw;
+    }
+    .item__lista___retorno-lista{
+        width: 88vw;
+    }
+    .container__retorno-lista{
+        width: 93.5vw;
+    }
+}
