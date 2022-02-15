@@ -412,7 +412,7 @@
 
         width: 93vw;
 
-        display: flex;
+        display: none;
         flex-direction: column;
 
         position: relative;
