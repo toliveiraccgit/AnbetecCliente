@@ -1,0 +1,699 @@
+@media (min-width:0px){
+    body{
+        background-color: #F8FBFF;
+        overflow-x: hidden;
+    }
+    html{
+        overflow-x: hidden;
+    }
+    #body{
+        overflow-x: hidden;
+    }
+    .conteudo{
+        overflow-x: hidden;
+    }
+    .filtros__dda{
+        overflow-x: hidden;
+    }
+    
+    /*-------------------------cabecalho---------------------------*/
+    .cabecalho{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+        height: 6.938rem;
+        width: 100vw;
+    
+        background-color: #FFFFFF;
+    
+        padding: 2rem 3.5rem;
+    }
+    .container__info{
+        display: flex;
+        flex-direction: row;
+    }
+    .logo-anbetec{
+        width: 9.213rem;
+        height: 2.979rem;
+    }
+    .pesquisa-mobile{
+        display: none;
+    }
+    .barra-pesquisa{
+        font-family: var(--mont-serrat);
+        font-size: 14px;
+        width: 39.813rem;
+        height: 3.25rem;
+    
+        border: none;
+        border-radius: .5rem;
+    
+        background-color: #F1F4F9;
+        background-image: url("../../Assets/search.png");
+        background-repeat: no-repeat;
+        background-position: 2.063rem, .5rem;
+    
+        padding: 1rem 0 1rem 3.5rem;
+    }
+    .barra-pesquisa:focus{
+        outline: 2px solid var(--primary-support);
+        color: var(--azul-secundaria);
+    }
+    .container__notificacao{
+        padding-right: 1.25rem;
+        margin-right: 1.75rem;
+        border-right: 1px solid #cdcdcd;
+        
+        display: flex;
+        align-items: center;
+
+        background-color: transparent;
+        border-top: none;
+        border-left: none;
+        border-bottom: none;
+    }
+    .notificacao-ativa{
+        visibility:visible;
+        position: relative;
+        top: -.8rem;
+        left: -.5rem;
+    }
+
+    .perfil-area{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.75rem;
+        font-family: var(--mont-serrat);
+        height: 2rem;
+    }
+    .informacoes__perfil{
+        width: 112px;
+    }
+    .icone__perfil{
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+    }
+    .nome__perfil{
+        margin: 0%;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--primary);
+    }
+    .banco__perfil{
+        font-size: 14px;
+        font-weight: 500;
+        color: #7A8594;
+    }
+    .menu-dots{
+        background-image: url("../../Assets/menu__dots.png");
+        border: none;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position-y: .5rem;
+
+        width: 30px;
+        height: 20px;
+    }
+
+    /*-------------------------paginação-DDA---------------------------*/
+    .intro__gerenciamento-arquivo{
+        font-family: var(--mont-serrat);
+        margin-bottom: 2rem;
+    }
+    .paginacao__gerenciamento-arquivo{
+        color: #7A8594;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 0%;
+    
+    }
+    .link-paginacao{
+        color: #7A8594;
+    }
+    .link-paginacao-edi{
+        padding-left: 1.6rem;
+        background-image: url("../../Assets/icone-paginacao.png");
+        background-repeat: no-repeat;
+        background-position: .55rem, .2rem ;
+        color: #7A8594;
+    }
+    .destaque__paginacao{
+        padding-left: 1.6rem;
+        background-image: url("../../Assets/icone-paginacao.png");
+        background-repeat: no-repeat;
+        background-position: .55rem, .2rem ;
+    
+        color: var(--primary);
+        font-weight: 600;
+    }
+
+    .secao__gerenciamento-arquivo{
+        padding-left: 3rem;
+        padding-top: 2rem;
+        padding-right: 3.438rem;
+    }
+    /*--------------------CABECALHO-------------------*/
+    .cabecalho__gerenciamento-arquivo{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        margin-bottom: 1.482rem;
+
+        padding-left: 3rem;
+        padding-right: 3.438rem;
+    }
+    .tablinks{
+        border: none;
+        background-color: transparent;
+        color: var(--primary);
+        font-family: var(--mont-serrat);
+        padding: 0%;
+
+        font-size: 22.58px;
+        font-weight: 700;
+        opacity: 0.2;
+    }
+    /*--------------------SECAO-UPLOAD-------------------*/
+    .secao__upload{
+        background: #FFFFFF;
+
+        border: 1px solid #F1F1F1;
+        border-radius: 16px;
+
+        display: flex;
+        flex-direction: column;
+
+        margin-left: 3rem;
+        margin-right: 3.438rem;
+
+        padding: 2rem;
+
+        margin-bottom: 26.75rem;
+    }
+        /*-------------------FILTROS-UPLOAD---------------------*/
+        .form__filtros{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .container__input{
+            display: flex;
+            flex-direction: column;
+        }
+        .titulo__filtro{
+            font-family: var(--mont-serrat);
+            font-size: 16px;
+            color: var(--primary);
+
+            margin-bottom: 1.438rem;
+        }
+        .label__filtro{
+            font-family: var(--mont-serrat);
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--primary);
+
+            margin-bottom: .25rem;
+        }
+        .input__filtro{
+            height: 3.063rem;
+            width: 43.1vw;
+
+            border: 1.02254px solid #ECECEC;
+            border-radius: 8px;
+
+            padding: .5rem 1rem .5rem 1rem;
+            font-size: 14px;
+            font-family: var(--mont-serrat);
+            color: #7A8594;
+            text-overflow:ellipsis;
+        }
+        .input__filtro:focus, .input__filtro-banco:focus, .input__filtro-cobranca:focus{
+            outline: 1px solid var(--primary-support);
+        }
+        select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background: url("../../Assets/seta__selection.png") no-repeat;
+            background-position-x: calc(100% - 1rem);
+            background-position-y: 1.3rem;
+            border: 1px solid #333;
+            padding-right: 20px;
+        }
+        select:focus{
+            outline: none;
+        }
+        .option__filtro{
+            padding: 1rem 0 1rem 1rem;
+        }
+        /*---------------------AREA-UPLOAD-------------------*/
+        .secao__area___upload{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+
+            background: #FFFCF9;
+
+            border: 1px dashed #F5971E;
+            border-radius: 16px;
+
+            height: 14.125rem;
+
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 3.563rem;
+
+            background-image: url("../../Assets/GerenciamentoArquivo/vetor-imagem-arquivo-area-drop.svg");
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: 4rem;
+        }
+        .texto__area___upload{
+            font-family: var(--mont-serrat);
+            font-size: 14px;
+
+            color: #7A8594;
+
+            background-color: transparent;
+            border: none;
+        }
+        .clique__aqui-upload{
+            color: #F5971E;
+
+            text-decoration: underline;
+        }
+        /*----------------ARQUIVOS-CARREGADOS--------------*/
+        .secao__arquivos___upload{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            padding-bottom: 1.5rem;
+
+            border-bottom: 1px solid #EEEEEE;
+        }
+        .titulo__secao___arquivos{
+            font-family: var(--mont-serrat);
+            font-size: 16px;
+            color: var(--primary);
+        }
+        .container__arquivo___carregado{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            font-family: var(--mont-serrat);
+            font-size: 14px;
+            color: var(--primary);
+
+            padding: 1rem 1rem 1rem 3.525rem;
+
+            background-color: #FAFAFA;
+
+            border-radius: 8px;
+
+            background-repeat: no-repeat;
+            background-position-y: center;
+            background-position-x: 1rem;
+        }
+        .container__info-arquivo{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 2.5rem;
+        }
+        .nome__arquivo{
+            font-weight: 600;
+        }
+        .botao__deleta___arquivo-carregado{
+            background-color: transparent;
+
+            border: none;
+
+            background-image: url("../../Assets/GerenciamentoArquivo/deletar-arquivo.svg");
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: center;
+
+            width: 1.768rem;
+            height: 1.768rem;
+        }
+        .tipo__arquivo-pdf{
+            background-image: url("../../Assets/GerenciamentoArquivo/vetor-arquivo-pdf.png");
+        }
+        .tipo__arquivo-zip{
+            background-image: url("../../Assets/GerenciamentoArquivo/vetor-arquivo-zip.png");
+        }
+        .tipo__arquivo-xls{
+            background-image: url("../../Assets/GerenciamentoArquivo/vetor-arquivo-xls.png");
+        }
+        .secao__botao___upload{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+
+            padding-top:  1.5rem;
+        }
+        .botao__upload{
+            background-color: var(--primary-support);
+            color: #FFFFFF;
+            padding: 1rem 2rem;
+
+            border: none;
+            border-radius: 64px;
+
+            font-family: var(--mont-serrat);
+        }
+    /*-------------------FEEDBACK------------------*/
+    .container__feedback-filtros{
+        width: 17.313rem;
+
+        position: absolute;
+        left: 41%;
+        right: 50%;
+        top: -300px;
+
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 2.563rem;
+        padding-right: 1rem;
+
+        background-color: var(--terciary);
+        background-image: url("../../Assets/ExtratoCobranca/icone-feedback-filtros.svg");
+        background-repeat: no-repeat;
+        background-position-x: .9rem;
+        background-position-y: center;
+
+        border-radius: 8px;
+
+    }
+    .texto__filtro-concluido{
+        font-family: var(--mont-serrat);
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+
+
+    /*----------------------DOWNLOAD-----------------------*/
+    .secao__download{
+        display: flex;
+        flex-direction: column;
+
+        margin-left: 3rem;
+        margin-right: 3.438rem;
+
+        margin-bottom: 26.75rem;
+    }
+
+        /*----------------------FILTROS-DOWNLOAD-----------------*/
+        .form__filtros___download{
+            display: flex;
+            flex-direction: column;
+
+            background: #FFFFFF;
+
+            border: 1px solid #F1F1F1;
+            border-radius: 16px;
+
+            padding: 2rem;
+        }
+        .secao__filtros-download{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            width: 89vw;
+            height: 12rem;
+
+            gap: 1.5rem;
+
+            padding-bottom: 1.5rem;
+
+            border-bottom: 1px solid #EEEEEE;
+        }
+        .input__filtro-data{
+            width: 43.29vw;
+            height: 3.063rem;
+
+            border: 1.02254px solid #ECECEC;
+            border-radius: 8px;
+
+            padding: 1rem 0 1rem 1rem;
+            font-size: 14px;
+            font-family: var(--mont-serrat);
+            color: #7A8594;
+
+            text-overflow:ellipsis;
+        }
+        .input__filtro-data::-webkit-calendar-picker-indicator {
+            display: none;
+            -webkit-appearance: none;
+        }
+        .input__filtro-data:focus, .input__filtro-small:focus, .input__filtro___pagamento:focus{
+            outline: none;
+        }
+
+
+        .botoes__form{
+            display: flex;
+            align-self: flex-end;
+            font-family: var(--mont-serrat);
+
+            padding-top: 1.5rem;
+        }
+        .botao-limpar{
+    
+            background-color: transparent;
+            color: var(--primary);
+            padding: 1rem 2rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+    
+            border: 0.966253px solid #ECECEC;
+            border-radius: 64px;
+        }
+        .botao-pesquisar{
+    
+            background-color: var(--primary-support);
+            color: #FFFFFF;
+            padding: 1rem 2rem;
+    
+            border: none;
+            border-radius: 64px;
+        }
+        /*-------------------------SECAO--LISTA-DOWNLOAD---------------------------*/
+        .container__download-lista{
+            background-color: #FFFFFF;
+            border-radius: 1rem;
+            border: 1px solid #F1F1F1;
+
+            padding: 2rem 1rem 2.1rem 1rem;
+            
+            margin-top: 1.5rem;
+
+            margin-bottom: 3.5rem;
+
+            overflow-x: scroll;
+            overflow-y: visible;
+            scrollbar-color: #173A67 transparent;
+            scrollbar-width: thin;
+
+            width: 93vw;
+
+            display: none;
+            flex-direction: column;
+
+            position: relative;
+
+            animation: animatetop .6s ease-in-out forwards;
+        }
+
+        .info__download-lista___configuracao{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            font-family: var(--mont-serrat);
+            font-weight: 600;
+            font-size: 14px;
+
+            width: 80.75rem;
+            height: 3.125rem;
+
+            padding-left: 6.033rem;
+
+            background-color: #FAFAFA;
+            border-radius: 8px;
+            color: var(--primary);
+        }
+        .info__download-lista___caixa-postal{
+            width: 16rem;
+            background-image: url("../../Assets/seta__selection.png");
+            background-repeat: no-repeat;
+            background-position-y: center;
+            background-position-x: 10.4rem;
+        }
+        .info__download-lista___data{
+            width: 7.125rem;
+            background-image: url("../../Assets/seta__selection.png");
+            background-repeat: no-repeat;
+            background-position-y: center;
+            background-position-x: 3.7rem;
+        }
+        .info__download-lista___arquivo{
+            width: 29.25rem;
+            background-image: url("../../Assets/seta__selection.png");
+            background-repeat: no-repeat;
+            background-position-y: center;
+            background-position-x: 10.7rem;
+        }
+        .info__download-lista___tamanho{
+            width: 14.813rem;
+            background-image: url("../../Assets/seta__selection.png");
+            background-repeat: no-repeat;
+            background-position-y: center;
+            background-position-x: 5.7rem;
+        }
+        /*-------------------------SECAO--DOWNLOAD-ARQUIVOS----------------------------*/
+        .container__download-lista > p {
+            overflow-x: hidden;
+        }
+        .container__download-lista::-webkit-scrollbar-thumb {
+            background:#173A67;
+            border-radius: 16px;
+        }
+        .container__download-lista::-webkit-scrollbar{
+            background:transparent;
+            height: 0.555rem;
+            width: .5rem;
+        }
+        .lista__clientes___download-lista{
+            display: flex;
+            flex-direction: column;
+
+            padding-left: 1.8rem;
+            padding-right: 1.6rem;
+        }
+        .item__lista___download-lista{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 77.106rem;
+
+            font-family: var(--mont-serrat);
+            color: #7A8594;
+            
+            border-bottom: 0.941034px solid #E1E1E1;
+
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+        }
+        .item__lista___download-lista:last-child{
+            border: none;
+        }
+        .input__check___lista-download{
+            margin-right: 3.4rem;
+        }
+        .download-lista__caixa-postal{
+            width: 16rem;
+            font-size: 14px;
+        }
+        .download-lista__data{
+            width: 7.125rem;
+            font-size: 14px;
+        }
+        .download-lista__arquivo{
+            width: 29.25rem;
+            font-size: 14px;
+        }
+        .download-lista__tamanho{
+            width: 8.75rem;
+            font-size: 14px;
+        }
+        .paginacao__carrousel{
+            width: 6.528rem;
+
+            position: relative;
+            top: 0%;
+            left: 47%;
+
+            margin-top: 3rem;
+
+            font-family: var(--mont-serrat);
+            font-size: 15px;
+            color: #7A8594;
+
+            background-color: #FFFFFF;
+            z-index: 20000;
+        }
+        .container__botoes-marcar{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 1.5rem;
+
+            margin-top: 1rem;
+        }
+
+        .botoes__marcador{
+            display: flex;
+            gap: 1rem;
+            font-family: var(--mont-serrat);
+            font-size: 14px;
+        }
+        .botao__marcar, .botao__desmarca{
+            border: 1px solid #ECECEC;
+            border-radius: 64px;
+            height: 1.938rem;
+
+            padding: .5rem 1rem;
+            background-color: transparent;
+            color: var(--primary);
+        }
+        .botao__processar{
+            border: 1px solid #ECECEC;
+            border-radius: 64px;
+            height: 3.25rem;
+
+            padding: 1rem 2rem;
+            background-color: #93C83D;
+            color: #FFFFFF;
+            font-family: var(--mont-serrat);
+        }
+        /*-------------------------SECAO--DOWNLOAD-BOTOES-CARROUSEL---------------------------*/
+        .button--carrousel{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 0 2.6rem 0 1.8rem;
+
+            margin-top: 1.969rem;
+        }
+        .carrousel__button{
+            background-repeat: no-repeat;
+            background-color: transparent;
+            border: none;
+            background-position-y: center;
+            color: #7A8594;
+            font-family: var(--mont-serrat);
+            font-weight: 600;
+        }
+        .carrousel__button--anterior{
+            background-image: url("../../Assets/seta-esquerda.png");
+            padding-left: 2rem;
+            opacity: 0.4;
+        }
+        .carrousel__button--proximo{
+            background-image: url("../../Assets/seta-direita.png");
+            padding-right: 2rem;
+            background-position-x:right;
+        }
+}

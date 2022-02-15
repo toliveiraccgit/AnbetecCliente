@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/GerenciamentoArquivo/gerenciamentoArquivo.css">
+        <link rel="stylesheet" href="../CSS/GerenciamentoArquivo/gerenciamentoArquivoResponsivo.css">
+        <link href="../CSS/base.css" rel="stylesheet">
+        <link href="../CSS/reset.css" rel="stylesheet">
+        <link href="../CSS/normalize.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../Assets/Logo-favicon.png" type="image/x-icon" />
+        <title>Gerenciamento de Arquivos | Anbetec</title>
+    </head>
+
+    <body id="body">
+        <header class="cabecalho">
+            <a href="../home.html"><img src="../Assets/LogoAnbetec.png" alt="Logo Anbetec" class="logo-anbetec"></a>
+            <div class="container-pesquisa">
+                <button class="pesquisa-mobile"><img class="ico-pesquisa-mobile" src="../Assets/ico-pesquisa-mobile.png" alt="Abrir Barra Pesquisa"></button>
+                <input type="text" class="barra-pesquisa" placeholder="Procure pelo portal">
+            </div>
+            
+            <div class="container__info">
+                <button type="button" class="container__notificacao">
+                    <img src="../Assets/notificação.png" alt="Notificação" class="notificacao">
+                    <img src="../Assets/notificação-ativa.png" alt="Você possui notificação" class="notificacao-ativa">
+                </button>
+                <div class="perfil-area">
+                    <img src="../Assets/icone2.png" alt="Sua Foto de Perfil" class="icone__perfil">
+                    <div class="informacoes__perfil">
+                        <h1 class="nome__perfil">Davi Neris</h1>
+                        <span class="banco__perfil">Banco Anbetec</span>
+                    </div>
+                    <button type="button" class="menu-dots"></button>
+                </div>
+            </div>
+       
+        </header>
+
+        <main class="conteudo">
+            <div class="container__feedback-filtros">
+
+                <span class="texto__filtro-concluido">Upload realizado com sucesso!</span>
+
+            </div>
+
+            <section class="secao__gerenciamento-arquivo"> 
+                
+                <div class="intro__gerenciamento-arquivo">
+                    <p class="paginacao__gerenciamento-arquivo">
+                        <a href="../home.html" class="link-paginacao">Produtos</a>
+                        <a href="../edi-financeiro.html" class="link-paginacao-edi">EDI Financeiro</a>
+                        <a href="./gerenciamento-arquivos.html" class="destaque__paginacao">Gerenciamento de Arquivos</a>
+                    </p>
+                </div>
+
+            </section>
+
+            <div class="cabecalho__gerenciamento-arquivo">
+                <button class="tablinks tab-upload" id="defaultOpen" onclick="openTab(event, 'upload')">Upload</button>
+                <button class="tablinks tab-download" onclick="openTab(event, 'download')">Download</button>   
+            </div>
+
+            <section class="secao__upload tabcontent" id="upload">
+                <h1 class="titulo__filtro">Selecionar Arquivos:</h1>
+
+                <form class="form__filtros">
+
+                    <div class="container__input">
+                        <label for="Configuração" class="label__filtro">Filial:</label>
+                        <select name="Configuração" id="Configuracao" class="input__filtro" required>
+                            <option  class="option__filtro" value="0">(Selecione)</option>
+                            <option class="option__filtro" value="1">99 - TODAS AS FILIAIS</option>
+                        </select>
+                    </div>
+
+                    <div class="container__input">
+                        <label for="Banco" class="label__filtro">Banco:</label>
+                        <select name="Banco" id="Banco" class="input__filtro" required>
+                            <option  class="option__filtro" value="0">(Selecione)</option>
+                            <option class="option__filtro" value="1">1- 1-1 BANCO DO BRASIL</option>
+                        </select>
+                    </div>
+
+                </form>
+
+                <section class="secao__area___upload">
+
+
+                    <button type="button" class="texto__area___upload">Arraste ou <span class="clique__aqui-upload">clique aqui</span> para adicionar arquivos</button>
+
+
+                </section>
+
+                <section class="secao__arquivos___upload">
+
+                    <h2 class="titulo__secao___arquivos">Arquivos carregados:</h2>
+
+                    <div class="container__arquivo___carregado tipo__arquivo-pdf">
+
+                        <div class="container__info-arquivo">
+
+                            <span class="nome__arquivo">Arquivo1.pdf</span>
+                            <span class="tamanho__arquivo">14 kb</span>
+
+                        </div>
+
+                        <button class="botao__deleta___arquivo-carregado"></button>
+
+                    </div>
+
+                    <div class="container__arquivo___carregado tipo__arquivo-zip">
+
+                        <div class="container__info-arquivo">
+
+                            <span class="nome__arquivo">Varios_arquivos.zip</span>
+                            <span class="tamanho__arquivo">125 kb</span>
+
+                        </div>
+
+                        <button class="botao__deleta___arquivo-carregado"></button>
+
+                    </div>
+
+                    <div class="container__arquivo___carregado tipo__arquivo-xls">
+
+                        <div class="container__info-arquivo">
+
+                            <span class="nome__arquivo">Tabela.xls</span>
+                            <span class="tamanho__arquivo">60 kb</span>
+
+                        </div>
+
+                        <button class="botao__deleta___arquivo-carregado"></button>
+
+                    </div>
+
+                </section>
+
+                <section class="secao__botao___upload">
+
+                    <button class="botao__upload">Fazer Upload</button>
+
+                </section>
+            </section>
+
+            <section class="secao__download tabcontent" id="download">
+
+                <form class="form__filtros___download">
+
+                    <h2 class="titulo__filtro">Filtros:</h1>
+                    
+                    <section class="secao__filtros-download">
+
+                        <div class="container__input">
+                            <label for="Configuração" class="label__filtro">Caixa Postal:  (obrigatório)</label>
+                            <select name="Configuração" id="Configuracao" class="input__filtro" required>
+                                <option  class="option__filtro" value="0">(Selecione)</option>
+                                <option class="option__filtro" value="1">99 - TODAS AS FILIAIS</option>
+                            </select>
+                        </div>
+            
+                        <div class="container__input">
+                            <label for="Banco" class="label__filtro">Tipo de Arquivo</label>
+                            <select name="Banco" id="Banco" class="input__filtro" required>
+                                <option  class="option__filtro" value="0">(Selecione)</option>
+                                <option class="option__filtro" value="1">1- 1-1 BANCO DO BRASIL</option>
+                            </select>
+                        </div>
+
+                        <div class="container__input">
+                            <label for="data-fim" class="label__filtro">Período Início:</label>
+                            <input type="date" for="Titulo" class="input__filtro-data" required>
+                        </div>
+
+                        <div class="container__input">
+                            <label for="data-fim" class="label__filtro">Período Final:</label>
+                            <input type="date" for="Titulo" class="input__filtro-data" required>
+                        </div>
+
+                    </section>
+
+                    <div class="botoes__form">
+                        <button type="reset" class="botao-limpar">Limpar</button>
+                        <button type="button" class="botao-pesquisar" id="pesquisa__dda" onclick="abrirResultadoDownload()">Pesquisar</button>
+                    </div>
+                </form>
+
+
+                <section class="container__download-lista" id="resultado__download___pesquisa-filtro">
+                    <section class="info__download-lista___configuracao">
+    
+                            <p class="info__download-lista___caixa-postal">Caixa Postal</p>
+    
+                            <p class="info__download-lista___data">Data</p>
+    
+                            <p class="info__download-lista___arquivo">Arquivo</p>
+    
+                            <p class="info__download-lista___tamanho">Tamanho</p>
+    
+                    </section>
+    
+                    <section class="lista___download-lista">
+    
+                        <div class="container__carousel">
+    
+                            <ul class="lista__clientes___download-lista">
+    
+                                <li class="item__lista___download-lista">
+    
+                                    <input type="checkbox" class="input__check___lista-download">
+    
+                                    <p class="download-lista__caixa-postal">OESA-EDI</p>
+    
+                                    <p class="download-lista__data">04/11/2021</p>
+    
+                                    <p class="download-lista__arquivo">COB0013342732_04112021096,RET.2021110402241341410</p>
+    
+                                    <p class="download-lista__tamanho">0.97 kb</p>
+    
+                                </li>
+
+                                <li class="item__lista___download-lista">
+    
+                                    <input type="checkbox" class="input__check___lista-download">
+    
+                                    <p class="download-lista__caixa-postal">OESA-EDI</p>
+    
+                                    <p class="download-lista__data">04/11/2021</p>
+    
+                                    <p class="download-lista__arquivo">COB0013342732_04112021096,RET.2021110402241341410</p>
+    
+                                    <p class="download-lista__tamanho">0.97 kb</p>
+    
+                                </li>
+    
+                            </ul>
+    
+                            <div class="container__botoes-marcar">
+                                <div class="botoes__marcador">
+                                    <button class="botao__marcar" id="botao__marcar">Marcar Todos</button>
+                                    <button class="botao__desmarca" id="botao__desmarca">Desmarcar Todos</button>
+                                </div>
+                                <button class="botao__processar" id="botao__processa">Processar</button>
+                            </div>
+    
+                        </div>
+    
+                    
+                    </section>
+                    
+                    <div class="button--carrousel">
+                        <button class="carrousel__button carrousel__button--anterior" aria-label="Botão de Voltar">Anterior</button>
+                        <button class="carrousel__button carrousel__button--proximo" aria-label="Botão de Avançar">Próximo</button>
+                    </div>
+    
+                    
+                </section>
+
+            </section>
+
+        </main>
+
+
+    <script src="../Componentes/tab.js" type="text/javascript"></script>
+    <script src="../Componentes/GerenciamentoArquivos/gerenciamentoArquivos.js" type="text/javascript"></script>
+    </body>
+
+
+</html>

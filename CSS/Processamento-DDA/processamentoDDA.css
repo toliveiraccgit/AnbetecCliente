@@ -676,7 +676,7 @@
 
         scroll-margin: .5rem ;
 
-        scrollbar-color: #173A67 #173A67;
+        scrollbar-color: #173A67 transparent;
         scrollbar-width: thin;
     }
     .clientes__configuracao::-webkit-scrollbar-thumb {

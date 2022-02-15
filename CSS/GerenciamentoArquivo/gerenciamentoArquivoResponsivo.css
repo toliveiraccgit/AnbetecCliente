@@ -1,0 +1,10 @@
+@media (min-width:1441px){
+    /*---------------------EXTRATO---------------------*/
+    .info__download-lista___configuracao{
+        width: 90vw;
+    }
+    .item__lista___download-lista{
+        width: 87vw;
+    }
+
+}
