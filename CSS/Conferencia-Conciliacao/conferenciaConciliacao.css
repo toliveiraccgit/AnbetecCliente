@@ -672,6 +672,7 @@
         .secao__movimentacao-erp{
             display: flex;
             flex-direction: column;
+
         }
         .titulo__secao___movimentacao-erp{
             font-family:var(--mont-serrat);

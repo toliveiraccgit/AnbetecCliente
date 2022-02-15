@@ -7,6 +7,9 @@
         width: 87vw;
     }
     /*---------------------MOVIMENTACAO-ERP---------------------*/
+    .secao__movimentacao-erp{
+        align-items: center;
+    }
     .container__movimentacao-erp___lista {
         width: 75vw;
     }
@@ -17,6 +20,9 @@
         width: 69vw;
     }
     /*---------------------MOVIMENTACAO-EXTRATO---------------------*/
+    .secao__movimentacao-extrato{
+        align-items: center;
+    }
     .container__movimentacao-extrato___lista {
         width: 75vw;
     }
