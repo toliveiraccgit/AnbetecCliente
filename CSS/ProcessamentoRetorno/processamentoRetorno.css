@@ -438,7 +438,10 @@
         border-radius: 8px;
         color: var(--primary);
     }
+   
 
+    
+    
     .info__retorno-lista___selecionar{
         width: 8.75rem;
         background-image: url("../../Assets/seta__selection.png");
@@ -446,48 +449,49 @@
         background-position-y: center;
         background-position-x: 5.5rem;
     }
+    
+    .info__retorno-lista___evento{
+        width: 17.938rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 4rem;
+    }
     .info__retorno-lista___banco{
-        width: 10.875rem;
+        width: 7.563rem;
         background-image: url("../../Assets/seta__selection.png");
         background-repeat: no-repeat;
         background-position-y: center;
         background-position-x: 3.5rem;
     }
 
+    .info__retorno-lista___conta{
+        width: 9.25rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.4rem;
+    }  
     .info__retorno-lista___arquivo{
-        width: 9.563rem;
+        width: 10.25rem;
         background-image: url("../../Assets/seta__selection.png");
         background-repeat: no-repeat;
         background-position-y: center;
         background-position-x: 4.4rem;
-    }  
-    .info__retorno-lista___data-processamento{
-        width: 13.688rem;
-        background-image: url("../../Assets/seta__selection.png");
-        background-repeat: no-repeat;
-        background-position-y: center;
-        background-position-x: 10.4rem;
     }
-    .info__retorno-lista___status{
-        width: 7.313rem;
-        background-image: url("../../Assets/seta__selection.png");
-        background-repeat: no-repeat;
-        background-position-y: center;
-        background-position-x: 3.7rem;
-    }
-    .info__retorno-lista___codigo-barras{
-        width: 15.563rem;
-        background-image: url("../../Assets/seta__selection.png");
-        background-repeat: no-repeat;
-        background-position-y: center;
-        background-position-x: 10.7rem;
-    }
-    .info__retorno-lista___valor-total{
+    .info__retorno-lista___data{
         width: 10rem;
         background-image: url("../../Assets/seta__selection.png");
         background-repeat: no-repeat;
         background-position-y: center;
-        background-position-x: 5.7rem;
+        background-position-x: 3rem;
+    }
+    .info__retorno-lista___status{
+        width: 11.375rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.7rem;
     }
     /*-------------------------SECAO--retorno-CLIENTES----------------------------*/
     .container__retorno-lista > p {
@@ -529,32 +533,34 @@
     .input__check___lista-retorno{
         margin-right: 7.3rem;
     }
-   
 
 
 
+
+
+
+    .retorno-lista__evento{
+        width: 17.938rem;
+        font-size: 14px;
+    }
     .retorno-lista__banco{
-        width: 11rem;
+        width: 7.563rem;
+        font-size: 14px;
+    }
+    .retorno-lista__conta{
+        width: 9.25rem;
         font-size: 14px;
     }
     .retorno-lista__arquivo{
-        width:  9.563rem;
+        width: 10.25rem;
         font-size: 14px;
     }
-    .retorno-lista__data-processamento{
-        width: 13.688rem;
+    .retorno-lista__data{
+        width: 10rem;
         font-size: 14px;
     }
     .retorno-lista__status{
-        width: 7.313rem;
-        font-size: 14px;
-    }
-    .retorno-lista__codigo-barras{
-        width: 15.563rem;
-        font-size: 14px;
-    }
-    .retorno-lista__valor-total{
-        width: 10rem;
+        width: 11.375rem;
         font-size: 14px;
     }
     .botao__status___configuracao-ativa{

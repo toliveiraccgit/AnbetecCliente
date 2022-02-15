@@ -6,31 +6,18 @@
     .item__lista___extrato-lista {
         width: 87vw;
     }
-    /*---------------------MOVIMENTACAO-ERP---------------------*/
-    .secao__movimentacao-erp{
-        align-items: center;
+    /*--------------------ERP-------------------------*/
+    .info__movimentacao-erp___configuracao{
+        width: 91vw;
     }
-    .container__movimentacao-erp___lista {
-        width: 75vw;
+    .item__lista___movimentacao-erp{
+        width: 87vw;
     }
-    .info__movimentacao-erp___configuracao {
-        width: 73vw;
-    }
-    .item__lista___movimentacao-erp {
-        width: 69vw;
-    }
-    /*---------------------MOVIMENTACAO-EXTRATO---------------------*/
-    .secao__movimentacao-extrato{
-        align-items: center;
-    }
-    .container__movimentacao-extrato___lista {
-        width: 75vw;
-    }
+    /*--------------------EXTRATO-BANCARIO-------------------------*/
     .info__movimentacao-extrato___configuracao{
-        width: 73vw;
+        width: 91vw;
     }
-   .item__lista___movimentacao-extrato {
-        width: 69vw;
-        justify-content: space-between;
+    .item__lista___movimentacao-extrato{
+        width: 87vw;
     }
 }

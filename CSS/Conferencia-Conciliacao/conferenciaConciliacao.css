@@ -827,6 +827,7 @@
             display: flex;
             flex-direction: row;
             align-items: center;
+            justify-content: space-between;
             width: 77.106rem;
 
             font-family: var(--mont-serrat);
@@ -839,6 +840,11 @@
         }
         .item__lista___movimentacao-erp:last-child{
             border: none;
+        }
+        .secao-1__item-lista___erp{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
         }
         .input__check___lista-extrato{
             margin-right: 2.717rem;
@@ -1035,7 +1041,7 @@
             background-position-x: 3rem;
         }
         .info__movimentacao-extrato___transacao{
-            width: 26.375rem;
+            width: 6.375rem;
             background-image: url("../../Assets/seta__selection.png");
             background-repeat: no-repeat;
             background-position-y: center;
@@ -1065,6 +1071,7 @@
             display: flex;
             flex-direction: row;
             align-items: center;
+            justify-content: space-between;
             width: 77.106rem;
 
             font-family: var(--mont-serrat);
@@ -1075,6 +1082,12 @@
             padding-top: .5rem;
             padding-bottom: .5rem;
         }
+        
+        .secao-1__item-lista___extrato{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
         .item__lista___movimentacao-extrato:last-child{
             border: none;
         }
@@ -1082,31 +1095,31 @@
             margin-right: 2.717rem;
         }
         .movimentacao-extrato__id{
-            width: 6.4rem;
+            width: 7rem;
             font-size: 14px;
         }
         .movimentacao-extrato__documento{
-            width: 10.5rem;
+            width: 11.875rem;
             font-size: 14px;
         }
         .movimentacao-extrato__a-pagar{
-            width: 9rem;
+            width: 10.313rem;
             font-size: 14px;
         }
         .movimentacao-extrato__a-receber{
-            width: 8rem;
+            width: 8.75rem;
             font-size: 14px;
         }
         .movimentacao-extrato__historico{
-            width: 11.4rem;
+            width: 12.75rem;
             font-size: 14px;
         }
         .movimentacao-extrato__data{
-            width: 6.5rem;
+            width: 6.875rem;
             font-size: 14px;
         }
         .movimentacao-extrato__transacao{
-            width: 15rem;
+            width: 6.563rem;
             font-size: 14px;
         }
         .botao__edita___item-erp{
