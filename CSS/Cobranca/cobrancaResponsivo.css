@@ -1,0 +1,25 @@
+@media (min-width:1441px){
+    /*-----------------CONTEUDO--------------------*/
+    .info__conteudo___configuracao{
+        width: 89vw;
+        justify-content: space-between;
+    }
+    .item__lista___conteudo-configuracao{
+        width: 87vw;
+        justify-content: space-between;
+    }
+    /*---------------COBRANCA-------------------*/
+    .info__notificacao___configuracao{
+        width: 91vw;justify-content: space-between;
+    }
+    .item__lista___notificacao-configuracao{
+        width: 88vw;justify-content: space-between;
+    }
+    /*---------------LOG--------------------------*/
+    .info__log___configuracao{
+        width: 91vw;
+    }
+    .item__lista___log-configuracao{
+        width: 88vw;
+    }
+}

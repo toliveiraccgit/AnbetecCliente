@@ -1,0 +1,1730 @@
+@media (min-width:0px){
+    body{
+        background-color: #F8FBFF;
+    }
+    /*-------------------------CABECALHO--------------------*/
+    .cabecalho{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+        height: 6.938rem;
+        width: 100vw;
+
+        background-color: #FFFFFF;
+
+        padding: 2rem 3.5rem;
+    }
+    .container__info{
+        display: flex;
+        flex-direction: row;
+    }
+    .logo-anbetec{
+        width: 9.213rem;
+        height: 2.979rem;
+    }
+    .pesquisa-mobile{
+        display: none;
+    }
+    .barra-pesquisa{
+        font-family: var(--mont-serrat);
+        font-size: 14px;
+        width: 42vw;
+        height: 3.25rem;
+
+        border: none;
+        border-radius: .5rem;
+
+        background-color: #F1F4F9;
+        background-image: url("../../Assets/search.png");
+        background-repeat: no-repeat;
+        background-position: 2.063rem, .5rem;
+
+        padding: 1rem 0 1rem 3.5rem;
+    }
+    .barra-pesquisa:focus{
+        outline: 2px solid var(--primary-support);
+        color: var(--azul-secundaria);
+    }
+    .container__notificacao{
+        padding-right: 1.25rem;
+        margin-right: 1.75rem;
+        border-right: 1px solid #cdcdcd;
+        
+        display: flex;
+        align-items: center;
+
+        background-color: transparent;
+        border-top: none;
+        border-left: none;
+        border-bottom: none;
+    }
+    .notificacao-ativa{
+        visibility:visible;
+        position: relative;
+        top: -.8rem;
+        left: -.5rem;
+    }
+
+    .perfil-area{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.75rem;
+        font-family: var(--mont-serrat);
+        height: 2rem;
+    }
+    .informacoes__perfil{
+        width: 112px;
+    }
+    .icone__perfil{
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+    }
+    .nome__perfil{
+        margin: 0%;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--primary);
+    }
+    .banco__perfil{
+        font-size: 14px;
+        font-weight: 500;
+        color: #7A8594;
+    }
+    .menu-dots{
+        background-image: url("../../Assets/menu__dots.png");
+        border: none;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position-y: .5rem;
+
+        width: 30px;
+        height: 20px;
+    }
+    /*-------------------------paginação-Cobranca---------------------------*/
+    .intro__cobranca{
+        font-family: var(--mont-serrat);
+        margin-bottom: 2.75rem;
+
+        padding-left: 3rem;
+        padding-top: 2rem;
+        padding-right: 3.438rem;
+    }
+    .paginacao__cobranca{
+        color: #7A8594;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 0%;
+    
+    }
+    .link-paginacao{
+        color: #7A8594;
+    }
+    .link-paginacao-cobranca{
+        padding-left: 1.6rem;
+        background-image: url("../../Assets/icone-paginacao.png");
+        background-repeat: no-repeat;
+        background-position: .55rem, .2rem ;
+        color: #7A8594;
+    }
+    .destaque__paginacao{
+        padding-left: 1.6rem;
+        background-image: url("../../Assets/icone-paginacao.png");
+        background-repeat: no-repeat;
+        background-position: .55rem, .2rem ;
+    
+        color: var(--primary);
+        font-weight: 600;
+    }
+    /*-------------------------CABECALHO-TABS---------------------------*/
+    .secao__cabecalho___cobranca{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        padding-left: 2.9rem;
+        padding-right: 3.438rem;
+    }
+    
+    .cabecalho__cobranca{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        margin-bottom: 1.272rem;
+    }
+    .tablinks{
+        border: none;
+        background-color: transparent;
+        color: var(--primary);
+        font-family: var(--mont-serrat);
+        padding: 0%;
+
+        font-size: 22.58px;
+        font-weight: 700;
+        opacity: 0.2;
+    }
+    .active{
+        opacity: 1;
+    }
+    /*--------------------SECAO-CONTEUDO---------------*/
+    .botao__cadastra-conteudo{
+        color: #FFFFFF;
+
+        font-weight: 500;
+        font-size: 16px;
+        font-family: var(--mont-serrat);
+
+        padding: 1rem 2rem 1rem 3.733rem;
+
+        background: var(--primary-support);
+        background-image: url("../../Assets/botao__configurar___cobranca.png");
+        background-repeat: no-repeat;
+
+        background-position-y: center;
+        background-position-x: 14%;
+        
+
+        box-shadow: 0px 0px 7.73002px rgba(26, 142, 249, 0.25);
+        border-radius: 64px;
+
+        margin-bottom: 1.5rem;
+
+        border:none;
+
+        position: absolute;
+        left: calc(100% - 19rem);
+        top: 12.5rem;
+    }
+    .container__titulo___conteudo{
+        display: flex;
+        justify-content: center;
+
+        margin-bottom: 2.906rem;
+
+        font-family: var(--mont-serrat);
+    }
+    .titulo__conteudo{
+        color: var(--primary);
+        font-size: 16px;
+    }
+    .text__weigth-blue{
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .text__bold-weigth-blue{
+        font-weight: 700;
+    }
+    .secao__conteudo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding-left: 2.9rem;
+        padding-top: 1rem;
+        padding-right: 3.438rem;
+    }
+    .secao__conteudo___configuracao{
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+        border: 1px solid #F1F1F1;
+
+        padding: 2rem 1rem 0 1rem;
+
+        margin-left: 2.9rem;
+        margin-right: 3.438rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .info__conteudo___configuracao{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        font-family: var(--mont-serrat);
+        font-weight: 600;
+        font-size: 14px;
+
+        width: 80rem;
+        height: 3.125rem;
+
+        padding-left: 1.646rem;
+
+        background-color: #FAFAFA;
+        border-radius: 8px;
+        color: var(--primary);
+    }
+
+    .container__info__conteudo-primeiro{
+        width: auto;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .info__conteudo___conteudo{
+        width: 61.5rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 5.5rem;
+    }
+    .info__conteudo___acoes{
+        width: 16rem;
+    }
+    /*-------------------------SECAO--CONTEUDO-CLIENTES-CONFIGURACAO---------------------------*/
+    .container__conteudo{
+        overflow-x: scroll;
+        overflow-y: visible;
+        scrollbar-color:  #173A67 transparent;
+        scrollbar-width: thin;
+
+        background-color: #FFFFFF;
+        border-radius: 1rem;
+        border: 1px solid #F1F1F1;
+
+        padding: 2rem 2rem 2.195rem 2rem;
+    }
+    .container__conteudo > p {
+        overflow-x: hidden;
+    }
+    .container__conteudo::-webkit-scrollbar-thumb {
+        background:#173A67;
+        border-radius: 16px;
+    }
+    .container__conteudo::-webkit-scrollbar{
+        background:transparent;
+        height: 0.555rem;
+        width: .5rem;
+    }
+    .lista__clientes___conteudo-configuracao{
+        display: flex;
+        flex-direction: column;
+
+        padding-left: 1.8rem;
+        padding-right: 1.6rem;
+    }
+    .item__lista___conteudo-configuracao{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 76.25rem;
+
+        font-family: var(--mont-serrat);
+        color: #7A8594;
+        
+        border-bottom: 0.941034px solid #E1E1E1;
+
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+    .item__lista___conteudo-configuracao:last-child{
+        border-bottom: none;
+    }
+
+    .cliente__conteudo{
+        width: 61.5rem;
+        font-size: 14px;
+    }
+    .container__botoes___conteudo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.25rem;
+        width: 15.466rem;
+    }
+    .botao__edita___conteudo{
+        border: none;
+        background-color: #E0F0FF;
+
+        padding-top: 0.719rem;
+        padding-bottom: 0.719rem;
+        padding-right: 1rem;
+        padding-left: 2.983rem;
+
+        border-radius: 64px;
+
+        color: #1A8EF9;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        font-size: 14px;
+
+        background-image: url("../../Assets/VetoresBotoes/vetor-botao-edita.svg");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 1rem;
+    }
+    .botao__deleta___conteudo{
+        border: none;
+        background-color: #FFF2F2;
+
+        padding-top: 0.719rem;
+        padding-bottom: 0.719rem;
+        padding-right: 1rem;
+        padding-left: 2.983rem;
+
+        border-radius: 64px;
+
+        color: #F5381E;
+        font-family: var(--mont-serrat);
+        font-weight: 500;
+        font-size: 14px;
+
+        background-image: url("../../Assets/VetoresBotoes/vetor-botao-deleta.svg");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 1rem;
+    }
+    .paginacao__carrousel{
+        width: 6.528rem;
+
+        position: relative;
+        top: 0%;
+        left: 47%;
+
+        margin-top: 3rem;
+
+        font-family: var(--mont-serrat);
+        font-size: 15px;
+        color: #7A8594;
+
+        background-color: #FFFFFF;
+        z-index: 20000;
+    }
+    /*-------------------------SECAO--CONTEUDO-BOTOES-CARROUSEL---------------------------*/
+    .button--carrousel__conteudo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+
+        padding: 0 1.6rem 0 1.85rem;
+
+        margin-top: 3rem;
+    }
+    .carrousel__button__conteudo{
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+        background-position-y: center;
+        color: #7A8594;
+        font-family: var(--mont-serrat);
+        font-weight: 600;
+    }
+    .carrousel__button--anterior__conteudo{
+        background-image: url("../../Assets/seta-esquerda.png");
+        padding-left: 2rem;
+        opacity: 0.4;
+    }
+    .carrousel__button--proximo__conteudo{
+        background-image: url("../../Assets/seta-direita.png");
+        padding-right: 2rem;
+        background-position-x:right;
+    }
+    /*--------------------SECAO-CONTEUDO---------------*/
+    .info__notificacao___configuracao{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        font-family: var(--mont-serrat);
+        font-weight: 600;
+        font-size: 14px;
+
+        width: 80rem;
+        height: 3.125rem;
+
+        padding-left: 1.646rem;
+
+        background-color: #FAFAFA;
+        border-radius: 8px;
+        color: var(--primary);
+    }
+    .secao-1__info___lista{
+        display: flex;
+        align-items: center;
+    }
+    .info__notificacao___dias{
+        width: 5.75rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 2.8rem;
+    }
+    .info__notificacao___acao{
+        width: 8.063rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.1rem;
+    }
+    .info__notificacao___conteudo{
+        width: 23.2rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 5.4rem;
+    }
+    .info__notificacao___estimativa{
+        width: 11.175rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 5.7rem;
+    }
+    .info__notificacao___status{
+        width: 13.563rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.8rem;
+    }
+    .info__notificacao___acoes{
+        width: 16.469rem;
+    }
+    /*-------------------------SECAO--CONTEUDO-CLIENTES-CONFIGURACAO---------------------------*/
+    .item__lista___notificacao-configuracao{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 76.25rem;
+
+        font-family: var(--mont-serrat);
+        color: #7A8594;
+        
+        border-bottom: 0.941034px solid #E1E1E1;
+
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+    .item__lista___notificacao-configuracao:last-child{
+        border: none;
+    }
+    .secao-1__item___lista{
+        display: flex;
+        align-items: center;
+    }
+    .cliente-notificacao__dias{
+        width: 5.75rem;
+        font-size: 14px;
+    }
+    .cliente-notificacao__acao{
+        width: 8.063rem;
+        font-size: 14px;
+    }
+    .cliente-notificacao__conteudo{
+        width: 23.1rem;
+        font-size: 14px;
+    }
+    .cliente-notificacao__estimativa{
+        width: 11.175rem;
+        font-size: 14px;
+    }
+    .container__botao-status___notificacao{
+        width: 13.563rem;
+    }
+    .botao__status___configuracao-ativa{
+        font-size: 14px;
+        font-weight: 500;
+
+        background: #DBFBCD;
+        border-radius: 18.8207px;
+        border: none;
+
+        color: #4ABE14;
+
+        padding: .2rem .9rem;
+    }
+    /*-----------------CONFIGURACAO-------------------*/
+    .container__titulo___configuracao{
+        display: flex;
+        justify-content: center;
+
+        margin-bottom: 2.906rem;
+
+        font-family: var(--mont-serrat);
+    }
+    .titulo__configuracao{
+        color: var(--primary);
+        font-size: 16px;
+    }
+    .text__weigth-blue{
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .text__bold-weigth-blue{
+        font-weight: 700;
+    }
+    .secao__configuracao{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding-left: 2.9rem;
+        padding-top: 1rem;
+        padding-right: 3.438rem;
+
+        overflow-x: scroll;
+        overflow-y: visible;
+
+        scrollbar-color: #173A67 transparent;
+        scrollbar-width: thin;
+
+        background-color: #FFFFFF;
+
+        border-radius: 1rem;
+        border: 1px solid #F1F1F1;
+
+        padding: 2rem 2rem 2.195rem 2rem;
+
+        margin-left: 2.9rem;
+        margin-right: 3.438rem;
+    }
+    .secao__configuracao___email{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 2.813rem;
+    }
+    .input__configuracao___email{
+        width: 60.375rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.844rem;
+    }
+    .container__input{
+        display: flex;
+        flex-direction: column;
+    }
+    .label__input{
+        font-family: var(--mont-serrat);
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--primary);
+
+        margin-bottom: .25rem;
+    }
+    .input__configuracao{
+        height: 3.063rem;
+        width: 67.1vw;
+
+        border: 1.02254px solid #ECECEC;
+        border-radius: 8px;
+
+        padding: .5rem 1rem .5rem 1rem;
+        font-size: 14px;
+        font-family: var(--mont-serrat);
+        color: #7A8594;
+        text-overflow:ellipsis;
+    }
+    .descricao__secao___configuracao-email{
+        font-family: var(--mont-serrat);
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.289876px;
+
+        color: #7A8594;
+
+        padding-left: .5rem;
+    }
+    .botao__salvar___configuracao{
+        color: #FFFFFF;
+
+        font-weight: 500;
+        font-size: 16px;
+        font-family: var(--mont-serrat);
+
+        padding: 1rem 2rem 1rem 2rem;
+
+        background: var(--primary-support);
+
+        box-shadow: 0px 0px 7.73002px rgba(26, 142, 249, 0.25);
+        border-radius: 64px;
+
+        border: none;
+
+        margin-top: 1rem;
+    }
+    /*-------------------------SECAO--CONFIGURACAO-BOTOES-CARROUSEL---------------------------*/
+    .button--carrousel__configuracao{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+
+        padding: 0 1.6rem 0 1.85rem;
+
+        margin-top: 4.556rem;
+    }
+    .carrousel__button__configuracao{
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+        background-position-y: center;
+        color: #7A8594;
+        font-family: var(--mont-serrat);
+        font-weight: 600;
+    }
+    .carrousel__button--anterior__configuracao{
+        background-image: url("../../Assets/seta-esquerda.png");
+        padding-left: 2rem;
+        opacity: 0.4;
+    }
+    .carrousel__button--proximo__configuracao{
+        background-image: url("../../Assets/seta-direita.png");
+        padding-right: 2rem;
+        background-position-x:right;
+    }
+    /*-------------------------SECAO--LOG-COBRANCA---------------------------*/
+    .secao__log{
+        display: flex;
+        flex-direction: column;
+
+        padding-left: 2.9rem;
+        padding-right: 3.438rem;
+    }
+        /*---------------------FITLROS-LOG-----------------------*/
+        .secao__filtros___log{
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            overflow-x: hidden;
+
+            background-color: #FFFFFF;
+            border-radius: 1rem;
+            border: 1px solid #F1F1F1;
+
+            padding: 2rem 2rem 2.195rem 2rem;
+
+            margin-bottom: 1.489rem;
+        }
+        .titulo__filtro{
+            font-family: var(--mont-serrat);
+            font-size: 16px;
+            color: var(--primary);
+            margin: 0%;
+        }
+        .secao__inputs___log{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+        .input__filtro-log{
+            height: 3.063rem;
+            width: 28.15vw;
+
+            border: 1.02254px solid #ECECEC;
+            border-radius: 8px;
+
+            padding: .5rem 1rem .5rem 1rem;
+            font-size: 14px;
+            font-family: var(--mont-serrat);
+            color: #7A8594;
+            text-overflow:ellipsis;
+        }
+        input:focus{
+            outline: 1px solid var(--primary-support);
+        }
+        .container__botao___pesquisa-log{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        .botao__pesquisar___log{
+            color: #FFFFFF;
+
+            font-weight: 500;
+            font-size: 16px;
+            font-family: var(--mont-serrat);
+
+            padding: 1rem 2rem 1rem 2rem;
+
+            background: var(--primary-support);
+
+            box-shadow: 0px 0px 7.73002px rgba(26, 142, 249, 0.25);
+
+            border-radius: 64px;
+            border: none;
+        }
+        /*--------------------SECAO-LOG-CLIENTES---------------*/
+        #resultado__log___pesquisa-filtro{
+            display: none;
+            opacity: 0;
+            animation: animatetop .6s ease-in-out forwards;
+
+            position: relative;
+        }
+        .info__log___configuracao{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            font-family: var(--mont-serrat);
+            font-weight: 600;
+            font-size: 14px;
+
+            width: 80rem;
+            height: 3.125rem;
+
+            padding-left: 1.646rem;
+
+            background-color: #FAFAFA;
+            border-radius: 8px;
+            color: var(--primary);
+        }
+        
+
+
+
+
+        .info__log___clientes{
+            width: 11.375rem;
+            background-image: url("../../Assets/seta__selection.png");
+            background-repeat: no-repeat;
+            background-position-y: center;
+            background-position-x: 2.8rem;
+        }
+        .info__log___titulo{
+            width: 14.875rem;
+            background-image: url("../../Assets/seta__selection.png");
+            background-repeat: no-repeat;
+            background-position-y: center;
+            background-position-x: 3.1rem;
+        }
+        .info__log___conteudo{
+            width: 23.938rem;
+            background-image: url("../../Assets/seta__selection.png");
+            background-repeat: no-repeat;
+            background-position-y: center;
+            background-position-x: 5.4rem;
+        }
+        .info__log___id-notificacao{
+            width: 15.125rem;
+            background-image: url("../../Assets/seta__selection.png");
+            background-repeat: no-repeat;
+            background-position-y: center;
+            background-position-x: 5.7rem;
+        }
+        .info__log___data-envio{
+            width: 13.563rem;
+            background-image: url("../../Assets/seta__selection.png");
+            background-repeat: no-repeat;
+            background-position-y: center;
+            background-position-x: 3.8rem;
+        }
+
+        /*-------------------------SECAO--LOG-CLIENTES-CONFIGURACAO---------------------------*/
+        .item__lista___log-cadastra-coonteudo{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 76.25rem;
+
+            font-family: var(--mont-serrat);
+            color: #7A8594;
+            
+            border-bottom: 0.941034px solid #E1E1E1;
+
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+        }
+        .item__lista___log-cadastra-coonteudo:last-child{
+            border: none;
+        }
+        .cliente-log__clientes{
+            width: 11.5rem;
+            font-size: 14px;
+        }
+        .cliente-log__titulo{
+            width: 14.75rem;
+            font-size: 14px;
+        }
+        .cliente-log__conteudo{
+            width: 23.938rem;
+            font-size: 14px;
+        }
+        .cliente-log__id-notificacao{
+            width: 15.563rem;
+            font-size: 14px;
+        }
+        .cliente-log__data-envio{
+            width: 11.4rem;
+            font-size: 14px;
+        }
+            /*-----------------------CADASTRAR-CONTEUDO----------------------------*/
+            .container__secao___cadastra-conteudo{
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                width: 100vw;
+        
+                padding: 48% 100vw;
+        
+                display: none;
+                justify-content: flex-end;
+                align-items: flex-end;
+                background-color: rgba(0,0,0,0.2);
+        
+                transition: all .4s ease-in-out;
+            }
+            .cadastra-conteudo{
+                width: 70vw;
+                height: 72.5rem;
+        
+                display: block;
+        
+                position: absolute;
+                top: 0%;
+                bottom: 0%;
+        
+                margin-top: 5vh;
+                margin-bottom: 4vh;
+        
+                padding: 3rem 3.438rem 2.5rem;
+        
+                transition: all .4s ease-in-out;
+        
+                background-color: #FFFFFF;
+                border-radius: 16px 0px 0px 16px;
+                border: 1px solid #F1F1F1;
+        
+                animation: animateLeftServiço .6s ease-in-out forwards;
+                
+        
+                font-family: var(--mont-serrat);
+            }
+        
+            .cabecalho__cadastra-conteudo-servico{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+        
+                margin-bottom: 1.5rem;
+            }
+            .titulo__cabecalho__cadastra-conteudo{
+                font-size: 22.58px;
+                color: var(--primary);
+            }
+            .fecha__configuracoes{
+                width: 1rem;
+                height: 1rem;
+                background-image: url("../../Assets/icone-fecha.svg");
+                background-repeat: no-repeat;
+        
+                border: none;
+                background-color: transparent;
+        
+                padding: 0;
+            }
+        
+            .container__botao___cadastra-conteudo{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 1.5rem;
+        
+                margin-top: 7.759rem;
+                padding-top: 5.5rem;
+        
+                border-top: 1px solid #EEEEEE;
+        
+                font-family: var(--mont-serrat);
+                
+            }
+            .botao-salvar{
+                border: 1px solid var(--primary-support);
+                border-radius: 64px;
+        
+                padding: 1rem 2rem;
+        
+                background-color: var(--primary-support);
+        
+                color: #FFFFFF;
+                font-weight: 500;
+            }
+            /*-------------------CABECALHO-CADASTRA------------------*/
+            .cabecalho__cadastro-conteudo{
+                display: flex;
+                flex-direction: row;
+                gap: 2rem;
+                margin-bottom: 1.272rem;
+            }
+            .tablinks-cadastra-conteudo{
+                border: none;
+                background-color: transparent;
+                color: var(--primary);
+                font-family: var(--mont-serrat);
+                padding: 0%;
+        
+                
+                font-size: 20px;
+                font-weight: 700;
+                opacity: 0.2;
+            }
+            .active-cadastra-conteudo{
+                opacity: 1;
+            }
+            /*------------------TEXT-AREA---------------*/
+            .input__assunto___conteudo{
+                height: 3.063rem;
+                width: 63vw;
+                border: 1.02254px solid #ECECEC;
+                border-radius: 8px;
+                padding: .5rem 1rem .5rem 1rem;
+                font-size: 14px;
+                font-family: var(--mont-serrat);
+                color: #7A8594;
+            }
+            .secao__text-area{
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                margin-top: 1.5rem;
+            }
+            .secao__edicao___textos{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: .8rem;
+            }
+            .botao__edicao-texto{
+                background-color: transparent;
+
+                border: 1px solid #E1E1E1;
+
+                height: 1.2rem;
+                width: 1.2rem;
+
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: 1.2rem 1.2rem;
+            }
+            .text-area__conteudo{
+                height: 6.063rem;
+                width: 63vw;
+                border: 1.02254px solid #ECECEC;
+                border-radius: 8px;
+                padding: .5rem 1rem .5rem 1rem;
+                font-size: 14px;
+                font-family: var(--mont-serrat);
+                color: #7A8594;
+
+                resize: none;
+            }
+            .text-area__conteudo:focus{
+                outline: 1px solid var(--primary-support);
+            }
+            .select__edicao___texto{
+                font-family: var(--mont-serrat);
+                font-size: 16px;
+                color: var(--primary);
+
+                background-color: transparent;
+
+                border: 1px solid #ECECEC;
+            }
+            .select__edicao___texto > option {
+                font-family: var(--mont-serrat);
+                font-size: 16px;
+                color: var(--primary);
+
+                background-color: transparent;
+
+                border: 1px solid #ECECEC;
+            }
+            /*---------------------BOTOES----------------*/
+            .botao__bold{
+                background-image: url("../../Assets/Cobranca/VetoresTabela/vetor-bold.svg");
+            }
+            .botao__italic{
+                background-image: url("../../Assets/Cobranca/VetoresTabela/vetor-italic.svg");
+            }
+            .botao__underline{
+                background-image: url("../../Assets/Cobranca/VetoresTabela/vetor-undefined.svg");
+            }
+            .botao__line-center{
+                background-image: url("../../Assets/Cobranca/VetoresTabela/vetor-line-center.svg");
+            }
+            .botao__chave{
+                background-image: url("../../Assets/Cobranca/VetoresTabela/vetor-chave.svg");
+            }
+            .botao__subscript-up{
+                background-image: url("../../Assets/Cobranca/VetoresTabela/vetor-subscript-up.svg");
+            }
+            .botao__subscript{
+                background-image: url("../../Assets/Cobranca/VetoresTabela/vetor-subscript.svg");
+            }
+            .botao__bullet-list{
+                background-image: url("../../Assets/Cobranca/VetoresTabela/vetor-lista-bullet.svg");
+            }
+            .botao__number-list{
+                background-image: url("../../Assets/Cobranca/VetoresTabela/vetor-lista-number.svg");
+            }
+            .botao__indent-right{
+                background-image: url("../../Assets/Cobranca/VetoresTabela/vetor-indent-rigth.svg");
+            }
+            .botao__indent-left{
+                background-image: url("../../Assets/Cobranca/VetoresTabela/vetor-indent-left.svg");
+            }
+            .botao__align-left{
+                background-image: url("../../Assets/Cobranca/VetoresTabela/vetor-alinha-left.svg");
+            }
+            .botao__align-center{
+                background-image: url("../../Assets/Cobranca/VetoresTabela/vetor-alinha-centro.svg");
+            }
+            .botao__align-right{
+                background-image: url("../../Assets/Cobranca/VetoresTabela/vetor-alinha-right.svg");
+            }
+            .botao__align-justify{
+                background-image: url("../../Assets/Cobranca/VetoresTabela/vetor-alinha-justify.svg");
+            }
+            .botao__color{
+                background-image: url("../../Assets/Cobranca/VetoresTabela/vetor-color.svg");
+            }
+            .botao__add___link{
+                background-image: url("../../Assets/Cobranca/VetoresTabela/vetor-link.svg");
+            }
+            .botao__remove___link{
+                background-image: url("../../Assets/Cobranca/VetoresTabela/vetor-link-off.svg");
+            }
+            .botao__table{
+                background-image: url("../../Assets/Cobranca/VetoresTabela/vetor-adicionar-tabela.svg");
+            }
+            .botao__emoji{
+                background-image: url("../../Assets/Cobranca/VetoresTabela/vetor-emoji.svg");
+            }
+            .botao__image{
+                background-image: url("../../Assets/Cobranca/VetoresTabela/vetor-adiciona-imagem.svg");
+            }
+            .botao__erase{
+                background-image: url("../../Assets/Cobranca/VetoresTabela/vetor-borracha.svg");
+            }
+            .botao__backwards{
+                background-image: url("../../Assets/Cobranca/VetoresTabela/vetor-rewind.svg");
+            }
+            .botao__fowards{
+                background-image: url("../../Assets/Cobranca/VetoresTabela/vetor-foward.svg");
+            }
+            /*-----------------------SECAO-TOOGLE---------------------*/
+            .secao__toogle{
+                margin-top: 1.5rem;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                padding-bottom: 2.5rem;
+
+                border-bottom: 1px solid #E1E1E1;
+            }
+            .container__toogles{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 2rem;
+            }
+            .titulo__container___toogle{
+                color: var(--primary);
+                font-family: var(--mont-serrat);   
+                
+                font-size: 14px;
+                font-weight: 700;
+            }
+            .toggle {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                color: var(--primary);
+                font-size: 13px;
+                font-weight: 600;
+                font-family:var(--mont-serrat);
+
+                color: var(--primary);
+        
+                width: auto;
+        
+                margin-bottom: 1rem;
+            }
+            .span-toogle{
+                position: relative;
+                top: .6rem;
+                right: 0rem;
+            }
+            .switch {
+                position: relative;
+                display: inline-block;
+                width: 2.355rem;
+                height: 0.846rem;
+                margin-right: .5rem;
+                margin-top: 1.375rem;
+            }
+            .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+            .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #ccc;
+                -webkit-transition: .4s;
+                transition: .4s;
+                height: 0.846rem
+            }
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 1.625rem;
+                width: 1.625rem;
+                left: -0.063rem;
+                bottom: -0.313rem;
+                background-color: white;
+                -webkit-transition: .3s;
+                transition: .3s;
+                box-shadow: 0px 1.93251px 1.93251px rgba(0, 0, 0, 0.25);
+            }
+            input:checked+.slider {
+                background-color: var(--primary-support);
+            }
+            input:focus+.slider {
+                box-shadow: 0 0 1px var(--primary-support);
+            }
+            input:checked+.slider:before {
+                -webkit-transform: translateX(1.125rem);
+                -ms-transform: translateX(1.125rem);
+                transform: translateX(1.125rem);
+            }
+            .toggle-switch:checked+.input-botao {
+                background-color: var(--primary);
+            }
+            .slider.round {
+                border-radius: 2.125rem;
+            }
+            .slider.round:before {
+                border-radius: 50%;
+            }
+            /*----------------------SECAO-DADOS-----------------------*/
+            .secao__dados{
+                display: flex;
+                flex-direction: column;
+                margin-top: 2.5rem;
+            }
+            .cabecalho__dados{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 0.75rem;
+
+                margin-bottom: 1.5rem;
+            }
+            .tablinks-dados{
+                font-family: var(--mont-serrat);
+                font-size: 14px;
+                font-weight: 500;
+
+                color: #173A67;
+
+                padding: .5rem 1rem;
+
+                border: 1px solid #7A8594;
+                border-radius: 8px;
+
+                background-color: transparent;
+            }
+            .active-dados{
+                background-color: #FFF5E9;
+
+                color: #F5971E;
+
+                border: 1px solid #F5971E;
+            }
+
+            .secao__itens___dados{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 1rem;
+
+                align-items: center;
+            }
+            .container__dados{
+                padding-left: 3.688rem;
+                padding-top: 1rem;
+                padding-bottom:1rem;
+                padding-right:1rem;
+
+                background-image: url("../../Assets/Cobranca/VetoresAdicionar/vetor-info-cliente.svg");
+                background-position: 1rem center;
+                background-repeat: no-repeat;
+            }
+            .info__dados{
+                font-family: var(--mont-serrat);
+                font-size: 14px;
+                font-weight: 700;
+
+                color: var(--primary);
+            }
+            .font-weight__dados{
+                font-weight: 500;
+            }
+
+
+
+
+            /*------------------------ASSINATURAS----------------------*/
+            .conteudo__assinatura{
+                display: flex;
+                flex-direction: column;
+
+                margin-bottom: 23rem;
+            }
+            .titulo__secao___assinatura{
+                color: var(--primary);
+                font-family: var(--mont-serrat);
+                padding: 0%;
+                font-size: 18px;
+                font-weight: 700;
+
+                margin: 0%;
+                margin-bottom: 1rem;
+            }
+            .lista__assinaturas{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .item__lista___assinatura{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 7.063rem;
+
+                padding-left: 1rem;
+                padding-bottom: 1rem;
+
+                border-bottom: 1px solid #E1E1E1;
+            }
+            .numero__assinatura{
+                color: var(--primary);
+                font-family: var(--mont-serrat);
+                padding: 0%;
+                font-size: 14px;
+                font-weight: 500;
+
+                margin: 0%;
+            }
+            .container__assinatura___enviada{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 1rem;
+            }
+            .imagem__assinatura___enviada{
+                width: 12.194rem;
+                height: 2.875rem;
+
+                border: 1px solid #E6E6E6;
+
+                border-radius: 8px;
+            }
+            .botao__nova___assinatura{
+                background-color: transparent;
+                background-image: url("../../Assets/Cobranca/VetoresAdicionar/vetor-nova-assinatura.svg");
+                background-repeat: no-repeat;
+                background-position: left center;
+
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                padding-left: 2rem;
+
+                border: none;
+
+                color: #F5971E;
+
+                font-family: var(--mont-serrat);
+            }
+            .botao__upload___assinatura{
+                background: #FFF8EF;
+                border-radius: 38px;
+                background-image: url("../../Assets/Cobranca/VetoresAdicionar/vetor-upload-assinatura.svg");
+                background-repeat: no-repeat;
+                background-position: 2rem center;
+
+                padding: 0.827rem 2.063rem 0.827rem 3.813rem;
+
+                border: none;
+
+                color: #F5971E;
+
+                font-family: var(--mont-serrat);
+            }
+/*------------------------ASSINATURAS----------------------*/
+            .conteudo__assinatura{
+                display: flex;
+                flex-direction: column;
+
+                margin-bottom: 23rem;
+            }
+            .titulo__secao___assinatura{
+                color: var(--primary);
+                font-family: var(--mont-serrat);
+                padding: 0%;
+                font-size: 18px;
+                font-weight: 700;
+
+                margin: 0%;
+                margin-bottom: 1rem;
+            }
+            .lista__assinaturas{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .item__lista___assinatura{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 7.063rem;
+
+                padding-left: 1rem;
+                padding-bottom: 1rem;
+
+                border-bottom: 1px solid #E1E1E1;
+            }
+            .numero__assinatura{
+                color: var(--primary);
+                font-family: var(--mont-serrat);
+                padding: 0%;
+                font-size: 14px;
+                font-weight: 500;
+
+                margin: 0%;
+            }
+            .container__assinatura___enviada{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 1rem;
+            }
+            .imagem__assinatura___enviada{
+                width: 12.194rem;
+                height: 2.875rem;
+
+                border: 1px solid #E6E6E6;
+
+                border-radius: 8px;
+            }
+            .botao__nova___assinatura{
+                background-color: transparent;
+                background-image: url("../../Assets/Cobranca/VetoresAdicionar/vetor-nova-assinatura.svg");
+                background-repeat: no-repeat;
+                background-position: left center;
+
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                padding-left: 2rem;
+
+                border: none;
+
+                color: #F5971E;
+
+                font-family: var(--mont-serrat);
+            }
+            .botao__upload___assinatura{
+                background: #FFF8EF;
+                border-radius: 38px;
+                background-image: url("../../Assets/Cobranca/VetoresAdicionar/vetor-upload-assinatura.svg");
+                background-repeat: no-repeat;
+                background-position: 2rem center;
+
+                padding: 0.827rem 2.063rem 0.827rem 3.813rem;
+
+                border: none;
+
+                color: #F5971E;
+
+                font-family: var(--mont-serrat);
+            }
+            /*------------------------LOGOS----------------------*/
+            .conteudo__logo{
+                display: flex;
+                flex-direction: column;
+
+                margin-bottom: 23rem;
+            }
+            .titulo__secao___logo{
+                color: var(--primary);
+                font-family: var(--mont-serrat);
+                padding: 0%;
+                font-size: 18px;
+                font-weight: 700;
+
+                margin: 0%;
+                margin-bottom: 1rem;
+            }
+            .lista__logos{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .item__lista___logo{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 7.063rem;
+
+                padding-left: 1rem;
+                padding-bottom: 1rem;
+
+                border-bottom: 1px solid #E1E1E1;
+            }
+            .numero__logo{
+                color: var(--primary);
+                font-family: var(--mont-serrat);
+                padding: 0%;
+                font-size: 14px;
+                font-weight: 500;
+
+                margin: 0%;
+            }
+            .container__logo___enviada{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 1rem;
+            }
+            .imagem__logo___enviada{
+                width: 12.194rem;
+                height: 2.875rem;
+
+                border: 1px solid #E6E6E6;
+
+                border-radius: 8px;
+            }
+            .botao__nova___logo{
+                background-color: transparent;
+                background-image: url("../../Assets/Cobranca/VetoresAdicionar/vetor-nova-assinatura.svg");
+                background-repeat: no-repeat;
+                background-position: left center;
+
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                padding-left: 2rem;
+
+                border: none;
+
+                color: #F5971E;
+
+                font-family: var(--mont-serrat);
+            }
+            .botao__upload___logo{
+                background: #FFF8EF;
+                border-radius: 38px;
+                background-image: url("../../Assets/Cobranca/VetoresAdicionar/vetor-upload-assinatura.svg");
+                background-repeat: no-repeat;
+                background-position: 2rem center;
+
+                padding: 0.827rem 2.063rem 0.827rem 3.813rem;
+
+                border: none;
+
+                color: #F5971E;
+
+                font-family: var(--mont-serrat);
+            }
+
+
+        /*-----------------------CADASTRAR-NOTIFICAÇÃO----------------------------*/
+        .container__secao___cadastra-notificacoes{
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100vw;
+    
+            padding: 48% 100vw;
+    
+            display: none;
+            justify-content: flex-end;
+            align-items: flex-end;
+            background-color: rgba(0,0,0,0.2);
+    
+            transition: all .4s ease-in-out;
+        }
+        .cadastra-notificacoes{
+            width: 70vw;
+            height: 72.5rem;
+    
+            display: block;
+    
+            position: absolute;
+            top: 0%;
+            bottom: 0%;
+    
+            margin-top: 5vh;
+            margin-bottom: 4vh;
+    
+            padding: 3rem 3.438rem 2.5rem;
+    
+            transition: all .4s ease-in-out;
+    
+            background-color: #FFFFFF;
+            border-radius: 16px 0px 0px 16px;
+            border: 1px solid #F1F1F1;
+    
+            animation: animateLeftServiço .6s ease-in-out forwards;
+            
+    
+            font-family: var(--mont-serrat);
+        }
+    
+        .cabecalho__cadastra-notificacoes-servico{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+    
+            margin-bottom: 1.5rem;
+        }
+        .titulo__cabecalho__cadastra-notificacoes{
+            font-size: 22.58px;
+            color: var(--primary);
+        }
+        .fecha__configuracoes{
+            width: 1rem;
+            height: 1rem;
+            background-image: url("../../Assets/icone-fecha.svg");
+            background-repeat: no-repeat;
+    
+            border: none;
+            background-color: transparent;
+    
+            padding: 0;
+        }
+    
+        .container__botao___cadastra-notificacoes{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 1.5rem;
+    
+            margin-top: 7.759rem;
+            padding-top: 5.5rem;
+    
+            border-top: 1px solid #EEEEEE;
+    
+            font-family: var(--mont-serrat);
+            
+        }
+        .botao-salvar{
+            border: 1px solid var(--primary-support);
+            border-radius: 64px;
+    
+            padding: 1rem 2rem;
+    
+            background-color: var(--primary-support);
+    
+            color: #FFFFFF;
+            font-weight: 500;
+        }
+        .secao__cadastra-notificacao{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 2.5rem;
+
+            border-bottom: 1px solid #E1E1E1;
+        }
+        .secao__input__radio{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+
+            margin-bottom: 3.875rem;
+        }
+        .container__input___radio{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: .5rem;
+        }
+        .input__radio___notificacao{
+            width: 19px;
+            height: 19px;
+        }
+        .label__input-radio{
+            font-family: var(--mont-serrat);
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 14px;
+        }
+        .secao__input___notificacao{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+
+            margin-bottom: 1rem;
+        }
+        .input__filtro___notificacoes{
+            height: 3.063rem;
+            width: 29vw;
+            border: 1.02254px solid #ECECEC;
+            border-radius: 8px;
+            padding: .5rem 1rem .5rem 1rem;
+            font-size: 14px;
+            font-family: var(--mont-serrat);
+            color: #7A8594;
+
+            background-color: transparent;
+        }
+        .secao__input___toogle-notificacao{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 2.25rem;
+        }
+        .input__filtro___notificacoes-filiais{
+            height: 3.063rem;
+            width: 49vw;
+            border: 1.02254px solid #ECECEC;
+            border-radius: 8px;
+            padding: .5rem 1rem .5rem 1rem;
+            font-size: 14px;
+            font-family: var(--mont-serrat);
+            color: #7A8594;
+
+            background-color: transparent;
+        }
+        .container__botao___cadastra-notificacao{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 1.5rem;
+            margin-top: 25.759rem;
+            padding-top: 5.5rem;
+            border-top: 1px solid #EEEEEE;
+            font-family: var(--mont-serrat);
+        }
+
+        
+}               
+
+
+
