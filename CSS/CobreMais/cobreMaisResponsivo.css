@@ -1,0 +1,16 @@
+@media (min-width:1441px){
+    /*---------------LOG--------------------------*/
+    .info__log___configuracao{
+        width: 91vw;
+    }
+    .item__lista___log-configuracao{
+        width: 88vw;
+    }
+    /*--------------VER-CONFIGURACAO----------*/
+    .info__log-ver-configuracoes___configuracao{
+        width: 62vw;
+    }
+    .item__lista___log-ver-configuracoes-configuracao{
+        width: 58vw;
+    }
+}

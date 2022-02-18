@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./CSS/CobreMais/cobreMais.css">
+        <link rel="stylesheet" href="./CSS/CobreMais/cobreMaisResponsivo.css">
+        <link href="./CSS/base.css" rel="stylesheet">
+        <link href="./CSS/reset.css" rel="stylesheet">
+        <link href="./CSS/normalize.css" rel="stylesheet">
+        <link rel="shortcut icon" href="./Assets/Logo-favicon.png" type="image/x-icon">
+        <title>Cobre Mais | Anbetec</title>
+    </head>
+
+    <body id="body">
+    
+        <header class="cabecalho">
+            <a href="./home.html"><img src="./Assets/LogoAnbetec.png" alt="Logo Anbetec" class="logo-anbetec"></a>
+            <div class="container-pesquisa">
+                <button class="pesquisa-mobile"><img class="ico-pesquisa-mobile" src="./Assets/ico-pesquisa-mobile.png" alt="Abrir Barra Pesquisa"></button>
+                <input type="text" class="barra-pesquisa" placeholder="Procure pelo portal">
+            </div>
+            
+            <div class="container__info">
+                <button type="button" class="container__notificacao">
+                    <img src="./Assets/notificação.png" alt="Notificação" class="notificacao">
+                    <img src="./Assets/notificação-ativa.png" alt="Você possui notificação" class="notificacao-ativa">
+                </button>
+                <div class="perfil-area">
+                    <img src="./Assets/icone2.png" alt="Sua Foto de Perfil" class="icone__perfil">
+                    <div class="informacoes__perfil">
+                        <h1 class="nome__perfil">Davi Neris</h1>
+                        <span class="banco__perfil">Banco Anbetec</span>
+                    </div>
+                    <button type="button" class="menu-dots"></button>
+                </div>
+            </div>
+        </header>
+
+        <main class="conteudo">
+
+            <div class="intro__cobranca">
+                <p class="paginacao__cobranca">
+                    <a href="./home.html" class="link-paginacao">Produtos</a>
+                    <a href="./cobre-mais.html" class="destaque__paginacao">Cobre Mais</a>
+                </p>
+            </div>
+
+            <section class="secao__cobre-mais___desconfigurado">
+
+
+                <section class="cabecalho__desconfigurado">
+
+
+                    <div class="container__titulo___desconfigurado">
+
+                        <h1 class="titulo__desconfigurado">Cobre mais</h1>
+                        <p class="descricao__desconfigurado">Nenhuma configuração criada</p>
+                    </div>
+
+
+                    <div class="container__botoes___desconfigurado">
+
+                        <button class="botao__ver-configuracoes___desconfigurado">Ver configurações de cobrança</button>
+
+                        <button class="botao__nova-configuracao___desconfigurado">Nova configuração de cobrança</button>
+
+                    </div>
+
+                </section>
+
+
+                <section class="secao__background___desconfigurado">
+
+                    <img src="./Assets/CobreMais/imagem-background-sem-configuracao.png" alt="Sem Configuração" class="imagem__desconfigurado">
+
+                    <h2 class="titulo__background___desconfigurado">Nenhuma configuração criada.</h2>
+                    <p class="paragrafo__background___desconfigurado">Crie sua parametrização, automatize e acompanhe seus envios</p>
+
+                </section>
+
+
+            </section>
+
+            <section class="secao__cobre-mais___configurado">
+
+                <section class="cabecalho__configurado">
+
+
+                    <div class="container__titulo___configurado">
+
+                        <h1 class="titulo__configurado">Cobre mais | #1 20211001 Configuração</h1>
+                        <p class="descricao__configurado">Configuração criada em 17/08/2021</p>
+                    </div>
+
+
+                    <div class="container__botoes___configurado">
+
+                        <button class="botao__ver-configuracoes___configurado" onclick="abrirVerConfiguracoes()">Ver configurações</button>
+
+                        <button class="botao__editar-configuracoes___configurado">Editar configuração</button>
+
+                        <button class="botao__nova-configuracao___configurado" onclick="abrirNovaConfiguracao()">Nova configuração</button>
+
+                    </div>
+
+                </section>
+
+                <section class="secao__conteudo___cobre-mais">
+
+                    <div class="container__estimativas">
+
+                        <h2 class="titulo__estimativa">Estimativa de emails</h2>
+                        <p class="paragrafo__estimativa"><span class="numero__estimativas">268 Enviados</span> neste mês</p>
+
+                    </div>
+
+                    <section class="secao__titulos___vencidos">
+
+                        <div class="container__titulos">
+
+                            <h3 class="titulo__vencendo">Títulos Vencendo -<span class="dias__vencendo"> Próximos 30 dias</span></h3>
+                            <p class="numero__titulos___vencendo">1.431 Títulos</p>
+                            <p class="valor__titulos__vencendo">R$ 1.722.412,00</p>
+
+                        </div>
+
+                        <div class="container__titulos">
+
+                            <h3 class="titulo__vencido">Títulos Vencidos -<span class="dias__vencido"> Últimos 30 dias</span></h3>
+                            <p class="numero__titulos___vencido">233 Títulos</p>
+                            <p class="valor__titulos__vencido">R$ 122.412,00</p>
+
+                        </div>
+
+                    </section>
+
+                </section>
+
+                <section class="secao__graficos___cobre-mais">
+
+                    <div class="container__grafico___inadimplencia">
+
+                        <div class="cabecalho__inadimplencia">
+
+                            <h5 class="titulo__inadimplencia">Inadimplência</h5>
+                            <p class="subtitulo__inadimplencia">Por filial</p>
+
+                        </div>
+
+                        <img src="./Assets/CobreMais/imagem-grafico.png" alt="Imagem Tabela" class="imagem__inadimplencia">
+
+                        <section class="secao__legenda___inadimplencia">
+
+                            <h6 class="titulo__legenda___inadimplencia">Legenda</h6>
+
+                            <div class="container__itens___legendas-inadimplencia">
+
+                                <div class="container__item___legenda">
+
+                                    <span class="cor__legenda cor__legenda-azul"></span>
+                                    <span class="nome__legenda">Filial 1</span>
+
+                                </div>
+
+                                <div class="container__item___legenda">
+
+                                    <span class="cor__legenda cor__legenda-amarela"></span>
+                                    <span class="nome__legenda">Filial 2</span>
+
+                                </div>
+
+                                <div class="container__item___legenda">
+
+                                    <span class="cor__legenda cor__legenda-verde"></span>
+                                    <span class="nome__legenda">Filial 3</span>
+
+                                </div>
+
+                            </div>
+
+                        </section>
+
+                    </div>
+
+
+                    <div class="container__tabela___cobranca">
+
+                        <div class="cabecalho__cobranca">
+
+                            <h5 class="titulo__cobranca">Cobranças realizadas</h5>
+                            <p class="subtitulo__cobranca">Por filial</p>
+
+                        </div>
+
+                        <img src="./Assets/CobreMais/imagem-tabela.png" alt="Tabela Cobrança" class="imagem__cobranca">
+
+                    </div>
+
+                </section>
+
+                <section class="container__log">
+
+                    <section class="secao__filtros___log">
+
+                        <h4 class="titulo__filtro">Logs da configuração de envio</h4>
+    
+                        <section class="secao__inputs___log">
+    
+                            <div class="container__input">
+    
+                                <label for="Código Cliente" class="label__input">Código do cliente cobrado:</label>
+                                <input type="text" class="input__filtro-log">
+    
+                            </div>
+    
+                            <div class="container__input">
+    
+                                <label for="Código Cliente" class="label__input">Código do título referente a notificação:</label>
+                                <input type="text" class="input__filtro-log">
+    
+                            </div>
+    
+                            <div class="container__input">
+    
+                                <label for="Código Cliente" class="label__input">Data envio:</label>
+                                <input type="date" class="input__filtro-log">
+    
+                            </div>
+    
+                        </section>
+
+                    </section>
+
+                    <section class="info__log___configuracao">
+
+                            <p class="info__log___clientes">Clientes</p>
+                        
+                            <p class="info__log___titulo">Título</p>
+
+                            <p class="info__log___conteudo">Conteúdo</p>
+
+                            <p class="info__log___id-notificacao">Estimativa</p>
+
+                            <p class="info__log___data-envio">Data Envio</p>
+                          
+
+                    </section>
+
+                    <section class="clientes___log___configuracao">
+
+                        <div class="container__carousel">
+
+                            <ul class="lista__clientes___log-configuracao">
+
+                                <li class="item__lista___log-configuracao">
+
+                                   
+                                        <p class="cliente-log__clientes">25</p>
+
+                                        <p class="cliente-log__titulo">36451</p>
+
+                                        <p class="cliente-log__conteudo">Notificação de vencimento</p>
+
+                                        <p class="cliente-log__id-notificacao">6075a243b38e00cd80739</p>
+
+                                        <p class="cliente-log__data-envio">01/11/2021</p>
+    
+                                </li>
+
+                                <li class="item__lista___log-configuracao">
+
+                                   
+                                    <p class="cliente-log__clientes">26</p>
+
+                                    <p class="cliente-log__titulo">63384</p>
+
+                                    <p class="cliente-log__conteudo">Notificação de vencimento</p>
+
+                                    <p class="cliente-log__id-notificacao">6075a243b38e00cd80739</p>
+
+                                    <p class="cliente-log__data-envio">01/11/2021</p>
+
+                                </li>
+
+                                <li class="item__lista___log-configuracao">
+
+                                    
+                                    <p class="cliente-log__clientes">31</p>
+
+                                    <p class="cliente-log__titulo">24383</p>
+
+                                    <p class="cliente-log__conteudo">Notificação de vencimento</p>
+
+                                    <p class="cliente-log__id-notificacao">6075a243b38e00cd80739</p>
+
+                                    <p class="cliente-log__data-envio">01/11/2021</p>
+
+                                </li>
+
+                                <li class="item__lista___log-configuracao">
+
+                                        
+                                    <p class="cliente-log__clientes">40</p>
+
+                                    <p class="cliente-log__titulo">48875</p>
+
+                                    <p class="cliente-log__conteudo">Notificação de vencimento</p>
+
+                                    <p class="cliente-log__id-notificacao">6075a243b38e00cd80739</p>
+
+                                    <p class="cliente-log__data-envio">01/11/2021</p>
+
+                                </li>
+
+                                <li class="item__lista___log-configuracao">
+
+                                            
+                                    <p class="cliente-log__clientes">41</p>
+
+                                    <p class="cliente-log__titulo">48642</p>
+
+                                    <p class="cliente-log__conteudo">Notificação de vencimento</p>
+
+                                    <p class="cliente-log__id-notificacao">6075a243b38e00cd80739</p>
+
+                                    <p class="cliente-log__data-envio">01/11/2021</p>
+
+                                </li>
+
+                                <li class="item__lista___log-configuracao">
+
+                                                
+                                    <p class="cliente-log__clientes">44</p>
+
+                                    <p class="cliente-log__titulo">12575</p>
+
+                                    <p class="cliente-log__conteudo">Notificação de vencimento</p>
+
+                                    <p class="cliente-log__id-notificacao">6075a243b38e00cd80739</p>
+
+                                    <p class="cliente-log__data-envio">01/11/2021</p>
+
+                                </li>
+
+                            </ul>
+
+
+                        </div>
+                    
+                    </section>
+
+                    <div class="button--carrousel__log">
+                        <button class="carrousel__button__log carrousel__button--anterior__log" aria-label="Botão de Voltar">Anterior</button>
+                        <button class="carrousel__button__log carrousel__button--proximo__log" aria-label="Botão de Avançar">Próximo</button>
+                    </div>
+
+                </section>
+
+
+            </section>
+
+            <div class="container__secao___novo-configuracao" id="nova-configuracao">
+
+                <section class="novo-configuracao" >
+
+                    <div class="cabecalho__novo-configuracao-servico">
+                        
+                        <section class="container__progresso___nova-configuracao">
+
+                            <div class="container__primeiro-progresso">
+                                <div class="container__numero___primeiro-progresso">
+                                    <span class="numero__primeiro-progresso">1</span>
+                                </div>
+                                <span class="nome__primeiro-progresso">Crie sua parametrização</span>
+
+                            </div>
+
+                            <div class="container__barra___progresso">
+
+                                <span class="barra__progresso" id="barra-progresso"></span>
+
+                            </div>
+
+                            <div class="container__segundo-progresso">
+                                <div class="container__numero___segundo-progresso" id="container-numero">
+                                    <span class="numero__segundo-progresso" id="numero">2</span>
+                                </div>
+
+                                <span class="nome__segundo-progresso">Configure a automação</span>
+
+                            </div>
+
+                        </section>
+
+                        <button class="fecha__configuracoes" id="botao__fecha___configuracoes" onclick="fechaNovaConfiguracao()"></button>
+                    </div>
+                    <div class="container__progresso">
+                        <section class="secao__conteudo___cadastro tabcontent-novo-configuracao" id="primeiro-progresso___nova-configuracao">
+                        <h1 class="titulo__cabecalho__novo-configuracao">Crie sua parametrização</h1>
+
+                        <div class="container__input container__input___titulo-nova-configuracao">
+
+                            <label for="Assunto" class="label__input">Título da Configuração</label>
+                            <input type="text" class="input__assunto___conteudo" placeholder="Título da Configuração" required>
+
+                        </div>
+
+                        <div class="container__input">
+
+                            <label for="Assunto" class="label__input">Assunto (obrigatório):</label>
+                            <input type="text" class="input__assunto___conteudo" placeholder="Assunto" required>
+
+                        </div>
+
+                        <section class="secao__text-area">
+
+                            <section class="secao__edicao___textos">
+
+                                <button class="botao__edicao-texto botao__bold"></button>
+                                <button class="botao__edicao-texto botao__italic"></button>
+                                <button class="botao__edicao-texto botao__underline"></button>
+                                <button class="botao__edicao-texto botao__line-center"></button>
+                                <button class="botao__edicao-texto botao__chave"></button>
+                                <button class="botao__edicao-texto botao__subscript-up"></button>
+                                <button class="botao__edicao-texto botao__subscript"></button>
+                                <select class="select__edicao___texto" name="Font-Weight">
+                                    <option value="Bold">Bold</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="Normal">Normal</option>
+                                    <option value="Light">Light</option>
+                                </select>
+                                <select class="select__edicao___texto" name="Font-Size">
+                                    <option value="32">32</option>
+                                    <option value="24">24</option>
+                                    <option value="16">16</option>
+                                    <option value="14">14</option>
+                                    <option value="12">12</option>
+                                </select>
+                                <select class="select__edicao___texto" name="Font">
+                                    <option value="Normal">Normal</option>
+                                    <option value="Arial">Arial</option>
+                                </select>
+                                <button class="botao__edicao-texto botao__bullet-list"></button>
+                                <button class="botao__edicao-texto botao__number-list"></button>
+                                <button class="botao__edicao-texto botao__indent-right"></button>
+                                <button class="botao__edicao-texto botao__indent-left"></button>
+                                <button class="botao__edicao-texto botao__align-left"></button>
+                                <button class="botao__edicao-texto botao__align-center"></button>
+                                <button class="botao__edicao-texto botao__align-right"></button>
+                                <button class="botao__edicao-texto botao__align-justify"></button>
+                                <button class="botao__edicao-texto botao__color"></button>
+                                <button class="botao__edicao-texto botao__add___link"></button>
+                                <button class="botao__edicao-texto botao__remove___link"></button>
+                                <button class="botao__edicao-texto botao__table"></button>
+                                <button class="botao__edicao-texto botao__emoji"></button>
+                                <button class="botao__edicao-texto botao__image"></button>
+                                <button class="botao__edicao-texto botao__erase"></button>
+                                <button class="botao__edicao-texto botao__backwards"></button>
+                                <button class="botao__edicao-texto botao__fowards"></button>
+
+                            </section>
+
+                            <textarea name="Conteúdo" class="text-area__conteudo" cols="auto" rows="auto" placeholder="Conteúdo..."></textarea>
+                        </section>
+
+                        <section class="secao__toogle">
+
+                            <div class="toggle">
+                                <label class="switch">
+                                    <input type="checkbox" class="toggle-switch">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span class="span-toogle">Incluir assinatura</span>
+                            </div>
+
+                            <section class="container__toogles">
+
+                                <span class="titulo__container___toogle">Anexos:</span>
+
+                                <div class="toggle">
+                                    <label class="switch">
+                                        <input type="checkbox" class="toggle-switch">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span class="span-toogle">Boleto (pdf)</span>
+                                </div>
+
+                                <div class="toggle">
+                                    <label class="switch">
+                                        <input type="checkbox" class="toggle-switch">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span class="span-toogle">DAN-e (pdf)</span>
+                                </div>
+
+                                <div class="toggle">
+                                    <label class="switch">
+                                        <input type="checkbox" class="toggle-switch">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span class="span-toogle">DAN-e (xml)</span>
+                                </div>
+
+                            </section>
+
+                        </section>
+
+                        <section class="secao__dados">
+
+                            <div class="cabecalho__dados">
+                                <button class="tablinks-dados tab-dados-clientes" id="defaultOpen-dados" onclick="openTabDados(event, 'dados-clientes')">Dados Cliente</button>
+                                <button class="tablinks-dados tab-dados-empresa" onclick="openTabDados(event, 'dados-empresa')">Dados Empresa</button>
+                                <button class="tablinks-dados tab-dados-titulos" onclick="openTabDados(event, 'dados-titulos')">Dados Título</button>
+                                <button class="tablinks-dados tab-elementos" onclick="openTabDados(event, 'elementos')">Elementos</button>
+                            </div>
+
+                            <section class="secao__itens___dados tabcontent-dados" id="dados-clientes">
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">Nome:</span> Anbetec Tecnlogia</span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">Nome Fantasia:</span> Anbetec </span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">CGC:</span> 1154</span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">Endereço:</span> Av. Sete de Setembro</span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">CEP:</span> 03105-015</span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">Telefone:</span> +55 11 95121-4545</span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">Municipio:</span> São Paulo</span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">Estado:</span> SP</span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">IE:</span> 0154</span>
+
+                                </div>
+
+                            </section>
+
+                            <section class="secao__itens___dados tabcontent-dados" id="dados-empresa">
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">Nome:</span> Anbetec Tecnlogia</span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">Nome Fantasia:</span> Anbetec </span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">CGC:</span> 1154</span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">Endereço:</span> Av. Sete de Setembro</span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">CEP:</span> 03105-015</span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">Telefone:</span> +55 11 95121-4545</span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">Municipio:</span> São Paulo</span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">Estado:</span> SP</span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">IE:</span> 0154</span>
+
+                                </div>
+
+                            </section>
+
+                            <section class="secao__itens___dados tabcontent-dados" id="dados-titulos">
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">Nome:</span> Anbetec Tecnlogia</span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">Nome Fantasia:</span> Anbetec </span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">CGC:</span> 1154</span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">Endereço:</span> Av. Sete de Setembro</span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">CEP:</span> 03105-015</span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">Telefone:</span> +55 11 95121-4545</span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">Municipio:</span> São Paulo</span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">Estado:</span> SP</span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">IE:</span> 0154</span>
+
+                                </div>
+
+                            </section>
+
+                            <section class="secao__itens___dados tabcontent-dados" id="elementos">
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">Nome:</span> Anbetec Tecnlogia</span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">Nome Fantasia:</span> Anbetec </span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">CGC:</span> 1154</span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">Endereço:</span> Av. Sete de Setembro</span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">CEP:</span> 03105-015</span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">Telefone:</span> +55 11 95121-4545</span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">Municipio:</span> São Paulo</span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">Estado:</span> SP</span>
+
+                                </div>
+
+                                <div class="container__dados">
+
+                                    <span class="info__dados"><span class="font-weight__dados">IE:</span> 0154</span>
+
+                                </div>
+
+                            </section>
+
+                        </section>
+
+                        </section>
+
+                        <section class="secao__segundo___progresso" id="segundo-progresso___nova-configuracao">
+
+                            <h1 class="titulo__cabecalho__cadastra-progresso">Configure a automação</h1>
+
+                            <section class="secao__cadastra-progresso">
+    
+                                <section class="secao__input__radio">
+    
+                                    <div class="container__input___radio">
+    
+                                        <input name="Vencimento" type="radio" class="input__radio___progresso">
+                                        <label class="label__input-radio" for="Vencimento">Antes do Vencimento</label>
+    
+                                    </div>
+    
+                                    <div class="container__input___radio">
+    
+                                        <input name="Vencimento" type="radio" class="input__radio___progresso">
+                                        <label class="label__input-radio" for="Vencimento">Depois do vencimento</label>
+                                        
+                                    </div>
+    
+                                </section>
+    
+                                <section class="secao__input___progresso">
+    
+                                    <div class="container__input">
+    
+                                        <label for="Dias Corridos" class="label__input">Dias Corridos (obrigatório):</label>
+                                        <input type="text" class="input__filtro___progresso" placeholder="0 dias">
+    
+                                    </div>
+    
+                                    <div class="container__input">
+                                        <label for="Conteúdo" class="label__input">Conteúdo (obrigatório):</label>
+                                        <select name="Conteúdo" class="input__filtro___progresso" required>
+                                            <option  class="option-filtro__progresso" value="0">(Selecione)</option>
+                                            <option class="option-filtro__progresso" value="1">AVISO DE VENCIMENTO (ANBETEC)</option>
+                                        </select>
+                                    </div>
+    
+                                    <div class="container__input">
+                                        <label for="Não Notificar" class="label__input">Não notificar os clientes:</label>
+                                        <select name="Não Notificar" class="input__filtro___progresso" required>
+                                            <option  class="option-filtro__progresso" value="0">(Selecione)</option>
+                                        </select>
+                                    </div>
+    
+                                    <div class="container__input">
+                                        <label for="Cobranças a Realizar" class="label__input">Cobranças que devem realizar notificação:</label>
+                                        <select name="Cobranças a Realizar" class="input__filtro___progresso" required>
+                                            <option  class="option-filtro__progresso" value="0">(Selecione)</option>
+                                        </select>
+                                    </div>
+    
+                                </section>
+    
+                                <section class="secao__input___toogle-progresso">
+    
+                                    <div class="container__input">
+                                        <label for="Cobranças a Realizar" class="label__input">Filiais que devem realizar notificação:</label>
+                                        <select name="Cobranças a Realizar" class="input__filtro___progresso-filiais" required>
+                                            <option  class="option__filtro" value="0">(Selecione)</option>
+                                        </select>
+                                    </div>
+    
+                                    <div class="toggle">
+                                        <label class="switch">
+                                            <input type="checkbox" class="toggle-switch">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <span class="span-toogle">Ativada</span>
+                                    </div>
+    
+                                </section>
+
+                                <section class="secao__input___email-progresso">
+
+                                    <div class="container__input">
+
+                                        <label for="E-mail" class="label__input">E-mail remetente (obrigatório):</label>
+                                        <input type="email" class="input__filtro___progresso" placeholder="E-mail">
+
+                                    </div>
+
+                                </section>
+    
+                            </section>
+
+                        </section>
+                    </div>
+
+                    <section class="container__botao___novo-configuracao">
+                        <button class="botao__anterior" id="botao__anterior-progresso" onclick="anteriorProgresso()">Anterior</button>
+                        <button class="botao-proximo" id="botao__proximo-progresso" onclick="proximoProgresso()">Próximo</button>
+                    </section>
+
+                </section>
+            </div>
+
+            <div class="container__secao___ver-configuracao" id="ver-configuracoes">
+
+
+                <section class="ver-configuracao" >
+
+                    <div class="cabecalho__ver-configuracao-servico">
+                        
+                        <h1 class="titulo__cabecalho__ver-configuracao">Configurações de envio</h1>
+    
+                        <button class="fecha__configuracoes" id="botao__fecha___configuracoes" onclick="fechaVerConfiguracoes()"></button>
+                    </div>
+
+                    <section class="container__log-ver-configuracoes">
+    
+                        <section class="info__log-ver-configuracoes___configuracao">
+    
+                                <p class="info__log-ver-configuracoes___numero">#</p>
+                            
+                                <p class="info__log-ver-configuracoes___titulo">Título</p>
+    
+                                <p class="info__log-ver-configuracoes___criado">Criado em:</p>
+    
+                        </section>
+    
+                        <section class="clientes___log-ver-configuracoes___configuracao">
+    
+                            <div class="container__carousel">
+    
+                                <ul class="lista__clientes___log-ver-configuracoes-configuracao">
+    
+                                    <li class="item__lista___log-ver-configuracoes-configuracao">
+    
+                                       
+                                            <p class="cliente-log-ver-configuracoes__numero">#1</p>
+    
+                                            <p class="cliente-log-ver-configuracoes__titulo">20211001Configuração</p>
+    
+                                            <p class="cliente-log-ver-configuracoes__criado">01/10/2021</p>
+
+                                            <button class="botao__ver-configuracao">Ver Configuração</button>
+
+                                            <button class="botao__deleta___ver-configuracao">Deletar</button>
+        
+                                    </li>
+
+                                    <li class="item__lista___log-ver-configuracoes-configuracao">
+    
+                                       
+                                        <p class="cliente-log-ver-configuracoes__numero">#2</p>
+
+                                        <p class="cliente-log-ver-configuracoes__titulo">20211001Configuração</p>
+
+                                        <p class="cliente-log-ver-configuracoes__criado">01/10/2021</p>
+
+                                        <button class="botao__ver-configuracao">Ver Configuração</button>
+
+                                        <button class="botao__deleta___ver-configuracao">Deletar</button>
+    
+                                    </li>
+                                    <li class="item__lista___log-ver-configuracoes-configuracao">
+    
+                                       
+                                        <p class="cliente-log-ver-configuracoes__numero">#3</p>
+
+                                        <p class="cliente-log-ver-configuracoes__titulo">20211001Configuração</p>
+
+                                        <p class="cliente-log-ver-configuracoes__criado">01/10/2021</p>
+
+                                        <button class="botao__ver-configuracao">Ver Configuração</button>
+
+                                        <button class="botao__deleta___ver-configuracao">Deletar</button>
+    
+                                    </li>
+                                    <li class="item__lista___log-ver-configuracoes-configuracao">
+    
+                                       
+                                        <p class="cliente-log-ver-configuracoes__numero">#4</p>
+
+                                        <p class="cliente-log-ver-configuracoes__titulo">20211001Configuração</p>
+
+                                        <p class="cliente-log-ver-configuracoes__criado">01/10/2021</p>
+
+                                        <button class="botao__ver-configuracao">Ver Configuração</button>
+
+                                        <button class="botao__deleta___ver-configuracao">Deletar</button>
+    
+                                    </li>
+
+                                    <li class="item__lista___log-ver-configuracoes-configuracao">
+    
+                                       
+                                        <p class="cliente-log-ver-configuracoes__numero">#5</p>
+
+                                        <p class="cliente-log-ver-configuracoes__titulo">20211001Configuração</p>
+
+                                        <p class="cliente-log-ver-configuracoes__criado">01/10/2021</p>
+
+                                        <button class="botao__ver-configuracao">Ver Configuração</button>
+
+                                        <button class="botao__deleta___ver-configuracao">Deletar</button>
+    
+                                    </li>
+                                    <li class="item__lista___log-ver-configuracoes-configuracao">
+    
+                                       
+                                        <p class="cliente-log-ver-configuracoes__numero">#6</p>
+
+                                        <p class="cliente-log-ver-configuracoes__titulo">20211001Configuração</p>
+
+                                        <p class="cliente-log-ver-configuracoes__criado">01/10/2021</p>
+
+                                        <button class="botao__ver-configuracao">Ver Configuração</button>
+
+                                        <button class="botao__deleta___ver-configuracao">Deletar</button>
+    
+                                    </li>
+                                    <li class="item__lista___log-ver-configuracoes-configuracao">
+    
+                                       
+                                        <p class="cliente-log-ver-configuracoes__numero">#7</p>
+
+                                        <p class="cliente-log-ver-configuracoes__titulo">20211001Configuração</p>
+
+                                        <p class="cliente-log-ver-configuracoes__criado">01/10/2021</p>
+
+                                        <button class="botao__ver-configuracao">Ver Configuração</button>
+
+                                        <button class="botao__deleta___ver-configuracao">Deletar</button>
+    
+                                    </li>
+    
+                                </ul>
+    
+    
+                            </div>
+                        
+                        </section>
+    
+                    </section>
+
+                    <section class="container__botao___novo-configuracao">
+
+                        <button class="botao-salvar">Salvar</button>
+
+                    </section>
+
+                </section>
+            </div>
+        </main>
+    
+
+    <script src="./Componentes/CobreMais/abreNovaConfiguracao.js" type="text/javascript"></script>
+    <script src="./Componentes/CobreMais/tabDadosNovaConfiguracao.js" type="text/javascript"></script>
+    <script src="./Componentes/CobreMais/progressoNovaConfiguracao.js" type="text/javascript"></script>
+    <script src="./Componentes/CobreMais/abreVerConfiguracao.js" type="text/javascript"></script>
+    </body>
+
+
+</html>
