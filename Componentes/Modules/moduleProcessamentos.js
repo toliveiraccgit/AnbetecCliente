@@ -1,3 +1,3 @@
-import { ConfiguraçãoCobranca } from "../ConfiguraçõesServiço/cobrancaConfiguracoes.js";
+import { ConfiguraçãoCobranca } from "../ConfiguracoesServico/cobrancaConfiguracoes.js";
 
 new ConfiguraçãoCobranca()
