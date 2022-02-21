@@ -6,30 +6,30 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./CSS/Processamento-DDA/processamentoDDA.css">
-        <link rel="stylesheet" href="./CSS/Processamento-DDA/processamentoDDAResponsivo.css">
-        <link href="./CSS/base.css" rel="stylesheet">
-        <link href="./CSS/reset.css" rel="stylesheet">
-        <link href="./CSS/normalize.css" rel="stylesheet">
-        <link rel="shortcut icon" href="./Assets/Logo-favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="../CSS/Processamento-DDA/processamentoDDA.css">
+        <link rel="stylesheet" href="../CSS/Processamento-DDA/processamentoDDAResponsivo.css">
+        <link href="../CSS/base.css" rel="stylesheet">
+        <link href="../CSS/reset.css" rel="stylesheet">
+        <link href="../CSS/normalize.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../Assets/Logo-favicon.png" type="image/x-icon" />
         <title>Processamento de DDA | Anbetec</title>
     </head>
 
     <body id="body">
         <header class="cabecalho">
-            <a href="./home.html"><img src="./Assets/LogoAnbetec.png" alt="Logo Anbetec" class="logo-anbetec"></a>
+            <a href="../home.html"><img src="../Assets/LogoAnbetec.png" alt="Logo Anbetec" class="logo-anbetec"></a>
             <div class="container-pesquisa">
-                <button class="pesquisa-mobile"><img class="ico-pesquisa-mobile" src="./Assets/ico-pesquisa-mobile.png" alt="Abrir Barra Pesquisa"></button>
+                <button class="pesquisa-mobile"><img class="ico-pesquisa-mobile" src="../Assets/ico-pesquisa-mobile.png" alt="Abrir Barra Pesquisa"></button>
                 <input type="text" class="barra-pesquisa" placeholder="Procure pelo portal">
             </div>
             
             <div class="container__info">
                 <button type="button" class="container__notificacao">
-                    <img src="./Assets/notificação.png" alt="Notificação" class="notificacao">
-                    <img src="./Assets/notificação-ativa.png" alt="Você possui notificação" class="notificacao-ativa">
+                    <img src="../Assets/notificação.png" alt="Notificação" class="notificacao">
+                    <img src="../Assets/notificação-ativa.png" alt="Você possui notificação" class="notificacao-ativa">
                 </button>
                 <div class="perfil-area">
-                    <img src="./Assets/icone2.png" alt="Sua Foto de Perfil" class="icone__perfil">
+                    <img src="../Assets/icone2.png" alt="Sua Foto de Perfil" class="icone__perfil">
                     <div class="informacoes__perfil">
                         <h1 class="nome__perfil">Davi Neris</h1>
                         <span class="banco__perfil">Banco Anbetec</span>
@@ -43,9 +43,9 @@
                 
                 <div class="intro__processamento-dda">
                     <p class="paginacao__processamento-dda">
-                        <a href="./home.html" class="link-paginacao">Produtos</a>
-                        <a href="./edi-financeiro.html" class="link-paginacao-edi">EDI Financeiro</a>
-                        <a href="./processamento-servico.html" class="destaque__paginacao">Processamento de DDA</a>
+                        <a href="../home.html" class="link-paginacao">Produtos</a>
+                        <a href="../edi-financeiro.html" class="link-paginacao-edi">EDI Financeiro</a>
+                        <a href="./processamento-dda.html" class="destaque__paginacao">Processamento de DDA</a>
                     </p>
                 </div>
 
@@ -112,7 +112,7 @@
                     </section>
 
                     <section class="clientes">
-                        <ul class="carrousel" data-lista-dda>
+                        <ul class="carrousel">
                             <li class="item__clientes">
                                 
                                 <form class="lista__clientes___dda">
@@ -196,8 +196,8 @@
                         <button class="botao__processar" id="botao__processa___dda" onclick="abrirProcessoDDA()">Processar</button>
                     </div>
                     <div class="button--carrousel">
-                        <button class="carrousel__button carrousel__button--anterior" data-anterior-dda aria-label="Botão de Voltar">Anterior</button>
-                        <button class="carrousel__button carrousel__button--proximo" data-proximo-dda aria-label="Botão de Avançar">Próximo</button>
+                        <button class="carrousel__button carrousel__button--anterior" aria-label="Botão de Voltar">Anterior</button>
+                        <button class="carrousel__button carrousel__button--proximo" aria-label="Botão de Avançar">Próximo</button>
                     </div>
                     
                 </section>
@@ -385,7 +385,7 @@
                 <div class="container__processo-concluido" id="container__processo-concluido-dda">
 
                     <div class="processo-concluido">
-                        <img src="./Assets/icone-concluido.png" alt="Processo Concluido" class="icone__concluido">
+                        <img src="../Assets/icone-concluido.png" alt="Processo Concluido" class="icone__concluido">
                         <h5 class="titulo__concluido">Atenção: Arquivo</h5>
                         <p class="texto__concluido">“VAR34154418_158451684RET.2021515145446198” enfilerado para processamento</p>
                         <button class="botao__fecha-concluido" id="botao-fecha" onclick="fecharProcessoConcluido()">Fechar</button>
@@ -438,6 +438,6 @@
                 </div>
 
         </main>
-        <script src="./Componentes/processamentoDDA.js" type="text/javascript"></script>
+        <script src="../Componentes/processamentoDDA.js" type="text/javascript"></script>
     </body>    
 </html>
