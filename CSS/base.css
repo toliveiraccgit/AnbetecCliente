@@ -120,3 +120,27 @@ html{
     outline: 1px solid var(--primary-support);
     text-overflow:ellipsis;
  }
+
+
+/*-------------------------DOCUMENTAÇÃO DE VALIDAÇÃO--------------------------*/
+        /*---------------------LOGIN-------------------*/
+        .input-senha__erro{
+            color: #F5381E;
+
+            border: 1px solid #F5381E;
+
+
+            background-image: url("../Assets/Login/vetor-senha-invalido.svg");
+        }
+        .input-email__erro{
+            color: #F5381E;
+
+            border: 1px solid #F5381E;
+        }
+        .input-mensagem-erro__visivel{
+            visibility: visible;
+        }
+
+        .input-email-mensagem-erro__visivel{
+            visibility: visible;
+        }

@@ -235,6 +235,8 @@
         background-repeat: no-repeat;
         background-position-y: 1rem;
         background-position-x: 1rem;
+
+        margin-bottom: 0%;
     }
     .input-senha {
         background-image: url("../../Assets/Login/VectorSenha.png");
@@ -242,6 +244,8 @@
         background-position-y: 1rem;
         background-position-x: 1rem;
         z-index: 1;
+
+        margin-bottom: 0%;
     }
     .input-email:focus {
         outline: 2px solid var(--primary-support);
@@ -381,8 +385,24 @@
         align-self: flex-end;
         margin-right: 4.466rem;
     }
-    .input-mensagem-erro {
-        display: none;
+    .input-email-mensagem-erro{
+        display: block;
+        visibility: hidden;
         align-self: flex-end;
+
+        font-family: var(--mont-serrat);
+        font-size: 12px;
+
+        color: #F5381E;
+    }
+    .input-mensagem-erro {
+        display: block;
+        visibility: hidden;
+        align-self: flex-end;
+
+        font-family: var(--mont-serrat);
+        font-size: 12px;
+
+        color: #F5381E;
     }
 }
