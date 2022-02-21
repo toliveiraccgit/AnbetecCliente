@@ -380,7 +380,12 @@
         margin-bottom: 5.5rem;
 
         animation-name: animatetop;
-        animation-duration: .4s
+        animation-duration: .4s;
+
+        overflow-x: scroll;
+        overflow-y: visible;
+        scrollbar-color: #173A67 transparent;
+        scrollbar-width: thin;
     }
     .clientes{
         margin-bottom: 3rem;
@@ -393,7 +398,7 @@
 
         font-family: var(--mont-serrat);
 
-        width: 88vw;
+        width: 79.75rem;
         height: 3.125rem;
 
         padding-left: 1.646rem;
@@ -405,18 +410,36 @@
         font-weight: 600;
         font-size: 14px;
     }
-    .info__arquivo, .info__banco, .info__status, .info__data{
+    .info__banco{   
+        width: 11.5rem;
         background-image: url("../../Assets/seta__selection.png");
         background-repeat: no-repeat;
-        background-position-y: .3rem;
-        background-position-x: calc(100% - 1rem);
-        padding-right: 2.101rem;
+        background-position-y: center;
+        background-position-x: 4rem;
+    }
+    .info__status{
+        width: 11.375rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 4rem;
+    } 
+    .info__data{
+        width: 10rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.2rem;
     }
     .info__arquivo{
-        padding-left: 4rem;
+        width: 22.188rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 4.5rem;
     }
     .info__selecionar{
-        padding-right: 2.101rem;
+        width: 8.75rem;
     }
 
     .secao-1{
@@ -445,7 +468,6 @@
         flex-direction: row;
         justify-content: space-between;
 
-
         font-family: var(--mont-serrat);
         color: #7A8594;
 
@@ -453,9 +475,28 @@
         border-bottom: 0.941034px solid #E1E1E1;
 
         align-items: center;
+
+        width: 76.125rem;
     }
-    .info__data-vencimento{
-        margin-left: 1.2rem;
+    .container__check-dda{
+        width: 7.813rem;
+    }
+    .cliente__banco{
+        width: 11.5rem;
+    }
+    .cliente__arquivo{
+        width: 22.188rem;
+    }
+    .cliente__data{
+        width: 10.125rem;
+    }
+    .cliente__status{
+        width:14.563rem;
+    }
+    .secao-1___cliente-dda{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
     .container__info___cliente-1{
         display: flex;
@@ -588,7 +629,7 @@
         border-radius: 16px 0px 0px 16px;
         border: 1px solid #F1F1F1;
 
-        animation-name: animateLeft;
+        animation-name: animateLeftServiço;
         animation-duration: .2s;
 
         font-family: var(--mont-serrat);

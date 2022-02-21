@@ -8,19 +8,6 @@
         width: 35vw;
         gap: 0;
     }
-    .secao-1__filtros{
-        justify-content: space-between;
-    }
-    .info__resultado{
-        padding-right: 27.7vw;
-        justify-content: space-between;
-    }
-    .info__banco{
-        padding-left: 10rem;
-    }
-    .info__resultado{
-        width: 91vw;
-    }
 
 }
 
@@ -68,4 +55,13 @@
         display: none;
     }
 
+}
+
+@media (min-width:1441px){
+    .info__resultado{
+        width: 88vw;
+    }
+    .cliente__pesquisa{
+        width: 85vw;
+    }
 }
