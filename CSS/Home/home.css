@@ -163,22 +163,22 @@
     }
 
     .fornecedor-descarga{
-        background-image: url("../../Assets/fornecedor.png");
+        background-image: url("../../Assets/Home/fornecedor.png");
     }
     .limite-automatico{
-        background-image: url("../../Assets/limite-automatico-home.png");
+        background-image: url("../../Assets/Home/limite-automatico-home.png");
     }
     .cobranca{
-        background-image: url("../../Assets/cobranca-home.png");
+        background-image: url("../../Assets/Home/cobranca-home.png");
     }
     .com-voce{
-        background-image: url("../../Assets/com-voce.png");
+        background-image: url("../../Assets/Home/com-voce.png");
     }
     .cobre-mais{
-        background-image: url("../../Assets/cobre-mais.png");
+        background-image: url("../../Assets/Home/cobre-mais.png");
     }
     .edi-financeiro{
-        background-image: url("../../Assets/edi-financeiro-home.png");
+        background-image: url("../../Assets/Home/edi-financeiro-home.png");
     }
 
     

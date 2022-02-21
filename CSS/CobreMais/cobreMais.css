@@ -770,7 +770,7 @@
             background-image: url("../../Assets/seta__selection.png");
             background-repeat: no-repeat;
             background-position-y: center;
-            background-position-x: 2.8rem;
+            background-position-x: 4.4rem;
         }
         .info__log___titulo{
             width: 14.875rem;
@@ -791,14 +791,14 @@
             background-image: url("../../Assets/seta__selection.png");
             background-repeat: no-repeat;
             background-position-y: center;
-            background-position-x: 5.7rem;
+            background-position-x: 7.4rem;
         }
         .info__log___data-envio{
             width: 13.563rem;
             background-image: url("../../Assets/seta__selection.png");
             background-repeat: no-repeat;
             background-position-y: center;
-            background-position-x: 3.8rem;
+            background-position-x: 5.5rem;
         }
 
         /*-------------------------SECAO--LOG-CLIENTES-CONFIGURACAO---------------------------*/

@@ -100,7 +100,7 @@
     }
     .edi-financeiro {
         background: #FFFFFF;
-        background-image: url("../../Assets/Finance.png");
+        background-image: url("../../Assets/Login/Finance.png");
     }
     .container__cobranca{
         position: absolute;
@@ -111,7 +111,7 @@
     }
     .cobranca {
         background: #FFFFFF;
-        background-image: url("../../Assets/cobrança.svg");
+        background-image: url("../../Assets/Login/cobrança.svg");
     }
     .container__limite-automatico{
         position: absolute;
@@ -121,7 +121,7 @@
     }
     .limite-automatico {
         background: #FFFFFF;
-        background-image: url("../../Assets/limiteAutomatico.svg");
+        background-image: url("../../Assets/Login/limiteAutomatico.svg");
     }
     .container__titulos-gerados{
         position: absolute;
@@ -131,7 +131,7 @@
     }
     .titulos-gerados {
         background: #FFFFFF;
-        background-image: url("../../Assets/titulosGerados.svg");
+        background-image: url("../../Assets/Login/titulosGerados.svg");
     }
     .icone-1 {
         position: absolute;
@@ -231,13 +231,13 @@
         margin-top: .2rem;
     }
     .input-email {
-        background-image: url("../../Assets/iconeAvatar.png");
+        background-image: url("../../Assets/Login/iconeAvatar.png");
         background-repeat: no-repeat;
         background-position-y: 1rem;
         background-position-x: 1rem;
     }
     .input-senha {
-        background-image: url("../../Assets/VectorSenha.png");
+        background-image: url("../../Assets/Login/VectorSenha.png");
         background-repeat: no-repeat;
         background-position-y: 1rem;
         background-position-x: 1rem;
@@ -260,7 +260,7 @@
         margin-bottom: .25rem;
     }
     .mostra-senha{
-        background-image: url("../../Assets/vetor-senha.png");
+        background-image: url("../../Assets/Login/vetor-senha.png");
         background-repeat: no-repeat;
         background-color: transparent;
         width: 1.313rem;

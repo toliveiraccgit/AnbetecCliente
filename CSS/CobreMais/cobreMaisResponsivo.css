@@ -1,5 +1,8 @@
 @media (min-width:1441px){
     /*---------------LOG--------------------------*/
+    .container__grafico___inadimplencia{
+        width: 25vw;
+    }
     .info__log___configuracao{
         width: 91vw;
     }
