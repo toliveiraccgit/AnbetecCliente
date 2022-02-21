@@ -54,6 +54,27 @@
     .info__bordero, .info__qtd-titulos, .info__valor-total{
         background-position-x: right;
     }
+    .info__bordero{
+        width: 15.5rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 7.2rem;
+    }
+    .info__qtd-titulos{
+        width: 39.938rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 6rem;
+    }
+    .info__valor-total{
+        width: 16rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 5.8rem;
+    }
     .cliente__pesquisa___pagamento{
         display: flex;
         flex-direction: row;
@@ -63,8 +84,6 @@
         font-family: var(--mont-serrat);
         color: #7A8594;
 
-        padding: 1.471rem 0;
-        padding-right: 16.5rem;
         border-bottom: 0.941034px solid #E1E1E1;
     }
     .cliente__pesquisa___pagamento-check{
@@ -86,21 +105,6 @@
         font-size: 14px;
         width: 50.5vw;
     }
-    .cliente__tipo-servico{
-        width: 15rem;
-    }
-    .cliente__forma-pagamento{
-        width: 22.625rem;
-    }
-    .cliente__bordero{
-        width: 8vw;
-    }
-    .cliente__qtd-titulos{
-        width: 5vw;
-    }
-    .info__forma-pagamento{
-        margin-right: 1.5rem;
-    }
     .container__cliente___pagamento{
         display: flex;
         flex-direction: row;
@@ -115,16 +119,14 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
 
         font-family: var(--mont-serrat);
 
-        width: 88vw;
+        width: 79.75rem;
         height: 3.125rem;
 
-        padding-left: 6.646rem;
-        padding-right: 17rem;
-        
+        padding-left: 5.346rem;
+        padding-right: 0%;
 
         background-color: #FAFAFA;
         border-radius: 8px;
@@ -168,17 +170,31 @@
     #resulta__cliente___pagamento{
         padding-bottom: 0%;
     }
+    .item__cliente__pagamento{
+        width: 76.125rem;
 
-    .carrousel-clientes-pagamento{
         display: flex;
         flex-direction: row;
-        overflow-x: hidden;
-        width: 400vw;
+        align-items: center;
 
+        font-family: var(--mont-serrat);
+        font-size: 14px;
+        color: #7A8594;
+
+        padding: 1.471rem 0;
+        border-bottom: 0.941034px solid #E1E1E1;
     }
-    .item__cliente__pagamento{
-        width: 100vw;
-        padding-right: 15rem;
+    .container__check___pagamento{
+        width: 3.4rem;
+    }
+    .cliente__bordero{
+        width: 15.563rem;
+    }
+    .cliente__qtd-titulos{
+        width: 39.875rem;
+    }
+    .cliente__valorTotal{
+        width: 16.5rem;
     }
     .button--carrousel{
         display: flex;
@@ -216,5 +232,57 @@
         justify-content: space-between;
         padding: 0 1.5rem;
         margin-top: 2rem;
+    }
+
+    .info__bordero___check{
+        width: 9.688rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 7.2rem;
+    }
+    .info__registro{
+        width: 9.875rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 7.2rem;
+    }
+    .info__valor-check{
+        width: 9.625rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.2rem;
+    }
+    .info__tipo-servico{
+        width: 15rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 7.8rem;
+    }
+    .info__forma-pagamento{
+        width: 11.875rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 6.6rem;
+    }
+
+    .cliente__bordero___pagamento{
+        width: 9.75rem;
+    }
+    .cliente__registro{
+        width: 9.875rem;
+    }
+    .cliente__valorCheck{
+        width: 9.625rem;
+    }
+    .cliente__tipo-servico{
+        width: 15rem;
+    }
+    .cliente__forma-pagamento{
+        width: 22.625rem;
     }
 }

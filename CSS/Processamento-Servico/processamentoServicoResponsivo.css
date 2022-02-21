@@ -3,27 +3,6 @@
         width: 40vw;
         background-position-x: calc(100% - 1rem);
     }
-    .secao-1__filtros{
-        justify-content: space-around;
-    }
-    .secao-2__filtros,.secao-3__filtros{
-        justify-content: space-between;
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
-    .cliente__pesquisa{
-        justify-content: space-between;
-    }
-    .secao-1{
-        gap: 0%;
-        width: 22.5vw;
-
-        justify-content: space-between;
-    }
-    .secao-2{
-        margin-left: 20vw;
-    }
-
     .input__filtro___pagamento-secao-1{
         background-position-x: calc(100% - 2rem);
     }
@@ -99,4 +78,20 @@
         display: none;
     }
 
+}
+@media (min-width:1441px){
+    .info__resultado{
+        width: 88vw;
+    }
+    .cliente__pesquisa{
+        width: 85vw;
+    }
+
+
+    .info__resultado___pagamento, .info__resultado___pagamento-check{
+        width: 88vw;
+    }
+    .item__cliente__pagamento, .item__cliente__pagamento{
+        width: 85vw;
+    }
 }

@@ -413,6 +413,11 @@
         animation-name: animatetop;
         animation-duration: .4s;
         position:relative;
+
+        overflow-x: scroll;
+        overflow-y: visible;
+        scrollbar-color: #173A67 transparent;
+        scrollbar-width: thin;
     }
     .clientes{
         margin-bottom: 3rem;
@@ -425,7 +430,7 @@
 
         font-family: var(--mont-serrat);
 
-        width: 88vw;
+        width: 79.75rem;
         height: 3.125rem;
 
         padding-left: 1.646rem;
@@ -437,12 +442,43 @@
         font-weight: 600;
         font-size: 14px;
     }
-    .info__selecionar,.info__cliente, .info__duplicatas, .info__data-vencimento, .info__valor, .info__prestacao, .info__bordero, .info__qtd-titulos, .info__valor-total, .info__valor-check, .info__registro {
+    .info__selecionar{
+        width: 8.75rem;
+    }
+    .info__cliente{
+        width: 17.938rem;
         background-image: url("../../Assets/seta__selection.png");
         background-repeat: no-repeat;
-        background-position-y: .3rem;
-        background-position-x: calc(100% - 1rem);
-        padding-right: 2.101rem;
+        background-position-y: center;
+        background-position-x: 4rem;
+    }
+    .info__duplicatas{
+        width: 7.563rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.8rem;
+    }
+    .info__prestacao{
+        width: 7.563rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.2rem;
+    }
+    .info__data-vencimento{
+        width: 14.563rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 8.7rem;
+    }
+    .info__valor{
+        width: 7.563rem;
+        background-image: url("../../Assets/seta__selection.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 3.2rem;
     }
 
     .secao-1{
@@ -468,17 +504,16 @@
     .cliente__pesquisa{
         display: flex;
         flex-direction: row;
+        align-items: center;
         justify-content: space-between;
-
 
         font-family: var(--mont-serrat);
         color: #7A8594;
 
         padding: 1.471rem 0;
-        border-bottom: 0.941034px solid #E1E1E1;;
-    }
-    .info__data-vencimento{
-        margin-left: 1.2rem;
+        border-bottom: 0.941034px solid #E1E1E1;
+
+        width: 76.125rem;
     }
     .container__info___cliente{
         display: flex;
@@ -495,7 +530,29 @@
         width: 1rem;
         height: 1rem;
     }
-
+    .secao-1__clientes-pesquisa{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .container__check{
+        width: 8.75rem;
+    }
+    .cliente{
+        width: 17.938rem;
+    }
+    .cliente__duplicata{
+        width: 7.8rem;
+    }
+    .cliente__prestacao{
+        width: 7.8rem;
+    }
+    .cliente__valor{
+        width: 7.8rem;
+    }
+    .cliente__vencimento{
+        width: 24.688rem;
+    }
     .container__botoes-marcar{
         display: flex;
         justify-content: space-between;
